@@ -31,8 +31,10 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
                 case ScriptTypes.Creature:
                 {
                     foreach (var key in CreatureScriptTemplate.hooksDictionary.Keys)
+                    {
                         mainForm.listBox_CoreScriptTemplates_Hooks.Items.Add(key);
-
+                    }
+                    
                     break;
                 }
 
@@ -89,9 +91,7 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
                         treeView.Nodes.Add(new TreeNode(hookName));
 
                         foreach (var item in SpellScriptTemplate.hookBodiesDictionary[hookName])
-                        {
                             treeView.Nodes[index].Nodes.Add(item.Key);
-                        }
 
                         index++;
                     }
