@@ -31,9 +31,15 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
                 case ScriptTypes.Creature:
                 {
                     foreach (var key in CreatureScriptTemplate.hooksDictionary.Keys)
-                    {
                         mainForm.listBox_CoreScriptTemplates_Hooks.Items.Add(key);
-                    }
+
+                    break;
+                }
+
+                case ScriptTypes.Spell:
+                {
+                    foreach (var key in SpellScriptTemplate.hooksDictionary.Keys)
+                        mainForm.listBox_CoreScriptTemplates_Hooks.Items.Add(key);
 
                     break;
                 }
@@ -70,6 +76,30 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
                     treeView.ExpandAll();
                     break;
                 }
+
+                case ScriptTypes.Spell:
+                {
+                    foreach (var hook in mainForm.listBox_CoreScriptTemplates_Hooks.SelectedItems)
+                    {
+                        string hookName = hook.ToString();
+
+                        if (!SpellScriptTemplate.hookBodiesDictionary.ContainsKey(hookName))
+                            continue;
+
+                        treeView.Nodes.Add(new TreeNode(hookName));
+
+                        foreach (var item in SpellScriptTemplate.hookBodiesDictionary[hookName])
+                        {
+                            treeView.Nodes[index].Nodes.Add(item.Key);
+                        }
+
+                        index++;
+                    }
+
+                    treeView.ExpandAll();
+
+                    break;
+                }
             }
         }
 
@@ -82,6 +112,12 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
                 case ScriptTypes.Creature:
                 {
                     CreatureScriptTemplate.CreateTemplate(objectEntry, mainForm.listBox_CoreScriptTemplates_Hooks, mainForm.treeView_CoreScriptTemplates_HookBodies);
+                    break;
+                }
+
+                case ScriptTypes.Spell:
+                {
+                    SpellScriptTemplate.CreateTemplate(objectEntry, mainForm.listBox_CoreScriptTemplates_Hooks, mainForm.treeView_CoreScriptTemplates_HookBodies);
                     break;
                 }
             }
