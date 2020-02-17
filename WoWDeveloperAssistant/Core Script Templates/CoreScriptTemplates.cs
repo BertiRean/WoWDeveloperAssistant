@@ -19,7 +19,8 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
             AreaTrigger  = 2,
             Spell        = 3,
             PlayerScript = 4,
-            Unknown      = 5
+            Aura         = 5,
+            Unknown      = 6
         };
 
         public void FillBoxWithHooks()
@@ -38,11 +39,22 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
                     break;
                 }
 
+                case ScriptTypes.Aura:
+                {
+                    foreach (var key in AuraScriptTemplate.hooksDictionary.Keys)
+                    {
+                        mainForm.listBox_CoreScriptTemplates_Hooks.Items.Add(key);
+                    }
+                    break;
+                }
+
                 case ScriptTypes.Spell:
                 {
                     foreach (var key in SpellScriptTemplate.hooksDictionary.Keys)
+                    {
                         mainForm.listBox_CoreScriptTemplates_Hooks.Items.Add(key);
 
+                    }
                     break;
                 }
             }
@@ -100,6 +112,28 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
 
                     break;
                 }
+
+                case ScriptTypes.Aura:
+                {
+                    foreach (var hook in mainForm.listBox_CoreScriptTemplates_Hooks.SelectedItems)
+                    {
+                        string hookName = hook.ToString();
+
+                        if (!AuraScriptTemplate.hookBodiesDictionary.ContainsKey(hookName))
+                            continue;
+
+                        treeView.Nodes.Add(new TreeNode(hookName));
+
+                        foreach (var item in AuraScriptTemplate.hookBodiesDictionary[hookName])
+                            treeView.Nodes[index].Nodes.Add(item.Key);
+
+                        index++;
+                    }
+
+                    treeView.ExpandAll();
+
+                    break;
+                }
             }
         }
 
@@ -120,6 +154,12 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
                     SpellScriptTemplate.CreateTemplate(objectEntry, mainForm.listBox_CoreScriptTemplates_Hooks, mainForm.treeView_CoreScriptTemplates_HookBodies);
                     break;
                 }
+
+                case ScriptTypes.Aura:
+                {
+                    AuraScriptTemplate.CreateTemplate(objectEntry, mainForm.listBox_CoreScriptTemplates_Hooks, mainForm.treeView_CoreScriptTemplates_HookBodies);
+                    break;
+                }
             }
         }
 
@@ -137,6 +177,8 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
                     return ScriptTypes.Spell;
                 case 4:
                     return ScriptTypes.PlayerScript;
+                case 5: 
+                    return ScriptTypes.Aura;
                 default:
                     return ScriptTypes.Unknown;
             }
