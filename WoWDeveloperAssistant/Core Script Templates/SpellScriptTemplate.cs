@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -8,7 +9,7 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
 {
     public static class SpellScriptTemplate
     {
-        public static Dictionary<string, string> hooksDictionary = new Dictionary<string, string>
+        public static readonly Dictionary<string, string> hooksDictionary = new Dictionary<string, string>
         {
             { "OnPrepare",                  "void HandlePrepare()"                                                                  },
             { "OnCheckInterrupt",           "bool HandleCheckInterrupt()"                                                           },
@@ -32,7 +33,31 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
             { "OnInterrupt",                "void HandleInterrupt(uint32 p_Time)"                                                   },
         };
 
-        public static Dictionary<string, Dictionary<string, string>> hookBodiesDictionary = new Dictionary<string, Dictionary<string, string>>
+        public static readonly Dictionary<string, string> hooksMacrosDictionary = new Dictionary<string, string>
+        {
+            { "OnPrepare",                  "+= SpellOnPrepareFn({0}::HandlePrepare);"                                                      },
+            { "OnCheckInterrupt",           "+= SpellCheckInterruptFn({0}::HandleCheckInterrupt);"                                          },
+            { "BeforeCast",                 "+= SpellCastFn({0}::HandleBeforeCast);"                                                        },
+            { "OnCheckCast",                "+= SpellCheckCastFn({0}::HandleOnCheckCast);"                                                  },
+            { "OnTakePowers",               "+= SpellTakePowersFn({0}::HandleTakePowers);"                                                  },
+            { "OnObjectAreaTargetSelect",   "+= SpellObjectAreaTargetSelectFn({0}::HandleTargets, SpellEffIndex::, Targets::);"             },
+            { "OnObjectTargetSelect",       "+= SpellObjectTargetSelectFn({0}::HandleSingleTarget, SpellEffIndex::, Targets::);"            },
+            { "OnDestinationTargetSelect",  "+= SpellDestinationTargetSelectFn({0}::HandleOnDestTargetSelect, SpellEffIndex::, Targets::);" },
+            { "OnCast",                     "+= SpellCastFn({0}::HandleOnCast);"                                                            },
+            { "AfterCast",                  "+= SpellCastFn({0}::HandleAfterCast);"                                                         },
+            { "OnEffectLaunch",             "+= SpellEffectFn({0}::HandleEffectLaunch, SpellEffIndex::, SpellEffects::);"                   },
+            { "OnEffectLaunchTarget",       "+= SpellEffectFn({0}::HandleEffectLaunchTarget, SpellEffIndex::, SpellEffects::);"             },
+            { "OnEffectHit",                "+= SpellEffectFn({0}::HandleEffectHit, SpellEffIndex::, SpellEffects::);"                      },
+            { "BeforeHit",                  "+= SpellHitFn({0}::HandleBeforeHit);"                                                          },
+            { "OnEffectHitTarget",          "+= SpellEffectFn({0}::HandleEffectHitTarget, SpellEffIndex::, SpellEffects::);"                },
+            { "OnHit",                      "+= SpellHitFn({0}::HandleOnHit);"                                                              },
+            { "AfterHit",                   "+= SpellHitFn({0}::HandleAfterHit);"                                                           },
+            { "OnCalculateThreat",          "+= SpellCalculateThreatFn({0}::HandleCalculateThreat);"                                        },
+            { "OnCalculateChannelDuration", "+= SpellCalculateChannelDurationFn({0}::HandleCalculateChannelDuration);"                      },
+            { "OnInterrupt",                "+= SpellInterruptFn({0}::HandleInterrupt);"                                                    },
+        };
+
+        public static readonly Dictionary<string, Dictionary<string, string>> hookBodiesDictionary = new Dictionary<string, Dictionary<string, string>>
         {
             { "OnPrepare",
                 new Dictionary<string, string>
@@ -264,7 +289,7 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
             scriptBody += GetHooksBody(hooksListBox, hookBodiesTreeView) + "\r\n\r\n";
             scriptBody += Utils.AddSpacesCount(4) + "void Register() override" + "\r\n";
             scriptBody += Utils.AddSpacesCount(4) + "{" + "\r\n";
-            scriptBody += Utils.AddSpacesCount(8) + "" + "\r\n";
+            scriptBody += GetHooksMacrosBody(hooksListBox, hookBodiesTreeView, scriptName) + "\r\n";
             scriptBody += Utils.AddSpacesCount(4) + "}" + "\r\n";
             scriptBody += "};";
 
@@ -322,6 +347,27 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
                 }
 
                 body += "\r\n" + Utils.AddSpacesCount(4) + "}";
+            }
+
+            return body;
+        }
+
+        private static string GetHooksMacrosBody(ListBox hooksListBox, TreeView hookBodiesTreeView, string scriptName)
+        {
+            string body = "";
+            int counter = 1;
+
+            foreach (var hook in hooksListBox.SelectedItems)
+            {
+                string hookStr = hook.ToString();
+
+                body += Utils.AddSpacesCount(8) + hookStr;
+                body += ' ' + String.Format(hooksMacrosDictionary[hookStr], scriptName, hookStr);
+                
+                if (counter < hooksListBox.SelectedItems.Count)
+                    body += "\r\n";
+
+                counter++;
             }
 
             return body;

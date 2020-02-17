@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Windows.Forms;
 using WoWDeveloperAssistant.Misc;
+using System;
 
 namespace WoWDeveloperAssistant.Core_Script_Templates
 {
@@ -31,7 +31,7 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
             { "AfterEffectManaShield",      "void HandleAfterEffManaShield(AuraEffect* p_AurEff, DamageInfo& p_DmgInfo, uint32& p_AbsorbAmount)"   },
             { "OnEffectSplitDamage",        "void HandleOnEffSplitDmg(AuraEffect* p_AurEff, DamageInfo& p_DmgInfo, uint32& p_SplitAmount)"   },
             { "DoCheckProc",                "bool HandleCheckProc(ProcEventInfo & p_EventInfo)"   },
-            { "DoCheckEffectProc",          "void HandleCheckProc(AuraEffect const* p_AurEff, ProcEventInfo& p_EventInfo, bool & p_IsTriggeredEffect)"   },
+            { "DoCheckEffectProc",          "void HandleCheckEffProc(AuraEffect const* p_AurEff, ProcEventInfo& p_EventInfo, bool & p_IsTriggeredEffect)"   },
             { "DoCalcPPM",                  "void HandleCalcPPM(float & p_PPM, ProcEventInfo & p_EventInfo)"   },
             { "DoCalcProcChance",           "void HandleCalcProcChance(float & p_Chance, ProcEventInfo & p_EventInfo)"   },
             { "DoPrepareProc",              "void HandlePrepareProc(ProcEventInfo & p_EventInfo)"   },
@@ -41,6 +41,41 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
             { "AfterEffectProc",            "void HandleAfterEffProc(AuraEffect const* p_AurEff, ProcEventInfo& p_EventInfo)"   },
             { "CanRefreshProc",             "bool HandleCheckRefreshProc()"   },
             { "OnEffectKeyboundOverride",   "void HandleOnEffKeyboundOverride(AuraEffect* p_AurEff, DamageInfo& p_DmgInfo, uint32& p_SplitAmount)"   },
+        };
+
+        public static readonly Dictionary<string, string> hooksMacrosDictionary = new Dictionary<string, string>
+        {
+            { "OnDispel",                   "+= AuraDispelFn({0}::HandleOnDispel);"   },
+            { "AfterDispel",                "+= AuraDispelFn({0}::HandleAfterDispel);"   },
+            { "OnEffectApply",              "+= AuraEffectApplyFn({0}::HandleOnEffApply, SpellEffIndex::, AuraType::, AuraEffectHandleModes::);"   },
+            { "AfterEffectApply",           "+= AuraEffectApplyFn({0}::HandleAfterEffApply, SpellEffIndex::, AuraType::, AuraEffectHandleModes::);"   },
+            { "OnEffectRemove",             "+= AuraEffectRemoveFn({0}::HandleOnEffRemove, SpellEffIndex::, AuraType::, AuraEffectHandleModes::);"   },
+            { "AfterEffectRemove",          "+= AuraEffectRemoveFn({0}::HandleAfterEffRemove, SpellEffIndex::, AuraType::, AuraEffectHandleModes::);"   },
+            { "OnEffectPeriodic",           "+= AuraEffectPeriodicFn({0}::HandleOnEffPeriodic, SpellEffIndex::, AuraType::);"   },
+            { "AfterEffectPeriodic",        "+= AuraEffectPeriodicFn({0}::HandleAfterEffPeriodic, SpellEffIndex::, AuraType::);"   },
+            { "OnAuraUpdate",               "+= AuraUpdateFn({0}::HandleOnAuraUpdate);"   },
+            { "OnEffectUpdate",             "+= AuraEffectUpdateFn({0}::HandleOnEffUpdate, SpellEffIndex::, AuraType::);"   },
+            { "OnEffectUpdatePeriodic",     "+= AuraEffectUpdatePeriodicFn({0}::HandleOnEffUpdatePeriodic, SpellEffIndex::, AuraType::);"   },
+            { "DoEffectCalcAmount",         "+= AuraEffectCalcAmounFn({0}::HandleCalcEffAmount, SpellEffIndex::, AuraType::);"   },
+            { "DoCalcMaxDuration",          "+= AuraCalcMaxDurationFn({0}::HandleCalcMaxDuration);"   },
+            { "DoEffectCalcPeriodic",       "+= AuraEffectCalcPeriodicFn({0}::HandleCalcMaxDuration, SpellEffIndex::, AuraType::);"   },
+            { "DoEffectCalcSpellMod",       "+= AuraEffectCalcSpellModFn({0}::HandleCalcEffSpellMod, SpellEffIndex::, AuraType::);"   },
+            { "OnEffectAbsorb",             "+= AuraEffectAbsorbFn({0}::HandleOnEffAbsorb, SpellEffIndex::);"   },
+            { "AfterEffectAbsorb",          "+= AuraEffectAbsorbFn({0}::HandleAfterEffAbsorb, SpellEffIndex::, AuraType::);"   },
+            { "OnEffectManaShield",         "+= AuraEffectAbsorbFn({0}::HandleOnEffManaShield, SpellEffIndex::);"   },
+            { "AfterEffectManaShield",      "+= AuraEffectAbsorbFn({0}::HandleAfterEffManaShield, SpellEffIndex::);"   },
+            { "OnEffectSplitDamage",        "+= AuraEffectSplitDamageFn({0}::HandleOnEffSplitDmg, SpellEffIndex::);"   },
+            { "DoCheckProc",                "+= AuraCheckProcFn({0}::HandleCheckProc);"   },
+            { "DoCheckEffectProc",          "+= AuraCheckEffectProcFn({0}::HandleCheckEffProc, SpellEffIndex::, AuraType::);"   },
+            { "DoCalcPPM",                  "+= AuraProcPerMinuteFn({0}::HandleCalcPPM);"   },
+            { "DoCalcProcChance",           "+= AuraProcChanceFn({0}::HandleCalcProcChance);"   },
+            { "DoPrepareProc",              "+= AuraProcFn({0}::HandlePrepareProc);"   },
+            { "OnProc",                     "+= AuraProcFn({0}::HandleOnProc);"   },
+            { "AfterProc",                  "+= AuraProcFn({0}::HandleAfterProc);"   },
+            { "OnEffectProc",               "+= AuraEffectProcFn({0}::HandleOnEffProc, SpellEffIndex::, AuraType::);"   },
+            { "AfterEffectProc",            "+= AuraEffectProcFn({0}::HandleAfterEffProc, SpellEffIndex::, AuraType::);"   },
+            { "CanRefreshProc",             "+= AuraCanRefreshProcFn({0}::HandleCheckRefreshProc);"   },
+            { "OnEffectKeyboundOverride",   "+= AuraEffectKeyboundOverrideFn({0}::HandleOnEffKeyboundOverride, SpellEffIndex::);"   },
         };
 
         private static readonly Dictionary<string, string> commonAuraMethods = new Dictionary<string, string>
@@ -133,7 +168,7 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
             scriptBody += GetHooksBody(hooksListBox, hookBodiesTreeView) + "\r\n\r\n";
             scriptBody += Utils.AddSpacesCount(4) + "void Register() override" + "\r\n";
             scriptBody += Utils.AddSpacesCount(4) + "{" + "\r\n";
-            scriptBody += Utils.AddSpacesCount(8) + "" + "\r\n";
+            scriptBody += GetHooksMacrosBody(hooksListBox, hookBodiesTreeView, scriptName);
             scriptBody += Utils.AddSpacesCount(4) + "}" + "\r\n";
             scriptBody += "};";
 
@@ -186,6 +221,27 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
                 }
 
                 body += "\r\n" + Utils.AddSpacesCount(4) + "}";
+            }
+
+            return body;
+        }
+
+        private static string GetHooksMacrosBody(ListBox hooksListBox, TreeView hookBodiesTreeView, string scriptName)
+        {
+            string body = "";
+            int counter = 1;
+
+            foreach (var hook in hooksListBox.SelectedItems)
+            {
+                string hookStr = hook.ToString();
+
+                body += Utils.AddSpacesCount(8) + hookStr;
+                body += ' ' + String.Format(hooksMacrosDictionary[hookStr], scriptName, hookStr);
+
+                if (counter <= hooksListBox.SelectedItems.Count)
+                    body += "\r\n";
+
+                counter++;
             }
 
             return body;
