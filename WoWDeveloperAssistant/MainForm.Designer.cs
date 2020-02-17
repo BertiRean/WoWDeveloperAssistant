@@ -1054,7 +1054,8 @@
             "AreaTrigger",
             "Spell",
             "PlayerScript",
-            "Aura"});
+            "Aura",
+            "BossScript"});
             this.comboBox_CoreScriptTemplates_ScriptType.Location = new System.Drawing.Point(104, 10);
             this.comboBox_CoreScriptTemplates_ScriptType.Name = "comboBox_CoreScriptTemplates_ScriptType";
             this.comboBox_CoreScriptTemplates_ScriptType.Size = new System.Drawing.Size(121, 28);

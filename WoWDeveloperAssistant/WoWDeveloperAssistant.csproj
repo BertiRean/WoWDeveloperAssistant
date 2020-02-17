@@ -106,6 +106,7 @@
     <Compile Include="Achievements\AchievementEnums.cs" />
     <Compile Include="Achievements\AchievementsHandler.cs" />
     <Compile Include="Core Script Templates\AuraScriptTemplate.cs" />
+    <Compile Include="Core Script Templates\BossScriptTemplate.cs" />
     <Compile Include="Core Script Templates\CoreScriptTemplates.cs" />
     <Compile Include="Core Script Templates\CreatureScriptTemplate.cs" />
     <Compile Include="Core Script Templates\SpellScriptTemplate.cs" />
