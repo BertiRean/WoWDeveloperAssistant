@@ -110,6 +110,9 @@
     <Compile Include="Core Script Templates\CoreScriptTemplates.cs" />
     <Compile Include="Core Script Templates\CreatureScriptTemplate.cs" />
     <Compile Include="Core Script Templates\SpellScriptTemplate.cs" />
+    <Compile Include="Creature Scripts Creator\AuraScriptDB.cs" />
+    <Compile Include="Creature Scripts Creator\SpellAuraScriptDbCreator.cs" />
+    <Compile Include="Creature Scripts Creator\SpellScriptDB.cs" />
     <Compile Include="DBC\Structures\AchievementEntry.cs" />
     <Compile Include="DBC\Structures\CriteriaEntry.cs" />
     <Compile Include="DBC\Structures\CriteriaTreeEntry.cs" />

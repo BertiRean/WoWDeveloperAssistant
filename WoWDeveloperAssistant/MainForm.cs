@@ -8,6 +8,7 @@ using WoWDeveloperAssistant.Database_Advisor;
 using WoWDeveloperAssistant.Waypoints_Creator;
 using WoWDeveloperAssistant.Achievements;
 using WoWDeveloperAssistant.Creature_Scripts_Creator;
+using WoWDeveloperAssistant.Spell_Aura_Script_DbCreator;
 
 namespace WoWDeveloperAssistant
 {
@@ -19,6 +20,7 @@ namespace WoWDeveloperAssistant
         private WaypointsCreator waypointsCreator;
         private CoreScriptTemplates coreScriptTemplate;
         private static Dictionary<uint, string> creatureNamesDict;
+        private SpellAuraScriptDbCreator spellAuraScriptCreatorDB;
 
         public MainForm()
         {
@@ -27,7 +29,7 @@ namespace WoWDeveloperAssistant
             creatureScriptsCreator = new CreatureScriptsCreator(this);
             waypointsCreator = new WaypointsCreator(this);
             coreScriptTemplate = new CoreScriptTemplates(this);
-
+            spellAuraScriptCreatorDB = new SpellAuraScriptDbCreator(this);
             creatureNamesDict = new Dictionary<uint, string>();
 
             if (Properties.Settings.Default.UsingDB)
@@ -388,6 +390,26 @@ namespace WoWDeveloperAssistant
         private void TreeView_Achievements_ModifierTrees_AfterCollapse(object sender, TreeViewEventArgs e)
         {
             treeView_Achievements_ModifierTreeChildNodes.Nodes.Clear();
+        }
+
+        private void SpellAuraScriptType_ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            spellAuraScriptCreatorDB.FillBoxWithHooks();
+        }
+
+        private void SpellAuraScript_ActionComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            spellAuraScriptCreatorDB.EnableLockedItems(true);
+        }
+
+        private void SpellAuraScript_Button_Add_Click(object sender, EventArgs e)
+        {
+            spellAuraScriptCreatorDB.AddScript();
+        }
+
+        private void SpellAuraScripts_GenerateSQL_Click(object sender, EventArgs e)
+        {
+            spellAuraScriptCreatorDB.GenerateSQL();
         }
     }
 }
