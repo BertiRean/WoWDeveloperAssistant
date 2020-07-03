@@ -36,7 +36,7 @@ namespace WoWDeveloperAssistant.Spell_Aura_Script_DbCreator
             "CooldownRemove"
         };
 
-        public static string CreateSqlAction(SpellScriptEntry spell, uint id)
+        public static string CreateSqlQuery(SpellScriptEntry spell, uint id)
         {
             var SQLtext = "";
             var spellName = "\"\"";
@@ -51,15 +51,10 @@ namespace WoWDeveloperAssistant.Spell_Aura_Script_DbCreator
                 spellName = DBC.DBC.SpellName[(int)spell.SpellId].Name + "" + hooksList[spell.Hook] + " - EFFECT_" + spell.EffectId.ToString();
 
             SQLtext += "(" + spell.SpellId + ", " + id.ToString() + ", "  + spell.Hook + ", " + spell.EffectId + ", " + spell.Action + ", " + spell.ActionSpellId + ", " +
-                spell.ActionCaster + ", " + spell.ActionTarget + ", " + triggered + ", " + spell.CalculationType + ", " + spell.DataSource + ", " + actionSpellList  + ", "
+                spell.ActionOriginalCaster + ", " + spell.ActionCaster + ", " + spell.ActionTarget + ", " + triggered + ", " + spell.CalculationType + ", " + spell.DataSource + ", " + actionSpellList  + ", "
                 + spellName + ")";
 
             return SQLtext;
-        }
-
-        private static string GetEnumsBody(TreeView hookBodiesTreeView)
-        {
-            return "";
         }
     }
 }

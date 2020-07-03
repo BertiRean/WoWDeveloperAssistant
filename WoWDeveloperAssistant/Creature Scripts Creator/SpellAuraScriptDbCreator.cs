@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections;
 using WoWDeveloperAssistant.Misc;
+using System.Windows.Forms;
 
 namespace WoWDeveloperAssistant.Spell_Aura_Script_DbCreator
 {
@@ -79,13 +80,13 @@ namespace WoWDeveloperAssistant.Spell_Aura_Script_DbCreator
             foreach (var item in spellScriptsEntries)
             {
                 var SQLtext = "DELETE FROM `spell_scripting` WHERE `SpellId` = " + item.Key + ";\r\n";
-                SQLtext += "INSERT INTO `spell_scripting` (`SpellId`, `Id`, `Hook`, `EffectId`, `Action`, `ActionSpellId`, `ActionCaster`, `ActionTarget`, `Triggered`,  " +
+                SQLtext += "INSERT INTO `spell_scripting` (`SpellId`, `Id`, `Hook`, `EffectId`, `Action`, `ActionSpellId`, `ActionCaster`, `OriginalCaster`, `ActionTarget`, `Triggered`, " +
                     "`Calculation`, `DataSource`, `ActionSpellList`, `Comment`) VALUES\r\n";
 
                 uint itr = 0;
                 foreach(SpellScriptEntry script in item.Value)
                 {
-                    string query = SpellScriptDB.CreateSqlAction(script, itr);
+                    string query = SpellScriptDB.CreateSqlQuery(script, itr);
 
                     if (itr + 1 >= item.Value.Count)
                         query += ";\n";
@@ -99,6 +100,32 @@ namespace WoWDeveloperAssistant.Spell_Aura_Script_DbCreator
                 SQLtext += "\n\n";
                 mainForm.SpellAuraScript_SQL_Out_RichTextBox.AppendText(SQLtext);
             }
+
+            foreach (var item in auraScriptsEntries)
+            {
+                var SQLtext = "DELETE FROM `aura_scripts` WHERE `SpellId` = " + item.Key + ";\r\n";
+                SQLtext += "insert into `aura_scripts` (`SpellId`, `Id`, `Hook`, `EffectId`, `Action`, `ActionSpellId`, `ActionCaster`, `OriginalCaster`, `ActionTarget`, `Triggered`, " +
+                    "`Calculation`, `DataSource`, `ActionSpellList`, `Comment`) VALUES\r\n";
+
+                uint itr = 0;
+                foreach (AuraScriptEntry script in item.Value)
+                {
+                    string query = AuraScriptDB.CreateSqlQuery(script, itr);
+
+                    if (itr + 1 >= item.Value.Count)
+                        query += ";\n";
+                    else
+                        query += ",\n";
+
+                    SQLtext += query;
+                    itr++;
+                }
+
+                SQLtext += "\n\n";
+                mainForm.SpellAuraScript_SQL_Out_RichTextBox.AppendText(SQLtext);
+            }
+
+            MessageBox.Show("SQL Queries Generated");
         }
 
         public void AddScript()
@@ -130,6 +157,7 @@ namespace WoWDeveloperAssistant.Spell_Aura_Script_DbCreator
                         spellScriptsEntries.Add(spell.SpellId, new ArrayList());
 
                     spellScriptsEntries[spell.SpellId].Add(spell);
+                    MessageBox.Show("Information added correctly to SpellId");
                     break;
                 }
 
@@ -158,6 +186,7 @@ namespace WoWDeveloperAssistant.Spell_Aura_Script_DbCreator
                         auraScriptsEntries.Add(auraScript.SpellId, new ArrayList());
 
                     auraScriptsEntries[auraScript.SpellId].Add(auraScript);
+                    MessageBox.Show("Information added correctly to SpellId");
                     break;
                 }
             }
