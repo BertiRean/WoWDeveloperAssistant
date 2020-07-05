@@ -9,6 +9,7 @@ using WoWDeveloperAssistant.Waypoints_Creator;
 using WoWDeveloperAssistant.Achievements;
 using WoWDeveloperAssistant.Creature_Scripts_Creator;
 using WoWDeveloperAssistant.Spell_Aura_Script_DbCreator;
+using WoWDeveloperAssistant.SpellInfo_Override_DbCreator;
 
 namespace WoWDeveloperAssistant
 {
@@ -21,6 +22,7 @@ namespace WoWDeveloperAssistant
         private CoreScriptTemplates coreScriptTemplate;
         private static Dictionary<uint, string> creatureNamesDict;
         private SpellAuraScriptDbCreator spellAuraScriptCreatorDB;
+        private SpellInfoOverrideCreator spellDBCOverrideCreatorDB;
 
         public MainForm()
         {
@@ -31,6 +33,7 @@ namespace WoWDeveloperAssistant
             coreScriptTemplate = new CoreScriptTemplates(this);
             spellAuraScriptCreatorDB = new SpellAuraScriptDbCreator(this);
             creatureNamesDict = new Dictionary<uint, string>();
+            spellDBCOverrideCreatorDB = new SpellInfoOverrideCreator(this);
 
             if (Properties.Settings.Default.UsingDB)
             {
@@ -410,6 +413,58 @@ namespace WoWDeveloperAssistant
         private void SpellAuraScripts_GenerateSQL_Click(object sender, EventArgs e)
         {
             spellAuraScriptCreatorDB.GenerateSQL();
+        }
+
+        private void SpellInfo_Spell_Id_TextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verify that the pressed key isn't CTRL or any non-numeric digit
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+                spellDBCOverrideCreatorDB.EnableLockedItems(false);
+            }
+        }
+
+        private void SpellInfo_Value_TextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verify that the pressed key isn't CTRL or any non-numeric digit
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+                e.Handled = true;
+        }
+
+        private void SpellInfo_Spell_Id_TextBox_TextChanged(object sender, EventArgs e)
+        {
+            string text = this.SpellInfo_Spell_Id_TextBox.Text;
+            bool isNumber = true;
+
+            foreach (char c in text)
+            {
+                if (c < '0' || c > '9')
+                    isNumber = false;
+            }
+
+            if (text.Length < 1)
+                isNumber = false;
+
+            this.spellDBCOverrideCreatorDB.EnableLockedItems(isNumber);
+        }
+
+        private void SpellIInfo_AddSpellOverride_Button_Click(object sender, EventArgs e)
+        {
+            if (!DBC.DBC.IsLoaded())
+                DBC.DBC.Load();
+
+            this.spellDBCOverrideCreatorDB.AddSpellInfoEntry();
+        }
+
+        private void SpellInfo_GenerateQuery_Button_Click(object sender, EventArgs e)
+        {
+            this.spellDBCOverrideCreatorDB.GenerateSQL();
+        }
+
+        private void SpellInfo_ClearSpellData_Button_Click(object sender, EventArgs e)
+        {
+            this.spellDBCOverrideCreatorDB.ClearSpellData();
         }
     }
 }
