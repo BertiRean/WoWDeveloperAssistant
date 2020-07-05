@@ -10,6 +10,7 @@ using WoWDeveloperAssistant.Achievements;
 using WoWDeveloperAssistant.Creature_Scripts_Creator;
 using WoWDeveloperAssistant.Spell_Aura_Script_DbCreator;
 using WoWDeveloperAssistant.SpellInfo_Override_DbCreator;
+using WoWDeveloperAssistant.CombatAI_Creator_Templates;
 
 namespace WoWDeveloperAssistant
 {
@@ -23,6 +24,7 @@ namespace WoWDeveloperAssistant
         private static Dictionary<uint, string> creatureNamesDict;
         private SpellAuraScriptDbCreator spellAuraScriptCreatorDB;
         private SpellInfoOverrideCreator spellDBCOverrideCreatorDB;
+        private CombatAICreator combatAIScriptsCreatorDB;
 
         public MainForm()
         {
@@ -34,6 +36,7 @@ namespace WoWDeveloperAssistant
             spellAuraScriptCreatorDB = new SpellAuraScriptDbCreator(this);
             creatureNamesDict = new Dictionary<uint, string>();
             spellDBCOverrideCreatorDB = new SpellInfoOverrideCreator(this);
+            combatAIScriptsCreatorDB = new CombatAICreator(this);
 
             if (Properties.Settings.Default.UsingDB)
             {
@@ -465,6 +468,67 @@ namespace WoWDeveloperAssistant
         private void SpellInfo_ClearSpellData_Button_Click(object sender, EventArgs e)
         {
             this.spellDBCOverrideCreatorDB.ClearSpellData();
+        }
+
+        private void SpellAuraScript_Clear_Button_Click(object sender, EventArgs e)
+        {
+            this.spellAuraScriptCreatorDB.ClearScriptData();
+        }
+
+        private void CombatAI_NpcEntry_TextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verify that the pressed key isn't CTRL or any non-numeric digit
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+                this.combatAIScriptsCreatorDB.EnableLockedItems(false);
+            }
+        }
+
+        private void CombatAI_GenerateSQL_Button_Click(object sender, EventArgs e)
+        {
+            this.combatAIScriptsCreatorDB.GenerateSQL();
+        }
+
+        private void CombatAI_NpcEntry_TextBox_TextChanged(object sender, EventArgs e)
+        {
+            string text = this.CombatAI_NpcEntry_TextBox.Text;
+            bool isNumber = true;
+
+            foreach (char c in text)
+            {
+                if (c < '0' || c > '9')
+                    isNumber = false;
+            }
+
+            if (text.Length < 1)
+                isNumber = false;
+
+            this.combatAIScriptsCreatorDB.EnableLockedItems(isNumber);
+        }
+
+        private void CombatAI_Add_ScriptData_Button_Click(object sender, EventArgs e)
+        {
+            if (!DBC.DBC.IsLoaded())
+                DBC.DBC.Load();
+
+            this.combatAIScriptsCreatorDB.AddCombatAIData();
+        }
+
+        private void CombatAI_AttackDist_TextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verify that the pressed key isn't CTRL or any non-numeric digit
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+                e.Handled = true;
+
+            // If you want, you can allow decimal (float) numbers
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+                e.Handled = true;
+        }
+
+        private void CombatAI_ClearData_Button_Click(object sender, EventArgs e)
+        {
+            this.combatAIScriptsCreatorDB.ClearCombatScriptData();
         }
     }
 }

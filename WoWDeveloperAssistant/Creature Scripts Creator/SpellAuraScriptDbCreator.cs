@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections;
 using WoWDeveloperAssistant.Misc;
 using System.Windows.Forms;
+using WoWDeveloperAssistant.SpellInfo_Override_DbCreator;
 
 namespace WoWDeveloperAssistant.Spell_Aura_Script_DbCreator
 {
@@ -79,7 +80,8 @@ namespace WoWDeveloperAssistant.Spell_Aura_Script_DbCreator
 
             foreach (var item in spellScriptsEntries)
             {
-                var SQLtext = "DELETE FROM `spell_scripting` WHERE `SpellId` = " + item.Key + ";\r\n";
+                var SQLtext = "-- " + SpellInfoOverrideCreator.GetSpellName(item.Key) + " \r\n";
+                SQLtext += "DELETE FROM `spell_scripting` WHERE `SpellId` = " + item.Key + ";\r\n";
                 SQLtext += "INSERT INTO `spell_scripting` (`SpellId`, `Id`, `Hook`, `EffectId`, `Action`, `ActionSpellId`, `ActionCaster`, `OriginalCaster`, `ActionTarget`, `Triggered`, " +
                     "`Calculation`, `DataSource`, `ActionSpellList`, `Comment`) VALUES\r\n";
 
@@ -103,7 +105,8 @@ namespace WoWDeveloperAssistant.Spell_Aura_Script_DbCreator
 
             foreach (var item in auraScriptsEntries)
             {
-                var SQLtext = "DELETE FROM `aura_scripts` WHERE `SpellId` = " + item.Key + ";\r\n";
+                var SQLtext = "-- " + SpellInfoOverrideCreator.GetSpellName(item.Key) + " \r\n";
+                SQLtext += "DELETE FROM `aura_scripts` WHERE `SpellId` = " + item.Key + ";\r\n";
                 SQLtext += "insert into `aura_scripts` (`SpellId`, `Id`, `Hook`, `EffectId`, `Action`, `ActionSpellId`, `ActionCaster`, `OriginalCaster`, `ActionTarget`, `Triggered`, " +
                     "`Calculation`, `DataSource`, `ActionSpellList`, `Comment`) VALUES\r\n";
 
@@ -128,6 +131,20 @@ namespace WoWDeveloperAssistant.Spell_Aura_Script_DbCreator
             MessageBox.Show("SQL Queries Generated");
         }
 
+        private bool ValidateSpellId(uint SpellId)
+        {
+            if (DBC.DBC.IsLoaded() && !DBC.DBC.SpellMisc.ContainsKey((int)SpellId))
+            {
+                String msg = String.Format("The Spell Id: {0} doesn't exist in DBC",
+                         SpellId);
+
+                MessageBox.Show(msg);
+                return false;
+            }
+
+            return true;
+        }
+
         public void AddScript()
         {
             switch (GetScriptType(mainForm.SpellAuraScriptType_ComboBox.SelectedIndex))
@@ -135,6 +152,10 @@ namespace WoWDeveloperAssistant.Spell_Aura_Script_DbCreator
                 case ScriptTypes.SpellScript:
                 {
                     uint SpellId = uint.Parse(mainForm.SpellAuraScript_SpellID_TextBox.Text);
+                    
+                    if (!ValidateSpellId(SpellId))
+                        return;
+                        
                     uint Hook = Convert.ToUInt32(mainForm.SpellAuraScript_Hooks_ComboBox.SelectedIndex);
                     int EffIdx = mainForm.SpellAuraScript_EffIndex_ComboBox.SelectedIndex;
 
@@ -164,6 +185,10 @@ namespace WoWDeveloperAssistant.Spell_Aura_Script_DbCreator
                 case ScriptTypes.AuraScript:
                 {
                     uint SpellId = uint.Parse(mainForm.SpellAuraScript_SpellID_TextBox.Text);
+
+                    if (!ValidateSpellId(SpellId))
+                        return;
+
                     uint Hook = Convert.ToUInt32(mainForm.SpellAuraScript_Hooks_ComboBox.SelectedIndex);
                     int EffIdx = mainForm.SpellAuraScript_EffIndex_ComboBox.SelectedIndex;
 
@@ -206,6 +231,13 @@ namespace WoWDeveloperAssistant.Spell_Aura_Script_DbCreator
             mainForm.SpellAuraScripts_ActionSpellId_TextBox.Enabled = enabled;
             mainForm.SpellAuraScripts_ActionSpellList_TextBox.Enabled = enabled;
             mainForm.SpellAuraScript_Button_Add.Enabled = enabled;
+        }
+
+        public void ClearScriptData()
+        {
+            mainForm.SpellAuraScript_SQL_Out_RichTextBox.Clear();
+            this.spellScriptsEntries.Clear();
+            this.auraScriptsEntries.Clear();
         }
     }
 }

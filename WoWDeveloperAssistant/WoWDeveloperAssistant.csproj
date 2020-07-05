@@ -111,6 +111,7 @@
     <Compile Include="Core Script Templates\CreatureScriptTemplate.cs" />
     <Compile Include="Core Script Templates\SpellScriptTemplate.cs" />
     <Compile Include="Creature Scripts Creator\AuraScriptDB.cs" />
+    <Compile Include="Creature Scripts Creator\CombatAICreator.cs" />
     <Compile Include="Creature Scripts Creator\SpellAuraScriptDbCreator.cs" />
     <Compile Include="Creature Scripts Creator\SpellInfoOverrideCreator.cs" />
     <Compile Include="Creature Scripts Creator\SpellScriptDB.cs" />

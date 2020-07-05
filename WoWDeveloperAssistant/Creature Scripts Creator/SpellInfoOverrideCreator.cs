@@ -24,7 +24,7 @@ namespace WoWDeveloperAssistant.SpellInfo_Override_DbCreator
             return query;
         }
 
-        static private string GetSpellName(uint spellId)
+        static public string GetSpellName(uint spellId)
         {
             string comment = "";
             if (DBC.DBC.IsLoaded() && DBC.DBC.SpellName.ContainsKey((int)spellId))

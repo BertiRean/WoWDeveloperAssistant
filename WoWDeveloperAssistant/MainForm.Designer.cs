@@ -29,30 +29,30 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.SpellInfo_Tab = new System.Windows.Forms.TabControl();
             this.tabPage_CreatureScriptsCreator = new System.Windows.Forms.TabPage();
@@ -147,55 +147,81 @@
             this.textBoxAchievements_Id = new System.Windows.Forms.TextBox();
             this.label_Achievements_Id = new System.Windows.Forms.Label();
             this.tabAuraSpell_Creator = new System.Windows.Forms.TabPage();
-            this.SpellAuraScripts_GenerateSQL = new System.Windows.Forms.Button();
-            this.SpellAuraScripts_ActionTarget_ComboBox = new System.Windows.Forms.ComboBox();
-            this.SpellAuraScripts_ActionOrgCaster_ComboBox = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.SpellAuraScript_SpellId_Label = new System.Windows.Forms.Label();
-            this.SpellAuraScript_SpellID_TextBox = new System.Windows.Forms.TextBox();
-            this.SpellAuraScript_SQL_Out_RichTextBox = new System.Windows.Forms.RichTextBox();
-            this.SpellAuraScript_Button_Add = new System.Windows.Forms.Button();
-            this.SpellAuraScript_Hooks_ComboBox = new System.Windows.Forms.ComboBox();
-            this.SpellAuraScript_Hook_Label = new System.Windows.Forms.Label();
-            this.SpellAuraScriptSources_ComboBox = new System.Windows.Forms.ComboBox();
-            this.SpellAuraScript_ActionComboBox = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.SpellAuraScripts_ActionCaster_ComboBox = new System.Windows.Forms.ComboBox();
-            this.SpellAuraScript_EffIndex_ComboBox = new System.Windows.Forms.ComboBox();
-            this.CalculationType_Label = new System.Windows.Forms.Label();
-            this.SpellAuraScript_CalcType_ComboBox = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.SpellAuraScript_Triggered_ComboBox = new System.Windows.Forms.ComboBox();
-            this.SpellAuraScripts_ActionSpellList_TextBox = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.SpellAuraScripts_ActionSpellId_TextBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.SpellAura_ActionLabel = new System.Windows.Forms.Label();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.ScriptType_Label = new System.Windows.Forms.Label();
+            this.SpellAuraScripts_ActionTarget_ComboBox = new System.Windows.Forms.ComboBox();
+            this.SpellAuraScript_Hooks_ComboBox = new System.Windows.Forms.ComboBox();
             this.SpellAuraScriptType_ComboBox = new System.Windows.Forms.ComboBox();
+            this.SpellAuraScripts_GenerateSQL = new System.Windows.Forms.Button();
+            this.SpellAuraScript_ActionComboBox = new System.Windows.Forms.ComboBox();
+            this.SpellAuraScripts_ActionOrgCaster_ComboBox = new System.Windows.Forms.ComboBox();
+            this.SpellAuraScripts_ActionCaster_ComboBox = new System.Windows.Forms.ComboBox();
+            this.SpellAuraScript_Hook_Label = new System.Windows.Forms.Label();
+            this.SpellAuraScript_SpellID_TextBox = new System.Windows.Forms.TextBox();
+            this.SpellAura_ActionLabel = new System.Windows.Forms.Label();
+            this.SpellAuraScriptSources_ComboBox = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.SpellAuraScript_CalcType_ComboBox = new System.Windows.Forms.ComboBox();
+            this.SpellAuraScript_EffIndex_ComboBox = new System.Windows.Forms.ComboBox();
+            this.SpellAuraScript_SpellId_Label = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.SpellAuraScript_Button_Add = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.CalculationType_Label = new System.Windows.Forms.Label();
+            this.SpellAuraScripts_ActionSpellId_TextBox = new System.Windows.Forms.TextBox();
+            this.SpellAuraScript_Triggered_ComboBox = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SpellAuraScripts_ActionSpellList_TextBox = new System.Windows.Forms.TextBox();
             this.ScriptHookAuraSpell_Label = new System.Windows.Forms.Label();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.SpellAuraScript_Clear_Button = new System.Windows.Forms.Button();
+            this.SpellAuraScript_SQL_Out_RichTextBox = new System.Windows.Forms.RichTextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tabSpellDBC_OverrideCreator = new System.Windows.Forms.TabPage();
+            this.SpellInfo_Override_RichBox = new System.Windows.Forms.RichTextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.SpellInfo_ClearSpellData_Button = new System.Windows.Forms.Button();
             this.SpellInfo_EffIdx_Label = new System.Windows.Forms.Label();
+            this.SpellInfo_Check_Data_Button = new System.Windows.Forms.Button();
             this.SpellInfo_Spell_Id_Field_Label = new System.Windows.Forms.Label();
             this.SpellInfo_Field_ComboBox = new System.Windows.Forms.ComboBox();
             this.SpellInfo_Spell_Id_Label = new System.Windows.Forms.Label();
             this.SpellInfo_Value_Label = new System.Windows.Forms.Label();
             this.SpellInfo_EffIdx_ComboBox = new System.Windows.Forms.ComboBox();
-            this.statusStrip_LoadedFile = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel_FileStatus = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel_CurrentAction = new System.Windows.Forms.ToolStripStatusLabel();
-            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.SpellInfo_Value_TextBox = new System.Windows.Forms.TextBox();
             this.SpellInfo_Spell_Id_TextBox = new System.Windows.Forms.TextBox();
             this.SpellIInfo_AddSpellOverride_Button = new System.Windows.Forms.Button();
             this.SpellInfo_GenerateQuery_Button = new System.Windows.Forms.Button();
-            this.SpellInfo_Override_RichBox = new System.Windows.Forms.RichTextBox();
-            this.SpellInfo_Check_Data_Button = new System.Windows.Forms.Button();
-            this.SpellInfo_ClearSpellData_Button = new System.Windows.Forms.Button();
+            this.tabCombatAI_Creator = new System.Windows.Forms.TabPage();
+            this.CombatAICreatorSQL_RichTextBox = new System.Windows.Forms.RichTextBox();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.CombatAI_NpcEntry_TextBox = new System.Windows.Forms.TextBox();
+            this.CombatAI_NpcEntry_Label = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.CombatAI_InitMin_TextBox = new System.Windows.Forms.TextBox();
+            this.CombatAI_InitMax_TextBox = new System.Windows.Forms.TextBox();
+            this.CombatAI_RepeatMin_TextBox = new System.Windows.Forms.TextBox();
+            this.CombatAI_RepeatMax_TextBox = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.CombatAI_RepeatMax_Label = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.CombatAI_EventType_ComboBox = new System.Windows.Forms.ComboBox();
+            this.CombatAI_AttackDist_TextBox = new System.Windows.Forms.TextBox();
+            this.CombatAI_Spell_Id_TextBox = new System.Windows.Forms.TextBox();
+            this.CombatAI_Add_ScriptData_Button = new System.Windows.Forms.Button();
+            this.CombatAI_GenerateSQL_Button = new System.Windows.Forms.Button();
+            this.CombatAI_ClearData_Button = new System.Windows.Forms.Button();
+            this.statusStrip_LoadedFile = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel_FileStatus = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel_CurrentAction = new System.Windows.Forms.ToolStripStatusLabel();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.CombatAI_EventFlags_CheckedBox = new System.Windows.Forms.CheckedListBox();
             this.SpellInfo_Tab.SuspendLayout();
             this.tabPage_CreatureScriptsCreator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Spells)).BeginInit();
@@ -212,8 +238,11 @@
             this.coreScriptTemplates.SuspendLayout();
             this.tabPage_Achievements.SuspendLayout();
             this.tabAuraSpell_Creator.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.tabSpellDBC_OverrideCreator.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.tabCombatAI_Creator.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.statusStrip_LoadedFile.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -227,7 +256,8 @@
             this.SpellInfo_Tab.Controls.Add(this.coreScriptTemplates);
             this.SpellInfo_Tab.Controls.Add(this.tabPage_Achievements);
             this.SpellInfo_Tab.Controls.Add(this.tabAuraSpell_Creator);
-            this.SpellInfo_Tab.Controls.Add(this.tabPage1);
+            this.SpellInfo_Tab.Controls.Add(this.tabSpellDBC_OverrideCreator);
+            this.SpellInfo_Tab.Controls.Add(this.tabCombatAI_Creator);
             this.SpellInfo_Tab.Location = new System.Drawing.Point(2, 2);
             this.SpellInfo_Tab.Margin = new System.Windows.Forms.Padding(2);
             this.SpellInfo_Tab.Name = "SpellInfo_Tab";
@@ -299,8 +329,8 @@
             // SpellId
             // 
             this.SpellId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.SpellId.DefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.SpellId.DefaultCellStyle = dataGridViewCellStyle9;
             this.SpellId.HeaderText = "SpellId";
             this.SpellId.MaxInputLength = 10;
             this.SpellId.MinimumWidth = 8;
@@ -311,8 +341,8 @@
             // SpellName
             // 
             this.SpellName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.SpellName.DefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.SpellName.DefaultCellStyle = dataGridViewCellStyle10;
             this.SpellName.HeaderText = "SpellName";
             this.SpellName.MaxInputLength = 50;
             this.SpellName.MinimumWidth = 8;
@@ -323,8 +353,8 @@
             // CastTime
             // 
             this.CastTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CastTime.DefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CastTime.DefaultCellStyle = dataGridViewCellStyle19;
             this.CastTime.HeaderText = "CastTime";
             this.CastTime.MaxInputLength = 10;
             this.CastTime.MinimumWidth = 8;
@@ -335,8 +365,8 @@
             // MinCastStartTime
             // 
             this.MinCastStartTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.MinCastStartTime.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.MinCastStartTime.DefaultCellStyle = dataGridViewCellStyle20;
             this.MinCastStartTime.HeaderText = "MinCastStartTime";
             this.MinCastStartTime.MaxInputLength = 10;
             this.MinCastStartTime.MinimumWidth = 8;
@@ -347,8 +377,8 @@
             // MaxCastStartTime
             // 
             this.MaxCastStartTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.MaxCastStartTime.DefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.MaxCastStartTime.DefaultCellStyle = dataGridViewCellStyle41;
             this.MaxCastStartTime.HeaderText = "MaxCastStartTime";
             this.MaxCastStartTime.MaxInputLength = 10;
             this.MaxCastStartTime.MinimumWidth = 8;
@@ -359,8 +389,8 @@
             // MinCastRepeatTime
             // 
             this.MinCastRepeatTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.MinCastRepeatTime.DefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.MinCastRepeatTime.DefaultCellStyle = dataGridViewCellStyle42;
             this.MinCastRepeatTime.HeaderText = "MinCastRepeatTime";
             this.MinCastRepeatTime.MaxInputLength = 10;
             this.MinCastRepeatTime.MinimumWidth = 8;
@@ -371,8 +401,8 @@
             // MaxCastRepeatTime
             // 
             this.MaxCastRepeatTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.MaxCastRepeatTime.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.MaxCastRepeatTime.DefaultCellStyle = dataGridViewCellStyle43;
             this.MaxCastRepeatTime.HeaderText = "MaxCastRepeatTime";
             this.MaxCastRepeatTime.MaxInputLength = 10;
             this.MaxCastRepeatTime.MinimumWidth = 8;
@@ -383,8 +413,8 @@
             // CastsCount
             // 
             this.CastsCount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CastsCount.DefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CastsCount.DefaultCellStyle = dataGridViewCellStyle44;
             this.CastsCount.HeaderText = "CastsCount";
             this.CastsCount.MaxInputLength = 4;
             this.CastsCount.MinimumWidth = 8;
@@ -521,18 +551,18 @@
             this.grid_WC_Waypoints.AllowUserToDeleteRows = false;
             this.grid_WC_Waypoints.AllowUserToResizeColumns = false;
             this.grid_WC_Waypoints.AllowUserToResizeRows = false;
-            dataGridViewCellStyle29.NullValue = null;
-            this.grid_WC_Waypoints.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle45.NullValue = null;
+            this.grid_WC_Waypoints.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle45;
             this.grid_WC_Waypoints.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle30.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle30.NullValue = null;
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grid_WC_Waypoints.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle46.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle46.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle46.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle46.NullValue = null;
+            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle46.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grid_WC_Waypoints.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle46;
             this.grid_WC_Waypoints.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grid_WC_Waypoints.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.gridColumn_Id,
@@ -545,23 +575,23 @@
             this.gridColumn_HasScript,
             this.WaypointSource});
             this.grid_WC_Waypoints.ContextMenuStrip = this.contextMenuStrip_WC;
-            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle39.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle39.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle39.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle39.NullValue = null;
-            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grid_WC_Waypoints.DefaultCellStyle = dataGridViewCellStyle39;
+            dataGridViewCellStyle55.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle55.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle55.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle55.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle55.NullValue = null;
+            dataGridViewCellStyle55.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle55.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle55.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grid_WC_Waypoints.DefaultCellStyle = dataGridViewCellStyle55;
             this.grid_WC_Waypoints.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.grid_WC_Waypoints.Enabled = false;
             this.grid_WC_Waypoints.Location = new System.Drawing.Point(849, 32);
             this.grid_WC_Waypoints.Name = "grid_WC_Waypoints";
             this.grid_WC_Waypoints.RowHeadersWidth = 62;
             this.grid_WC_Waypoints.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle40.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grid_WC_Waypoints.RowsDefaultCellStyle = dataGridViewCellStyle40;
+            dataGridViewCellStyle56.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grid_WC_Waypoints.RowsDefaultCellStyle = dataGridViewCellStyle56;
             this.grid_WC_Waypoints.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grid_WC_Waypoints.Size = new System.Drawing.Size(506, 576);
             this.grid_WC_Waypoints.TabIndex = 28;
@@ -569,8 +599,8 @@
             // 
             // gridColumn_Id
             // 
-            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.gridColumn_Id.DefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.gridColumn_Id.DefaultCellStyle = dataGridViewCellStyle47;
             this.gridColumn_Id.HeaderText = "Id";
             this.gridColumn_Id.MinimumWidth = 8;
             this.gridColumn_Id.Name = "gridColumn_Id";
@@ -580,9 +610,9 @@
             // 
             // gridColumn_PosX
             // 
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle32.NullValue = null;
-            this.gridColumn_PosX.DefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle48.NullValue = null;
+            this.gridColumn_PosX.DefaultCellStyle = dataGridViewCellStyle48;
             this.gridColumn_PosX.HeaderText = "PosX";
             this.gridColumn_PosX.MinimumWidth = 8;
             this.gridColumn_PosX.Name = "gridColumn_PosX";
@@ -592,9 +622,9 @@
             // 
             // gridColumn_PosY
             // 
-            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle33.NullValue = null;
-            this.gridColumn_PosY.DefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle49.NullValue = null;
+            this.gridColumn_PosY.DefaultCellStyle = dataGridViewCellStyle49;
             this.gridColumn_PosY.HeaderText = "PosY";
             this.gridColumn_PosY.MinimumWidth = 8;
             this.gridColumn_PosY.Name = "gridColumn_PosY";
@@ -604,8 +634,8 @@
             // 
             // gridColumn_PosZ
             // 
-            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.gridColumn_PosZ.DefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.gridColumn_PosZ.DefaultCellStyle = dataGridViewCellStyle50;
             this.gridColumn_PosZ.HeaderText = "PosZ";
             this.gridColumn_PosZ.MinimumWidth = 8;
             this.gridColumn_PosZ.Name = "gridColumn_PosZ";
@@ -615,8 +645,8 @@
             // 
             // gridColumn_Orientation
             // 
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.gridColumn_Orientation.DefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.gridColumn_Orientation.DefaultCellStyle = dataGridViewCellStyle51;
             this.gridColumn_Orientation.HeaderText = "Orientation";
             this.gridColumn_Orientation.MinimumWidth = 8;
             this.gridColumn_Orientation.Name = "gridColumn_Orientation";
@@ -625,8 +655,8 @@
             // 
             // gridColumn_WCTime
             // 
-            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.gridColumn_WCTime.DefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle52.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.gridColumn_WCTime.DefaultCellStyle = dataGridViewCellStyle52;
             this.gridColumn_WCTime.HeaderText = "Time";
             this.gridColumn_WCTime.MinimumWidth = 8;
             this.gridColumn_WCTime.Name = "gridColumn_WCTime";
@@ -635,8 +665,8 @@
             // 
             // gridColumn_WCDelay
             // 
-            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.gridColumn_WCDelay.DefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.gridColumn_WCDelay.DefaultCellStyle = dataGridViewCellStyle53;
             this.gridColumn_WCDelay.HeaderText = "Delay";
             this.gridColumn_WCDelay.MinimumWidth = 8;
             this.gridColumn_WCDelay.Name = "gridColumn_WCDelay";
@@ -644,8 +674,8 @@
             // 
             // gridColumn_HasScript
             // 
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.gridColumn_HasScript.DefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.gridColumn_HasScript.DefaultCellStyle = dataGridViewCellStyle54;
             this.gridColumn_HasScript.HeaderText = "HasScript";
             this.gridColumn_HasScript.MinimumWidth = 8;
             this.gridColumn_HasScript.Name = "gridColumn_HasScript";
@@ -730,87 +760,87 @@
             this.chart_WC.BorderSkin.BackColor = System.Drawing.Color.Transparent;
             this.chart_WC.BorderSkin.BorderColor = System.Drawing.Color.Transparent;
             this.chart_WC.BorderSkin.BorderWidth = 0;
-            chartArea2.AlignmentOrientation = ((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations)((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Vertical | System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal)));
-            chartArea2.AxisX.IsReversed = true;
-            chartArea2.AxisX.IsStartedFromZero = false;
-            chartArea2.AxisX.LabelStyle.ForeColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisX.LineColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisX.MajorGrid.Enabled = false;
-            chartArea2.AxisX.MajorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisX.MajorTickMark.Enabled = false;
-            chartArea2.AxisX.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisX.MinorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisX.MinorTickMark.LineColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisX.MinorTickMark.TickMarkStyle = System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.None;
-            chartArea2.AxisX.ScaleBreakStyle.Enabled = true;
-            chartArea2.AxisX.ScaleBreakStyle.LineColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.Silver;
-            chartArea2.AxisX.ScrollBar.LineColor = System.Drawing.Color.Black;
-            chartArea2.AxisX.TitleForeColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisX2.MajorGrid.Enabled = false;
-            chartArea2.AxisX2.MajorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisX2.MajorTickMark.Enabled = false;
-            chartArea2.AxisX2.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisX2.MinorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisY.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
-            chartArea2.AxisY.IsStartedFromZero = false;
-            chartArea2.AxisY.LabelStyle.Enabled = false;
-            chartArea2.AxisY.LabelStyle.IsEndLabelVisible = false;
-            chartArea2.AxisY.LineColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisY.MajorGrid.Enabled = false;
-            chartArea2.AxisY.MajorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisY.MajorTickMark.Enabled = false;
-            chartArea2.AxisY.MinorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisY.MinorTickMark.LineColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisY.MinorTickMark.TickMarkStyle = System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.None;
-            chartArea2.AxisY.ScaleBreakStyle.LineColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.Silver;
-            chartArea2.AxisY.ScrollBar.LineColor = System.Drawing.Color.Black;
-            chartArea2.AxisY.TitleForeColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisY2.MajorGrid.Enabled = false;
-            chartArea2.AxisY2.MajorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisY2.MajorTickMark.Enabled = false;
-            chartArea2.AxisY2.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisY2.MinorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisY2.MinorTickMark.LineColor = System.Drawing.Color.Transparent;
-            chartArea2.BorderColor = System.Drawing.Color.Transparent;
-            chartArea2.CursorX.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea2.CursorX.IsUserEnabled = true;
-            chartArea2.CursorX.IsUserSelectionEnabled = true;
-            chartArea2.CursorX.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            chartArea2.CursorY.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea2.CursorY.IsUserEnabled = true;
-            chartArea2.CursorY.IsUserSelectionEnabled = true;
-            chartArea2.CursorY.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            chartArea2.Name = "ChartArea1";
-            this.chart_WC.ChartAreas.Add(chartArea2);
+            chartArea3.AlignmentOrientation = ((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations)((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Vertical | System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal)));
+            chartArea3.AxisX.IsReversed = true;
+            chartArea3.AxisX.IsStartedFromZero = false;
+            chartArea3.AxisX.LabelStyle.ForeColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisX.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisX.MajorGrid.Enabled = false;
+            chartArea3.AxisX.MajorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisX.MajorTickMark.Enabled = false;
+            chartArea3.AxisX.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisX.MinorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisX.MinorTickMark.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisX.MinorTickMark.TickMarkStyle = System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.None;
+            chartArea3.AxisX.ScaleBreakStyle.Enabled = true;
+            chartArea3.AxisX.ScaleBreakStyle.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.Silver;
+            chartArea3.AxisX.ScrollBar.LineColor = System.Drawing.Color.Black;
+            chartArea3.AxisX.TitleForeColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisX2.MajorGrid.Enabled = false;
+            chartArea3.AxisX2.MajorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisX2.MajorTickMark.Enabled = false;
+            chartArea3.AxisX2.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisX2.MinorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisY.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
+            chartArea3.AxisY.IsStartedFromZero = false;
+            chartArea3.AxisY.LabelStyle.Enabled = false;
+            chartArea3.AxisY.LabelStyle.IsEndLabelVisible = false;
+            chartArea3.AxisY.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisY.MajorGrid.Enabled = false;
+            chartArea3.AxisY.MajorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisY.MajorTickMark.Enabled = false;
+            chartArea3.AxisY.MinorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisY.MinorTickMark.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisY.MinorTickMark.TickMarkStyle = System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.None;
+            chartArea3.AxisY.ScaleBreakStyle.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.Silver;
+            chartArea3.AxisY.ScrollBar.LineColor = System.Drawing.Color.Black;
+            chartArea3.AxisY.TitleForeColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisY2.MajorGrid.Enabled = false;
+            chartArea3.AxisY2.MajorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisY2.MajorTickMark.Enabled = false;
+            chartArea3.AxisY2.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisY2.MinorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisY2.MinorTickMark.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.BorderColor = System.Drawing.Color.Transparent;
+            chartArea3.CursorX.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea3.CursorX.IsUserEnabled = true;
+            chartArea3.CursorX.IsUserSelectionEnabled = true;
+            chartArea3.CursorX.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            chartArea3.CursorY.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea3.CursorY.IsUserEnabled = true;
+            chartArea3.CursorY.IsUserSelectionEnabled = true;
+            chartArea3.CursorY.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            chartArea3.Name = "ChartArea1";
+            this.chart_WC.ChartAreas.Add(chartArea3);
             this.chart_WC.Enabled = false;
-            legend2.Enabled = false;
-            legend2.ForeColor = System.Drawing.Color.Transparent;
-            legend2.HeaderSeparatorColor = System.Drawing.Color.Transparent;
-            legend2.ItemColumnSeparatorColor = System.Drawing.Color.Transparent;
-            legend2.Name = "Legend1";
-            legend2.TitleForeColor = System.Drawing.Color.Transparent;
-            legend2.TitleSeparatorColor = System.Drawing.Color.Transparent;
-            this.chart_WC.Legends.Add(legend2);
+            legend3.Enabled = false;
+            legend3.ForeColor = System.Drawing.Color.Transparent;
+            legend3.HeaderSeparatorColor = System.Drawing.Color.Transparent;
+            legend3.ItemColumnSeparatorColor = System.Drawing.Color.Transparent;
+            legend3.Name = "Legend1";
+            legend3.TitleForeColor = System.Drawing.Color.Transparent;
+            legend3.TitleSeparatorColor = System.Drawing.Color.Transparent;
+            this.chart_WC.Legends.Add(legend3);
             this.chart_WC.Location = new System.Drawing.Point(3, 32);
             this.chart_WC.Name = "chart_WC";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
-            series2.Color = System.Drawing.Color.Red;
-            series2.Legend = "Legend1";
-            series2.Name = "Path";
-            series2.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
-            series2.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
-            this.chart_WC.Series.Add(series2);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series3.Color = System.Drawing.Color.Red;
+            series3.Legend = "Legend1";
+            series3.Name = "Path";
+            series3.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
+            series3.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
+            this.chart_WC.Series.Add(series3);
             this.chart_WC.Size = new System.Drawing.Size(596, 577);
             this.chart_WC.TabIndex = 26;
             this.chart_WC.Text = "Waypoints";
-            title2.DockedToChartArea = "ChartArea1";
-            title2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title2.Name = "Path";
-            title2.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Horizontal;
-            this.chart_WC.Titles.Add(title2);
+            title3.DockedToChartArea = "ChartArea1";
+            title3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title3.Name = "Path";
+            title3.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Horizontal;
+            this.chart_WC.Titles.Add(title3);
             // 
             // toolStrip_WC
             // 
@@ -1364,36 +1394,9 @@
             // 
             // tabAuraSpell_Creator
             // 
-            this.tabAuraSpell_Creator.Controls.Add(this.SpellAuraScripts_GenerateSQL);
-            this.tabAuraSpell_Creator.Controls.Add(this.SpellAuraScripts_ActionTarget_ComboBox);
-            this.tabAuraSpell_Creator.Controls.Add(this.SpellAuraScripts_ActionOrgCaster_ComboBox);
-            this.tabAuraSpell_Creator.Controls.Add(this.label8);
-            this.tabAuraSpell_Creator.Controls.Add(this.label6);
-            this.tabAuraSpell_Creator.Controls.Add(this.SpellAuraScript_SpellId_Label);
-            this.tabAuraSpell_Creator.Controls.Add(this.SpellAuraScript_SpellID_TextBox);
+            this.tabAuraSpell_Creator.Controls.Add(this.tableLayoutPanel2);
             this.tabAuraSpell_Creator.Controls.Add(this.SpellAuraScript_SQL_Out_RichTextBox);
-            this.tabAuraSpell_Creator.Controls.Add(this.SpellAuraScript_Button_Add);
-            this.tabAuraSpell_Creator.Controls.Add(this.SpellAuraScript_Hooks_ComboBox);
-            this.tabAuraSpell_Creator.Controls.Add(this.SpellAuraScript_Hook_Label);
-            this.tabAuraSpell_Creator.Controls.Add(this.SpellAuraScriptSources_ComboBox);
-            this.tabAuraSpell_Creator.Controls.Add(this.SpellAuraScript_ActionComboBox);
-            this.tabAuraSpell_Creator.Controls.Add(this.label7);
-            this.tabAuraSpell_Creator.Controls.Add(this.SpellAuraScripts_ActionCaster_ComboBox);
-            this.tabAuraSpell_Creator.Controls.Add(this.SpellAuraScript_EffIndex_ComboBox);
-            this.tabAuraSpell_Creator.Controls.Add(this.CalculationType_Label);
-            this.tabAuraSpell_Creator.Controls.Add(this.SpellAuraScript_CalcType_ComboBox);
             this.tabAuraSpell_Creator.Controls.Add(this.label5);
-            this.tabAuraSpell_Creator.Controls.Add(this.SpellAuraScript_Triggered_ComboBox);
-            this.tabAuraSpell_Creator.Controls.Add(this.SpellAuraScripts_ActionSpellList_TextBox);
-            this.tabAuraSpell_Creator.Controls.Add(this.label4);
-            this.tabAuraSpell_Creator.Controls.Add(this.label3);
-            this.tabAuraSpell_Creator.Controls.Add(this.label2);
-            this.tabAuraSpell_Creator.Controls.Add(this.SpellAuraScripts_ActionSpellId_TextBox);
-            this.tabAuraSpell_Creator.Controls.Add(this.label1);
-            this.tabAuraSpell_Creator.Controls.Add(this.SpellAura_ActionLabel);
-            this.tabAuraSpell_Creator.Controls.Add(this.ScriptType_Label);
-            this.tabAuraSpell_Creator.Controls.Add(this.SpellAuraScriptType_ComboBox);
-            this.tabAuraSpell_Creator.Controls.Add(this.ScriptHookAuraSpell_Label);
             this.tabAuraSpell_Creator.Location = new System.Drawing.Point(4, 22);
             this.tabAuraSpell_Creator.Name = "tabAuraSpell_Creator";
             this.tabAuraSpell_Creator.Padding = new System.Windows.Forms.Padding(3);
@@ -1402,16 +1405,70 @@
             this.tabAuraSpell_Creator.Text = "SpellAuraScript Creator";
             this.tabAuraSpell_Creator.UseVisualStyleBackColor = true;
             // 
-            // SpellAuraScripts_GenerateSQL
+            // tableLayoutPanel2
             // 
-            this.SpellAuraScripts_GenerateSQL.Location = new System.Drawing.Point(108, 439);
-            this.SpellAuraScripts_GenerateSQL.Margin = new System.Windows.Forms.Padding(2);
-            this.SpellAuraScripts_GenerateSQL.Name = "SpellAuraScripts_GenerateSQL";
-            this.SpellAuraScripts_GenerateSQL.Size = new System.Drawing.Size(93, 19);
-            this.SpellAuraScripts_GenerateSQL.TabIndex = 51;
-            this.SpellAuraScripts_GenerateSQL.Text = "Generate SQL";
-            this.SpellAuraScripts_GenerateSQL.UseVisualStyleBackColor = true;
-            this.SpellAuraScripts_GenerateSQL.Click += new System.EventHandler(this.SpellAuraScripts_GenerateSQL_Click);
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel2.Controls.Add(this.ScriptType_Label, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.SpellAuraScripts_ActionTarget_ComboBox, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.SpellAuraScript_Hooks_ComboBox, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.SpellAuraScriptType_ComboBox, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.SpellAuraScripts_GenerateSQL, 1, 13);
+            this.tableLayoutPanel2.Controls.Add(this.SpellAuraScript_ActionComboBox, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.SpellAuraScripts_ActionOrgCaster_ComboBox, 1, 5);
+            this.tableLayoutPanel2.Controls.Add(this.SpellAuraScripts_ActionCaster_ComboBox, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.SpellAuraScript_Hook_Label, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.SpellAuraScript_SpellID_TextBox, 1, 12);
+            this.tableLayoutPanel2.Controls.Add(this.SpellAura_ActionLabel, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.SpellAuraScriptSources_ComboBox, 1, 8);
+            this.tableLayoutPanel2.Controls.Add(this.label7, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.SpellAuraScript_CalcType_ComboBox, 1, 6);
+            this.tableLayoutPanel2.Controls.Add(this.SpellAuraScript_EffIndex_ComboBox, 1, 7);
+            this.tableLayoutPanel2.Controls.Add(this.SpellAuraScript_SpellId_Label, 0, 12);
+            this.tableLayoutPanel2.Controls.Add(this.label6, 0, 5);
+            this.tableLayoutPanel2.Controls.Add(this.SpellAuraScript_Button_Add, 0, 13);
+            this.tableLayoutPanel2.Controls.Add(this.label8, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.CalculationType_Label, 0, 6);
+            this.tableLayoutPanel2.Controls.Add(this.SpellAuraScripts_ActionSpellId_TextBox, 1, 9);
+            this.tableLayoutPanel2.Controls.Add(this.SpellAuraScript_Triggered_ComboBox, 1, 10);
+            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 7);
+            this.tableLayoutPanel2.Controls.Add(this.SpellAuraScripts_ActionSpellList_TextBox, 1, 11);
+            this.tableLayoutPanel2.Controls.Add(this.ScriptHookAuraSpell_Label, 0, 8);
+            this.tableLayoutPanel2.Controls.Add(this.label2, 0, 9);
+            this.tableLayoutPanel2.Controls.Add(this.label3, 0, 10);
+            this.tableLayoutPanel2.Controls.Add(this.label4, 0, 11);
+            this.tableLayoutPanel2.Controls.Add(this.SpellAuraScript_Clear_Button, 0, 14);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(6, 18);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 15;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(276, 433);
+            this.tableLayoutPanel2.TabIndex = 52;
+            // 
+            // ScriptType_Label
+            // 
+            this.ScriptType_Label.AutoSize = true;
+            this.ScriptType_Label.Location = new System.Drawing.Point(2, 0);
+            this.ScriptType_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ScriptType_Label.Name = "ScriptType_Label";
+            this.ScriptType_Label.Size = new System.Drawing.Size(64, 13);
+            this.ScriptType_Label.TabIndex = 11;
+            this.ScriptType_Label.Text = "Script Type:";
             // 
             // SpellAuraScripts_ActionTarget_ComboBox
             // 
@@ -1422,11 +1479,51 @@
             "HitUnit",
             "ProcActor",
             "ProcTarget"});
-            this.SpellAuraScripts_ActionTarget_ComboBox.Location = new System.Drawing.Point(94, 132);
+            this.SpellAuraScripts_ActionTarget_ComboBox.Location = new System.Drawing.Point(99, 102);
             this.SpellAuraScripts_ActionTarget_ComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.SpellAuraScripts_ActionTarget_ComboBox.Name = "SpellAuraScripts_ActionTarget_ComboBox";
             this.SpellAuraScripts_ActionTarget_ComboBox.Size = new System.Drawing.Size(108, 21);
             this.SpellAuraScripts_ActionTarget_ComboBox.TabIndex = 50;
+            // 
+            // SpellAuraScript_Hooks_ComboBox
+            // 
+            this.SpellAuraScript_Hooks_ComboBox.Location = new System.Drawing.Point(99, 27);
+            this.SpellAuraScript_Hooks_ComboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.SpellAuraScript_Hooks_ComboBox.Name = "SpellAuraScript_Hooks_ComboBox";
+            this.SpellAuraScript_Hooks_ComboBox.Size = new System.Drawing.Size(108, 21);
+            this.SpellAuraScript_Hooks_ComboBox.TabIndex = 42;
+            // 
+            // SpellAuraScriptType_ComboBox
+            // 
+            this.SpellAuraScriptType_ComboBox.Items.AddRange(new object[] {
+            "SpellScript",
+            "AuraScript"});
+            this.SpellAuraScriptType_ComboBox.Location = new System.Drawing.Point(99, 2);
+            this.SpellAuraScriptType_ComboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.SpellAuraScriptType_ComboBox.Name = "SpellAuraScriptType_ComboBox";
+            this.SpellAuraScriptType_ComboBox.Size = new System.Drawing.Size(108, 21);
+            this.SpellAuraScriptType_ComboBox.TabIndex = 8;
+            this.SpellAuraScriptType_ComboBox.SelectedIndexChanged += new System.EventHandler(this.SpellAuraScriptType_ComboBox_SelectedIndexChanged);
+            // 
+            // SpellAuraScripts_GenerateSQL
+            // 
+            this.SpellAuraScripts_GenerateSQL.Location = new System.Drawing.Point(99, 324);
+            this.SpellAuraScripts_GenerateSQL.Margin = new System.Windows.Forms.Padding(2);
+            this.SpellAuraScripts_GenerateSQL.Name = "SpellAuraScripts_GenerateSQL";
+            this.SpellAuraScripts_GenerateSQL.Size = new System.Drawing.Size(93, 19);
+            this.SpellAuraScripts_GenerateSQL.TabIndex = 51;
+            this.SpellAuraScripts_GenerateSQL.Text = "Generate SQL";
+            this.SpellAuraScripts_GenerateSQL.UseVisualStyleBackColor = true;
+            this.SpellAuraScripts_GenerateSQL.Click += new System.EventHandler(this.SpellAuraScripts_GenerateSQL_Click);
+            // 
+            // SpellAuraScript_ActionComboBox
+            // 
+            this.SpellAuraScript_ActionComboBox.Location = new System.Drawing.Point(99, 52);
+            this.SpellAuraScript_ActionComboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.SpellAuraScript_ActionComboBox.Name = "SpellAuraScript_ActionComboBox";
+            this.SpellAuraScript_ActionComboBox.Size = new System.Drawing.Size(108, 21);
+            this.SpellAuraScript_ActionComboBox.TabIndex = 39;
+            this.SpellAuraScript_ActionComboBox.SelectedIndexChanged += new System.EventHandler(this.SpellAuraScript_ActionComboBox_SelectedIndexChanged);
             // 
             // SpellAuraScripts_ActionOrgCaster_ComboBox
             // 
@@ -1437,120 +1534,11 @@
             "HitUnit",
             "ProcActor",
             "ProcTarget"});
-            this.SpellAuraScripts_ActionOrgCaster_ComboBox.Location = new System.Drawing.Point(94, 162);
+            this.SpellAuraScripts_ActionOrgCaster_ComboBox.Location = new System.Drawing.Point(99, 127);
             this.SpellAuraScripts_ActionOrgCaster_ComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.SpellAuraScripts_ActionOrgCaster_ComboBox.Name = "SpellAuraScripts_ActionOrgCaster_ComboBox";
             this.SpellAuraScripts_ActionOrgCaster_ComboBox.Size = new System.Drawing.Size(108, 21);
             this.SpellAuraScripts_ActionOrgCaster_ComboBox.TabIndex = 49;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(7, 132);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(71, 13);
-            this.label8.TabIndex = 48;
-            this.label8.Text = "ActionTarget:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 162);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 13);
-            this.label6.TabIndex = 47;
-            this.label6.Text = "ActionOrgCaster:";
-            // 
-            // SpellAuraScript_SpellId_Label
-            // 
-            this.SpellAuraScript_SpellId_Label.AutoSize = true;
-            this.SpellAuraScript_SpellId_Label.Location = new System.Drawing.Point(7, 405);
-            this.SpellAuraScript_SpellId_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.SpellAuraScript_SpellId_Label.Name = "SpellAuraScript_SpellId_Label";
-            this.SpellAuraScript_SpellId_Label.Size = new System.Drawing.Size(47, 13);
-            this.SpellAuraScript_SpellId_Label.TabIndex = 46;
-            this.SpellAuraScript_SpellId_Label.Text = "Spell ID:";
-            // 
-            // SpellAuraScript_SpellID_TextBox
-            // 
-            this.SpellAuraScript_SpellID_TextBox.Location = new System.Drawing.Point(94, 402);
-            this.SpellAuraScript_SpellID_TextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.SpellAuraScript_SpellID_TextBox.MaxLength = 6;
-            this.SpellAuraScript_SpellID_TextBox.Name = "SpellAuraScript_SpellID_TextBox";
-            this.SpellAuraScript_SpellID_TextBox.Size = new System.Drawing.Size(108, 20);
-            this.SpellAuraScript_SpellID_TextBox.TabIndex = 45;
-            // 
-            // SpellAuraScript_SQL_Out_RichTextBox
-            // 
-            this.SpellAuraScript_SQL_Out_RichTextBox.Location = new System.Drawing.Point(287, 31);
-            this.SpellAuraScript_SQL_Out_RichTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.SpellAuraScript_SQL_Out_RichTextBox.Name = "SpellAuraScript_SQL_Out_RichTextBox";
-            this.SpellAuraScript_SQL_Out_RichTextBox.Size = new System.Drawing.Size(842, 500);
-            this.SpellAuraScript_SQL_Out_RichTextBox.TabIndex = 44;
-            this.SpellAuraScript_SQL_Out_RichTextBox.Text = "";
-            // 
-            // SpellAuraScript_Button_Add
-            // 
-            this.SpellAuraScript_Button_Add.Enabled = false;
-            this.SpellAuraScript_Button_Add.Location = new System.Drawing.Point(5, 439);
-            this.SpellAuraScript_Button_Add.Margin = new System.Windows.Forms.Padding(2);
-            this.SpellAuraScript_Button_Add.Name = "SpellAuraScript_Button_Add";
-            this.SpellAuraScript_Button_Add.Size = new System.Drawing.Size(93, 19);
-            this.SpellAuraScript_Button_Add.TabIndex = 43;
-            this.SpellAuraScript_Button_Add.Text = "Add Script";
-            this.SpellAuraScript_Button_Add.UseVisualStyleBackColor = true;
-            this.SpellAuraScript_Button_Add.Click += new System.EventHandler(this.SpellAuraScript_Button_Add_Click);
-            // 
-            // SpellAuraScript_Hooks_ComboBox
-            // 
-            this.SpellAuraScript_Hooks_ComboBox.Location = new System.Drawing.Point(94, 31);
-            this.SpellAuraScript_Hooks_ComboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.SpellAuraScript_Hooks_ComboBox.Name = "SpellAuraScript_Hooks_ComboBox";
-            this.SpellAuraScript_Hooks_ComboBox.Size = new System.Drawing.Size(108, 21);
-            this.SpellAuraScript_Hooks_ComboBox.TabIndex = 42;
-            // 
-            // SpellAuraScript_Hook_Label
-            // 
-            this.SpellAuraScript_Hook_Label.AutoSize = true;
-            this.SpellAuraScript_Hook_Label.Location = new System.Drawing.Point(6, 31);
-            this.SpellAuraScript_Hook_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.SpellAuraScript_Hook_Label.Name = "SpellAuraScript_Hook_Label";
-            this.SpellAuraScript_Hook_Label.Size = new System.Drawing.Size(41, 13);
-            this.SpellAuraScript_Hook_Label.TabIndex = 41;
-            this.SpellAuraScript_Hook_Label.Text = "Hooks:";
-            // 
-            // SpellAuraScriptSources_ComboBox
-            // 
-            this.SpellAuraScriptSources_ComboBox.Enabled = false;
-            this.SpellAuraScriptSources_ComboBox.Items.AddRange(new object[] {
-            "SourceSpellInfo",
-            "SourceSpellAura"});
-            this.SpellAuraScriptSources_ComboBox.Location = new System.Drawing.Point(94, 255);
-            this.SpellAuraScriptSources_ComboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.SpellAuraScriptSources_ComboBox.Name = "SpellAuraScriptSources_ComboBox";
-            this.SpellAuraScriptSources_ComboBox.Size = new System.Drawing.Size(108, 21);
-            this.SpellAuraScriptSources_ComboBox.TabIndex = 40;
-            // 
-            // SpellAuraScript_ActionComboBox
-            // 
-            this.SpellAuraScript_ActionComboBox.Location = new System.Drawing.Point(94, 56);
-            this.SpellAuraScript_ActionComboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.SpellAuraScript_ActionComboBox.Name = "SpellAuraScript_ActionComboBox";
-            this.SpellAuraScript_ActionComboBox.Size = new System.Drawing.Size(108, 21);
-            this.SpellAuraScript_ActionComboBox.TabIndex = 39;
-            this.SpellAuraScript_ActionComboBox.SelectedIndexChanged += new System.EventHandler(this.SpellAuraScript_ActionComboBox_SelectedIndexChanged);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 90);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(70, 13);
-            this.label7.TabIndex = 38;
-            this.label7.Text = "ActionCaster:";
             // 
             // SpellAuraScripts_ActionCaster_ComboBox
             // 
@@ -1561,11 +1549,77 @@
             "HitUnit",
             "ProcActor",
             "ProcTarget"});
-            this.SpellAuraScripts_ActionCaster_ComboBox.Location = new System.Drawing.Point(94, 90);
+            this.SpellAuraScripts_ActionCaster_ComboBox.Location = new System.Drawing.Point(99, 77);
             this.SpellAuraScripts_ActionCaster_ComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.SpellAuraScripts_ActionCaster_ComboBox.Name = "SpellAuraScripts_ActionCaster_ComboBox";
             this.SpellAuraScripts_ActionCaster_ComboBox.Size = new System.Drawing.Size(108, 21);
             this.SpellAuraScripts_ActionCaster_ComboBox.TabIndex = 37;
+            // 
+            // SpellAuraScript_Hook_Label
+            // 
+            this.SpellAuraScript_Hook_Label.AutoSize = true;
+            this.SpellAuraScript_Hook_Label.Location = new System.Drawing.Point(2, 25);
+            this.SpellAuraScript_Hook_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SpellAuraScript_Hook_Label.Name = "SpellAuraScript_Hook_Label";
+            this.SpellAuraScript_Hook_Label.Size = new System.Drawing.Size(41, 13);
+            this.SpellAuraScript_Hook_Label.TabIndex = 41;
+            this.SpellAuraScript_Hook_Label.Text = "Hooks:";
+            // 
+            // SpellAuraScript_SpellID_TextBox
+            // 
+            this.SpellAuraScript_SpellID_TextBox.Location = new System.Drawing.Point(99, 300);
+            this.SpellAuraScript_SpellID_TextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.SpellAuraScript_SpellID_TextBox.MaxLength = 6;
+            this.SpellAuraScript_SpellID_TextBox.Name = "SpellAuraScript_SpellID_TextBox";
+            this.SpellAuraScript_SpellID_TextBox.Size = new System.Drawing.Size(108, 20);
+            this.SpellAuraScript_SpellID_TextBox.TabIndex = 45;
+            // 
+            // SpellAura_ActionLabel
+            // 
+            this.SpellAura_ActionLabel.AutoSize = true;
+            this.SpellAura_ActionLabel.Location = new System.Drawing.Point(2, 50);
+            this.SpellAura_ActionLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SpellAura_ActionLabel.Name = "SpellAura_ActionLabel";
+            this.SpellAura_ActionLabel.Size = new System.Drawing.Size(40, 13);
+            this.SpellAura_ActionLabel.TabIndex = 17;
+            this.SpellAura_ActionLabel.Text = "Action:";
+            // 
+            // SpellAuraScriptSources_ComboBox
+            // 
+            this.SpellAuraScriptSources_ComboBox.Enabled = false;
+            this.SpellAuraScriptSources_ComboBox.Items.AddRange(new object[] {
+            "SourceSpellInfo",
+            "SourceSpellAura"});
+            this.SpellAuraScriptSources_ComboBox.Location = new System.Drawing.Point(99, 202);
+            this.SpellAuraScriptSources_ComboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.SpellAuraScriptSources_ComboBox.Name = "SpellAuraScriptSources_ComboBox";
+            this.SpellAuraScriptSources_ComboBox.Size = new System.Drawing.Size(108, 21);
+            this.SpellAuraScriptSources_ComboBox.TabIndex = 40;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(2, 75);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(70, 13);
+            this.label7.TabIndex = 38;
+            this.label7.Text = "ActionCaster:";
+            // 
+            // SpellAuraScript_CalcType_ComboBox
+            // 
+            this.SpellAuraScript_CalcType_ComboBox.Enabled = false;
+            this.SpellAuraScript_CalcType_ComboBox.Items.AddRange(new object[] {
+            "TypeCalcPct",
+            "TypeAddPct",
+            "TypeRemovePct",
+            "TypeAddFlat",
+            "TypeRemoveFlat"});
+            this.SpellAuraScript_CalcType_ComboBox.Location = new System.Drawing.Point(99, 152);
+            this.SpellAuraScript_CalcType_ComboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.SpellAuraScript_CalcType_ComboBox.Name = "SpellAuraScript_CalcType_ComboBox";
+            this.SpellAuraScript_CalcType_ComboBox.Size = new System.Drawing.Size(108, 21);
+            this.SpellAuraScript_CalcType_ComboBox.TabIndex = 33;
             // 
             // SpellAuraScript_EffIndex_ComboBox
             // 
@@ -1603,36 +1657,165 @@
             "EFFECT_29,",
             "EFFECT_30,",
             "EFFECT_31,"});
-            this.SpellAuraScript_EffIndex_ComboBox.Location = new System.Drawing.Point(94, 217);
+            this.SpellAuraScript_EffIndex_ComboBox.Location = new System.Drawing.Point(99, 177);
             this.SpellAuraScript_EffIndex_ComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.SpellAuraScript_EffIndex_ComboBox.Name = "SpellAuraScript_EffIndex_ComboBox";
             this.SpellAuraScript_EffIndex_ComboBox.Size = new System.Drawing.Size(108, 21);
             this.SpellAuraScript_EffIndex_ComboBox.TabIndex = 35;
             // 
+            // SpellAuraScript_SpellId_Label
+            // 
+            this.SpellAuraScript_SpellId_Label.AutoSize = true;
+            this.SpellAuraScript_SpellId_Label.Location = new System.Drawing.Point(2, 298);
+            this.SpellAuraScript_SpellId_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SpellAuraScript_SpellId_Label.Name = "SpellAuraScript_SpellId_Label";
+            this.SpellAuraScript_SpellId_Label.Size = new System.Drawing.Size(47, 13);
+            this.SpellAuraScript_SpellId_Label.TabIndex = 46;
+            this.SpellAuraScript_SpellId_Label.Text = "Spell ID:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(2, 125);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(87, 13);
+            this.label6.TabIndex = 47;
+            this.label6.Text = "ActionOrgCaster:";
+            // 
+            // SpellAuraScript_Button_Add
+            // 
+            this.SpellAuraScript_Button_Add.Enabled = false;
+            this.SpellAuraScript_Button_Add.Location = new System.Drawing.Point(2, 324);
+            this.SpellAuraScript_Button_Add.Margin = new System.Windows.Forms.Padding(2);
+            this.SpellAuraScript_Button_Add.Name = "SpellAuraScript_Button_Add";
+            this.SpellAuraScript_Button_Add.Size = new System.Drawing.Size(93, 19);
+            this.SpellAuraScript_Button_Add.TabIndex = 43;
+            this.SpellAuraScript_Button_Add.Text = "Add Script";
+            this.SpellAuraScript_Button_Add.UseVisualStyleBackColor = true;
+            this.SpellAuraScript_Button_Add.Click += new System.EventHandler(this.SpellAuraScript_Button_Add_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(2, 100);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(71, 13);
+            this.label8.TabIndex = 48;
+            this.label8.Text = "ActionTarget:";
+            // 
             // CalculationType_Label
             // 
             this.CalculationType_Label.AutoSize = true;
-            this.CalculationType_Label.Location = new System.Drawing.Point(4, 193);
+            this.CalculationType_Label.Location = new System.Drawing.Point(2, 150);
             this.CalculationType_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.CalculationType_Label.Name = "CalculationType_Label";
             this.CalculationType_Label.Size = new System.Drawing.Size(86, 13);
             this.CalculationType_Label.TabIndex = 34;
             this.CalculationType_Label.Text = "CalculationType:";
             // 
-            // SpellAuraScript_CalcType_ComboBox
+            // SpellAuraScripts_ActionSpellId_TextBox
             // 
-            this.SpellAuraScript_CalcType_ComboBox.Enabled = false;
-            this.SpellAuraScript_CalcType_ComboBox.Items.AddRange(new object[] {
-            "TypeCalcPct",
-            "TypeAddPct",
-            "TypeRemovePct",
-            "TypeAddFlat",
-            "TypeRemoveFlat"});
-            this.SpellAuraScript_CalcType_ComboBox.Location = new System.Drawing.Point(94, 190);
-            this.SpellAuraScript_CalcType_ComboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.SpellAuraScript_CalcType_ComboBox.Name = "SpellAuraScript_CalcType_ComboBox";
-            this.SpellAuraScript_CalcType_ComboBox.Size = new System.Drawing.Size(108, 21);
-            this.SpellAuraScript_CalcType_ComboBox.TabIndex = 33;
+            this.SpellAuraScripts_ActionSpellId_TextBox.Enabled = false;
+            this.SpellAuraScripts_ActionSpellId_TextBox.Location = new System.Drawing.Point(99, 227);
+            this.SpellAuraScripts_ActionSpellId_TextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.SpellAuraScripts_ActionSpellId_TextBox.MaxLength = 6;
+            this.SpellAuraScripts_ActionSpellId_TextBox.Name = "SpellAuraScripts_ActionSpellId_TextBox";
+            this.SpellAuraScripts_ActionSpellId_TextBox.Size = new System.Drawing.Size(108, 20);
+            this.SpellAuraScripts_ActionSpellId_TextBox.TabIndex = 25;
+            // 
+            // SpellAuraScript_Triggered_ComboBox
+            // 
+            this.SpellAuraScript_Triggered_ComboBox.Enabled = false;
+            this.SpellAuraScript_Triggered_ComboBox.Items.AddRange(new object[] {
+            "False",
+            "True"});
+            this.SpellAuraScript_Triggered_ComboBox.Location = new System.Drawing.Point(99, 251);
+            this.SpellAuraScript_Triggered_ComboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.SpellAuraScript_Triggered_ComboBox.Name = "SpellAuraScript_Triggered_ComboBox";
+            this.SpellAuraScript_Triggered_ComboBox.Size = new System.Drawing.Size(108, 21);
+            this.SpellAuraScript_Triggered_ComboBox.TabIndex = 31;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(2, 175);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 13);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "EffectIndex";
+            // 
+            // SpellAuraScripts_ActionSpellList_TextBox
+            // 
+            this.SpellAuraScripts_ActionSpellList_TextBox.Enabled = false;
+            this.SpellAuraScripts_ActionSpellList_TextBox.Location = new System.Drawing.Point(99, 276);
+            this.SpellAuraScripts_ActionSpellList_TextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.SpellAuraScripts_ActionSpellList_TextBox.MaxLength = 6;
+            this.SpellAuraScripts_ActionSpellList_TextBox.Name = "SpellAuraScripts_ActionSpellList_TextBox";
+            this.SpellAuraScripts_ActionSpellList_TextBox.Size = new System.Drawing.Size(108, 20);
+            this.SpellAuraScripts_ActionSpellList_TextBox.TabIndex = 30;
+            // 
+            // ScriptHookAuraSpell_Label
+            // 
+            this.ScriptHookAuraSpell_Label.AutoSize = true;
+            this.ScriptHookAuraSpell_Label.Location = new System.Drawing.Point(2, 200);
+            this.ScriptHookAuraSpell_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ScriptHookAuraSpell_Label.Name = "ScriptHookAuraSpell_Label";
+            this.ScriptHookAuraSpell_Label.Size = new System.Drawing.Size(72, 13);
+            this.ScriptHookAuraSpell_Label.TabIndex = 10;
+            this.ScriptHookAuraSpell_Label.Text = "DataSources:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(2, 225);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(80, 13);
+            this.label2.TabIndex = 26;
+            this.label2.Text = "Action Spell ID:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(2, 249);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(55, 13);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "Triggered:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(2, 274);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(79, 13);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "ActionSpellList:";
+            // 
+            // SpellAuraScript_Clear_Button
+            // 
+            this.SpellAuraScript_Clear_Button.Location = new System.Drawing.Point(2, 347);
+            this.SpellAuraScript_Clear_Button.Margin = new System.Windows.Forms.Padding(2);
+            this.SpellAuraScript_Clear_Button.Name = "SpellAuraScript_Clear_Button";
+            this.SpellAuraScript_Clear_Button.Size = new System.Drawing.Size(93, 19);
+            this.SpellAuraScript_Clear_Button.TabIndex = 52;
+            this.SpellAuraScript_Clear_Button.Text = "Clear Script Data";
+            this.SpellAuraScript_Clear_Button.UseVisualStyleBackColor = true;
+            this.SpellAuraScript_Clear_Button.Click += new System.EventHandler(this.SpellAuraScript_Clear_Button_Click);
+            // 
+            // SpellAuraScript_SQL_Out_RichTextBox
+            // 
+            this.SpellAuraScript_SQL_Out_RichTextBox.Location = new System.Drawing.Point(287, 20);
+            this.SpellAuraScript_SQL_Out_RichTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.SpellAuraScript_SQL_Out_RichTextBox.Name = "SpellAuraScript_SQL_Out_RichTextBox";
+            this.SpellAuraScript_SQL_Out_RichTextBox.Size = new System.Drawing.Size(842, 500);
+            this.SpellAuraScript_SQL_Out_RichTextBox.TabIndex = 44;
+            this.SpellAuraScript_SQL_Out_RichTextBox.Text = "";
             // 
             // label5
             // 
@@ -1643,132 +1826,27 @@
             this.label5.Size = new System.Drawing.Size(0, 13);
             this.label5.TabIndex = 32;
             // 
-            // SpellAuraScript_Triggered_ComboBox
+            // tabSpellDBC_OverrideCreator
             // 
-            this.SpellAuraScript_Triggered_ComboBox.Enabled = false;
-            this.SpellAuraScript_Triggered_ComboBox.Items.AddRange(new object[] {
-            "False",
-            "True"});
-            this.SpellAuraScript_Triggered_ComboBox.Location = new System.Drawing.Point(94, 327);
-            this.SpellAuraScript_Triggered_ComboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.SpellAuraScript_Triggered_ComboBox.Name = "SpellAuraScript_Triggered_ComboBox";
-            this.SpellAuraScript_Triggered_ComboBox.Size = new System.Drawing.Size(108, 21);
-            this.SpellAuraScript_Triggered_ComboBox.TabIndex = 31;
+            this.tabSpellDBC_OverrideCreator.Controls.Add(this.SpellInfo_Override_RichBox);
+            this.tabSpellDBC_OverrideCreator.Controls.Add(this.tableLayoutPanel1);
+            this.tabSpellDBC_OverrideCreator.Location = new System.Drawing.Point(4, 22);
+            this.tabSpellDBC_OverrideCreator.Margin = new System.Windows.Forms.Padding(2);
+            this.tabSpellDBC_OverrideCreator.Name = "tabSpellDBC_OverrideCreator";
+            this.tabSpellDBC_OverrideCreator.Padding = new System.Windows.Forms.Padding(2);
+            this.tabSpellDBC_OverrideCreator.Size = new System.Drawing.Size(1357, 616);
+            this.tabSpellDBC_OverrideCreator.TabIndex = 8;
+            this.tabSpellDBC_OverrideCreator.Text = "Spell DBC Override Creator";
+            this.tabSpellDBC_OverrideCreator.UseVisualStyleBackColor = true;
             // 
-            // SpellAuraScripts_ActionSpellList_TextBox
+            // SpellInfo_Override_RichBox
             // 
-            this.SpellAuraScripts_ActionSpellList_TextBox.Enabled = false;
-            this.SpellAuraScripts_ActionSpellList_TextBox.Location = new System.Drawing.Point(94, 366);
-            this.SpellAuraScripts_ActionSpellList_TextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.SpellAuraScripts_ActionSpellList_TextBox.MaxLength = 6;
-            this.SpellAuraScripts_ActionSpellList_TextBox.Name = "SpellAuraScripts_ActionSpellList_TextBox";
-            this.SpellAuraScripts_ActionSpellList_TextBox.Size = new System.Drawing.Size(108, 20);
-            this.SpellAuraScripts_ActionSpellList_TextBox.TabIndex = 30;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(4, 366);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 13);
-            this.label4.TabIndex = 28;
-            this.label4.Text = "ActionSpellList:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 327);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 13);
-            this.label3.TabIndex = 27;
-            this.label3.Text = "Triggered:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 294);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 13);
-            this.label2.TabIndex = 26;
-            this.label2.Text = "Action Spell ID:";
-            // 
-            // SpellAuraScripts_ActionSpellId_TextBox
-            // 
-            this.SpellAuraScripts_ActionSpellId_TextBox.Enabled = false;
-            this.SpellAuraScripts_ActionSpellId_TextBox.Location = new System.Drawing.Point(94, 294);
-            this.SpellAuraScripts_ActionSpellId_TextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.SpellAuraScripts_ActionSpellId_TextBox.MaxLength = 6;
-            this.SpellAuraScripts_ActionSpellId_TextBox.Name = "SpellAuraScripts_ActionSpellId_TextBox";
-            this.SpellAuraScripts_ActionSpellId_TextBox.Size = new System.Drawing.Size(108, 20);
-            this.SpellAuraScripts_ActionSpellId_TextBox.TabIndex = 25;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(5, 217);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 13);
-            this.label1.TabIndex = 24;
-            this.label1.Text = "EffectIndex";
-            // 
-            // SpellAura_ActionLabel
-            // 
-            this.SpellAura_ActionLabel.AutoSize = true;
-            this.SpellAura_ActionLabel.Location = new System.Drawing.Point(7, 56);
-            this.SpellAura_ActionLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.SpellAura_ActionLabel.Name = "SpellAura_ActionLabel";
-            this.SpellAura_ActionLabel.Size = new System.Drawing.Size(40, 13);
-            this.SpellAura_ActionLabel.TabIndex = 17;
-            this.SpellAura_ActionLabel.Text = "Action:";
-            // 
-            // ScriptType_Label
-            // 
-            this.ScriptType_Label.AutoSize = true;
-            this.ScriptType_Label.Location = new System.Drawing.Point(5, 11);
-            this.ScriptType_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.ScriptType_Label.Name = "ScriptType_Label";
-            this.ScriptType_Label.Size = new System.Drawing.Size(64, 13);
-            this.ScriptType_Label.TabIndex = 11;
-            this.ScriptType_Label.Text = "Script Type:";
-            // 
-            // SpellAuraScriptType_ComboBox
-            // 
-            this.SpellAuraScriptType_ComboBox.Items.AddRange(new object[] {
-            "SpellScript",
-            "AuraScript"});
-            this.SpellAuraScriptType_ComboBox.Location = new System.Drawing.Point(94, 8);
-            this.SpellAuraScriptType_ComboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.SpellAuraScriptType_ComboBox.Name = "SpellAuraScriptType_ComboBox";
-            this.SpellAuraScriptType_ComboBox.Size = new System.Drawing.Size(108, 21);
-            this.SpellAuraScriptType_ComboBox.TabIndex = 8;
-            this.SpellAuraScriptType_ComboBox.SelectedIndexChanged += new System.EventHandler(this.SpellAuraScriptType_ComboBox_SelectedIndexChanged);
-            // 
-            // ScriptHookAuraSpell_Label
-            // 
-            this.ScriptHookAuraSpell_Label.AutoSize = true;
-            this.ScriptHookAuraSpell_Label.Location = new System.Drawing.Point(7, 255);
-            this.ScriptHookAuraSpell_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.ScriptHookAuraSpell_Label.Name = "ScriptHookAuraSpell_Label";
-            this.ScriptHookAuraSpell_Label.Size = new System.Drawing.Size(72, 13);
-            this.ScriptHookAuraSpell_Label.TabIndex = 10;
-            this.ScriptHookAuraSpell_Label.Text = "DataSources:";
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.SpellInfo_Override_RichBox);
-            this.tabPage1.Controls.Add(this.tableLayoutPanel1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(1357, 616);
-            this.tabPage1.TabIndex = 8;
-            this.tabPage1.Text = "Spell DBC Override Creator";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.SpellInfo_Override_RichBox.Location = new System.Drawing.Point(270, 5);
+            this.SpellInfo_Override_RichBox.Margin = new System.Windows.Forms.Padding(2);
+            this.SpellInfo_Override_RichBox.Name = "SpellInfo_Override_RichBox";
+            this.SpellInfo_Override_RichBox.Size = new System.Drawing.Size(610, 500);
+            this.SpellInfo_Override_RichBox.TabIndex = 45;
+            this.SpellInfo_Override_RichBox.Text = "";
             // 
             // tableLayoutPanel1
             // 
@@ -1801,6 +1879,16 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(244, 216);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // SpellInfo_ClearSpellData_Button
+            // 
+            this.SpellInfo_ClearSpellData_Button.Location = new System.Drawing.Point(125, 149);
+            this.SpellInfo_ClearSpellData_Button.Name = "SpellInfo_ClearSpellData_Button";
+            this.SpellInfo_ClearSpellData_Button.Size = new System.Drawing.Size(116, 34);
+            this.SpellInfo_ClearSpellData_Button.TabIndex = 47;
+            this.SpellInfo_ClearSpellData_Button.Text = "Clear Spell Data";
+            this.SpellInfo_ClearSpellData_Button.UseVisualStyleBackColor = true;
+            this.SpellInfo_ClearSpellData_Button.Click += new System.EventHandler(this.SpellInfo_ClearSpellData_Button_Click);
+            // 
             // SpellInfo_EffIdx_Label
             // 
             this.SpellInfo_EffIdx_Label.AutoSize = true;
@@ -1809,6 +1897,16 @@
             this.SpellInfo_EffIdx_Label.Size = new System.Drawing.Size(67, 13);
             this.SpellInfo_EffIdx_Label.TabIndex = 7;
             this.SpellInfo_EffIdx_Label.Text = "Effect Index:";
+            // 
+            // SpellInfo_Check_Data_Button
+            // 
+            this.SpellInfo_Check_Data_Button.Enabled = false;
+            this.SpellInfo_Check_Data_Button.Location = new System.Drawing.Point(3, 149);
+            this.SpellInfo_Check_Data_Button.Name = "SpellInfo_Check_Data_Button";
+            this.SpellInfo_Check_Data_Button.Size = new System.Drawing.Size(116, 34);
+            this.SpellInfo_Check_Data_Button.TabIndex = 46;
+            this.SpellInfo_Check_Data_Button.Text = "Check Existent Spell Data";
+            this.SpellInfo_Check_Data_Button.UseVisualStyleBackColor = true;
             // 
             // SpellInfo_Spell_Id_Field_Label
             // 
@@ -1940,36 +2038,6 @@
             this.SpellInfo_EffIdx_ComboBox.Size = new System.Drawing.Size(116, 21);
             this.SpellInfo_EffIdx_ComboBox.TabIndex = 2;
             // 
-            // statusStrip_LoadedFile
-            // 
-            this.statusStrip_LoadedFile.BackColor = System.Drawing.Color.LightGray;
-            this.statusStrip_LoadedFile.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.statusStrip_LoadedFile.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel_FileStatus,
-            this.toolStripStatusLabel_CurrentAction});
-            this.statusStrip_LoadedFile.Location = new System.Drawing.Point(0, 634);
-            this.statusStrip_LoadedFile.Name = "statusStrip_LoadedFile";
-            this.statusStrip_LoadedFile.Padding = new System.Windows.Forms.Padding(2, 0, 9, 0);
-            this.statusStrip_LoadedFile.Size = new System.Drawing.Size(1155, 22);
-            this.statusStrip_LoadedFile.TabIndex = 2;
-            this.statusStrip_LoadedFile.Text = "statusStrip";
-            // 
-            // toolStripStatusLabel_FileStatus
-            // 
-            this.toolStripStatusLabel_FileStatus.Name = "toolStripStatusLabel_FileStatus";
-            this.toolStripStatusLabel_FileStatus.Size = new System.Drawing.Size(86, 17);
-            this.toolStripStatusLabel_FileStatus.Text = "No File Loaded";
-            // 
-            // toolStripStatusLabel_CurrentAction
-            // 
-            this.toolStripStatusLabel_CurrentAction.Name = "toolStripStatusLabel_CurrentAction";
-            this.toolStripStatusLabel_CurrentAction.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripStatusLabel_CurrentAction.Size = new System.Drawing.Size(0, 17);
-            // 
-            // openFileDialog
-            // 
-            this.openFileDialog.FileName = "openFileDialog_WSC";
-            // 
             // SpellInfo_Value_TextBox
             // 
             this.SpellInfo_Value_TextBox.Enabled = false;
@@ -2010,34 +2078,330 @@
             this.SpellInfo_GenerateQuery_Button.UseVisualStyleBackColor = true;
             this.SpellInfo_GenerateQuery_Button.Click += new System.EventHandler(this.SpellInfo_GenerateQuery_Button_Click);
             // 
-            // SpellInfo_Override_RichBox
+            // tabCombatAI_Creator
             // 
-            this.SpellInfo_Override_RichBox.Location = new System.Drawing.Point(270, 5);
-            this.SpellInfo_Override_RichBox.Margin = new System.Windows.Forms.Padding(2);
-            this.SpellInfo_Override_RichBox.Name = "SpellInfo_Override_RichBox";
-            this.SpellInfo_Override_RichBox.Size = new System.Drawing.Size(610, 500);
-            this.SpellInfo_Override_RichBox.TabIndex = 45;
-            this.SpellInfo_Override_RichBox.Text = "";
+            this.tabCombatAI_Creator.Controls.Add(this.CombatAICreatorSQL_RichTextBox);
+            this.tabCombatAI_Creator.Controls.Add(this.tableLayoutPanel3);
+            this.tabCombatAI_Creator.Location = new System.Drawing.Point(4, 22);
+            this.tabCombatAI_Creator.Name = "tabCombatAI_Creator";
+            this.tabCombatAI_Creator.Padding = new System.Windows.Forms.Padding(3);
+            this.tabCombatAI_Creator.Size = new System.Drawing.Size(1357, 616);
+            this.tabCombatAI_Creator.TabIndex = 9;
+            this.tabCombatAI_Creator.Text = "Combat AI Creator";
+            this.tabCombatAI_Creator.UseVisualStyleBackColor = true;
             // 
-            // SpellInfo_Check_Data_Button
+            // CombatAICreatorSQL_RichTextBox
             // 
-            this.SpellInfo_Check_Data_Button.Enabled = false;
-            this.SpellInfo_Check_Data_Button.Location = new System.Drawing.Point(3, 149);
-            this.SpellInfo_Check_Data_Button.Name = "SpellInfo_Check_Data_Button";
-            this.SpellInfo_Check_Data_Button.Size = new System.Drawing.Size(116, 34);
-            this.SpellInfo_Check_Data_Button.TabIndex = 46;
-            this.SpellInfo_Check_Data_Button.Text = "Check Existent Spell Data";
-            this.SpellInfo_Check_Data_Button.UseVisualStyleBackColor = true;
+            this.CombatAICreatorSQL_RichTextBox.Location = new System.Drawing.Point(376, 6);
+            this.CombatAICreatorSQL_RichTextBox.Name = "CombatAICreatorSQL_RichTextBox";
+            this.CombatAICreatorSQL_RichTextBox.Size = new System.Drawing.Size(761, 427);
+            this.CombatAICreatorSQL_RichTextBox.TabIndex = 1;
+            this.CombatAICreatorSQL_RichTextBox.Text = "";
             // 
-            // SpellInfo_ClearSpellData_Button
+            // tableLayoutPanel3
             // 
-            this.SpellInfo_ClearSpellData_Button.Location = new System.Drawing.Point(125, 149);
-            this.SpellInfo_ClearSpellData_Button.Name = "SpellInfo_ClearSpellData_Button";
-            this.SpellInfo_ClearSpellData_Button.Size = new System.Drawing.Size(116, 34);
-            this.SpellInfo_ClearSpellData_Button.TabIndex = 47;
-            this.SpellInfo_ClearSpellData_Button.Text = "Clear Spell Data";
-            this.SpellInfo_ClearSpellData_Button.UseVisualStyleBackColor = true;
-            this.SpellInfo_ClearSpellData_Button.Click += new System.EventHandler(this.SpellInfo_ClearSpellData_Button_Click);
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.tableLayoutPanel3.Controls.Add(this.CombatAI_NpcEntry_TextBox, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.CombatAI_NpcEntry_Label, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label10, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.CombatAI_InitMin_TextBox, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.CombatAI_InitMax_TextBox, 1, 3);
+            this.tableLayoutPanel3.Controls.Add(this.CombatAI_RepeatMin_TextBox, 1, 6);
+            this.tableLayoutPanel3.Controls.Add(this.CombatAI_RepeatMax_TextBox, 1, 7);
+            this.tableLayoutPanel3.Controls.Add(this.label12, 0, 6);
+            this.tableLayoutPanel3.Controls.Add(this.CombatAI_RepeatMax_Label, 0, 3);
+            this.tableLayoutPanel3.Controls.Add(this.label13, 0, 7);
+            this.tableLayoutPanel3.Controls.Add(this.label14, 0, 9);
+            this.tableLayoutPanel3.Controls.Add(this.label16, 0, 10);
+            this.tableLayoutPanel3.Controls.Add(this.label15, 0, 11);
+            this.tableLayoutPanel3.Controls.Add(this.label17, 0, 12);
+            this.tableLayoutPanel3.Controls.Add(this.CombatAI_EventType_ComboBox, 1, 9);
+            this.tableLayoutPanel3.Controls.Add(this.CombatAI_AttackDist_TextBox, 1, 11);
+            this.tableLayoutPanel3.Controls.Add(this.CombatAI_Spell_Id_TextBox, 1, 12);
+            this.tableLayoutPanel3.Controls.Add(this.CombatAI_Add_ScriptData_Button, 0, 13);
+            this.tableLayoutPanel3.Controls.Add(this.CombatAI_GenerateSQL_Button, 1, 13);
+            this.tableLayoutPanel3.Controls.Add(this.CombatAI_ClearData_Button, 0, 14);
+            this.tableLayoutPanel3.Controls.Add(this.CombatAI_EventFlags_CheckedBox, 1, 10);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(6, 6);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 15;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(364, 604);
+            this.tableLayoutPanel3.TabIndex = 0;
+            // 
+            // CombatAI_NpcEntry_TextBox
+            // 
+            this.CombatAI_NpcEntry_TextBox.Location = new System.Drawing.Point(153, 3);
+            this.CombatAI_NpcEntry_TextBox.Name = "CombatAI_NpcEntry_TextBox";
+            this.CombatAI_NpcEntry_TextBox.Size = new System.Drawing.Size(100, 20);
+            this.CombatAI_NpcEntry_TextBox.TabIndex = 11;
+            this.CombatAI_NpcEntry_TextBox.TextChanged += new System.EventHandler(this.CombatAI_NpcEntry_TextBox_TextChanged);
+            this.CombatAI_NpcEntry_TextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CombatAI_NpcEntry_TextBox_KeyPress);
+            // 
+            // CombatAI_NpcEntry_Label
+            // 
+            this.CombatAI_NpcEntry_Label.AutoSize = true;
+            this.CombatAI_NpcEntry_Label.Location = new System.Drawing.Point(3, 0);
+            this.CombatAI_NpcEntry_Label.Name = "CombatAI_NpcEntry_Label";
+            this.CombatAI_NpcEntry_Label.Size = new System.Drawing.Size(57, 13);
+            this.CombatAI_NpcEntry_Label.TabIndex = 0;
+            this.CombatAI_NpcEntry_Label.Text = "Npc Entry:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(3, 26);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(47, 13);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "Init Min: ";
+            // 
+            // CombatAI_InitMin_TextBox
+            // 
+            this.CombatAI_InitMin_TextBox.Enabled = false;
+            this.CombatAI_InitMin_TextBox.Location = new System.Drawing.Point(153, 29);
+            this.CombatAI_InitMin_TextBox.Name = "CombatAI_InitMin_TextBox";
+            this.CombatAI_InitMin_TextBox.Size = new System.Drawing.Size(100, 20);
+            this.CombatAI_InitMin_TextBox.TabIndex = 9;
+            this.CombatAI_InitMin_TextBox.TabStop = false;
+            // 
+            // CombatAI_InitMax_TextBox
+            // 
+            this.CombatAI_InitMax_TextBox.Enabled = false;
+            this.CombatAI_InitMax_TextBox.Location = new System.Drawing.Point(153, 55);
+            this.CombatAI_InitMax_TextBox.Name = "CombatAI_InitMax_TextBox";
+            this.CombatAI_InitMax_TextBox.Size = new System.Drawing.Size(100, 20);
+            this.CombatAI_InitMax_TextBox.TabIndex = 14;
+            this.CombatAI_InitMax_TextBox.TabStop = false;
+            // 
+            // CombatAI_RepeatMin_TextBox
+            // 
+            this.CombatAI_RepeatMin_TextBox.Enabled = false;
+            this.CombatAI_RepeatMin_TextBox.Location = new System.Drawing.Point(153, 81);
+            this.CombatAI_RepeatMin_TextBox.Name = "CombatAI_RepeatMin_TextBox";
+            this.CombatAI_RepeatMin_TextBox.Size = new System.Drawing.Size(100, 20);
+            this.CombatAI_RepeatMin_TextBox.TabIndex = 17;
+            this.CombatAI_RepeatMin_TextBox.TabStop = false;
+            // 
+            // CombatAI_RepeatMax_TextBox
+            // 
+            this.CombatAI_RepeatMax_TextBox.Enabled = false;
+            this.CombatAI_RepeatMax_TextBox.Location = new System.Drawing.Point(153, 107);
+            this.CombatAI_RepeatMax_TextBox.Name = "CombatAI_RepeatMax_TextBox";
+            this.CombatAI_RepeatMax_TextBox.Size = new System.Drawing.Size(100, 20);
+            this.CombatAI_RepeatMax_TextBox.TabIndex = 18;
+            this.CombatAI_RepeatMax_TextBox.TabStop = false;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(3, 78);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(65, 13);
+            this.label12.TabIndex = 3;
+            this.label12.Text = "RepeatMin: ";
+            // 
+            // CombatAI_RepeatMax_Label
+            // 
+            this.CombatAI_RepeatMax_Label.AutoSize = true;
+            this.CombatAI_RepeatMax_Label.Location = new System.Drawing.Point(3, 52);
+            this.CombatAI_RepeatMax_Label.Name = "CombatAI_RepeatMax_Label";
+            this.CombatAI_RepeatMax_Label.Size = new System.Drawing.Size(44, 13);
+            this.CombatAI_RepeatMax_Label.TabIndex = 2;
+            this.CombatAI_RepeatMax_Label.Text = "InitMax:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(3, 104);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(65, 13);
+            this.label13.TabIndex = 4;
+            this.label13.Text = "RepeatMax:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(3, 130);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(68, 13);
+            this.label14.TabIndex = 5;
+            this.label14.Text = "Event Type: ";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(3, 157);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(69, 13);
+            this.label16.TabIndex = 7;
+            this.label16.Text = "Event Flags: ";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(3, 377);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(65, 13);
+            this.label15.TabIndex = 6;
+            this.label15.Text = "Attack Dist: ";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(3, 403);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(50, 13);
+            this.label17.TabIndex = 8;
+            this.label17.Text = "Spell ID: ";
+            // 
+            // CombatAI_EventType_ComboBox
+            // 
+            this.CombatAI_EventType_ComboBox.Enabled = false;
+            this.CombatAI_EventType_ComboBox.FormattingEnabled = true;
+            this.CombatAI_EventType_ComboBox.Items.AddRange(new object[] {
+            "MeleeNegative               ",
+            "RangedNegative              ",
+            "AoENegative                 ",
+            "RangedPositive              ",
+            "AoEPositive                 ",
+            "RangedHeal                  ",
+            "AoEHeal                     ",
+            "NonTankNegative             ",
+            "AoENonSelfPositive          ",
+            "MeleeTopAggro               ",
+            "AoENonSelfPositiveDispel    ",
+            "FarthestNegative            ",
+            "TopAggroTarget              "});
+            this.CombatAI_EventType_ComboBox.Location = new System.Drawing.Point(153, 133);
+            this.CombatAI_EventType_ComboBox.Name = "CombatAI_EventType_ComboBox";
+            this.CombatAI_EventType_ComboBox.Size = new System.Drawing.Size(208, 21);
+            this.CombatAI_EventType_ComboBox.TabIndex = 16;
+            this.CombatAI_EventType_ComboBox.TabStop = false;
+            // 
+            // CombatAI_AttackDist_TextBox
+            // 
+            this.CombatAI_AttackDist_TextBox.Enabled = false;
+            this.CombatAI_AttackDist_TextBox.Location = new System.Drawing.Point(153, 380);
+            this.CombatAI_AttackDist_TextBox.Name = "CombatAI_AttackDist_TextBox";
+            this.CombatAI_AttackDist_TextBox.Size = new System.Drawing.Size(100, 20);
+            this.CombatAI_AttackDist_TextBox.TabIndex = 10;
+            this.CombatAI_AttackDist_TextBox.TabStop = false;
+            this.CombatAI_AttackDist_TextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CombatAI_AttackDist_TextBox_KeyPress);
+            // 
+            // CombatAI_Spell_Id_TextBox
+            // 
+            this.CombatAI_Spell_Id_TextBox.Enabled = false;
+            this.CombatAI_Spell_Id_TextBox.Location = new System.Drawing.Point(153, 406);
+            this.CombatAI_Spell_Id_TextBox.Name = "CombatAI_Spell_Id_TextBox";
+            this.CombatAI_Spell_Id_TextBox.Size = new System.Drawing.Size(100, 20);
+            this.CombatAI_Spell_Id_TextBox.TabIndex = 12;
+            this.CombatAI_Spell_Id_TextBox.TabStop = false;
+            // 
+            // CombatAI_Add_ScriptData_Button
+            // 
+            this.CombatAI_Add_ScriptData_Button.Enabled = false;
+            this.CombatAI_Add_ScriptData_Button.Location = new System.Drawing.Point(3, 432);
+            this.CombatAI_Add_ScriptData_Button.Name = "CombatAI_Add_ScriptData_Button";
+            this.CombatAI_Add_ScriptData_Button.Size = new System.Drawing.Size(100, 23);
+            this.CombatAI_Add_ScriptData_Button.TabIndex = 19;
+            this.CombatAI_Add_ScriptData_Button.Text = "Add Script Data";
+            this.CombatAI_Add_ScriptData_Button.UseVisualStyleBackColor = true;
+            this.CombatAI_Add_ScriptData_Button.Click += new System.EventHandler(this.CombatAI_Add_ScriptData_Button_Click);
+            // 
+            // CombatAI_GenerateSQL_Button
+            // 
+            this.CombatAI_GenerateSQL_Button.Location = new System.Drawing.Point(153, 432);
+            this.CombatAI_GenerateSQL_Button.Name = "CombatAI_GenerateSQL_Button";
+            this.CombatAI_GenerateSQL_Button.Size = new System.Drawing.Size(100, 23);
+            this.CombatAI_GenerateSQL_Button.TabIndex = 21;
+            this.CombatAI_GenerateSQL_Button.Text = "Generate SQL";
+            this.CombatAI_GenerateSQL_Button.UseVisualStyleBackColor = true;
+            this.CombatAI_GenerateSQL_Button.Click += new System.EventHandler(this.CombatAI_GenerateSQL_Button_Click);
+            // 
+            // CombatAI_ClearData_Button
+            // 
+            this.CombatAI_ClearData_Button.Location = new System.Drawing.Point(3, 461);
+            this.CombatAI_ClearData_Button.Name = "CombatAI_ClearData_Button";
+            this.CombatAI_ClearData_Button.Size = new System.Drawing.Size(100, 23);
+            this.CombatAI_ClearData_Button.TabIndex = 20;
+            this.CombatAI_ClearData_Button.Text = "Clear Script Data";
+            this.CombatAI_ClearData_Button.UseVisualStyleBackColor = true;
+            this.CombatAI_ClearData_Button.Click += new System.EventHandler(this.CombatAI_ClearData_Button_Click);
+            // 
+            // statusStrip_LoadedFile
+            // 
+            this.statusStrip_LoadedFile.BackColor = System.Drawing.Color.LightGray;
+            this.statusStrip_LoadedFile.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.statusStrip_LoadedFile.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel_FileStatus,
+            this.toolStripStatusLabel_CurrentAction});
+            this.statusStrip_LoadedFile.Location = new System.Drawing.Point(0, 634);
+            this.statusStrip_LoadedFile.Name = "statusStrip_LoadedFile";
+            this.statusStrip_LoadedFile.Padding = new System.Windows.Forms.Padding(2, 0, 9, 0);
+            this.statusStrip_LoadedFile.Size = new System.Drawing.Size(1155, 22);
+            this.statusStrip_LoadedFile.TabIndex = 2;
+            this.statusStrip_LoadedFile.Text = "statusStrip";
+            // 
+            // toolStripStatusLabel_FileStatus
+            // 
+            this.toolStripStatusLabel_FileStatus.Name = "toolStripStatusLabel_FileStatus";
+            this.toolStripStatusLabel_FileStatus.Size = new System.Drawing.Size(86, 17);
+            this.toolStripStatusLabel_FileStatus.Text = "No File Loaded";
+            // 
+            // toolStripStatusLabel_CurrentAction
+            // 
+            this.toolStripStatusLabel_CurrentAction.Name = "toolStripStatusLabel_CurrentAction";
+            this.toolStripStatusLabel_CurrentAction.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripStatusLabel_CurrentAction.Size = new System.Drawing.Size(0, 17);
+            // 
+            // openFileDialog
+            // 
+            this.openFileDialog.FileName = "openFileDialog_WSC";
+            // 
+            // CombatAI_EventFlags_CheckedBox
+            // 
+            this.CombatAI_EventFlags_CheckedBox.FormattingEnabled = true;
+            this.CombatAI_EventFlags_CheckedBox.Items.AddRange(new object[] {
+            "DisableTurn           ",
+            "CastAfterDeath        ",
+            "CastOnDeath           ",
+            "CastUnderHealthPct    ",
+            "DespawnAfterCast       ",
+            "DontCheckInCombat      ",
+            "DieAfterCast           ",
+            "DespawnSummonsAfterDie ",
+            "DespawnAreaTriggers     ",
+            "CastAfterSpell          ",
+            "DisableMove             ",
+            "DisableMeleeAttack      ",
+            "CanBeRemoved            ",
+            "CanRemoveOtherEvents    ",
+            "CanScheduleOtherEvents  ",
+            "TargetPriorityToPlayers ",
+            "CastOnTargetPosition     ",
+            "AddKnockbackImmunities   ",
+            "CastOnJustReachedHome"});
+            this.CombatAI_EventFlags_CheckedBox.Location = new System.Drawing.Point(153, 160);
+            this.CombatAI_EventFlags_CheckedBox.Name = "CombatAI_EventFlags_CheckedBox";
+            this.CombatAI_EventFlags_CheckedBox.Size = new System.Drawing.Size(208, 214);
+            this.CombatAI_EventFlags_CheckedBox.TabIndex = 23;
             // 
             // MainForm
             // 
@@ -2079,9 +2443,14 @@
             this.tabPage_Achievements.PerformLayout();
             this.tabAuraSpell_Creator.ResumeLayout(false);
             this.tabAuraSpell_Creator.PerformLayout();
-            this.tabPage1.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            this.tabSpellDBC_OverrideCreator.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.tabCombatAI_Creator.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.statusStrip_LoadedFile.ResumeLayout(false);
             this.statusStrip_LoadedFile.PerformLayout();
             this.ResumeLayout(false);
@@ -2218,7 +2587,7 @@
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.RichTextBox SpellAuraScript_SQL_Out_RichTextBox;
         public System.Windows.Forms.Button SpellAuraScripts_GenerateSQL;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabSpellDBC_OverrideCreator;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label SpellInfo_EffIdx_Label;
         private System.Windows.Forms.Label SpellInfo_Spell_Id_Field_Label;
@@ -2233,6 +2602,32 @@
         public System.Windows.Forms.TextBox SpellInfo_Value_TextBox;
         public System.Windows.Forms.TextBox SpellInfo_Spell_Id_TextBox;
         private System.Windows.Forms.Button SpellInfo_ClearSpellData_Button;
+        private System.Windows.Forms.TabPage tabCombatAI_Creator;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        public System.Windows.Forms.Button SpellAuraScript_Clear_Button;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.Label CombatAI_NpcEntry_Label;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label CombatAI_RepeatMax_Label;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Button CombatAI_GenerateSQL_Button;
+        private System.Windows.Forms.Button CombatAI_ClearData_Button;
+        public System.Windows.Forms.RichTextBox CombatAICreatorSQL_RichTextBox;
+        public System.Windows.Forms.TextBox CombatAI_NpcEntry_TextBox;
+        public System.Windows.Forms.TextBox CombatAI_InitMin_TextBox;
+        public System.Windows.Forms.TextBox CombatAI_InitMax_TextBox;
+        public System.Windows.Forms.TextBox CombatAI_RepeatMin_TextBox;
+        public System.Windows.Forms.TextBox CombatAI_RepeatMax_TextBox;
+        public System.Windows.Forms.ComboBox CombatAI_EventType_ComboBox;
+        public System.Windows.Forms.TextBox CombatAI_AttackDist_TextBox;
+        public System.Windows.Forms.TextBox CombatAI_Spell_Id_TextBox;
+        public System.Windows.Forms.Button CombatAI_Add_ScriptData_Button;
+        public System.Windows.Forms.CheckedListBox CombatAI_EventFlags_CheckedBox;
     }
 }
 

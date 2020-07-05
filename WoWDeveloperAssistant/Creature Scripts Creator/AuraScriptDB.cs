@@ -53,7 +53,7 @@ namespace WoWDeveloperAssistant.Spell_Aura_Script_DbCreator
             uint triggered = Convert.ToUInt32(spell.Triggered);
 
             if (DBC.DBC.IsLoaded() && DBC.DBC.SpellName.ContainsKey((int)spell.SpellId))
-                spellName = DBC.DBC.SpellName[(int)spell.SpellId].Name + "" + hooksList[spell.Hook] + " - EFFECT_" + spell.EffectId.ToString();
+                spellName = "\"" + DBC.DBC.SpellName[(int)spell.SpellId].Name + "--" + hooksList[spell.Hook] + " - EFFECT_" + spell.EffectId.ToString() + "\"";
 
             SQLtext += "(" + spell.SpellId + ", " + id.ToString() + ", " + spell.Hook + ", " + spell.EffectId + ", " + spell.Action + ", " + spell.ActionSpellId + ", " +
                 spell.ActionOriginalCaster + ", " + spell.ActionCaster + ", " + spell.ActionTarget + ", " + triggered + ", " + spell.CalculationType + ", " + spell.DataSource + ", " + actionSpellList + ", "
