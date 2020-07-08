@@ -79,7 +79,7 @@ namespace WoWDeveloperAssistant.SpellInfo_Override_DbCreator
         {
             uint SpellId = uint.Parse(mainForm.SpellInfo_Spell_Id_TextBox.Text);
 
-            if (DBC.DBC.IsLoaded() && !DBC.DBC.SpellMisc.ContainsKey((int)SpellId))
+            if (DBC.DBC.IsLoaded() && !DBC.DBC.SpellName.ContainsKey((int)SpellId))
             {
                 String msg = String.Format("The Spell Id: {0} doesn't exist in DBC",
                          SpellId);
@@ -90,7 +90,7 @@ namespace WoWDeveloperAssistant.SpellInfo_Override_DbCreator
 
             uint EffIdx = Convert.ToUInt32(mainForm.SpellInfo_EffIdx_ComboBox.SelectedIndex);
             uint OverrideField = Convert.ToUInt32(mainForm.SpellInfo_Field_ComboBox.SelectedIndex);
-            uint OverrideValue = Convert.ToUInt32(mainForm.SpellInfo_Value_TextBox.Text);
+            int OverrideValue = Convert.ToInt32(mainForm.SpellInfo_Value_TextBox.Text);
 
             SpellInfoOverrideEntry spellDBC_Override = new SpellInfoOverrideEntry(SpellId, EffIdx, OverrideField, OverrideValue);
 

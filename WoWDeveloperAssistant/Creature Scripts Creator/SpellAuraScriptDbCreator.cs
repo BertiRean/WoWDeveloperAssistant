@@ -133,7 +133,7 @@ namespace WoWDeveloperAssistant.Spell_Aura_Script_DbCreator
 
         private bool ValidateSpellId(uint SpellId)
         {
-            if (DBC.DBC.IsLoaded() && !DBC.DBC.SpellMisc.ContainsKey((int)SpellId))
+            if (DBC.DBC.IsLoaded() && !DBC.DBC.SpellName.ContainsKey((int)SpellId))
             {
                 String msg = String.Format("The Spell Id: {0} doesn't exist in DBC",
                          SpellId);

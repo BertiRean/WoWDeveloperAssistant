@@ -180,7 +180,7 @@ namespace WoWDeveloperAssistant.CombatAI_Creator_Templates
             if (mainForm.CombatAI_Spell_Id_TextBox.Text.Length > 0)
                 SpellId = uint.Parse(mainForm.CombatAI_Spell_Id_TextBox.Text);
 
-            if (DBC.DBC.IsLoaded() && !DBC.DBC.SpellMisc.ContainsKey((int)SpellId))
+            if (DBC.DBC.IsLoaded() && !DBC.DBC.SpellName.ContainsKey((int)SpellId))
             {
                 String msg = String.Format("The Spell Id: {0} doesn't exist in DBC",
                          SpellId);

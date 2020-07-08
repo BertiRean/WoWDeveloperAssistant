@@ -84,9 +84,9 @@ namespace WoWDeveloperAssistant.Misc
         public uint spellId;                                    ///< SpellId needing data override
         public uint effectID;                                   ///< Index of the effect to override (-1 if not an effect value)
         public uint overrideField;                              ///< Data to override (see enum : eOverrideValues)
-        public uint overrideValue;                                      ///< New Value
+        public int overrideValue;                                      ///< New Value
 
-        public SpellInfoOverrideEntry(uint SpellId, uint EffectIndex, uint OverrideField, uint OverrideValue)
+        public SpellInfoOverrideEntry(uint SpellId, uint EffectIndex, uint OverrideField, int OverrideValue)
         {
             this.spellId        = SpellId;
             this.effectID       = EffectIndex;
