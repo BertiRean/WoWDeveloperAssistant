@@ -80,33 +80,33 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
 
         private static readonly Dictionary<string, string> commonAuraMethods = new Dictionary<string, string>
         {
-            { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(8) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(12) + "return;"   },
-            { "OwnerCheck",     "Unit* l_Owner  = GetUnitOwner();" + "\r\n" + Utils.AddSpacesCount(8) + "if (!l_Owner)" + "\r\n" + Utils.AddSpacesCount(12) + "return;" },
+            { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"   },
+            { "OwnerCheck",     "Unit* l_Owner  = GetUnitOwner();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Owner)" + "\r\n" + Utils.AddSpacesCount(20) + "return;" },
             { "GetCasterGUID",  "ObjectGuid l_CasterGUID = GetCasterGUID();" + "\r\n" },
-            { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(8) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(12) + "return;"    },
-            { "GetAura",        "Aura* l_Aura = GetAura();" + "\r\n" + Utils.AddSpacesCount(8) + "if (!l_Aura)" + "\r\n" + Utils.AddSpacesCount(12) + "return;"    },
-            { "GetEffect",      "AuraEffect* l_AurEff = GetEffect(Index);" + "\r\n" + Utils.AddSpacesCount(8) + "if (!l_AurEff)" + "\r\n" + Utils.AddSpacesCount(12) + "return;"    },
+            { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"    },
+            { "GetAura",        "Aura* l_Aura = GetAura();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Aura)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"    },
+            { "GetEffect",      "AuraEffect* l_AurEff = GetEffect(Index);" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_AurEff)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"    },
 
-            { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(8) + "{" + "\r\n" + Utils.AddSpacesCount(12) + "\r\n" + Utils.AddSpacesCount(8) + "}" },
-            { "OwnerAuraCheck","if (l_Owner->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(8) + "{" + "\r\n" + Utils.AddSpacesCount(12) + "\r\n" + Utils.AddSpacesCount(8) + "}" },
-            { "AuraIdCheck","if (GetId() == DESIRED_ID)" + "\r\n" + Utils.AddSpacesCount(8) + "{" + "\r\n" + Utils.AddSpacesCount(12) + "\r\n" + Utils.AddSpacesCount(8) + "}" },
-            
+            { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" },
+            { "OwnerAuraCheck","if (l_Owner->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" },
+            { "AuraIdCheck","if (GetId() == DESIRED_ID)" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" },
+
 
             { "PreventDefaultAction", "PreventDefaultAction();" + "\r\n" },
         };
 
         private static readonly Dictionary<string, string> commonProcMethods = new Dictionary<string, string>
         {
-            { "GetDmgInfo",             "DamageInfo* l_DmgInfo  = p_EventInfo.GetDamageInfo();" + "\r\n" + Utils.AddSpacesCount(8) + "if (!l_DmgInfo)" + "\r\n" + Utils.AddSpacesCount(12) + "return;"   },
-            { "GetActor",               "Unit* l_Actor          = p_EventInfo.GetActor();" + "\r\n" + Utils.AddSpacesCount(8) + "if (!l_Actor)" + "\r\n" + Utils.AddSpacesCount(12) + "return;" },
-            { "GetActionTarget",        "Unit* l_ActionTarget   = p_EventInfo.GetActionTarget();" + "\r\n" + Utils.AddSpacesCount(8) + "if (!l_ActionTarget)" + "\r\n" + Utils.AddSpacesCount(12) + "return;" },
-            { "GetProcTarget",          "Unit* l_Target         = p_ProcEventInfo.GetProcTarget();" + "\r\n" + Utils.AddSpacesCount(8) + "if (!l_Target)" + "\r\n" + Utils.AddSpacesCount(12) + "return;" },
-            { "GetProcEventSpellInfo",  "SpellInfo* l_ProcSpellInfo = p_EventInfo.GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(8) + "if (!l_ProcSpellInfo)" + "\r\n" + Utils.AddSpacesCount(12) + "return;"    },
-            { "GetProcSpell",           "Spell* l_ProcSpell = p_EventInfo.GetSpell();" + "\r\n" + Utils.AddSpacesCount(8) + "if (!l_ProcSpell)" + "\r\n" + Utils.AddSpacesCount(12) + "return;"    },
-            { "GetTriggerSpell",        "SpellInfo* l_DmgSpellInfo = p_ProcEventInfo.GetDamageInfo()->GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(8) + "if (!l_DmgSpellInfo)" + "\r\n" + Utils.AddSpacesCount(12) + "return;"    },
+            { "GetDmgInfo",             "DamageInfo* l_DmgInfo  = p_EventInfo.GetDamageInfo();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_DmgInfo)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"   },
+            { "GetActor",               "Unit* l_Actor          = p_EventInfo.GetActor();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Actor)" + "\r\n" + Utils.AddSpacesCount(20) + "return;" },
+            { "GetActionTarget",        "Unit* l_ActionTarget   = p_EventInfo.GetActionTarget();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_ActionTarget)" + "\r\n" + Utils.AddSpacesCount(20) + "return;" },
+            { "GetProcTarget",          "Unit* l_Target         = p_ProcEventInfo.GetProcTarget();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Target)" + "\r\n" + Utils.AddSpacesCount(20) + "return;" },
+            { "GetProcEventSpellInfo",  "SpellInfo* l_ProcSpellInfo = p_EventInfo.GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_ProcSpellInfo)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"    },
+            { "GetProcSpell",           "Spell* l_ProcSpell = p_EventInfo.GetSpell();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_ProcSpell)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"    },
+            { "GetTriggerSpell",        "SpellInfo* l_DmgSpellInfo = p_ProcEventInfo.GetDamageInfo()->GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_DmgSpellInfo)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"    },
 
-            { "TriggerSpellCheck","if (l_DmgSpellInfo->Id == DESIRED_ID)" + "\r\n" + Utils.AddSpacesCount(8) + "{" + "\r\n" + Utils.AddSpacesCount(12) + "\r\n" + Utils.AddSpacesCount(8) + "}" },
-            { "AuraProcSpellCheck","if (l_ProcSpellInfo->Id == DESIRED_ID)" + "\r\n" + Utils.AddSpacesCount(8) + "{" + "\r\n" + Utils.AddSpacesCount(12) + "\r\n" + Utils.AddSpacesCount(8) + "}" },
+            { "TriggerSpellCheck","if (l_DmgSpellInfo->Id == DESIRED_ID)" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" },
+            { "AuraProcSpellCheck","if (l_ProcSpellInfo->Id == DESIRED_ID)" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" },
         };
 
         public static Dictionary<string, Dictionary<string, string>> hookBodiesDictionary = new Dictionary<string, Dictionary<string, string>>
@@ -161,26 +161,44 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
 
             scriptName = "spell_" + defaultName.Replace(" ", "_").ToLower().Replace("'", "") + "_" + spellId;
             scriptBody = "/// " + defaultName + " - " + spellId + "\r\n";
-            scriptBody += "class " + scriptName + " : public AuraScript" + "\r\n";
+            scriptBody += "class " + scriptName + " : public SpellScriptLoader" + "\r\n";
             scriptBody += "{" + "\r\n";
-            scriptBody += Utils.AddSpacesCount(4) + "PrepareAuraScript(" + scriptName + ");" + "\r\n";
-            scriptBody += GetEnumsBody(hookBodiesTreeView);
+            scriptBody += Utils.AddSpacesCount(4) + "public:" + "\r\n";
+            scriptBody += Utils.AddSpacesCount(8) + scriptName + "()" + " : SpellScriptLoader(\"" + scriptName + "\")" + " { }" + "\r\n\r\n";
+            scriptBody += GetEnumsBody(hookBodiesTreeView) + "\r\n\r\n";
+            scriptBody += Utils.AddSpacesCount(8) + "class " + scriptName + "_AuraScript" + " : public AuraScript" + "\r\n";
+            scriptBody += Utils.AddSpacesCount(8) + "{" + "\r\n";
+            scriptBody += Utils.AddSpacesCount(12) + "PrepareAuraScript(" + scriptName + "_AuraScript" + ");" + "\r\n";
             scriptBody += GetHooksBody(hooksListBox, hookBodiesTreeView) + "\r\n\r\n";
-            scriptBody += Utils.AddSpacesCount(4) + "void Register() override" + "\r\n";
-            scriptBody += Utils.AddSpacesCount(4) + "{" + "\r\n";
-            scriptBody += GetHooksMacrosBody(hooksListBox, hookBodiesTreeView, scriptName);
-            scriptBody += Utils.AddSpacesCount(4) + "}" + "\r\n";
+            scriptBody += Utils.AddSpacesCount(12) + "void Register() override" + "\r\n";
+            scriptBody += Utils.AddSpacesCount(12) + "{" + "\r\n";
+            scriptBody += GetHooksMacrosBody(hooksListBox, hookBodiesTreeView, scriptName) + "\r\n";
+            scriptBody += Utils.AddSpacesCount(12) + "}" + "\r\n";
+            scriptBody += Utils.AddSpacesCount(8) + "};" + "\r\n";
+            scriptBody += "\r\n" + GetGettersBody(scriptName) + "\r\n";
             scriptBody += "};";
 
             Clipboard.SetText(scriptBody);
             MessageBox.Show("Template has been successfully builded and copied on your clipboard!");
         }
 
+        private static string GetGettersBody(string scriptName)
+        {
+            string body = "";
+
+            body += Utils.AddSpacesCount(8) + "AuraScript* GetAuraScript() const override" + "\r\n";
+            body += Utils.AddSpacesCount(8) + "{" + "\r\n";
+            body += Utils.AddSpacesCount(12) + "return new " + scriptName + "_AuraScript();" + "\r\n";
+            body += Utils.AddSpacesCount(8) + "}";
+
+            return body;
+        }
+
         private static string GetEnumsBody(TreeView hookBodiesTreeView)
         {
             string body = "";
 
-            body += "\r\n" + Utils.AddSpacesCount(4) + "enum eSpells" + "\r\n" + Utils.AddSpacesCount(4) + "{" + "\r\n" + Utils.AddSpacesCount(8) + "\r\n" + Utils.AddSpacesCount(4) + "};";
+            body += "\r\n" + Utils.AddSpacesCount(8) + "enum eSpells" + "\r\n" + Utils.AddSpacesCount(8) + "{" + "\r\n" + Utils.AddSpacesCount(12) + "\r\n" + Utils.AddSpacesCount(8) + "};";
 
             return body;
         }
@@ -191,8 +209,8 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
 
             foreach (var hook in hooksListBox.SelectedItems)
             {
-                body += "\r\n\r\n" + Utils.AddSpacesCount(4) + hooksDictionary[hook.ToString()];
-                body += "\r\n" + Utils.AddSpacesCount(4) + "{" + "\r\n" + Utils.AddSpacesCount(8);
+                body += "\r\n\r\n" + Utils.AddSpacesCount(12) + hooksDictionary[hook.ToString()];
+                body += "\r\n" + Utils.AddSpacesCount(12) + "{" + "\r\n" + Utils.AddSpacesCount(16);
 
                 foreach (TreeNode parentNode in hookBodiesTreeView.Nodes)
                 {
@@ -207,7 +225,7 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
                         {
                             if (moreThanOne)
                             {
-                                body += "\r\n\r\n" + Utils.AddSpacesCount(8);
+                                body += "\r\n\r\n" + Utils.AddSpacesCount(16);
                             }
 
                             body += hookBodiesDictionary[hook.ToString()][childNode.Text];
@@ -220,7 +238,7 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
                     }
                 }
 
-                body += "\r\n" + Utils.AddSpacesCount(4) + "}";
+                body += "\r\n" + Utils.AddSpacesCount(12) + "}";
             }
 
             return body;
@@ -235,7 +253,7 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
             {
                 string hookStr = hook.ToString();
 
-                body += Utils.AddSpacesCount(8) + hookStr;
+                body += Utils.AddSpacesCount(16) + hookStr;
                 body += ' ' + String.Format(hooksMacrosDictionary[hookStr], scriptName, hookStr);
 
                 if (counter <= hooksListBox.SelectedItems.Count)
