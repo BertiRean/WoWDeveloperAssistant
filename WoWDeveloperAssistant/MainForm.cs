@@ -543,5 +543,10 @@ namespace WoWDeveloperAssistant
                 this.spellAuraScriptCreatorDB.EnableLockedItems(false);
             }
         }
+
+        private void SpellInfo_Field_ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.spellDBCOverrideCreatorDB.FillValuesOptionListBox(this.SpellInfo_Field_ComboBox.SelectedIndex);
+        }
     }
 }
