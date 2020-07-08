@@ -83,7 +83,7 @@ namespace WoWDeveloperAssistant.Spell_Aura_Script_DbCreator
                 var SQLtext = "-- " + SpellInfoOverrideCreator.GetSpellName(item.Key) + " \r\n";
                 SQLtext += "DELETE FROM `spell_scripting` WHERE `SpellId` = " + item.Key + ";\r\n";
                 SQLtext += "INSERT INTO `spell_scripting` (`SpellId`, `Id`, `Hook`, `EffectId`, `Action`, `ActionSpellId`, `ActionCaster`, `OriginalCaster`, `ActionTarget`, `Triggered`, " +
-                    "`Calculation`, `DataSource`, `ActionSpellList`, `Comment`) VALUES\r\n";
+                    "`Calculation`, `DataSource`, `ActionSpellList`, `TargetSpellId`, `TargetEffectId`, `DataEffectId`, `Comment`) VALUES\r\n";
 
                 uint itr = 0;
                 foreach(SpellScriptEntry script in item.Value)
@@ -171,8 +171,12 @@ namespace WoWDeveloperAssistant.Spell_Aura_Script_DbCreator
                     uint Source = Convert.ToUInt32(mainForm.SpellAuraScriptSources_ComboBox.SelectedIndex != -1 ? mainForm.SpellAuraScriptSources_ComboBox.SelectedIndex : 0);
                     string ActionSpellList = mainForm.SpellAuraScripts_ActionSpellList_TextBox.Text;
 
+                    uint TargetSpellId  = Convert.ToUInt32(mainForm.SpellAuraScripts_TargetSpellId_TextBox.Text.Length > 1 ? mainForm.SpellAuraScripts_TargetSpellId_TextBox.Text : "0");
+                    int  DataEffIdx     = mainForm.SpellAuraScripts_DataEffIdx_ComboBox.SelectedIndex;
+                    int TargetEffIdx    = mainForm.SpellAuraScripts_TargetEffIdx_ComboBox.SelectedIndex;
+
                     SpellScriptEntry spell = new SpellScriptEntry(SpellId, Hook, EffIdx, Action, ActionSpellId, ActionCaster, ActionTarget, Triggered, ActionSpellList, ActionOriginalCaster,
-                        Source, CalcType);
+                    Source, CalcType, TargetSpellId, TargetEffIdx, DataEffIdx);
 
                     if (!spellScriptsEntries.ContainsKey(spell.SpellId))
                         spellScriptsEntries.Add(spell.SpellId, new ArrayList());
@@ -204,8 +208,12 @@ namespace WoWDeveloperAssistant.Spell_Aura_Script_DbCreator
                     uint Source = Convert.ToUInt32(mainForm.SpellAuraScriptSources_ComboBox.SelectedIndex != -1 ? mainForm.SpellAuraScriptSources_ComboBox.SelectedIndex : 0);
                     string ActionSpellList = mainForm.SpellAuraScripts_ActionSpellList_TextBox.Text;
 
+                    uint TargetSpellId = Convert.ToUInt32(mainForm.SpellAuraScripts_TargetSpellId_TextBox.Text.Length > 1 ? mainForm.SpellAuraScripts_TargetSpellId_TextBox.Text : "0");
+                    int DataEffIdx = mainForm.SpellAuraScripts_DataEffIdx_ComboBox.SelectedIndex;
+                    int TargetEffIdx = mainForm.SpellAuraScripts_TargetEffIdx_ComboBox.SelectedIndex;
+
                     AuraScriptEntry auraScript = new AuraScriptEntry(SpellId, Hook, EffIdx, Action, ActionSpellId, ActionCaster, ActionTarget, Triggered, ActionSpellList, ActionOriginalCaster,
-                    Source, CalcType);
+                    Source, CalcType, TargetSpellId, TargetEffIdx, DataEffIdx);
 
                     if (!auraScriptsEntries.ContainsKey(auraScript.SpellId))
                         auraScriptsEntries.Add(auraScript.SpellId, new ArrayList());
@@ -231,6 +239,9 @@ namespace WoWDeveloperAssistant.Spell_Aura_Script_DbCreator
             mainForm.SpellAuraScripts_ActionSpellId_TextBox.Enabled = enabled;
             mainForm.SpellAuraScripts_ActionSpellList_TextBox.Enabled = enabled;
             mainForm.SpellAuraScript_Button_Add.Enabled = enabled;
+            mainForm.SpellAuraScripts_TargetSpellId_TextBox.Enabled = enabled;
+            mainForm.SpellAuraScripts_DataEffIdx_ComboBox.Enabled = enabled;
+            mainForm.SpellAuraScripts_TargetEffIdx_ComboBox.Enabled = enabled;
         }
 
         public void ClearScriptData()

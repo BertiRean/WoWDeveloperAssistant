@@ -52,7 +52,7 @@ namespace WoWDeveloperAssistant.Spell_Aura_Script_DbCreator
 
             SQLtext += "(" + spell.SpellId + ", " + id.ToString() + ", "  + spell.Hook + ", " + spell.EffectId + ", " + spell.Action + ", " + spell.ActionSpellId + ", " +
                 spell.ActionOriginalCaster + ", " + spell.ActionCaster + ", " + spell.ActionTarget + ", " + triggered + ", " + spell.CalculationType + ", " + spell.DataSource + ", " + actionSpellList  + ", "
-                + spellName + ")";
+                + spell.TargetSpellId + ", " + spell.TargetEffectId + ", " + spell.DataEffectId + ", " + spellName + ")";
 
             return SQLtext;
         }
