@@ -11,6 +11,7 @@ using WoWDeveloperAssistant.Creature_Scripts_Creator;
 using WoWDeveloperAssistant.Spell_Aura_Script_DbCreator;
 using WoWDeveloperAssistant.SpellInfo_Override_DbCreator;
 using WoWDeveloperAssistant.CombatAI_Creator_Templates;
+using WoWDeveloperAssistant.ObjectTemplateDB_Helper;
 
 namespace WoWDeveloperAssistant
 {
@@ -25,6 +26,7 @@ namespace WoWDeveloperAssistant
         private SpellAuraScriptDbCreator spellAuraScriptCreatorDB;
         private SpellInfoOverrideCreator spellDBCOverrideCreatorDB;
         private CombatAICreator combatAIScriptsCreatorDB;
+        private ObjectTemplateHelper objectTemplateHelperDB;
 
         public MainForm()
         {
@@ -37,6 +39,7 @@ namespace WoWDeveloperAssistant
             creatureNamesDict = new Dictionary<uint, string>();
             spellDBCOverrideCreatorDB = new SpellInfoOverrideCreator(this);
             combatAIScriptsCreatorDB = new CombatAICreator(this);
+            objectTemplateHelperDB = new ObjectTemplateHelper(this);
 
             if (Properties.Settings.Default.UsingDB)
             {
@@ -547,6 +550,48 @@ namespace WoWDeveloperAssistant
         private void SpellInfo_Field_ComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             this.spellDBCOverrideCreatorDB.FillValuesOptionListBox(this.SpellInfo_Field_ComboBox.SelectedIndex);
+        }
+
+        private void ObjectTemplateHelper_TextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verify that the pressed key isn't CTRL or any non-numeric digit
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void ObjectTemplate_ObjectField_ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.objectTemplateHelperDB.FillValuesOptionListBox(this.ObjectTemplate_ObjectField_ComboBox.SelectedIndex);
+        }
+
+        private void ObjectTemplateHelper_CheckInfo_Button_Click(object sender, EventArgs e)
+        {
+            this.objectTemplateHelperDB.CheckObjectInfo();
+        }
+
+        private void ObjectTemplateHelper_ObjEntry_TextBox_TextChanged(object sender, EventArgs e)
+        {
+            this.objectTemplateHelperDB.EnableLockedItems(false);
+        }
+
+        private void ObjectTemplateHelper_GenerateSQL_Button_Click(object sender, EventArgs e)
+        {
+            this.objectTemplateHelperDB.GenerateSQL();
+        }
+
+        private void ObjectTemplateHelper_UpdateField_Button_Click(object sender, EventArgs e)
+        {
+            this.objectTemplateHelperDB.UpdateObjFieldsFromList();
+        }
+
+        private void ObjectTemplateHelper_ObjType_ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.objectTemplateHelperDB.EnableLockedItems(false);
+        }
+
+        private void ObjectTemplate_Helper_ClearButton_Click(object sender, EventArgs e)
+        {
+            this.objectTemplateHelperDB.ClearObjectData();
         }
     }
 }
