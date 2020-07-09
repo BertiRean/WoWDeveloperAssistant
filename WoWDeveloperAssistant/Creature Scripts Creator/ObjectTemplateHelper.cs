@@ -14,7 +14,7 @@ namespace WoWDeveloperAssistant.ObjectTemplateDB_Helper
         public string NpcName;
 
         public CreatureInfo(long npcEntry, long unitFlags = 0, long unitFlags2 = 0, long unitFlags3 = 0, long npcFlags = 0, long npcFlags2 = 0, long creatureFlagsExtra = 0,
-            string npcName = "")
+            long mechanicImmunneMask = 0, string npcName = "")
         {
             this.NpcEntry = npcEntry;
             this.NpcName = npcName;
@@ -27,6 +27,7 @@ namespace WoWDeveloperAssistant.ObjectTemplateDB_Helper
                 npcFlags,
                 npcFlags2,
                 creatureFlagsExtra,
+                mechanicImmunneMask,
             };
         }
 
@@ -273,7 +274,48 @@ namespace WoWDeveloperAssistant.ObjectTemplateDB_Helper
                     "CREATURE_FLAG_EXTRA_DUNGEON_END_BOSS",
                     "CREATURE_FLAG_EXTRA_NO_MOVE_FLAGS_UPDATE",
                 }
-            }
+            },
+
+            { 6, new ArrayList
+                {
+                    "MECHANIC_NONE",
+                    "MECHANIC_CHARM",
+                    "MECHANIC_DISORIENTED",
+                    "MECHANIC_DISARM",
+                    "MECHANIC_DISTRACT",
+                    "MECHANIC_FEAR",
+                    "MECHANIC_GRIP",
+                    "MECHANIC_ROOT",
+                    "MECHANIC_SLOW_ATTACK",
+                    "MECHANIC_SILENCE",
+                    "MECHANIC_SLEEP",
+                    "MECHANIC_SNARE",
+                    "MECHANIC_STUN",
+                    "MECHANIC_FREEZE",
+                    "MECHANIC_KNOCKOUT",
+                    "MECHANIC_BLEED",
+                    "MECHANIC_BANDAGE",
+                    "MECHANIC_POLYMORPH",
+                    "MECHANIC_BANISH",
+                    "MECHANIC_SHIELD",
+                    "MECHANIC_SHACKLE",
+                    "MECHANIC_MOUNT",
+                    "MECHANIC_INFECTED",
+                    "MECHANIC_TURN",
+                    "MECHANIC_HORROR",
+                    "MECHANIC_INVULNERABILITY",
+                    "MECHANIC_INTERRUPT",
+                    "MECHANIC_DAZE",
+                    "MECHANIC_DISCOVERY",
+                    "MECHANIC_IMMUNE_SHIELD",
+                    "MECHANIC_SAPPED",
+                    "MECHANIC_ENRAGED",
+                    "MECHANIC_WOUNDED",
+                    "MECHANIC_UNK_33",
+                    "MECHANIC_UNK_34",
+                    "MECHANIC_UNK_35",
+                }
+            },
         };
 
         public void ClearObjectData()
@@ -301,10 +343,11 @@ namespace WoWDeveloperAssistant.ObjectTemplateDB_Helper
                     foreach(var npc in creatureEntries)
                     {
                         string query = "-- " + npc.Value.NpcName + "\r\n";
-                        object[] fields = { npc.Value.Flags[0], npc.Value.Flags[1], npc.Value.Flags[2], npc.Value.Flags[3], npc.Value.Flags[4], npc.Value.Flags[5] };
+                        object[] fields = { npc.Value.Flags[0], npc.Value.Flags[1], npc.Value.Flags[2], npc.Value.Flags[3], npc.Value.Flags[4], npc.Value.Flags[5],
+                            npc.Value.Flags[6]};
 
                         query += String.Format("UPDATE `creature_template` set `unit_flags` = {0}, `unit_flags2` = {1}," +
-                            "unit_flags3` = {2}, `npcFlags` = {3}, `npcFlags2` = {4}, `flags_extra` = {5}", fields);
+                            "unit_flags3` = {2}, `npcFlags` = {3}, `npcFlags2` = {4}, `flags_extra` = {5}, `mechanic_immune_mask` = {6} ", fields);
 
                         query += " WHERE `entry` = " + npc.Key.ToString() + "; \n\n";
 
@@ -344,7 +387,7 @@ namespace WoWDeveloperAssistant.ObjectTemplateDB_Helper
         {
             DataSet unitFlagsDs;
             DataSet creatureNameDs;
-            string unitFlagsSqlQuery = "SELECT `npcflag`, `npcflag2`, `unit_flags`, `unit_flags2`, `unit_flags3`, `dynamicflags`, `flags_extra` FROM `creature_template` WHERE `entry` = " + creatureEntry + ";";
+            string unitFlagsSqlQuery = "SELECT `npcflag`, `npcflag2`, `unit_flags`, `unit_flags2`, `unit_flags3`, `mechanic_immune_mask`, `flags_extra` FROM `creature_template` WHERE `entry` = " + creatureEntry + ";";
             string creatureNameQuery = "SELECT `Name1` FROM `creature_template_wdb` WHERE `entry` = " + creatureEntry + ";";
             unitFlagsDs = SQLModule.DatabaseSelectQuery(unitFlagsSqlQuery);
             creatureNameDs = SQLModule.DatabaseSelectQuery(creatureNameQuery);
@@ -360,10 +403,11 @@ namespace WoWDeveloperAssistant.ObjectTemplateDB_Helper
             long unitFlags = Convert.ToInt64(unitFlagsDs.Tables["table"].Rows[0][2].ToString());
             long unitFlags2 = Convert.ToInt64(unitFlagsDs.Tables["table"].Rows[0][3].ToString());
             long unitFlags3 = Convert.ToInt64(unitFlagsDs.Tables["table"].Rows[0][4].ToString());
+            long mechanicMask = Convert.ToInt64(unitFlagsDs.Tables["table"].Rows[0][5].ToString());
             long extraFlags = Convert.ToInt64(unitFlagsDs.Tables["table"].Rows[0][6].ToString());
             string npcName = creatureNameDs.Tables["table"].Rows[0][0].ToString();
 
-            CreatureInfo creatureInfo = new CreatureInfo(long.Parse(creatureEntry), unitFlags, unitFlags2, unitFlags3, npcFlags, npcFlags2, extraFlags, npcName);
+            CreatureInfo creatureInfo = new CreatureInfo(long.Parse(creatureEntry), unitFlags, unitFlags2, unitFlags3, npcFlags, npcFlags2, extraFlags, mechanicMask, npcName);
             return creatureInfo;
         }
 
@@ -498,6 +542,7 @@ namespace WoWDeveloperAssistant.ObjectTemplateDB_Helper
                     mainForm.ObjectTemplate_ObjectField_ComboBox.Items.Add("Npc Flags");
                     mainForm.ObjectTemplate_ObjectField_ComboBox.Items.Add("Npc Flags 2");
                     mainForm.ObjectTemplate_ObjectField_ComboBox.Items.Add("Creature Flags Extra");
+                    mainForm.ObjectTemplate_ObjectField_ComboBox.Items.Add("Mechanic Immune Mask");
                     break;
                 }
 
