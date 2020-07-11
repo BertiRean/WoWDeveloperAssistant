@@ -54,7 +54,7 @@
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.SpellInfo_Tab = new System.Windows.Forms.TabControl();
+            this.MainWindowTabs = new System.Windows.Forms.TabControl();
             this.tabPage_CreatureScriptsCreator = new System.Windows.Forms.TabPage();
             this.checkBox_OnlyCombatSpells = new System.Windows.Forms.CheckBox();
             this.dataGridView_Spells = new System.Windows.Forms.DataGridView();
@@ -186,6 +186,7 @@
             this.SpellAuraScript_SQL_Out_RichTextBox = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tabSpellDBC_OverrideCreator = new System.Windows.Forms.TabPage();
+            this.CheckJournalButton = new System.Windows.Forms.Button();
             this.SpellInfoOverride_Values_CheckListBox = new System.Windows.Forms.CheckedListBox();
             this.SpellInfo_Override_RichBox = new System.Windows.Forms.RichTextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -237,13 +238,19 @@
             this.ObjectTemplateHelper_Field_Label = new System.Windows.Forms.Label();
             this.ObjectTemplate_ObjectField_ComboBox = new System.Windows.Forms.ComboBox();
             this.ObjectTemplateHelper_ObjType_ComboBox = new System.Windows.Forms.ComboBox();
+            this.ObjectTemplateHelper_UpdateField_Button = new System.Windows.Forms.Button();
+            this.ObjectTemplate_Helper_ClearButton = new System.Windows.Forms.Button();
+            this.tabJournalLootCreator = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.JournalLoot_ComboBox = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.JournalLoot_GenerateSQL = new System.Windows.Forms.Button();
             this.statusStrip_LoadedFile = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel_FileStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel_CurrentAction = new System.Windows.Forms.ToolStripStatusLabel();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.ObjectTemplateHelper_UpdateField_Button = new System.Windows.Forms.Button();
-            this.ObjectTemplate_Helper_ClearButton = new System.Windows.Forms.Button();
-            this.SpellInfo_Tab.SuspendLayout();
+            this.JournalLoot_SQL_RichTextBox = new System.Windows.Forms.RichTextBox();
+            this.MainWindowTabs.SuspendLayout();
             this.tabPage_CreatureScriptsCreator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Spells)).BeginInit();
             this.contextMenuStrip_CSC.SuspendLayout();
@@ -266,28 +273,31 @@
             this.tableLayoutPanel3.SuspendLayout();
             this.ObjectTemplateHelper_Tab.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            this.tabJournalLootCreator.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
             this.statusStrip_LoadedFile.SuspendLayout();
             this.SuspendLayout();
             // 
-            // SpellInfo_Tab
+            // MainWindowTabs
             // 
-            this.SpellInfo_Tab.Controls.Add(this.tabPage_CreatureScriptsCreator);
-            this.SpellInfo_Tab.Controls.Add(this.tabPage_WaypointsCreator);
-            this.SpellInfo_Tab.Controls.Add(this.tabPage_Output);
-            this.SpellInfo_Tab.Controls.Add(this.tabPage_DatabaseAdvisor);
-            this.SpellInfo_Tab.Controls.Add(this.tabPage_DoubleSpawnsRemover);
-            this.SpellInfo_Tab.Controls.Add(this.coreScriptTemplates);
-            this.SpellInfo_Tab.Controls.Add(this.tabPage_Achievements);
-            this.SpellInfo_Tab.Controls.Add(this.tabAuraSpell_Creator);
-            this.SpellInfo_Tab.Controls.Add(this.tabSpellDBC_OverrideCreator);
-            this.SpellInfo_Tab.Controls.Add(this.tabCombatAI_Creator);
-            this.SpellInfo_Tab.Controls.Add(this.ObjectTemplateHelper_Tab);
-            this.SpellInfo_Tab.Location = new System.Drawing.Point(3, 2);
-            this.SpellInfo_Tab.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.SpellInfo_Tab.Name = "SpellInfo_Tab";
-            this.SpellInfo_Tab.SelectedIndex = 0;
-            this.SpellInfo_Tab.Size = new System.Drawing.Size(1820, 790);
-            this.SpellInfo_Tab.TabIndex = 1;
+            this.MainWindowTabs.Controls.Add(this.tabPage_CreatureScriptsCreator);
+            this.MainWindowTabs.Controls.Add(this.tabPage_WaypointsCreator);
+            this.MainWindowTabs.Controls.Add(this.tabPage_Output);
+            this.MainWindowTabs.Controls.Add(this.tabPage_DatabaseAdvisor);
+            this.MainWindowTabs.Controls.Add(this.tabPage_DoubleSpawnsRemover);
+            this.MainWindowTabs.Controls.Add(this.coreScriptTemplates);
+            this.MainWindowTabs.Controls.Add(this.tabPage_Achievements);
+            this.MainWindowTabs.Controls.Add(this.tabAuraSpell_Creator);
+            this.MainWindowTabs.Controls.Add(this.tabSpellDBC_OverrideCreator);
+            this.MainWindowTabs.Controls.Add(this.tabCombatAI_Creator);
+            this.MainWindowTabs.Controls.Add(this.ObjectTemplateHelper_Tab);
+            this.MainWindowTabs.Controls.Add(this.tabJournalLootCreator);
+            this.MainWindowTabs.Location = new System.Drawing.Point(3, 2);
+            this.MainWindowTabs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MainWindowTabs.Name = "MainWindowTabs";
+            this.MainWindowTabs.SelectedIndex = 0;
+            this.MainWindowTabs.Size = new System.Drawing.Size(1820, 790);
+            this.MainWindowTabs.TabIndex = 1;
             // 
             // tabPage_CreatureScriptsCreator
             // 
@@ -1964,6 +1974,7 @@
             // 
             // tabSpellDBC_OverrideCreator
             // 
+            this.tabSpellDBC_OverrideCreator.Controls.Add(this.CheckJournalButton);
             this.tabSpellDBC_OverrideCreator.Controls.Add(this.SpellInfoOverride_Values_CheckListBox);
             this.tabSpellDBC_OverrideCreator.Controls.Add(this.SpellInfo_Override_RichBox);
             this.tabSpellDBC_OverrideCreator.Controls.Add(this.tableLayoutPanel1);
@@ -1975,6 +1986,13 @@
             this.tabSpellDBC_OverrideCreator.TabIndex = 8;
             this.tabSpellDBC_OverrideCreator.Text = "Spell DBC Override Creator";
             this.tabSpellDBC_OverrideCreator.UseVisualStyleBackColor = true;
+            // 
+            // CheckJournalButton
+            // 
+            this.CheckJournalButton.Location = new System.Drawing.Point(0, 0);
+            this.CheckJournalButton.Name = "CheckJournalButton";
+            this.CheckJournalButton.Size = new System.Drawing.Size(75, 23);
+            this.CheckJournalButton.TabIndex = 0;
             // 
             // SpellInfoOverride_Values_CheckListBox
             // 
@@ -2704,6 +2722,83 @@
             this.ObjectTemplateHelper_ObjType_ComboBox.TabIndex = 8;
             this.ObjectTemplateHelper_ObjType_ComboBox.SelectedIndexChanged += new System.EventHandler(this.ObjectTemplateHelper_ObjType_ComboBox_SelectedIndexChanged);
             // 
+            // ObjectTemplateHelper_UpdateField_Button
+            // 
+            this.ObjectTemplateHelper_UpdateField_Button.Enabled = false;
+            this.ObjectTemplateHelper_UpdateField_Button.Location = new System.Drawing.Point(3, 132);
+            this.ObjectTemplateHelper_UpdateField_Button.Name = "ObjectTemplateHelper_UpdateField_Button";
+            this.ObjectTemplateHelper_UpdateField_Button.Size = new System.Drawing.Size(131, 46);
+            this.ObjectTemplateHelper_UpdateField_Button.TabIndex = 10;
+            this.ObjectTemplateHelper_UpdateField_Button.Text = "Update Selected Field";
+            this.ObjectTemplateHelper_UpdateField_Button.UseVisualStyleBackColor = true;
+            this.ObjectTemplateHelper_UpdateField_Button.Click += new System.EventHandler(this.ObjectTemplateHelper_UpdateField_Button_Click);
+            // 
+            // ObjectTemplate_Helper_ClearButton
+            // 
+            this.ObjectTemplate_Helper_ClearButton.Location = new System.Drawing.Point(140, 132);
+            this.ObjectTemplate_Helper_ClearButton.Name = "ObjectTemplate_Helper_ClearButton";
+            this.ObjectTemplate_Helper_ClearButton.Size = new System.Drawing.Size(131, 46);
+            this.ObjectTemplate_Helper_ClearButton.TabIndex = 11;
+            this.ObjectTemplate_Helper_ClearButton.Text = "Clear Local Object Data";
+            this.ObjectTemplate_Helper_ClearButton.UseVisualStyleBackColor = true;
+            this.ObjectTemplate_Helper_ClearButton.Click += new System.EventHandler(this.ObjectTemplate_Helper_ClearButton_Click);
+            // 
+            // tabJournalLootCreator
+            // 
+            this.tabJournalLootCreator.Controls.Add(this.JournalLoot_SQL_RichTextBox);
+            this.tabJournalLootCreator.Controls.Add(this.tableLayoutPanel5);
+            this.tabJournalLootCreator.Location = new System.Drawing.Point(4, 25);
+            this.tabJournalLootCreator.Name = "tabJournalLootCreator";
+            this.tabJournalLootCreator.Padding = new System.Windows.Forms.Padding(3);
+            this.tabJournalLootCreator.Size = new System.Drawing.Size(1812, 761);
+            this.tabJournalLootCreator.TabIndex = 11;
+            this.tabJournalLootCreator.Text = "Journal Loot Creator";
+            this.tabJournalLootCreator.UseVisualStyleBackColor = true;
+            this.tabJournalLootCreator.Enter += new System.EventHandler(this.tabJournalLootCreator_Enter);
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.ColumnCount = 2;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.Controls.Add(this.JournalLoot_ComboBox, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.label11, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.JournalLoot_GenerateSQL, 1, 1);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(6, 6);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 2;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(336, 100);
+            this.tableLayoutPanel5.TabIndex = 0;
+            // 
+            // JournalLoot_ComboBox
+            // 
+            this.JournalLoot_ComboBox.FormattingEnabled = true;
+            this.JournalLoot_ComboBox.Location = new System.Drawing.Point(171, 3);
+            this.JournalLoot_ComboBox.Name = "JournalLoot_ComboBox";
+            this.JournalLoot_ComboBox.Size = new System.Drawing.Size(162, 24);
+            this.JournalLoot_ComboBox.TabIndex = 0;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(3, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(72, 17);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "Instances:";
+            // 
+            // JournalLoot_GenerateSQL
+            // 
+            this.JournalLoot_GenerateSQL.Location = new System.Drawing.Point(171, 53);
+            this.JournalLoot_GenerateSQL.Name = "JournalLoot_GenerateSQL";
+            this.JournalLoot_GenerateSQL.Size = new System.Drawing.Size(162, 44);
+            this.JournalLoot_GenerateSQL.TabIndex = 2;
+            this.JournalLoot_GenerateSQL.Text = "Generate Loot";
+            this.JournalLoot_GenerateSQL.UseVisualStyleBackColor = true;
+            this.JournalLoot_GenerateSQL.Click += new System.EventHandler(this.JournalLoot_GenerateSQL_Click);
+            // 
             // statusStrip_LoadedFile
             // 
             this.statusStrip_LoadedFile.BackColor = System.Drawing.Color.LightGray;
@@ -2734,26 +2829,13 @@
             // 
             this.openFileDialog.FileName = "openFileDialog_WSC";
             // 
-            // ObjectTemplateHelper_UpdateField_Button
+            // JournalLoot_SQL_RichTextBox
             // 
-            this.ObjectTemplateHelper_UpdateField_Button.Enabled = false;
-            this.ObjectTemplateHelper_UpdateField_Button.Location = new System.Drawing.Point(3, 132);
-            this.ObjectTemplateHelper_UpdateField_Button.Name = "ObjectTemplateHelper_UpdateField_Button";
-            this.ObjectTemplateHelper_UpdateField_Button.Size = new System.Drawing.Size(131, 46);
-            this.ObjectTemplateHelper_UpdateField_Button.TabIndex = 10;
-            this.ObjectTemplateHelper_UpdateField_Button.Text = "Update Selected Field";
-            this.ObjectTemplateHelper_UpdateField_Button.UseVisualStyleBackColor = true;
-            this.ObjectTemplateHelper_UpdateField_Button.Click += new System.EventHandler(this.ObjectTemplateHelper_UpdateField_Button_Click);
-            // 
-            // ObjectTemplate_Helper_ClearButton
-            // 
-            this.ObjectTemplate_Helper_ClearButton.Location = new System.Drawing.Point(140, 132);
-            this.ObjectTemplate_Helper_ClearButton.Name = "ObjectTemplate_Helper_ClearButton";
-            this.ObjectTemplate_Helper_ClearButton.Size = new System.Drawing.Size(131, 46);
-            this.ObjectTemplate_Helper_ClearButton.TabIndex = 11;
-            this.ObjectTemplate_Helper_ClearButton.Text = "Clear Local Object Data";
-            this.ObjectTemplate_Helper_ClearButton.UseVisualStyleBackColor = true;
-            this.ObjectTemplate_Helper_ClearButton.Click += new System.EventHandler(this.ObjectTemplate_Helper_ClearButton_Click);
+            this.JournalLoot_SQL_RichTextBox.Location = new System.Drawing.Point(348, 9);
+            this.JournalLoot_SQL_RichTextBox.Name = "JournalLoot_SQL_RichTextBox";
+            this.JournalLoot_SQL_RichTextBox.Size = new System.Drawing.Size(1173, 742);
+            this.JournalLoot_SQL_RichTextBox.TabIndex = 1;
+            this.JournalLoot_SQL_RichTextBox.Text = "";
             // 
             // MainForm
             // 
@@ -2762,14 +2844,14 @@
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1540, 807);
             this.Controls.Add(this.statusStrip_LoadedFile);
-            this.Controls.Add(this.SpellInfo_Tab);
+            this.Controls.Add(this.MainWindowTabs);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainForm";
             this.Text = "Wow Developer Assistant";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
-            this.SpellInfo_Tab.ResumeLayout(false);
+            this.MainWindowTabs.ResumeLayout(false);
             this.tabPage_CreatureScriptsCreator.ResumeLayout(false);
             this.tabPage_CreatureScriptsCreator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Spells)).EndInit();
@@ -2806,6 +2888,9 @@
             this.ObjectTemplateHelper_Tab.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
+            this.tabJournalLootCreator.ResumeLayout(false);
+            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel5.PerformLayout();
             this.statusStrip_LoadedFile.ResumeLayout(false);
             this.statusStrip_LoadedFile.PerformLayout();
             this.ResumeLayout(false);
@@ -2815,7 +2900,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl SpellInfo_Tab;
+        private System.Windows.Forms.TabControl MainWindowTabs;
         private System.Windows.Forms.TabPage tabPage_CreatureScriptsCreator;
         private System.Windows.Forms.ToolStrip toolStrip_CSC;
         public System.Windows.Forms.ToolStripButton toolStripButton_CSC_ImportSniff;
@@ -3004,6 +3089,13 @@
         public System.Windows.Forms.RichTextBox ObjectTempalte_SQLResult_RichTextBox;
         public System.Windows.Forms.Button ObjectTemplateHelper_UpdateField_Button;
         public System.Windows.Forms.Button ObjectTemplate_Helper_ClearButton;
+        private System.Windows.Forms.Button CheckJournalButton;
+        private System.Windows.Forms.TabPage tabJournalLootCreator;
+        public System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        public System.Windows.Forms.ComboBox JournalLoot_ComboBox;
+        public System.Windows.Forms.Label label11;
+        public System.Windows.Forms.Button JournalLoot_GenerateSQL;
+        public System.Windows.Forms.RichTextBox JournalLoot_SQL_RichTextBox;
     }
 }
 

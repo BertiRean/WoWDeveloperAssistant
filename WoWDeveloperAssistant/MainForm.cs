@@ -12,6 +12,7 @@ using WoWDeveloperAssistant.Spell_Aura_Script_DbCreator;
 using WoWDeveloperAssistant.SpellInfo_Override_DbCreator;
 using WoWDeveloperAssistant.CombatAI_Creator_Templates;
 using WoWDeveloperAssistant.ObjectTemplateDB_Helper;
+using WoWDeveloperAssistant.JournalLootCreator_DB;
 
 namespace WoWDeveloperAssistant
 {
@@ -27,6 +28,7 @@ namespace WoWDeveloperAssistant
         private SpellInfoOverrideCreator spellDBCOverrideCreatorDB;
         private CombatAICreator combatAIScriptsCreatorDB;
         private ObjectTemplateHelper objectTemplateHelperDB;
+        private JournalLootCreator journalLootCreatorDB;
 
         public MainForm()
         {
@@ -40,6 +42,7 @@ namespace WoWDeveloperAssistant
             spellDBCOverrideCreatorDB = new SpellInfoOverrideCreator(this);
             combatAIScriptsCreatorDB = new CombatAICreator(this);
             objectTemplateHelperDB = new ObjectTemplateHelper(this);
+            journalLootCreatorDB = new JournalLootCreator(this);
 
             if (Properties.Settings.Default.UsingDB)
             {
@@ -592,6 +595,16 @@ namespace WoWDeveloperAssistant
         private void ObjectTemplate_Helper_ClearButton_Click(object sender, EventArgs e)
         {
             this.objectTemplateHelperDB.ClearObjectData();
+        }
+
+        private void JournalLoot_GenerateSQL_Click(object sender, EventArgs e)
+        {
+            this.journalLootCreatorDB.GenerateSQL();
+        }
+
+        private void tabJournalLootCreator_Enter(object sender, EventArgs e)
+        {
+            this.journalLootCreatorDB.FillInstanceComboBox();
         }
     }
 }

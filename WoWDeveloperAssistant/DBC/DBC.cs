@@ -22,6 +22,9 @@ namespace WoWDeveloperAssistant.DBC
         public static Storage<CriteriaTreeEntry> CriteriaTree { get; set; }
         public static Storage<CriteriaEntry> Criteria { get; set; }
         public static Storage<ModifierTreeEntry> ModifierTree { get; set; }
+        public static Storage<JournalEncounterEntry> JournalEncounters { get; set; }
+        public static Storage<JournalEncounterItemEntry> JournalEncounterItems { get; set; }
+        public static Storage<JournalInstanceEntry> JournalInstances { get; set; }
 
         private static string GetPath()
         {
@@ -59,6 +62,15 @@ namespace WoWDeveloperAssistant.DBC
 
             dbReader = new DBReader(GetPath(), "ModifierTree.db2");
             ModifierTree = dbReader.GetRecords<ModifierTreeEntry>();
+
+            dbReader = new DBReader(GetPath(), "JournalEncounter.db2");
+            JournalEncounters = dbReader.GetRecords<JournalEncounterEntry>();
+
+            dbReader = new DBReader(GetPath(), "JournalEncounterItem.db2");
+            JournalEncounterItems = dbReader.GetRecords<JournalEncounterItemEntry>();
+
+            dbReader = new DBReader(GetPath(), "JournalInstance.db2");
+            JournalInstances = dbReader.GetRecords<JournalInstanceEntry>();
 
             if (SpellEffect != null && SpellEffectStores.Count == 0)
             {
