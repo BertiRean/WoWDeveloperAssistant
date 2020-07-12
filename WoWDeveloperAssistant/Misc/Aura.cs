@@ -107,37 +107,5 @@ namespace WoWDeveloperAssistant.Misc
         }
     };
 
-    public struct CombatAIEventDataEntry
-    {
-        public uint NpcEntry;
-
-        public uint StartMin;
-        public uint StartMax;
-        public uint RepeatMin;
-        public uint RepeatMax;
-        public uint RepeatFail;
-
-        public uint SpellId;
-        public float AttackDist;
-
-        public uint EventCheck;
-        public uint EventFlags;
-
-        public uint DifficultyMask;
-
-        public CombatAIEventDataEntry(uint npcEntry, uint startMin, uint startMax, uint repeatMin, uint repeatMax, uint spellId, float attackDist, uint eventCheck, uint eventFlags, uint diffMask = 0)
-        {
-            this.NpcEntry   = npcEntry;
-            this.StartMin   = startMin;
-            this.StartMax   = startMax;
-            this.RepeatMin = repeatMin;
-            this.RepeatMax = repeatMax;
-            this.RepeatFail = 1000;
-            this.SpellId    = spellId;
-            this.AttackDist = attackDist;
-            this.EventCheck = eventCheck;
-            this.EventFlags = eventFlags;
-            this.DifficultyMask = diffMask;
-        }
-    };
+    
 }

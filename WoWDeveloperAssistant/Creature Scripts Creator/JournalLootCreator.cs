@@ -63,7 +63,7 @@ namespace WoWDeveloperAssistant.JournalLootCreator_DB
                 string query = "";
                 uint count = 0;
                 var loot = GetItemsAssociatedToCreature(encounter.ID);
-                string constantName = encounter.Name.Replace(' ', '_').ToUpper();
+                string constantName = encounter.Name.Replace(',', ' ').Replace(' ', '_').ToUpper();
 
                 if (loot.Count > 0)
                 {

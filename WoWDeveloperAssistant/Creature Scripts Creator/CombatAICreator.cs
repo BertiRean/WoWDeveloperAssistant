@@ -8,6 +8,62 @@ using WoWDeveloperAssistant.SpellInfo_Override_DbCreator;
 
 namespace WoWDeveloperAssistant.CombatAI_Creator_Templates
 {
+    public struct CombatAIEventDataEntry
+    {
+        public uint NpcEntry;
+
+        public uint StartMin;
+        public uint StartMax;
+        public uint RepeatMin;
+        public uint RepeatMax;
+        public uint RepeatFail;
+
+        public uint SpellId;
+        public float AttackDist;
+
+        public uint EventCheck;
+        public uint EventFlags;
+
+        public uint DifficultyMask;
+
+        public CombatAIEventDataEntry(uint npcEntry, uint startMin, uint startMax, uint repeatMin, uint repeatMax, uint spellId, float attackDist, uint eventCheck, uint eventFlags, uint diffMask = 0)
+        {
+            this.NpcEntry = npcEntry;
+            this.StartMin = startMin;
+            this.StartMax = startMax;
+            this.RepeatMin = repeatMin;
+            this.RepeatMax = repeatMax;
+            this.RepeatFail = 1000;
+            this.SpellId = spellId;
+            this.AttackDist = attackDist;
+            this.EventCheck = eventCheck;
+            this.EventFlags = eventFlags;
+            this.DifficultyMask = diffMask;
+        }
+
+        public CombatAIEventDataEntry(object[] values)
+        {
+            int idx = 0;
+            this.NpcEntry = (uint)values[idx++];
+            this.StartMin = (uint)values[idx++];
+            this.StartMax = (uint)values[idx++];
+            this.RepeatMin = (uint)values[idx++];
+            this.RepeatMax = (uint)values[idx++];
+            this.RepeatFail = (uint)values[idx++];
+            this.SpellId = (uint)values[idx++];
+            this.EventCheck = (uint)values[idx++];
+            this.EventFlags = (uint)values[idx++];
+            this.AttackDist = (float)values[idx++];
+            this.DifficultyMask = 0;
+        }
+
+        public object[] GetFieldArray()
+        {
+            object[] fields = new object[] { this.NpcEntry, this.StartMin, this.StartMax, this.RepeatMin, this.RepeatMax, this.RepeatFail, this.SpellId, this.EventCheck, this.EventFlags, this.AttackDist };
+            return fields;
+        }
+    };
+
     public class CombatAICreator
     {
         private MainForm mainForm;
@@ -114,9 +170,9 @@ namespace WoWDeveloperAssistant.CombatAI_Creator_Templates
                     string query = CombatAICreator.CreateCombatEntryValues(combatData, itr);
 
                     if (itr + 1 >= item.Value.Count)
-                        query += ";\n";
+                        query += ";\r\n";
                     else
-                        query += ",\n";
+                        query += ",\r\n";
 
                     SQLtext += query;
                     itr++;
@@ -127,6 +183,69 @@ namespace WoWDeveloperAssistant.CombatAI_Creator_Templates
             }
 
             MessageBox.Show("SQL Queries Generated");
+        }
+
+        public CombatAIEventDataEntry GenerateScriptData()
+        {
+            uint NpcEntry = uint.Parse(mainForm.CombatAI_NpcEntry_TextBox.Text);
+
+            if (!ValidateNpcEntry(NpcEntry))
+            {
+                String msg = String.Format("The Creature with Entry: {0} doesn't exist in world DB",
+                         NpcEntry);
+
+                MessageBox.Show(msg);
+                return new CombatAIEventDataEntry();
+            }
+
+            uint InitMin = 0;
+            if (mainForm.CombatAI_InitMin_TextBox.Text.Length > 0)
+                InitMin = uint.Parse(mainForm.CombatAI_InitMin_TextBox.Text);
+
+            uint InitMax = 0;
+            if (mainForm.CombatAI_InitMax_TextBox.Text.Length > 0)
+                InitMax = uint.Parse(mainForm.CombatAI_InitMax_TextBox.Text);
+
+            uint RepeatMin = 0;
+            if (mainForm.CombatAI_RepeatMin_TextBox.Text.Length > 0)
+                RepeatMin = uint.Parse(mainForm.CombatAI_RepeatMin_TextBox.Text);
+
+            uint RepeatMax = 0;
+            if (mainForm.CombatAI_RepeatMax_TextBox.Text.Length > 0)
+                RepeatMax = uint.Parse(mainForm.CombatAI_RepeatMax_TextBox.Text);
+
+            uint EventType = 0;
+            if (mainForm.CombatAI_EventType_ComboBox.SelectedIndex != -1)
+                EventType = Convert.ToUInt32(mainForm.CombatAI_EventType_ComboBox.SelectedIndex);
+
+            uint EventFlags = 0;
+
+            for (int idx = 0; idx < mainForm.CombatAI_EventFlags_CheckedBox.Items.Count; ++idx)
+            {
+                var option = mainForm.CombatAI_EventFlags_CheckedBox.Items[idx];
+
+                if (mainForm.CombatAI_EventFlags_CheckedBox.GetItemChecked(idx))
+                    EventFlags |= eventFlagsValues[idx];
+            }
+
+            float AttackDist = 0.0f;
+            if (mainForm.CombatAI_AttackDist_TextBox.Text.Length > 0)
+                AttackDist = float.Parse(mainForm.CombatAI_AttackDist_TextBox.Text);
+
+            uint SpellId = 0;
+            if (mainForm.CombatAI_Spell_Id_TextBox.Text.Length > 0)
+                SpellId = uint.Parse(mainForm.CombatAI_Spell_Id_TextBox.Text);
+
+            if (DBC.DBC.IsLoaded() && !DBC.DBC.SpellName.ContainsKey((int)SpellId))
+            {
+                String msg = String.Format("The Spell Id: {0} doesn't exist in DBC",
+                         SpellId);
+
+                MessageBox.Show(msg);
+                return new CombatAIEventDataEntry();
+            }
+
+            return new CombatAIEventDataEntry(NpcEntry, InitMin, InitMax, RepeatMin, RepeatMax, SpellId, AttackDist, EventType, EventFlags);
         }
 
         public void AddCombatAIData()
@@ -229,25 +348,29 @@ namespace WoWDeveloperAssistant.CombatAI_Creator_Templates
             this.mainForm.CombatAI_SpellGrid_DataGrid.Enabled = true;
             this.mainForm.CombatAI_SpellGrid_DataGrid.Rows.Clear();
 
+            uint NpcEntry = Convert.ToUInt32(creatureEntry);
+
             foreach(DataRow row in combatAiDs.Tables["table"].Rows)
+            {
+                if (!combatAIEntries.ContainsKey(NpcEntry))
+                    combatAIEntries[NpcEntry] = new ArrayList();
+
                 this.mainForm.CombatAI_SpellGrid_DataGrid.Rows.Add(row.ItemArray);
+                combatAIEntries[NpcEntry].Add(new CombatAIEventDataEntry(row.ItemArray));
+            }
         }
 
-        public void CombatRowSelected(int rowIndex, bool fromDB = true)
+        private void FillCombatFields(CombatAIEventDataEntry script)
         {
-            if (!fromDB)
-                return;
+            this.mainForm.CombatAI_NpcEntry_TextBox.Text = script.NpcEntry.ToString();
+            this.mainForm.CombatAI_InitMin_TextBox.Text = script.StartMin.ToString();
+            this.mainForm.CombatAI_InitMax_TextBox.Text = script.StartMax.ToString();
+            this.mainForm.CombatAI_RepeatMin_TextBox.Text = script.RepeatMin.ToString();
+            this.mainForm.CombatAI_RepeatMax_TextBox.Text = script.RepeatMax.ToString();
+            this.mainForm.CombatAI_Spell_Id_TextBox.Text = script.SpellId.ToString();
+            this.mainForm.CombatAI_EventType_ComboBox.SelectedIndex = (int)script.EventCheck;
 
-            DataGridView scriptGrid = this.mainForm.CombatAI_SpellGrid_DataGrid;
-            this.mainForm.CombatAI_NpcEntry_TextBox.Text = scriptGrid[0, rowIndex].Value.ToString();
-            this.mainForm.CombatAI_InitMin_TextBox.Text = scriptGrid[1, rowIndex].Value.ToString();
-            this.mainForm.CombatAI_InitMax_TextBox.Text = scriptGrid[2, rowIndex].Value.ToString();
-            this.mainForm.CombatAI_RepeatMin_TextBox.Text = scriptGrid[3, rowIndex].Value.ToString();
-            this.mainForm.CombatAI_RepeatMax_TextBox.Text = scriptGrid[4, rowIndex].Value.ToString();
-            this.mainForm.CombatAI_Spell_Id_TextBox.Text = scriptGrid[6, rowIndex].Value.ToString();
-            this.mainForm.CombatAI_EventType_ComboBox.SelectedIndex = Convert.ToInt32(scriptGrid[7, rowIndex].Value.ToString());
-
-            long flags = Convert.ToInt64(scriptGrid[8, rowIndex].Value.ToString());
+            long flags = (long)script.EventFlags;
 
             CheckedListBox eventFlags = this.mainForm.CombatAI_EventFlags_CheckedBox;
 
@@ -259,7 +382,47 @@ namespace WoWDeveloperAssistant.CombatAI_Creator_Templates
                     eventFlags.SetItemChecked(idx, true);
             }
 
-            this.mainForm.CombatAI_AttackDist_TextBox.Text = scriptGrid[9, rowIndex].Value.ToString();
+            this.mainForm.CombatAI_AttackDist_TextBox.Text = script.AttackDist.ToString();
+        }
+
+        public void CombatRowSelected(int rowIndex)
+        {
+            uint npcEntry = Convert.ToUInt32(this.mainForm.CombatAI_SpellGrid_DataGrid[0, rowIndex].Value.ToString());
+            uint idx = 0;
+
+            foreach (var script in this.combatAIEntries[npcEntry])
+            {
+                if (idx++ == rowIndex)
+                    this.FillCombatFields((CombatAIEventDataEntry)script);
+            }
+        }
+
+        public void UpdateCombatGridData(uint npcEntry)
+        {
+            this.mainForm.CombatAI_SpellGrid_DataGrid.Rows.Clear();
+
+            foreach (CombatAIEventDataEntry script in this.combatAIEntries[npcEntry])
+                this.mainForm.CombatAI_SpellGrid_DataGrid.Rows.Add(script.GetFieldArray());
+        }
+
+        public void UpdateRowSelected()
+        {
+            int rowIndex = this.mainForm.CombatAI_SpellGrid_DataGrid.CurrentRow.Index;
+            CombatAIEventDataEntry entry = this.GenerateScriptData();
+
+            if (!combatAIEntries.ContainsKey(entry.NpcEntry))
+                return;
+
+            for (int idx = 0; idx < this.combatAIEntries[entry.NpcEntry].Count; ++idx)
+            {
+                if (idx == rowIndex)
+                {
+                    this.combatAIEntries[entry.NpcEntry][idx] = entry;
+                    MessageBox.Show("CombatAI Data Updated");
+                    this.UpdateCombatGridData(entry.NpcEntry);
+                    return;
+                }
+            }
         }
     }
 }

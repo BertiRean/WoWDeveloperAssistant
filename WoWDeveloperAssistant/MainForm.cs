@@ -616,5 +616,10 @@ namespace WoWDeveloperAssistant
         {
             this.combatAIScriptsCreatorDB.CombatRowSelected(e.RowIndex);
         }
+
+        private void CombatAI_UpdateRow_Button_Click(object sender, EventArgs e)
+        {
+            this.combatAIScriptsCreatorDB.UpdateRowSelected();
+        }
     }
 }
