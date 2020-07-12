@@ -606,5 +606,15 @@ namespace WoWDeveloperAssistant
         {
             this.journalLootCreatorDB.FillInstanceComboBox();
         }
+
+        private void CombatAI_SearchData_DB_Button_Click(object sender, EventArgs e)
+        {
+            this.combatAIScriptsCreatorDB.SearchCreatureScript();
+        }
+
+        private void CombatAI_SpellGrid_DataGrid_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            this.combatAIScriptsCreatorDB.CombatRowSelected(e.RowIndex);
+        }
     }
 }
