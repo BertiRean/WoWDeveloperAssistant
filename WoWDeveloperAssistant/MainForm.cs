@@ -13,6 +13,7 @@ using WoWDeveloperAssistant.SpellInfo_Override_DbCreator;
 using WoWDeveloperAssistant.CombatAI_Creator_Templates;
 using WoWDeveloperAssistant.ObjectTemplateDB_Helper;
 using WoWDeveloperAssistant.JournalLootCreator_DB;
+using WoWDeveloperAssistant.DungeonDataInfoParser_Db;
 
 namespace WoWDeveloperAssistant
 {
@@ -29,6 +30,7 @@ namespace WoWDeveloperAssistant
         private CombatAICreator combatAIScriptsCreatorDB;
         private ObjectTemplateHelper objectTemplateHelperDB;
         private JournalLootCreator journalLootCreatorDB;
+        private DungeonDataInfoCreator dungeonDataParser;
 
         public MainForm()
         {
@@ -43,6 +45,7 @@ namespace WoWDeveloperAssistant
             combatAIScriptsCreatorDB = new CombatAICreator(this);
             objectTemplateHelperDB = new ObjectTemplateHelper(this);
             journalLootCreatorDB = new JournalLootCreator(this);
+            dungeonDataParser = new DungeonDataInfoCreator(this);
 
             if (Properties.Settings.Default.UsingDB)
             {
@@ -620,6 +623,47 @@ namespace WoWDeveloperAssistant
         private void CombatAI_UpdateRow_Button_Click(object sender, EventArgs e)
         {
             this.combatAIScriptsCreatorDB.UpdateRowSelected();
+        }
+
+        private void DungeonDataInfo_ImportFile_Button_Click(object sender, EventArgs e)
+        {
+            this.dungeonDataParser.OpenFileDialog();
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                dungeonDataParser.ImportAddonData(openFileDialog.FileName);
+            }
+        }
+
+        private void DungeonDataInfo_Map_ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.dungeonDataParser.FillCreatureListBox(DungeonDataInfo_Map_ComboBox.SelectedIndex);
+        }
+
+        private void DungeonDataInfo_SpellTimer_Grid_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            this.dungeonDataParser.SpellGridSelected(e.RowIndex);
+        }
+
+        private void DungeonDataInfo_Npc_CheckListBox_ItemCheck(object sender, EventArgs e)
+        {
+            this.dungeonDataParser.FillSpellGrid(DungeonDataInfo_Npc_CheckListBox.SelectedIndex);
+        }
+
+        private void DungeonDataInfo_CalcTimers_Button_Click(object sender, EventArgs e)
+        {
+            int rowIndex = DungeonDataInfo_SpellTimer_Grid.SelectedRows.Count > 0 ? DungeonDataInfo_SpellTimer_Grid.SelectedRows[0].Index : -1;
+        }
+
+        private void DungeonDataInfo_Add_Script_Button_Click(object sender, EventArgs e)
+        {
+            int rowIndex = DungeonDataInfo_SpellTimer_Grid.SelectedRows.Count > 0 ? DungeonDataInfo_SpellTimer_Grid.SelectedRows[0].Index : -1;
+            this.dungeonDataParser.UpdateCombatEventEntry(rowIndex);
+        }
+
+        private void DungeonDataInfo_GenerateQueries_Button_Click(object sender, EventArgs e)
+        {
+            this.dungeonDataParser.GenerateSQL();
         }
     }
 }

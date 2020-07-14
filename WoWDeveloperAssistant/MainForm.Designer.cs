@@ -29,39 +29,42 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle62 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle63 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle64 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle65 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle66 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle67 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle68 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle69 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle70 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle71 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle80 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle81 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle72 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle73 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle74 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle75 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle76 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle77 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle78 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle79 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle82 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle83 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle84 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle85 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle61 = new System.Windows.Forms.DataGridViewCellStyle();
             this.MainWindowTabs = new System.Windows.Forms.TabControl();
             this.tabPage_CreatureScriptsCreator = new System.Windows.Forms.TabPage();
             this.checkBox_OnlyCombatSpells = new System.Windows.Forms.CheckBox();
@@ -228,9 +231,7 @@
             this.CombatAI_RepeatMin_TextBox = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.CombatAI_InitMax_TextBox = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
             this.CombatAI_SearchData_DB_Button = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.CombatAI_RepeatMax_Label = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -246,8 +247,8 @@
             this.CombatAI_Add_ScriptData_Button = new System.Windows.Forms.Button();
             this.CombatAI_EventFlags_CheckedBox = new System.Windows.Forms.CheckedListBox();
             this.CombatAI_ClearData_Button = new System.Windows.Forms.Button();
-            this.CombatAI_DungeonDataMap_ComboBox = new System.Windows.Forms.ComboBox();
             this.CombatAI_GenerateSQL_Button = new System.Windows.Forms.Button();
+            this.CombatAI_UpdateRow_Button = new System.Windows.Forms.Button();
             this.ObjectTemplateHelper_Tab = new System.Windows.Forms.TabPage();
             this.ObjectTempalte_SQLResult_RichTextBox = new System.Windows.Forms.RichTextBox();
             this.ObjectTypeHelper_Fields_ListBox = new System.Windows.Forms.CheckedListBox();
@@ -269,13 +270,42 @@
             this.label11 = new System.Windows.Forms.Label();
             this.JournalLoot_GenerateSQL = new System.Windows.Forms.Button();
             this.tabDungeonDataInfoParser = new System.Windows.Forms.TabPage();
+            this.DungeonDataInfo_Npc_CheckListBox = new System.Windows.Forms.CheckedListBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.DungeonDataInfo_ImportFile_Button = new System.Windows.Forms.Button();
+            this.label18 = new System.Windows.Forms.Label();
+            this.DungeonDataInfo_Map_ComboBox = new System.Windows.Forms.ComboBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.DungeonDataInfo_NpcEntry_TextBox = new System.Windows.Forms.TextBox();
+            this.DungeonDataInfo_InitMin_TextBox = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.DungeonDataInfo_InitMax_TextBox = new System.Windows.Forms.TextBox();
+            this.DungeonDataInfo_RepeatMin_TextBox = new System.Windows.Forms.TextBox();
+            this.DungeonDataInfo_RepeatMax_TextBox = new System.Windows.Forms.TextBox();
+            this.DungeonDataInfo__EventType_TextBox = new System.Windows.Forms.ComboBox();
+            this.DungeonDataInfo_EventFlags_TextBox = new System.Windows.Forms.CheckedListBox();
+            this.DungeonDataInfo_AttackDist_TextBox = new System.Windows.Forms.TextBox();
+            this.DungeonDataInfo_SpellId_TextBox = new System.Windows.Forms.TextBox();
+            this.DungeonDataInfo_Add_Script_Button = new System.Windows.Forms.Button();
+            this.DungeonDataInfo_GenerateQueries_Button = new System.Windows.Forms.Button();
+            this.DungeonDataInfo_ClearScriptData_Button = new System.Windows.Forms.Button();
+            this.DungeonDataInfo_SpellTimer_Grid = new System.Windows.Forms.DataGridView();
             this.statusStrip_LoadedFile = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel_FileStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel_CurrentAction = new System.Windows.Forms.ToolStripStatusLabel();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.CombatAI_UpdateRow_Button = new System.Windows.Forms.Button();
+            this.DungeonDataInfo_CalcTimers_Button = new System.Windows.Forms.Button();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EventAddedCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MainWindowTabs.SuspendLayout();
             this.tabPage_CreatureScriptsCreator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Spells)).BeginInit();
@@ -304,6 +334,7 @@
             this.tableLayoutPanel5.SuspendLayout();
             this.tabDungeonDataInfoParser.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DungeonDataInfo_SpellTimer_Grid)).BeginInit();
             this.statusStrip_LoadedFile.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -393,8 +424,8 @@
             // SpellId
             // 
             this.SpellId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.SpellId.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle62.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.SpellId.DefaultCellStyle = dataGridViewCellStyle62;
             this.SpellId.HeaderText = "SpellId";
             this.SpellId.MaxInputLength = 10;
             this.SpellId.MinimumWidth = 8;
@@ -405,8 +436,8 @@
             // SpellName
             // 
             this.SpellName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.SpellName.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle63.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.SpellName.DefaultCellStyle = dataGridViewCellStyle63;
             this.SpellName.HeaderText = "SpellName";
             this.SpellName.MaxInputLength = 50;
             this.SpellName.MinimumWidth = 8;
@@ -417,8 +448,8 @@
             // CastTime
             // 
             this.CastTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CastTime.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle64.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CastTime.DefaultCellStyle = dataGridViewCellStyle64;
             this.CastTime.HeaderText = "CastTime";
             this.CastTime.MaxInputLength = 10;
             this.CastTime.MinimumWidth = 8;
@@ -429,8 +460,8 @@
             // MinCastStartTime
             // 
             this.MinCastStartTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.MinCastStartTime.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle65.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.MinCastStartTime.DefaultCellStyle = dataGridViewCellStyle65;
             this.MinCastStartTime.HeaderText = "MinCastStartTime";
             this.MinCastStartTime.MaxInputLength = 10;
             this.MinCastStartTime.MinimumWidth = 8;
@@ -441,8 +472,8 @@
             // MaxCastStartTime
             // 
             this.MaxCastStartTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.MaxCastStartTime.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle66.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.MaxCastStartTime.DefaultCellStyle = dataGridViewCellStyle66;
             this.MaxCastStartTime.HeaderText = "MaxCastStartTime";
             this.MaxCastStartTime.MaxInputLength = 10;
             this.MaxCastStartTime.MinimumWidth = 8;
@@ -453,8 +484,8 @@
             // MinCastRepeatTime
             // 
             this.MinCastRepeatTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.MinCastRepeatTime.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle67.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.MinCastRepeatTime.DefaultCellStyle = dataGridViewCellStyle67;
             this.MinCastRepeatTime.HeaderText = "MinCastRepeatTime";
             this.MinCastRepeatTime.MaxInputLength = 10;
             this.MinCastRepeatTime.MinimumWidth = 8;
@@ -465,8 +496,8 @@
             // MaxCastRepeatTime
             // 
             this.MaxCastRepeatTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.MaxCastRepeatTime.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle68.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.MaxCastRepeatTime.DefaultCellStyle = dataGridViewCellStyle68;
             this.MaxCastRepeatTime.HeaderText = "MaxCastRepeatTime";
             this.MaxCastRepeatTime.MaxInputLength = 10;
             this.MaxCastRepeatTime.MinimumWidth = 8;
@@ -477,8 +508,8 @@
             // CastsCount
             // 
             this.CastsCount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CastsCount.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle69.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CastsCount.DefaultCellStyle = dataGridViewCellStyle69;
             this.CastsCount.HeaderText = "CastsCount";
             this.CastsCount.MaxInputLength = 4;
             this.CastsCount.MinimumWidth = 8;
@@ -617,18 +648,18 @@
             this.grid_WC_Waypoints.AllowUserToDeleteRows = false;
             this.grid_WC_Waypoints.AllowUserToResizeColumns = false;
             this.grid_WC_Waypoints.AllowUserToResizeRows = false;
-            dataGridViewCellStyle9.NullValue = null;
-            this.grid_WC_Waypoints.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle70.NullValue = null;
+            this.grid_WC_Waypoints.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle70;
             this.grid_WC_Waypoints.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.NullValue = null;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grid_WC_Waypoints.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle71.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle71.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle71.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle71.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle71.NullValue = null;
+            dataGridViewCellStyle71.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle71.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle71.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grid_WC_Waypoints.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle71;
             this.grid_WC_Waypoints.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grid_WC_Waypoints.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.gridColumn_Id,
@@ -641,15 +672,15 @@
             this.gridColumn_HasScript,
             this.WaypointSource});
             this.grid_WC_Waypoints.ContextMenuStrip = this.contextMenuStrip_WC;
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle19.NullValue = null;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grid_WC_Waypoints.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle80.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle80.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle80.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle80.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle80.NullValue = null;
+            dataGridViewCellStyle80.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle80.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle80.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grid_WC_Waypoints.DefaultCellStyle = dataGridViewCellStyle80;
             this.grid_WC_Waypoints.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.grid_WC_Waypoints.Enabled = false;
             this.grid_WC_Waypoints.Location = new System.Drawing.Point(1132, 39);
@@ -657,8 +688,8 @@
             this.grid_WC_Waypoints.Name = "grid_WC_Waypoints";
             this.grid_WC_Waypoints.RowHeadersWidth = 62;
             this.grid_WC_Waypoints.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grid_WC_Waypoints.RowsDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle81.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grid_WC_Waypoints.RowsDefaultCellStyle = dataGridViewCellStyle81;
             this.grid_WC_Waypoints.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grid_WC_Waypoints.Size = new System.Drawing.Size(675, 709);
             this.grid_WC_Waypoints.TabIndex = 28;
@@ -666,8 +697,8 @@
             // 
             // gridColumn_Id
             // 
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.gridColumn_Id.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle72.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.gridColumn_Id.DefaultCellStyle = dataGridViewCellStyle72;
             this.gridColumn_Id.HeaderText = "Id";
             this.gridColumn_Id.MinimumWidth = 8;
             this.gridColumn_Id.Name = "gridColumn_Id";
@@ -677,9 +708,9 @@
             // 
             // gridColumn_PosX
             // 
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle12.NullValue = null;
-            this.gridColumn_PosX.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle73.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle73.NullValue = null;
+            this.gridColumn_PosX.DefaultCellStyle = dataGridViewCellStyle73;
             this.gridColumn_PosX.HeaderText = "PosX";
             this.gridColumn_PosX.MinimumWidth = 8;
             this.gridColumn_PosX.Name = "gridColumn_PosX";
@@ -689,9 +720,9 @@
             // 
             // gridColumn_PosY
             // 
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle13.NullValue = null;
-            this.gridColumn_PosY.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle74.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle74.NullValue = null;
+            this.gridColumn_PosY.DefaultCellStyle = dataGridViewCellStyle74;
             this.gridColumn_PosY.HeaderText = "PosY";
             this.gridColumn_PosY.MinimumWidth = 8;
             this.gridColumn_PosY.Name = "gridColumn_PosY";
@@ -701,8 +732,8 @@
             // 
             // gridColumn_PosZ
             // 
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.gridColumn_PosZ.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle75.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.gridColumn_PosZ.DefaultCellStyle = dataGridViewCellStyle75;
             this.gridColumn_PosZ.HeaderText = "PosZ";
             this.gridColumn_PosZ.MinimumWidth = 8;
             this.gridColumn_PosZ.Name = "gridColumn_PosZ";
@@ -712,8 +743,8 @@
             // 
             // gridColumn_Orientation
             // 
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.gridColumn_Orientation.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle76.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.gridColumn_Orientation.DefaultCellStyle = dataGridViewCellStyle76;
             this.gridColumn_Orientation.HeaderText = "Orientation";
             this.gridColumn_Orientation.MinimumWidth = 8;
             this.gridColumn_Orientation.Name = "gridColumn_Orientation";
@@ -722,8 +753,8 @@
             // 
             // gridColumn_WCTime
             // 
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.gridColumn_WCTime.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle77.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.gridColumn_WCTime.DefaultCellStyle = dataGridViewCellStyle77;
             this.gridColumn_WCTime.HeaderText = "Time";
             this.gridColumn_WCTime.MinimumWidth = 8;
             this.gridColumn_WCTime.Name = "gridColumn_WCTime";
@@ -732,8 +763,8 @@
             // 
             // gridColumn_WCDelay
             // 
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.gridColumn_WCDelay.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle78.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.gridColumn_WCDelay.DefaultCellStyle = dataGridViewCellStyle78;
             this.gridColumn_WCDelay.HeaderText = "Delay";
             this.gridColumn_WCDelay.MinimumWidth = 8;
             this.gridColumn_WCDelay.Name = "gridColumn_WCDelay";
@@ -741,8 +772,8 @@
             // 
             // gridColumn_HasScript
             // 
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.gridColumn_HasScript.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle79.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.gridColumn_HasScript.DefaultCellStyle = dataGridViewCellStyle79;
             this.gridColumn_HasScript.HeaderText = "HasScript";
             this.gridColumn_HasScript.MinimumWidth = 8;
             this.gridColumn_HasScript.Name = "gridColumn_HasScript";
@@ -829,88 +860,88 @@
             this.chart_WC.BorderSkin.BackColor = System.Drawing.Color.Transparent;
             this.chart_WC.BorderSkin.BorderColor = System.Drawing.Color.Transparent;
             this.chart_WC.BorderSkin.BorderWidth = 0;
-            chartArea1.AlignmentOrientation = ((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations)((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Vertical | System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal)));
-            chartArea1.AxisX.IsReversed = true;
-            chartArea1.AxisX.IsStartedFromZero = false;
-            chartArea1.AxisX.LabelStyle.ForeColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisX.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisX.MajorGrid.Enabled = false;
-            chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisX.MajorTickMark.Enabled = false;
-            chartArea1.AxisX.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisX.MinorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisX.MinorTickMark.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisX.MinorTickMark.TickMarkStyle = System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.None;
-            chartArea1.AxisX.ScaleBreakStyle.Enabled = true;
-            chartArea1.AxisX.ScaleBreakStyle.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.Silver;
-            chartArea1.AxisX.ScrollBar.LineColor = System.Drawing.Color.Black;
-            chartArea1.AxisX.TitleForeColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisX2.MajorGrid.Enabled = false;
-            chartArea1.AxisX2.MajorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisX2.MajorTickMark.Enabled = false;
-            chartArea1.AxisX2.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisX2.MinorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisY.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
-            chartArea1.AxisY.IsStartedFromZero = false;
-            chartArea1.AxisY.LabelStyle.Enabled = false;
-            chartArea1.AxisY.LabelStyle.IsEndLabelVisible = false;
-            chartArea1.AxisY.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisY.MajorGrid.Enabled = false;
-            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisY.MajorTickMark.Enabled = false;
-            chartArea1.AxisY.MinorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisY.MinorTickMark.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisY.MinorTickMark.TickMarkStyle = System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.None;
-            chartArea1.AxisY.ScaleBreakStyle.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.Silver;
-            chartArea1.AxisY.ScrollBar.LineColor = System.Drawing.Color.Black;
-            chartArea1.AxisY.TitleForeColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisY2.MajorGrid.Enabled = false;
-            chartArea1.AxisY2.MajorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisY2.MajorTickMark.Enabled = false;
-            chartArea1.AxisY2.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisY2.MinorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisY2.MinorTickMark.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.BorderColor = System.Drawing.Color.Transparent;
-            chartArea1.CursorX.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea1.CursorX.IsUserEnabled = true;
-            chartArea1.CursorX.IsUserSelectionEnabled = true;
-            chartArea1.CursorX.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            chartArea1.CursorY.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea1.CursorY.IsUserEnabled = true;
-            chartArea1.CursorY.IsUserSelectionEnabled = true;
-            chartArea1.CursorY.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            chartArea1.Name = "ChartArea1";
-            this.chart_WC.ChartAreas.Add(chartArea1);
+            chartArea3.AlignmentOrientation = ((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations)((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Vertical | System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal)));
+            chartArea3.AxisX.IsReversed = true;
+            chartArea3.AxisX.IsStartedFromZero = false;
+            chartArea3.AxisX.LabelStyle.ForeColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisX.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisX.MajorGrid.Enabled = false;
+            chartArea3.AxisX.MajorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisX.MajorTickMark.Enabled = false;
+            chartArea3.AxisX.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisX.MinorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisX.MinorTickMark.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisX.MinorTickMark.TickMarkStyle = System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.None;
+            chartArea3.AxisX.ScaleBreakStyle.Enabled = true;
+            chartArea3.AxisX.ScaleBreakStyle.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.Silver;
+            chartArea3.AxisX.ScrollBar.LineColor = System.Drawing.Color.Black;
+            chartArea3.AxisX.TitleForeColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisX2.MajorGrid.Enabled = false;
+            chartArea3.AxisX2.MajorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisX2.MajorTickMark.Enabled = false;
+            chartArea3.AxisX2.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisX2.MinorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisY.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
+            chartArea3.AxisY.IsStartedFromZero = false;
+            chartArea3.AxisY.LabelStyle.Enabled = false;
+            chartArea3.AxisY.LabelStyle.IsEndLabelVisible = false;
+            chartArea3.AxisY.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisY.MajorGrid.Enabled = false;
+            chartArea3.AxisY.MajorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisY.MajorTickMark.Enabled = false;
+            chartArea3.AxisY.MinorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisY.MinorTickMark.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisY.MinorTickMark.TickMarkStyle = System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.None;
+            chartArea3.AxisY.ScaleBreakStyle.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.Silver;
+            chartArea3.AxisY.ScrollBar.LineColor = System.Drawing.Color.Black;
+            chartArea3.AxisY.TitleForeColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisY2.MajorGrid.Enabled = false;
+            chartArea3.AxisY2.MajorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisY2.MajorTickMark.Enabled = false;
+            chartArea3.AxisY2.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisY2.MinorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisY2.MinorTickMark.LineColor = System.Drawing.Color.Transparent;
+            chartArea3.BorderColor = System.Drawing.Color.Transparent;
+            chartArea3.CursorX.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea3.CursorX.IsUserEnabled = true;
+            chartArea3.CursorX.IsUserSelectionEnabled = true;
+            chartArea3.CursorX.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            chartArea3.CursorY.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea3.CursorY.IsUserEnabled = true;
+            chartArea3.CursorY.IsUserSelectionEnabled = true;
+            chartArea3.CursorY.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            chartArea3.Name = "ChartArea1";
+            this.chart_WC.ChartAreas.Add(chartArea3);
             this.chart_WC.Enabled = false;
-            legend1.Enabled = false;
-            legend1.ForeColor = System.Drawing.Color.Transparent;
-            legend1.HeaderSeparatorColor = System.Drawing.Color.Transparent;
-            legend1.ItemColumnSeparatorColor = System.Drawing.Color.Transparent;
-            legend1.Name = "Legend1";
-            legend1.TitleForeColor = System.Drawing.Color.Transparent;
-            legend1.TitleSeparatorColor = System.Drawing.Color.Transparent;
-            this.chart_WC.Legends.Add(legend1);
+            legend3.Enabled = false;
+            legend3.ForeColor = System.Drawing.Color.Transparent;
+            legend3.HeaderSeparatorColor = System.Drawing.Color.Transparent;
+            legend3.ItemColumnSeparatorColor = System.Drawing.Color.Transparent;
+            legend3.Name = "Legend1";
+            legend3.TitleForeColor = System.Drawing.Color.Transparent;
+            legend3.TitleSeparatorColor = System.Drawing.Color.Transparent;
+            this.chart_WC.Legends.Add(legend3);
             this.chart_WC.Location = new System.Drawing.Point(4, 39);
             this.chart_WC.Margin = new System.Windows.Forms.Padding(4);
             this.chart_WC.Name = "chart_WC";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
-            series1.Color = System.Drawing.Color.Red;
-            series1.Legend = "Legend1";
-            series1.Name = "Path";
-            series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
-            series1.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
-            this.chart_WC.Series.Add(series1);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series3.Color = System.Drawing.Color.Red;
+            series3.Legend = "Legend1";
+            series3.Name = "Path";
+            series3.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
+            series3.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
+            this.chart_WC.Series.Add(series3);
             this.chart_WC.Size = new System.Drawing.Size(795, 710);
             this.chart_WC.TabIndex = 26;
             this.chart_WC.Text = "Waypoints";
-            title1.DockedToChartArea = "ChartArea1";
-            title1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title1.Name = "Path";
-            title1.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Horizontal;
-            this.chart_WC.Titles.Add(title1);
+            title3.DockedToChartArea = "ChartArea1";
+            title3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title3.Name = "Path";
+            title3.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Horizontal;
+            this.chart_WC.Titles.Add(title3);
             // 
             // toolStrip_WC
             // 
@@ -2335,8 +2366,8 @@
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle43;
             this.dataGridViewTextBoxColumn1.HeaderText = "Entry";
             this.dataGridViewTextBoxColumn1.MaxInputLength = 10;
             this.dataGridViewTextBoxColumn1.MinimumWidth = 8;
@@ -2347,8 +2378,8 @@
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle44;
             this.dataGridViewTextBoxColumn2.HeaderText = "InitMin";
             this.dataGridViewTextBoxColumn2.MaxInputLength = 50;
             this.dataGridViewTextBoxColumn2.MinimumWidth = 8;
@@ -2359,8 +2390,8 @@
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle53;
             this.dataGridViewTextBoxColumn3.HeaderText = "InitMax";
             this.dataGridViewTextBoxColumn3.MaxInputLength = 10;
             this.dataGridViewTextBoxColumn3.MinimumWidth = 8;
@@ -2371,8 +2402,8 @@
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle54;
             this.dataGridViewTextBoxColumn4.HeaderText = "RepeatMin";
             this.dataGridViewTextBoxColumn4.MaxInputLength = 10;
             this.dataGridViewTextBoxColumn4.MinimumWidth = 8;
@@ -2383,8 +2414,8 @@
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle82.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle82;
             this.dataGridViewTextBoxColumn5.HeaderText = "RepeatMax";
             this.dataGridViewTextBoxColumn5.MaxInputLength = 10;
             this.dataGridViewTextBoxColumn5.MinimumWidth = 8;
@@ -2395,8 +2426,8 @@
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle83.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle83;
             this.dataGridViewTextBoxColumn6.HeaderText = "RepeatFail";
             this.dataGridViewTextBoxColumn6.MaxInputLength = 10;
             this.dataGridViewTextBoxColumn6.MinimumWidth = 8;
@@ -2414,8 +2445,8 @@
             // dataGridViewTextBoxColumn7
             // 
             this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle84.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle84;
             this.dataGridViewTextBoxColumn7.HeaderText = "EventCheck";
             this.dataGridViewTextBoxColumn7.MaxInputLength = 10;
             this.dataGridViewTextBoxColumn7.MinimumWidth = 8;
@@ -2426,8 +2457,8 @@
             // dataGridViewTextBoxColumn8
             // 
             this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle85.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle85;
             this.dataGridViewTextBoxColumn8.HeaderText = "EventFlags";
             this.dataGridViewTextBoxColumn8.MaxInputLength = 4;
             this.dataGridViewTextBoxColumn8.MinimumWidth = 8;
@@ -2452,9 +2483,7 @@
             this.tableLayoutPanel3.Controls.Add(this.CombatAI_RepeatMin_TextBox, 1, 7);
             this.tableLayoutPanel3.Controls.Add(this.label12, 0, 7);
             this.tableLayoutPanel3.Controls.Add(this.CombatAI_InitMax_TextBox, 1, 6);
-            this.tableLayoutPanel3.Controls.Add(this.label18, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.CombatAI_SearchData_DB_Button, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.button3, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.CombatAI_RepeatMax_Label, 0, 6);
             this.tableLayoutPanel3.Controls.Add(this.label14, 0, 9);
             this.tableLayoutPanel3.Controls.Add(this.label10, 0, 5);
@@ -2470,7 +2499,6 @@
             this.tableLayoutPanel3.Controls.Add(this.CombatAI_Add_ScriptData_Button, 0, 13);
             this.tableLayoutPanel3.Controls.Add(this.CombatAI_EventFlags_CheckedBox, 1, 10);
             this.tableLayoutPanel3.Controls.Add(this.CombatAI_ClearData_Button, 1, 15);
-            this.tableLayoutPanel3.Controls.Add(this.CombatAI_DungeonDataMap_ComboBox, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.CombatAI_GenerateSQL_Button, 1, 13);
             this.tableLayoutPanel3.Controls.Add(this.CombatAI_UpdateRow_Button, 0, 15);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(8, 7);
@@ -2493,13 +2521,14 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(485, 743);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // CombatAI_RepeatMax_TextBox
             // 
             this.CombatAI_RepeatMax_TextBox.Enabled = false;
-            this.CombatAI_RepeatMax_TextBox.Location = new System.Drawing.Point(204, 197);
+            this.CombatAI_RepeatMax_TextBox.Location = new System.Drawing.Point(204, 167);
             this.CombatAI_RepeatMax_TextBox.Margin = new System.Windows.Forms.Padding(4);
             this.CombatAI_RepeatMax_TextBox.Name = "CombatAI_RepeatMax_TextBox";
             this.CombatAI_RepeatMax_TextBox.Size = new System.Drawing.Size(132, 22);
@@ -2509,7 +2538,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(4, 193);
+            this.label13.Location = new System.Drawing.Point(4, 163);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(83, 17);
@@ -2519,7 +2548,7 @@
             // CombatAI_RepeatMin_TextBox
             // 
             this.CombatAI_RepeatMin_TextBox.Enabled = false;
-            this.CombatAI_RepeatMin_TextBox.Location = new System.Drawing.Point(204, 167);
+            this.CombatAI_RepeatMin_TextBox.Location = new System.Drawing.Point(204, 137);
             this.CombatAI_RepeatMin_TextBox.Margin = new System.Windows.Forms.Padding(4);
             this.CombatAI_RepeatMin_TextBox.Name = "CombatAI_RepeatMin_TextBox";
             this.CombatAI_RepeatMin_TextBox.Size = new System.Drawing.Size(132, 22);
@@ -2529,7 +2558,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(4, 163);
+            this.label12.Location = new System.Drawing.Point(4, 133);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(84, 17);
@@ -2539,23 +2568,12 @@
             // CombatAI_InitMax_TextBox
             // 
             this.CombatAI_InitMax_TextBox.Enabled = false;
-            this.CombatAI_InitMax_TextBox.Location = new System.Drawing.Point(204, 137);
+            this.CombatAI_InitMax_TextBox.Location = new System.Drawing.Point(204, 107);
             this.CombatAI_InitMax_TextBox.Margin = new System.Windows.Forms.Padding(4);
             this.CombatAI_InitMax_TextBox.Name = "CombatAI_InitMax_TextBox";
             this.CombatAI_InitMax_TextBox.Size = new System.Drawing.Size(132, 22);
             this.CombatAI_InitMax_TextBox.TabIndex = 14;
             this.CombatAI_InitMax_TextBox.TabStop = false;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Enabled = false;
-            this.label18.Location = new System.Drawing.Point(4, 43);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(82, 17);
-            this.label18.TabIndex = 27;
-            this.label18.Text = "Select Map:";
             // 
             // CombatAI_SearchData_DB_Button
             // 
@@ -2567,19 +2585,10 @@
             this.CombatAI_SearchData_DB_Button.UseVisualStyleBackColor = true;
             this.CombatAI_SearchData_DB_Button.Click += new System.EventHandler(this.CombatAI_SearchData_DB_Button_Click);
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(3, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(193, 37);
-            this.button3.TabIndex = 19;
-            this.button3.Text = "Import DungeonData Addon";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // CombatAI_RepeatMax_Label
             // 
             this.CombatAI_RepeatMax_Label.AutoSize = true;
-            this.CombatAI_RepeatMax_Label.Location = new System.Drawing.Point(4, 133);
+            this.CombatAI_RepeatMax_Label.Location = new System.Drawing.Point(4, 103);
             this.CombatAI_RepeatMax_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CombatAI_RepeatMax_Label.Name = "CombatAI_RepeatMax_Label";
             this.CombatAI_RepeatMax_Label.Size = new System.Drawing.Size(55, 17);
@@ -2589,7 +2598,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(4, 223);
+            this.label14.Location = new System.Drawing.Point(4, 193);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(88, 17);
@@ -2599,7 +2608,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(4, 103);
+            this.label10.Location = new System.Drawing.Point(4, 73);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(60, 17);
@@ -2609,7 +2618,7 @@
             // CombatAI_InitMin_TextBox
             // 
             this.CombatAI_InitMin_TextBox.Enabled = false;
-            this.CombatAI_InitMin_TextBox.Location = new System.Drawing.Point(204, 107);
+            this.CombatAI_InitMin_TextBox.Location = new System.Drawing.Point(204, 77);
             this.CombatAI_InitMin_TextBox.Margin = new System.Windows.Forms.Padding(4);
             this.CombatAI_InitMin_TextBox.Name = "CombatAI_InitMin_TextBox";
             this.CombatAI_InitMin_TextBox.Size = new System.Drawing.Size(132, 22);
@@ -2619,7 +2628,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(4, 255);
+            this.label16.Location = new System.Drawing.Point(4, 225);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(90, 17);
@@ -2629,7 +2638,7 @@
             // CombatAI_NpcEntry_Label
             // 
             this.CombatAI_NpcEntry_Label.AutoSize = true;
-            this.CombatAI_NpcEntry_Label.Location = new System.Drawing.Point(4, 73);
+            this.CombatAI_NpcEntry_Label.Location = new System.Drawing.Point(4, 43);
             this.CombatAI_NpcEntry_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CombatAI_NpcEntry_Label.Name = "CombatAI_NpcEntry_Label";
             this.CombatAI_NpcEntry_Label.Size = new System.Drawing.Size(74, 17);
@@ -2639,7 +2648,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(4, 505);
+            this.label15.Location = new System.Drawing.Point(4, 475);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(83, 17);
@@ -2648,7 +2657,7 @@
             // 
             // CombatAI_NpcEntry_TextBox
             // 
-            this.CombatAI_NpcEntry_TextBox.Location = new System.Drawing.Point(204, 77);
+            this.CombatAI_NpcEntry_TextBox.Location = new System.Drawing.Point(204, 47);
             this.CombatAI_NpcEntry_TextBox.Margin = new System.Windows.Forms.Padding(4);
             this.CombatAI_NpcEntry_TextBox.Name = "CombatAI_NpcEntry_TextBox";
             this.CombatAI_NpcEntry_TextBox.Size = new System.Drawing.Size(132, 22);
@@ -2659,7 +2668,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(4, 535);
+            this.label17.Location = new System.Drawing.Point(4, 505);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(64, 17);
@@ -2684,7 +2693,7 @@
             "AoENonSelfPositiveDispel    ",
             "FarthestNegative            ",
             "TopAggroTarget              "});
-            this.CombatAI_EventType_ComboBox.Location = new System.Drawing.Point(204, 227);
+            this.CombatAI_EventType_ComboBox.Location = new System.Drawing.Point(204, 197);
             this.CombatAI_EventType_ComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.CombatAI_EventType_ComboBox.Name = "CombatAI_EventType_ComboBox";
             this.CombatAI_EventType_ComboBox.Size = new System.Drawing.Size(276, 24);
@@ -2694,7 +2703,7 @@
             // CombatAI_AttackDist_TextBox
             // 
             this.CombatAI_AttackDist_TextBox.Enabled = false;
-            this.CombatAI_AttackDist_TextBox.Location = new System.Drawing.Point(204, 509);
+            this.CombatAI_AttackDist_TextBox.Location = new System.Drawing.Point(204, 479);
             this.CombatAI_AttackDist_TextBox.Margin = new System.Windows.Forms.Padding(4);
             this.CombatAI_AttackDist_TextBox.Name = "CombatAI_AttackDist_TextBox";
             this.CombatAI_AttackDist_TextBox.Size = new System.Drawing.Size(132, 22);
@@ -2705,7 +2714,7 @@
             // CombatAI_Spell_Id_TextBox
             // 
             this.CombatAI_Spell_Id_TextBox.Enabled = false;
-            this.CombatAI_Spell_Id_TextBox.Location = new System.Drawing.Point(204, 539);
+            this.CombatAI_Spell_Id_TextBox.Location = new System.Drawing.Point(204, 509);
             this.CombatAI_Spell_Id_TextBox.Margin = new System.Windows.Forms.Padding(4);
             this.CombatAI_Spell_Id_TextBox.Name = "CombatAI_Spell_Id_TextBox";
             this.CombatAI_Spell_Id_TextBox.Size = new System.Drawing.Size(132, 22);
@@ -2715,7 +2724,7 @@
             // CombatAI_Add_ScriptData_Button
             // 
             this.CombatAI_Add_ScriptData_Button.Enabled = false;
-            this.CombatAI_Add_ScriptData_Button.Location = new System.Drawing.Point(4, 569);
+            this.CombatAI_Add_ScriptData_Button.Location = new System.Drawing.Point(4, 539);
             this.CombatAI_Add_ScriptData_Button.Margin = new System.Windows.Forms.Padding(4);
             this.CombatAI_Add_ScriptData_Button.Name = "CombatAI_Add_ScriptData_Button";
             this.CombatAI_Add_ScriptData_Button.Size = new System.Drawing.Size(192, 28);
@@ -2747,7 +2756,7 @@
             "CastOnTargetPosition     ",
             "AddKnockbackImmunities   ",
             "CastOnJustReachedHome"});
-            this.CombatAI_EventFlags_CheckedBox.Location = new System.Drawing.Point(204, 259);
+            this.CombatAI_EventFlags_CheckedBox.Location = new System.Drawing.Point(204, 229);
             this.CombatAI_EventFlags_CheckedBox.Margin = new System.Windows.Forms.Padding(4);
             this.CombatAI_EventFlags_CheckedBox.Name = "CombatAI_EventFlags_CheckedBox";
             this.CombatAI_EventFlags_CheckedBox.Size = new System.Drawing.Size(276, 242);
@@ -2755,7 +2764,7 @@
             // 
             // CombatAI_ClearData_Button
             // 
-            this.CombatAI_ClearData_Button.Location = new System.Drawing.Point(204, 605);
+            this.CombatAI_ClearData_Button.Location = new System.Drawing.Point(204, 575);
             this.CombatAI_ClearData_Button.Margin = new System.Windows.Forms.Padding(4);
             this.CombatAI_ClearData_Button.Name = "CombatAI_ClearData_Button";
             this.CombatAI_ClearData_Button.Size = new System.Drawing.Size(133, 28);
@@ -2764,18 +2773,9 @@
             this.CombatAI_ClearData_Button.UseVisualStyleBackColor = true;
             this.CombatAI_ClearData_Button.Click += new System.EventHandler(this.CombatAI_ClearData_Button_Click);
             // 
-            // CombatAI_DungeonDataMap_ComboBox
-            // 
-            this.CombatAI_DungeonDataMap_ComboBox.Enabled = false;
-            this.CombatAI_DungeonDataMap_ComboBox.FormattingEnabled = true;
-            this.CombatAI_DungeonDataMap_ComboBox.Location = new System.Drawing.Point(203, 46);
-            this.CombatAI_DungeonDataMap_ComboBox.Name = "CombatAI_DungeonDataMap_ComboBox";
-            this.CombatAI_DungeonDataMap_ComboBox.Size = new System.Drawing.Size(279, 24);
-            this.CombatAI_DungeonDataMap_ComboBox.TabIndex = 26;
-            // 
             // CombatAI_GenerateSQL_Button
             // 
-            this.CombatAI_GenerateSQL_Button.Location = new System.Drawing.Point(204, 569);
+            this.CombatAI_GenerateSQL_Button.Location = new System.Drawing.Point(204, 539);
             this.CombatAI_GenerateSQL_Button.Margin = new System.Windows.Forms.Padding(4);
             this.CombatAI_GenerateSQL_Button.Name = "CombatAI_GenerateSQL_Button";
             this.CombatAI_GenerateSQL_Button.Size = new System.Drawing.Size(133, 28);
@@ -2783,6 +2783,16 @@
             this.CombatAI_GenerateSQL_Button.Text = "Generate SQL";
             this.CombatAI_GenerateSQL_Button.UseVisualStyleBackColor = true;
             this.CombatAI_GenerateSQL_Button.Click += new System.EventHandler(this.CombatAI_GenerateSQL_Button_Click);
+            // 
+            // CombatAI_UpdateRow_Button
+            // 
+            this.CombatAI_UpdateRow_Button.Location = new System.Drawing.Point(3, 574);
+            this.CombatAI_UpdateRow_Button.Name = "CombatAI_UpdateRow_Button";
+            this.CombatAI_UpdateRow_Button.Size = new System.Drawing.Size(193, 23);
+            this.CombatAI_UpdateRow_Button.TabIndex = 28;
+            this.CombatAI_UpdateRow_Button.Text = "Update Row Selected";
+            this.CombatAI_UpdateRow_Button.UseVisualStyleBackColor = true;
+            this.CombatAI_UpdateRow_Button.Click += new System.EventHandler(this.CombatAI_UpdateRow_Button_Click);
             // 
             // ObjectTemplateHelper_Tab
             // 
@@ -3018,7 +3028,9 @@
             // 
             // tabDungeonDataInfoParser
             // 
+            this.tabDungeonDataInfoParser.Controls.Add(this.DungeonDataInfo_Npc_CheckListBox);
             this.tabDungeonDataInfoParser.Controls.Add(this.tableLayoutPanel6);
+            this.tabDungeonDataInfoParser.Controls.Add(this.DungeonDataInfo_SpellTimer_Grid);
             this.tabDungeonDataInfoParser.Location = new System.Drawing.Point(4, 25);
             this.tabDungeonDataInfoParser.Name = "tabDungeonDataInfoParser";
             this.tabDungeonDataInfoParser.Padding = new System.Windows.Forms.Padding(3);
@@ -3027,28 +3039,371 @@
             this.tabDungeonDataInfoParser.Text = "DungeonDataInfo Parser";
             this.tabDungeonDataInfoParser.UseVisualStyleBackColor = true;
             // 
+            // DungeonDataInfo_Npc_CheckListBox
+            // 
+            this.DungeonDataInfo_Npc_CheckListBox.Enabled = false;
+            this.DungeonDataInfo_Npc_CheckListBox.FormattingEnabled = true;
+            this.DungeonDataInfo_Npc_CheckListBox.Location = new System.Drawing.Point(617, 7);
+            this.DungeonDataInfo_Npc_CheckListBox.Name = "DungeonDataInfo_Npc_CheckListBox";
+            this.DungeonDataInfo_Npc_CheckListBox.Size = new System.Drawing.Size(289, 735);
+            this.DungeonDataInfo_Npc_CheckListBox.TabIndex = 32;
+            this.DungeonDataInfo_Npc_CheckListBox.SelectedIndexChanged += new System.EventHandler(this.DungeonDataInfo_Npc_CheckListBox_ItemCheck);
+            // 
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.ColumnCount = 2;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Controls.Add(this.button1, 1, 0);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(5, 6);
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 285F));
+            this.tableLayoutPanel6.Controls.Add(this.DungeonDataInfo_CalcTimers_Button, 0, 12);
+            this.tableLayoutPanel6.Controls.Add(this.DungeonDataInfo_ImportFile_Button, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.label18, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.DungeonDataInfo_Map_ComboBox, 1, 1);
+            this.tableLayoutPanel6.Controls.Add(this.label25, 0, 2);
+            this.tableLayoutPanel6.Controls.Add(this.DungeonDataInfo_NpcEntry_TextBox, 1, 2);
+            this.tableLayoutPanel6.Controls.Add(this.DungeonDataInfo_InitMin_TextBox, 1, 3);
+            this.tableLayoutPanel6.Controls.Add(this.label23, 0, 3);
+            this.tableLayoutPanel6.Controls.Add(this.label21, 0, 4);
+            this.tableLayoutPanel6.Controls.Add(this.label20, 0, 5);
+            this.tableLayoutPanel6.Controls.Add(this.label19, 0, 6);
+            this.tableLayoutPanel6.Controls.Add(this.label22, 0, 7);
+            this.tableLayoutPanel6.Controls.Add(this.label24, 0, 8);
+            this.tableLayoutPanel6.Controls.Add(this.label26, 0, 9);
+            this.tableLayoutPanel6.Controls.Add(this.label27, 0, 10);
+            this.tableLayoutPanel6.Controls.Add(this.DungeonDataInfo_InitMax_TextBox, 1, 4);
+            this.tableLayoutPanel6.Controls.Add(this.DungeonDataInfo_RepeatMin_TextBox, 1, 5);
+            this.tableLayoutPanel6.Controls.Add(this.DungeonDataInfo_RepeatMax_TextBox, 1, 6);
+            this.tableLayoutPanel6.Controls.Add(this.DungeonDataInfo__EventType_TextBox, 1, 7);
+            this.tableLayoutPanel6.Controls.Add(this.DungeonDataInfo_EventFlags_TextBox, 1, 8);
+            this.tableLayoutPanel6.Controls.Add(this.DungeonDataInfo_AttackDist_TextBox, 1, 9);
+            this.tableLayoutPanel6.Controls.Add(this.DungeonDataInfo_SpellId_TextBox, 1, 10);
+            this.tableLayoutPanel6.Controls.Add(this.DungeonDataInfo_Add_Script_Button, 0, 11);
+            this.tableLayoutPanel6.Controls.Add(this.DungeonDataInfo_GenerateQueries_Button, 1, 11);
+            this.tableLayoutPanel6.Controls.Add(this.DungeonDataInfo_ClearScriptData_Button, 1, 0);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(7, 7);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 2;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(200, 100);
-            this.tableLayoutPanel6.TabIndex = 0;
+            this.tableLayoutPanel6.RowCount = 13;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(603, 743);
+            this.tableLayoutPanel6.TabIndex = 30;
             // 
-            // button1
+            // DungeonDataInfo_ImportFile_Button
             // 
-            this.button1.Location = new System.Drawing.Point(103, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 44);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.DungeonDataInfo_ImportFile_Button.Location = new System.Drawing.Point(3, 3);
+            this.DungeonDataInfo_ImportFile_Button.Name = "DungeonDataInfo_ImportFile_Button";
+            this.DungeonDataInfo_ImportFile_Button.Size = new System.Drawing.Size(193, 55);
+            this.DungeonDataInfo_ImportFile_Button.TabIndex = 29;
+            this.DungeonDataInfo_ImportFile_Button.Text = "Import DungeonData Addon";
+            this.DungeonDataInfo_ImportFile_Button.UseVisualStyleBackColor = true;
+            this.DungeonDataInfo_ImportFile_Button.Click += new System.EventHandler(this.DungeonDataInfo_ImportFile_Button_Click);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(4, 61);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(82, 17);
+            this.label18.TabIndex = 29;
+            this.label18.Text = "Select Map:";
+            // 
+            // DungeonDataInfo_Map_ComboBox
+            // 
+            this.DungeonDataInfo_Map_ComboBox.Enabled = false;
+            this.DungeonDataInfo_Map_ComboBox.FormattingEnabled = true;
+            this.DungeonDataInfo_Map_ComboBox.Location = new System.Drawing.Point(203, 64);
+            this.DungeonDataInfo_Map_ComboBox.Name = "DungeonDataInfo_Map_ComboBox";
+            this.DungeonDataInfo_Map_ComboBox.Size = new System.Drawing.Size(279, 24);
+            this.DungeonDataInfo_Map_ComboBox.TabIndex = 28;
+            this.DungeonDataInfo_Map_ComboBox.SelectedIndexChanged += new System.EventHandler(this.DungeonDataInfo_Map_ComboBox_SelectedIndexChanged);
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(4, 91);
+            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(74, 17);
+            this.label25.TabIndex = 0;
+            this.label25.Text = "Npc Entry:";
+            // 
+            // DungeonDataInfo_NpcEntry_TextBox
+            // 
+            this.DungeonDataInfo_NpcEntry_TextBox.Enabled = false;
+            this.DungeonDataInfo_NpcEntry_TextBox.Location = new System.Drawing.Point(204, 95);
+            this.DungeonDataInfo_NpcEntry_TextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.DungeonDataInfo_NpcEntry_TextBox.Name = "DungeonDataInfo_NpcEntry_TextBox";
+            this.DungeonDataInfo_NpcEntry_TextBox.Size = new System.Drawing.Size(132, 22);
+            this.DungeonDataInfo_NpcEntry_TextBox.TabIndex = 11;
+            // 
+            // DungeonDataInfo_InitMin_TextBox
+            // 
+            this.DungeonDataInfo_InitMin_TextBox.Enabled = false;
+            this.DungeonDataInfo_InitMin_TextBox.Location = new System.Drawing.Point(204, 125);
+            this.DungeonDataInfo_InitMin_TextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.DungeonDataInfo_InitMin_TextBox.Name = "DungeonDataInfo_InitMin_TextBox";
+            this.DungeonDataInfo_InitMin_TextBox.Size = new System.Drawing.Size(132, 22);
+            this.DungeonDataInfo_InitMin_TextBox.TabIndex = 9;
+            this.DungeonDataInfo_InitMin_TextBox.TabStop = false;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(4, 121);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(60, 17);
+            this.label23.TabIndex = 1;
+            this.label23.Text = "Init Min: ";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(4, 151);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(55, 17);
+            this.label21.TabIndex = 2;
+            this.label21.Text = "InitMax:";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(4, 181);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(84, 17);
+            this.label20.TabIndex = 3;
+            this.label20.Text = "RepeatMin: ";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(4, 211);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(83, 17);
+            this.label19.TabIndex = 4;
+            this.label19.Text = "RepeatMax:";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(4, 241);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(88, 17);
+            this.label22.TabIndex = 5;
+            this.label22.Text = "Event Type: ";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(4, 273);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(90, 17);
+            this.label24.TabIndex = 7;
+            this.label24.Text = "Event Flags: ";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(4, 353);
+            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(83, 17);
+            this.label26.TabIndex = 6;
+            this.label26.Text = "Attack Dist: ";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(4, 383);
+            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(64, 17);
+            this.label27.TabIndex = 8;
+            this.label27.Text = "Spell ID: ";
+            // 
+            // DungeonDataInfo_InitMax_TextBox
+            // 
+            this.DungeonDataInfo_InitMax_TextBox.Enabled = false;
+            this.DungeonDataInfo_InitMax_TextBox.Location = new System.Drawing.Point(204, 155);
+            this.DungeonDataInfo_InitMax_TextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.DungeonDataInfo_InitMax_TextBox.Name = "DungeonDataInfo_InitMax_TextBox";
+            this.DungeonDataInfo_InitMax_TextBox.Size = new System.Drawing.Size(132, 22);
+            this.DungeonDataInfo_InitMax_TextBox.TabIndex = 14;
+            this.DungeonDataInfo_InitMax_TextBox.TabStop = false;
+            // 
+            // DungeonDataInfo_RepeatMin_TextBox
+            // 
+            this.DungeonDataInfo_RepeatMin_TextBox.Enabled = false;
+            this.DungeonDataInfo_RepeatMin_TextBox.Location = new System.Drawing.Point(204, 185);
+            this.DungeonDataInfo_RepeatMin_TextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.DungeonDataInfo_RepeatMin_TextBox.Name = "DungeonDataInfo_RepeatMin_TextBox";
+            this.DungeonDataInfo_RepeatMin_TextBox.Size = new System.Drawing.Size(132, 22);
+            this.DungeonDataInfo_RepeatMin_TextBox.TabIndex = 17;
+            this.DungeonDataInfo_RepeatMin_TextBox.TabStop = false;
+            // 
+            // DungeonDataInfo_RepeatMax_TextBox
+            // 
+            this.DungeonDataInfo_RepeatMax_TextBox.Enabled = false;
+            this.DungeonDataInfo_RepeatMax_TextBox.Location = new System.Drawing.Point(204, 215);
+            this.DungeonDataInfo_RepeatMax_TextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.DungeonDataInfo_RepeatMax_TextBox.Name = "DungeonDataInfo_RepeatMax_TextBox";
+            this.DungeonDataInfo_RepeatMax_TextBox.Size = new System.Drawing.Size(132, 22);
+            this.DungeonDataInfo_RepeatMax_TextBox.TabIndex = 18;
+            this.DungeonDataInfo_RepeatMax_TextBox.TabStop = false;
+            // 
+            // DungeonDataInfo__EventType_TextBox
+            // 
+            this.DungeonDataInfo__EventType_TextBox.Enabled = false;
+            this.DungeonDataInfo__EventType_TextBox.FormattingEnabled = true;
+            this.DungeonDataInfo__EventType_TextBox.Items.AddRange(new object[] {
+            "MeleeNegative               ",
+            "RangedNegative              ",
+            "AoENegative                 ",
+            "RangedPositive              ",
+            "AoEPositive                 ",
+            "RangedHeal                  ",
+            "AoEHeal                     ",
+            "NonTankNegative             ",
+            "AoENonSelfPositive          ",
+            "MeleeTopAggro               ",
+            "AoENonSelfPositiveDispel    ",
+            "FarthestNegative            ",
+            "TopAggroTarget              "});
+            this.DungeonDataInfo__EventType_TextBox.Location = new System.Drawing.Point(204, 245);
+            this.DungeonDataInfo__EventType_TextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.DungeonDataInfo__EventType_TextBox.Name = "DungeonDataInfo__EventType_TextBox";
+            this.DungeonDataInfo__EventType_TextBox.Size = new System.Drawing.Size(276, 24);
+            this.DungeonDataInfo__EventType_TextBox.TabIndex = 16;
+            this.DungeonDataInfo__EventType_TextBox.TabStop = false;
+            // 
+            // DungeonDataInfo_EventFlags_TextBox
+            // 
+            this.DungeonDataInfo_EventFlags_TextBox.Enabled = false;
+            this.DungeonDataInfo_EventFlags_TextBox.FormattingEnabled = true;
+            this.DungeonDataInfo_EventFlags_TextBox.Items.AddRange(new object[] {
+            "DisableTurn           ",
+            "CastAfterDeath        ",
+            "CastOnDeath           ",
+            "CastUnderHealthPct    ",
+            "DespawnAfterCast       ",
+            "DontCheckInCombat      ",
+            "DieAfterCast           ",
+            "DespawnSummonsAfterDie ",
+            "DespawnAreaTriggers     ",
+            "CastAfterSpell          ",
+            "DisableMove             ",
+            "DisableMeleeAttack      ",
+            "CanBeRemoved            ",
+            "CanRemoveOtherEvents    ",
+            "CanScheduleOtherEvents  ",
+            "TargetPriorityToPlayers ",
+            "CastOnTargetPosition     ",
+            "AddKnockbackImmunities   ",
+            "CastOnJustReachedHome"});
+            this.DungeonDataInfo_EventFlags_TextBox.Location = new System.Drawing.Point(204, 277);
+            this.DungeonDataInfo_EventFlags_TextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.DungeonDataInfo_EventFlags_TextBox.Name = "DungeonDataInfo_EventFlags_TextBox";
+            this.DungeonDataInfo_EventFlags_TextBox.Size = new System.Drawing.Size(276, 72);
+            this.DungeonDataInfo_EventFlags_TextBox.TabIndex = 23;
+            // 
+            // DungeonDataInfo_AttackDist_TextBox
+            // 
+            this.DungeonDataInfo_AttackDist_TextBox.Enabled = false;
+            this.DungeonDataInfo_AttackDist_TextBox.Location = new System.Drawing.Point(204, 357);
+            this.DungeonDataInfo_AttackDist_TextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.DungeonDataInfo_AttackDist_TextBox.Name = "DungeonDataInfo_AttackDist_TextBox";
+            this.DungeonDataInfo_AttackDist_TextBox.Size = new System.Drawing.Size(276, 22);
+            this.DungeonDataInfo_AttackDist_TextBox.TabIndex = 10;
+            this.DungeonDataInfo_AttackDist_TextBox.TabStop = false;
+            // 
+            // DungeonDataInfo_SpellId_TextBox
+            // 
+            this.DungeonDataInfo_SpellId_TextBox.Enabled = false;
+            this.DungeonDataInfo_SpellId_TextBox.Location = new System.Drawing.Point(204, 387);
+            this.DungeonDataInfo_SpellId_TextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.DungeonDataInfo_SpellId_TextBox.Name = "DungeonDataInfo_SpellId_TextBox";
+            this.DungeonDataInfo_SpellId_TextBox.Size = new System.Drawing.Size(276, 22);
+            this.DungeonDataInfo_SpellId_TextBox.TabIndex = 12;
+            this.DungeonDataInfo_SpellId_TextBox.TabStop = false;
+            // 
+            // DungeonDataInfo_Add_Script_Button
+            // 
+            this.DungeonDataInfo_Add_Script_Button.Enabled = false;
+            this.DungeonDataInfo_Add_Script_Button.Location = new System.Drawing.Point(4, 417);
+            this.DungeonDataInfo_Add_Script_Button.Margin = new System.Windows.Forms.Padding(4);
+            this.DungeonDataInfo_Add_Script_Button.Name = "DungeonDataInfo_Add_Script_Button";
+            this.DungeonDataInfo_Add_Script_Button.Size = new System.Drawing.Size(192, 44);
+            this.DungeonDataInfo_Add_Script_Button.TabIndex = 19;
+            this.DungeonDataInfo_Add_Script_Button.Text = "Add Script Data";
+            this.DungeonDataInfo_Add_Script_Button.UseVisualStyleBackColor = true;
+            this.DungeonDataInfo_Add_Script_Button.Click += new System.EventHandler(this.DungeonDataInfo_Add_Script_Button_Click);
+            // 
+            // DungeonDataInfo_GenerateQueries_Button
+            // 
+            this.DungeonDataInfo_GenerateQueries_Button.Location = new System.Drawing.Point(204, 417);
+            this.DungeonDataInfo_GenerateQueries_Button.Margin = new System.Windows.Forms.Padding(4);
+            this.DungeonDataInfo_GenerateQueries_Button.Name = "DungeonDataInfo_GenerateQueries_Button";
+            this.DungeonDataInfo_GenerateQueries_Button.Size = new System.Drawing.Size(277, 44);
+            this.DungeonDataInfo_GenerateQueries_Button.TabIndex = 21;
+            this.DungeonDataInfo_GenerateQueries_Button.Text = "Generate SQL";
+            this.DungeonDataInfo_GenerateQueries_Button.UseVisualStyleBackColor = true;
+            this.DungeonDataInfo_GenerateQueries_Button.Click += new System.EventHandler(this.DungeonDataInfo_GenerateQueries_Button_Click);
+            // 
+            // DungeonDataInfo_ClearScriptData_Button
+            // 
+            this.DungeonDataInfo_ClearScriptData_Button.Location = new System.Drawing.Point(204, 4);
+            this.DungeonDataInfo_ClearScriptData_Button.Margin = new System.Windows.Forms.Padding(4);
+            this.DungeonDataInfo_ClearScriptData_Button.Name = "DungeonDataInfo_ClearScriptData_Button";
+            this.DungeonDataInfo_ClearScriptData_Button.Size = new System.Drawing.Size(277, 53);
+            this.DungeonDataInfo_ClearScriptData_Button.TabIndex = 20;
+            this.DungeonDataInfo_ClearScriptData_Button.Text = "Clear Script Data";
+            this.DungeonDataInfo_ClearScriptData_Button.UseVisualStyleBackColor = true;
+            // 
+            // DungeonDataInfo_SpellTimer_Grid
+            // 
+            this.DungeonDataInfo_SpellTimer_Grid.AllowUserToAddRows = false;
+            this.DungeonDataInfo_SpellTimer_Grid.AllowUserToDeleteRows = false;
+            this.DungeonDataInfo_SpellTimer_Grid.AllowUserToOrderColumns = true;
+            this.DungeonDataInfo_SpellTimer_Grid.AllowUserToResizeColumns = false;
+            this.DungeonDataInfo_SpellTimer_Grid.AllowUserToResizeRows = false;
+            this.DungeonDataInfo_SpellTimer_Grid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.DungeonDataInfo_SpellTimer_Grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DungeonDataInfo_SpellTimer_Grid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12,
+            this.EventAddedCol});
+            this.DungeonDataInfo_SpellTimer_Grid.ContextMenuStrip = this.contextMenuStrip_CSC;
+            this.DungeonDataInfo_SpellTimer_Grid.Enabled = false;
+            this.DungeonDataInfo_SpellTimer_Grid.Location = new System.Drawing.Point(912, 7);
+            this.DungeonDataInfo_SpellTimer_Grid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DungeonDataInfo_SpellTimer_Grid.MultiSelect = false;
+            this.DungeonDataInfo_SpellTimer_Grid.Name = "DungeonDataInfo_SpellTimer_Grid";
+            this.DungeonDataInfo_SpellTimer_Grid.ReadOnly = true;
+            this.DungeonDataInfo_SpellTimer_Grid.RowHeadersWidth = 62;
+            this.DungeonDataInfo_SpellTimer_Grid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.DungeonDataInfo_SpellTimer_Grid.RowTemplate.Height = 28;
+            this.DungeonDataInfo_SpellTimer_Grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DungeonDataInfo_SpellTimer_Grid.Size = new System.Drawing.Size(840, 740);
+            this.DungeonDataInfo_SpellTimer_Grid.TabIndex = 5;
+            this.DungeonDataInfo_SpellTimer_Grid.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.DungeonDataInfo_SpellTimer_Grid_RowEnter);
             // 
             // statusStrip_LoadedFile
             // 
@@ -3080,15 +3435,60 @@
             // 
             this.openFileDialog.FileName = "openFileDialog_WSC";
             // 
-            // CombatAI_UpdateRow_Button
+            // DungeonDataInfo_CalcTimers_Button
             // 
-            this.CombatAI_UpdateRow_Button.Location = new System.Drawing.Point(3, 604);
-            this.CombatAI_UpdateRow_Button.Name = "CombatAI_UpdateRow_Button";
-            this.CombatAI_UpdateRow_Button.Size = new System.Drawing.Size(193, 23);
-            this.CombatAI_UpdateRow_Button.TabIndex = 28;
-            this.CombatAI_UpdateRow_Button.Text = "Update Row Selected";
-            this.CombatAI_UpdateRow_Button.UseVisualStyleBackColor = true;
-            this.CombatAI_UpdateRow_Button.Click += new System.EventHandler(this.CombatAI_UpdateRow_Button_Click);
+            this.DungeonDataInfo_CalcTimers_Button.Location = new System.Drawing.Point(3, 468);
+            this.DungeonDataInfo_CalcTimers_Button.Name = "DungeonDataInfo_CalcTimers_Button";
+            this.DungeonDataInfo_CalcTimers_Button.Size = new System.Drawing.Size(193, 44);
+            this.DungeonDataInfo_CalcTimers_Button.TabIndex = 33;
+            this.DungeonDataInfo_CalcTimers_Button.Text = "Calculate Average Timers of Spell Selected";
+            this.DungeonDataInfo_CalcTimers_Button.UseVisualStyleBackColor = true;
+            this.DungeonDataInfo_CalcTimers_Button.Click += new System.EventHandler(this.DungeonDataInfo_CalcTimers_Button_Click);
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            dataGridViewCellStyle59.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle59;
+            this.dataGridViewTextBoxColumn10.HeaderText = "Spell ID";
+            this.dataGridViewTextBoxColumn10.MaxInputLength = 50;
+            this.dataGridViewTextBoxColumn10.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            this.dataGridViewTextBoxColumn10.Width = 85;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            dataGridViewCellStyle60.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn11.DefaultCellStyle = dataGridViewCellStyle60;
+            this.dataGridViewTextBoxColumn11.HeaderText = "InitTimers";
+            this.dataGridViewTextBoxColumn11.MaxInputLength = 50;
+            this.dataGridViewTextBoxColumn11.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            this.dataGridViewTextBoxColumn11.Width = 98;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            dataGridViewCellStyle61.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn12.DefaultCellStyle = dataGridViewCellStyle61;
+            this.dataGridViewTextBoxColumn12.HeaderText = "RepeatTimers";
+            this.dataGridViewTextBoxColumn12.MaxInputLength = 50;
+            this.dataGridViewTextBoxColumn12.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            this.dataGridViewTextBoxColumn12.Width = 126;
+            // 
+            // EventAddedCol
+            // 
+            this.EventAddedCol.HeaderText = "Event Added";
+            this.EventAddedCol.MaxInputLength = 250;
+            this.EventAddedCol.MinimumWidth = 6;
+            this.EventAddedCol.Name = "EventAddedCol";
+            this.EventAddedCol.ReadOnly = true;
+            this.EventAddedCol.Width = 125;
             // 
             // MainForm
             // 
@@ -3147,6 +3547,8 @@
             this.tableLayoutPanel5.PerformLayout();
             this.tabDungeonDataInfoParser.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DungeonDataInfo_SpellTimer_Grid)).EndInit();
             this.statusStrip_LoadedFile.ResumeLayout(false);
             this.statusStrip_LoadedFile.PerformLayout();
             this.ResumeLayout(false);
@@ -3352,12 +3754,7 @@
         public System.Windows.Forms.Button JournalLoot_GenerateSQL;
         public System.Windows.Forms.RichTextBox JournalLoot_SQL_RichTextBox;
         private System.Windows.Forms.TabPage tabDungeonDataInfoParser;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button CombatAI_SearchData_DB_Button;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.ComboBox CombatAI_DungeonDataMap_ComboBox;
-        private System.Windows.Forms.Button button1;
         public System.Windows.Forms.DataGridView CombatAI_SpellGrid_DataGrid;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
@@ -3370,6 +3767,38 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn AttackDist;
         public System.Windows.Forms.Button CombatAI_UpdateRow_Button;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.Button DungeonDataInfo_ImportFile_Button;
+        private System.Windows.Forms.Label label18;
+        public System.Windows.Forms.ComboBox DungeonDataInfo_Map_ComboBox;
+        private System.Windows.Forms.Label label25;
+        public System.Windows.Forms.TextBox DungeonDataInfo_NpcEntry_TextBox;
+        public System.Windows.Forms.TextBox DungeonDataInfo_InitMin_TextBox;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        public System.Windows.Forms.TextBox DungeonDataInfo_InitMax_TextBox;
+        public System.Windows.Forms.TextBox DungeonDataInfo_RepeatMin_TextBox;
+        public System.Windows.Forms.TextBox DungeonDataInfo_RepeatMax_TextBox;
+        public System.Windows.Forms.ComboBox DungeonDataInfo__EventType_TextBox;
+        public System.Windows.Forms.CheckedListBox DungeonDataInfo_EventFlags_TextBox;
+        public System.Windows.Forms.TextBox DungeonDataInfo_AttackDist_TextBox;
+        public System.Windows.Forms.TextBox DungeonDataInfo_SpellId_TextBox;
+        public System.Windows.Forms.Button DungeonDataInfo_Add_Script_Button;
+        private System.Windows.Forms.Button DungeonDataInfo_GenerateQueries_Button;
+        private System.Windows.Forms.Button DungeonDataInfo_ClearScriptData_Button;
+        public System.Windows.Forms.DataGridView DungeonDataInfo_SpellTimer_Grid;
+        public System.Windows.Forms.CheckedListBox DungeonDataInfo_Npc_CheckListBox;
+        private System.Windows.Forms.Button DungeonDataInfo_CalcTimers_Button;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EventAddedCol;
     }
 }
 

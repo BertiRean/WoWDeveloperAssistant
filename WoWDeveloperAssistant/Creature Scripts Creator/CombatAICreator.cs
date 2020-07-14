@@ -2,6 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
+using System.IO;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using WoWDeveloperAssistant.Misc;
 using WoWDeveloperAssistant.SpellInfo_Override_DbCreator;
@@ -72,11 +75,13 @@ namespace WoWDeveloperAssistant.CombatAI_Creator_Templates
         {
             this.mainForm = mainForm;
             this.combatAIEntries = new Dictionary<uint, ArrayList>();
+            this.scriptsParsedFromAddon = new Dictionary<int, Dictionary<uint, ArrayList>>();
         }
 
         private Dictionary<uint, ArrayList> combatAIEntries;
+        private Dictionary<int, Dictionary<uint, ArrayList>> scriptsParsedFromAddon;
 
-        static private uint[] eventFlagsValues =
+        static public uint[] eventFlagsValues =
         {
             0x1,
             0x2,
@@ -123,7 +128,7 @@ namespace WoWDeveloperAssistant.CombatAI_Creator_Templates
             return true;
         }
 
-        static private string CreateCombatEntryValues(CombatAIEventDataEntry combatData, uint id)
+        static public string CreateCombatEntryValues(CombatAIEventDataEntry combatData, uint id)
         {
             string npcName = "";
 
@@ -423,6 +428,161 @@ namespace WoWDeveloperAssistant.CombatAI_Creator_Templates
                     return;
                 }
             }
+        }
+
+        public void OpenFileDialog()
+        {
+            mainForm.openFileDialog.Title = "Open File";
+            mainForm.openFileDialog.Filter = "DungeonDataInfo File (*.lua)|*.lua";
+            mainForm.openFileDialog.FileName = "*.lua";
+            mainForm.openFileDialog.FilterIndex = 1;
+            mainForm.openFileDialog.ShowReadOnly = false;
+            mainForm.openFileDialog.Multiselect = false;
+            mainForm.openFileDialog.CheckFileExists = true;
+        }
+
+        public void ImportAddonData(string fileName)
+        {
+            if (!DBC.DBC.IsLoaded())
+                DBC.DBC.Load();
+
+            var lines = File.ReadAllLines(fileName);
+
+            ArrayList parsedMaps = new ArrayList();
+            string mapPattern = Regex.Escape("[\"") + "(\\d*),";
+            string npcEntryPattern = Regex.Escape("[") + "([0-9]+)" + Regex.Escape("]");
+            string spellPattern = Regex.Escape("(") + "([^)]+)" + Regex.Escape(")");
+            ArrayList npcSpellLineIndexes = new ArrayList();
+
+            int currentMapId = 0;
+            int currentNpc = 0;
+            bool isReadingNpc = false;
+            bool isReadingSpellTimers = false;
+
+            foreach(string line in lines)
+            {
+                MatchCollection maps = Regex.Matches(line, mapPattern);
+
+                if (maps.Count > 0)
+                {
+                    currentMapId = Convert.ToInt32(maps[0].Groups[1].ToString());
+                    
+                    if (DBC.DBC.Map.ContainsKey(currentMapId))
+                        parsedMaps.Add(DBC.DBC.Map[currentMapId].MapName);
+
+                    continue;
+                }
+
+                //Check If Line is a Npc Entry
+                if (!isReadingNpc)
+                {
+                    MatchCollection npcEntries = Regex.Matches(line, npcEntryPattern);
+                    if (npcEntries.Count > 0)
+                    {
+                        isReadingNpc = true;
+                        currentNpc = Convert.ToInt32(npcEntries[0].Groups[1].ToString());
+                        mainForm.textBox_SQLOutput.AppendText(String.Format("Spells Casted By {0}\r\n", currentNpc));
+                        continue;
+                    }
+                }
+
+                if (!isReadingSpellTimers && Regex.IsMatch(line, "spells"))
+                    isReadingSpellTimers = true;
+
+                if (isReadingSpellTimers)
+                {
+                    /// Check if line is a string with spell information
+                    MatchCollection spellCasted = Regex.Matches(line, spellPattern);
+                    if (spellCasted.Count > 0)
+                    {
+                        this.AddCreatureDataFromAddon(currentNpc, spellCasted[0].Groups[1].ToString());
+                        continue;
+                    }
+                    else if (isReadingSpellTimers && Regex.IsMatch(line, Regex.Escape("},")))
+                    {
+                        isReadingSpellTimers = false;
+                        isReadingNpc = false;
+                    }
+                }
+            }
+        }
+
+        public class SpellTimerData
+        {
+            public uint SpellId;
+            public ArrayList InitMinTimers;
+            public ArrayList InitMaxTimers;
+            public ArrayList RepeatMinTimers;
+            public ArrayList RepeatMaxTimers;
+
+            public SpellTimerData(uint spellId = 0)
+            {
+                this.SpellId = spellId;
+                this.InitMinTimers = new ArrayList();
+                this.InitMaxTimers = new ArrayList();
+                this.RepeatMinTimers = new ArrayList();
+                this.RepeatMaxTimers = new ArrayList();
+            }
+
+            private uint GetAverageTimer(ArrayList timers)
+            {
+                uint avg = 0;
+
+                foreach (uint timer in timers)
+                    avg += timer;
+
+                return avg / (uint)timers.Count;
+            }
+
+            uint GetInitMinAverageTimer()
+            {
+                return GetAverageTimer(this.InitMinTimers);
+            }
+
+            uint GetInitMaxAverageTimer()
+            {
+                return GetAverageTimer(this.InitMaxTimers);
+            }
+
+            uint GetRepeatMinAverageTimer()
+            {
+                return GetAverageTimer(this.RepeatMinTimers);
+            }
+
+            uint GetRepeatMaxAverageTimer()
+            {
+                return GetAverageTimer(this.RepeatMaxTimers);
+            }
+        };
+
+        public void AddCreatureDataFromAddon(int npcEntry, string spellTimerInfo)
+        {
+            string[] SpellInfo = spellTimerInfo.Split(',');
+
+            uint SpellId = Convert.ToUInt32(SpellInfo[0]);
+            uint InitMin = Convert.ToUInt32(SpellInfo[1]);
+            uint InitMax = Convert.ToUInt32(SpellInfo[2]);
+            uint RepeatMin = Convert.ToUInt32(SpellInfo[3]);
+            uint RepeatMax = Convert.ToUInt32(SpellInfo[4]);
+
+            SpellTimerData SpellTimer = new SpellTimerData(SpellId);
+
+            SpellTimer.InitMinTimers.Add(InitMin);
+            SpellTimer.InitMaxTimers.Add(InitMax);
+            SpellTimer.RepeatMinTimers.Add(RepeatMin);
+            SpellTimer.RepeatMaxTimers.Add(RepeatMax);
+
+            if (!this.scriptsParsedFromAddon.ContainsKey(npcEntry))
+                this.scriptsParsedFromAddon[npcEntry] = new Dictionary<uint, ArrayList>();
+
+            var spellsCastedByNpc = scriptsParsedFromAddon[npcEntry];
+
+            if (!spellsCastedByNpc.ContainsKey(SpellId))
+                spellsCastedByNpc[SpellId] = new ArrayList();
+
+            spellsCastedByNpc[SpellId].Add(SpellTimer);
+
+            mainForm.textBox_SQLOutput.AppendText(String.Format("Creature Entry: {0} -> CastSpell: {1} \r\n", npcEntry, spellTimerInfo));
         }
     }
 }
