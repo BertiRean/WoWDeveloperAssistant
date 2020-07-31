@@ -76,7 +76,7 @@ namespace WoWDeveloperAssistant.JournalLootCreator_DB
                 foreach (Tuple<uint, long> item in loot)
                 {
                     count++;
-                    query += String.Format("(@{0}, {1}, 100, 1, 1, 1, 1, {2})", constantName, item.Item1, item.Item2);
+                    query += String.Format("(@{0}, {1}, 0, 1, 1, 1, 1, {2})", constantName, item.Item1, item.Item2);
 
                     if (count + 1 > loot.Count)
                         query += ";\n\n";
