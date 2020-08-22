@@ -505,7 +505,12 @@ namespace WoWDeveloperAssistant.ObjectTemplateDB_Helper
 
                     foreach (var value in creatureFieldValues[field])
                     {
-                        long flag = 1 << idx++;
+                        long flag = 1 << idx;
+
+                        if (field == 6 && idx != 0)
+                            flag = 1 << idx - 1;
+
+                        idx++;
                         fieldListBox.Items.Add(value, creature.HasFlag(field, flag));
                     }
                     
