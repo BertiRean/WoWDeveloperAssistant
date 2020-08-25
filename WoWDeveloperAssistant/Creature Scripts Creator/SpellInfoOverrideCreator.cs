@@ -928,7 +928,7 @@ namespace WoWDeveloperAssistant.SpellInfo_Override_DbCreator
             uint EffIdx = Convert.ToUInt32(mainForm.SpellInfo_EffIdx_ComboBox.SelectedIndex);
             uint OverrideField = Convert.ToUInt32(mainForm.SpellInfo_Field_ComboBox.SelectedIndex);
             string OverrideValText = mainForm.SpellInfo_Value_TextBox.Text;
-            int OverrideValue = Convert.ToInt32(OverrideValText.Length > 1 ? OverrideValText : "0");
+            int OverrideValue = Convert.ToInt32(OverrideValText.Length > 0 ? OverrideValText : "0");
 
             if (this.FieldRequireGetSelectValues(OverrideField))
                 OverrideValue = GetMaskOfSelectedValuesInCheckBox(OverrideField);
