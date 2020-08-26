@@ -14,6 +14,7 @@ using WoWDeveloperAssistant.CombatAI_Creator_Templates;
 using WoWDeveloperAssistant.ObjectTemplateDB_Helper;
 using WoWDeveloperAssistant.JournalLootCreator_DB;
 using WoWDeveloperAssistant.DungeonDataInfoParser_Db;
+using WoWDeveloperAssistant.AreaTriggerActionCreatorDB;
 
 namespace WoWDeveloperAssistant
 {
@@ -31,6 +32,7 @@ namespace WoWDeveloperAssistant
         private ObjectTemplateHelper objectTemplateHelperDB;
         private JournalLootCreator journalLootCreatorDB;
         private DungeonDataInfoCreator dungeonDataParser;
+        private AreaTriggerActionCreator areaTriggerActionCreator;
 
         public MainForm()
         {
@@ -46,6 +48,7 @@ namespace WoWDeveloperAssistant
             objectTemplateHelperDB = new ObjectTemplateHelper(this);
             journalLootCreatorDB = new JournalLootCreator(this);
             dungeonDataParser = new DungeonDataInfoCreator(this);
+            areaTriggerActionCreator = new AreaTriggerActionCreator(this);
 
             if (Properties.Settings.Default.UsingDB)
             {
@@ -664,6 +667,33 @@ namespace WoWDeveloperAssistant
         private void DungeonDataInfo_GenerateQueries_Button_Click(object sender, EventArgs e)
         {
             this.dungeonDataParser.GenerateSQL();
+        }
+
+        private void AreaTrigger_SpellId_TextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verify that the pressed key isn't CTRL or any non-numeric digit
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                this.areaTriggerActionCreator.EnableLockedItems(false);
+            }
+            else
+                this.areaTriggerActionCreator.EnableLockedItems(true);
+        }
+
+        private void AreaTrigger_ClearData_Button_Click(object sender, EventArgs e)
+        {
+            this.areaTriggerActionCreator.ClearActionsData();
+        }
+
+        private void AreaTrigger_CreateAction_Button_Click(object sender, EventArgs e)
+        {
+            this.areaTriggerActionCreator.AddActionEntry();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.areaTriggerActionCreator.GenerateSQL();
         }
     }
 }
