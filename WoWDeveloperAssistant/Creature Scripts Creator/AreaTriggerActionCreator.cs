@@ -33,6 +33,7 @@ namespace WoWDeveloperAssistant.AreaTriggerActionCreatorDB
         public uint HasAura;
         public uint MaxTargetHitted;
         public uint DespawnAfterAction;
+
     };
 
     public class AreaTriggerActionCreator
@@ -49,6 +50,30 @@ namespace WoWDeveloperAssistant.AreaTriggerActionCreatorDB
         }
 
         private Dictionary<uint, ArrayList> areaTriggerActionEntries;
+
+        static public string[] areaTriggerActionsComments =
+        {
+            "Cast Spell ",
+            "Remove Aura ",
+            "Add Aura Stack ",
+            "Remove Aura Stack ",
+            "Change AreaTrigger Scale",
+            "Share Spell Damage ",
+            "Apply Movement Force On",
+            "Remove Movement Force On",
+            "Change AreaTrigger Duration",
+            "Cast Spell Using Health as Basepoint",
+            "Repatch AreaTrigger",
+            "Set Aura CustomData in 1",
+            "Set Aura CustomData in -1",
+            "Slow AreaTrigger Movement",
+            "",
+            "",
+            "",
+            "",
+            "Set Aura Duration On",
+            "ReShape AreaTrigger"
+        };
 
         public void CheckAreaTriggerInfo()
         {
@@ -68,11 +93,33 @@ namespace WoWDeveloperAssistant.AreaTriggerActionCreatorDB
                 EnableLockedItems(true);
         }
 
+        static private string GenerateActionComment(AreaTriggerAction action)
+        {
+            string comment = "";
+
+            comment += areaTriggerActionsComments[action.ActionType];
+
+            string spellName = GetSpellName(action.ActionSpellId);
+
+            if (spellName.Length > 0)
+            {
+                if (action.ActionType >= 0 && action.ActionType < 5)
+                    comment += spellName + "-" + action.ActionSpellId + " ";
+
+                if ((action.TargetFlags & 8) != 0)
+                    comment += "On Player";
+                else
+                    comment += "On Creature";
+            }
+
+            return comment;
+        }
+
         static private string CreateAreaTriggerInsertValue(AreaTriggerAction action, AreaTriggerTemplateInfo template, int id)
         {
             string query = "(" + template.Entry + ", " + template.SpellId + ", " + template.CustomEntry + ", "
                 + id + ", " + action.Moment + ", " + action.ActionType + ", " + action.TargetFlags + ", " + action.ActionSpellId + ", " + action.MaxCharges + ", " +
-                action.HasAura + ", " + action.ChargeRestoreTimer + ", " + action.MaxTargetHitted + ", " + action.DespawnAfterAction + ',' + "\'\'" + ")";
+                action.HasAura + ", " + action.ChargeRestoreTimer + ", " + action.MaxTargetHitted + ", " + action.DespawnAfterAction + ',' + GenerateActionComment(action) + ")";
             return query;
         }
 
@@ -217,7 +264,7 @@ namespace WoWDeveloperAssistant.AreaTriggerActionCreatorDB
 
             foreach (var item in areaTriggerActionEntries)
             {
-                string areaName = GetSpellName(item.Key) + "--" + item.Key;
+                string areaName = GetSpellName(item.Key) + "--" + item.Key + " Actions: " + item.Value.Count;
                 this.mainForm.AreaTrigger_CurrentActions_ListView.Items.Add(areaName);
             }
         }
