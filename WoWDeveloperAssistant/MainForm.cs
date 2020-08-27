@@ -677,8 +677,6 @@ namespace WoWDeveloperAssistant
                 e.Handled = true;
                 this.areaTriggerActionCreator.EnableLockedItems(false);
             }
-            else
-                this.areaTriggerActionCreator.EnableLockedItems(true);
         }
 
         private void AreaTrigger_ClearData_Button_Click(object sender, EventArgs e)
@@ -694,6 +692,11 @@ namespace WoWDeveloperAssistant
         private void button1_Click(object sender, EventArgs e)
         {
             this.areaTriggerActionCreator.GenerateSQL();
+        }
+
+        private void AreaTriggerCreator_CheckTemplate_Button_Click(object sender, EventArgs e)
+        {
+            this.areaTriggerActionCreator.CheckAreaTriggerInfo();
         }
     }
 }
