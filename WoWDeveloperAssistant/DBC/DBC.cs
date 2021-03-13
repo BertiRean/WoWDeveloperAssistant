@@ -26,6 +26,8 @@ namespace WoWDeveloperAssistant.DBC
         public static Storage<JournalEncounterItemEntry> JournalEncounterItems { get; set; }
         public static Storage<JournalInstanceEntry> JournalInstances { get; set; }
 
+        public static Storage<SpellRangeEntry> SpellRanges { get; set; }
+
         private static string GetPath()
         {
             return Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), Settings.DBCPath, Settings.DBCLocale);
@@ -39,6 +41,9 @@ namespace WoWDeveloperAssistant.DBC
             var dbReader = new DBReader(GetPath(), "SpellEffect.db2");
             SpellEffect = dbReader.GetRecords<SpellEffectEntry>();
 
+            dbReader = new DBReader(GetPath(), "SpellRange.db2");
+            SpellRanges = dbReader.GetRecords<SpellRangeEntry>();
+            
             dbReader = new DBReader(GetPath(), "SpellName.db2");
             SpellName = dbReader.GetRecords<SpellNameEntry>();
 

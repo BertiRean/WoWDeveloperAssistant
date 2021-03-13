@@ -176,10 +176,7 @@ namespace WoWDeveloperAssistant.DungeonDataInfoParser_Db
                     }
                 }
 
-                if (!isReadingSpellTimers && Regex.IsMatch(line, "spells"))
-                    isReadingSpellTimers = true;
-
-                if (isReadingSpellTimers)
+                if (isReadingNpc)
                 {
                     /// Check if line is a string with spell information
                     MatchCollection spellCasted = Regex.Matches(line, spellPattern);
@@ -188,9 +185,8 @@ namespace WoWDeveloperAssistant.DungeonDataInfoParser_Db
                         this.AddCreatureDataFromAddon(currentMapId, currentNpc, spellCasted[0].Groups[1].ToString());
                         continue;
                     }
-                    else if (isReadingSpellTimers && Regex.IsMatch(line, Regex.Escape("},")))
+                    else if (Regex.IsMatch(line, Regex.Escape("},")))
                     {
-                        isReadingSpellTimers = false;
                         isReadingNpc = false;
                     }
                 }
@@ -201,6 +197,11 @@ namespace WoWDeveloperAssistant.DungeonDataInfoParser_Db
 
             foreach (var map in parsedMaps)
                 mainForm.DungeonDataInfo_Map_ComboBox.Items.Add(map);
+
+            mainForm.DungeonDataInfo_Map_ComboBox.Sorted = true;
+
+            this.maps.Sort(Comparer<int>.Create((x, y) => DBC.DBC.Map[x].MapName.CompareTo(DBC.DBC.Map[y].MapName))
+            );
         }
 
         public void AddCreatureDataFromAddon(int mapId, int npcEntry, string spellTimerInfo)
@@ -238,6 +239,8 @@ namespace WoWDeveloperAssistant.DungeonDataInfoParser_Db
                     mainForm.DungeonDataInfo_Npc_CheckListBox.Items.Add(npcName, false);
                 }
             }
+
+            mainForm.DungeonDataInfo_Npc_CheckListBox.Sorted = true;
         }
         public void FillSpellGrid(int selectedIndex)
         {
@@ -329,6 +332,7 @@ namespace WoWDeveloperAssistant.DungeonDataInfoParser_Db
         {
             DataGridView spellGrid = this.mainForm.DungeonDataInfo_SpellTimer_Grid;
 
+            int spellId = (int)spellGrid[0, rowIndex].Value;
             this.mainForm.DungeonDataInfo_SpellId_TextBox.Text = spellGrid[0, rowIndex].Value.ToString();
 
             int[] initTimers = ToIntTimers(spellGrid[1, rowIndex].Value.ToString().Split(' '));
@@ -347,6 +351,29 @@ namespace WoWDeveloperAssistant.DungeonDataInfoParser_Db
             this.mainForm.DungeonDataInfo_InitMax_TextBox.Text = initMax.ToString();
             this.mainForm.DungeonDataInfo_RepeatMin_TextBox.Text = repMin.ToString();
             this.mainForm.DungeonDataInfo_RepeatMax_TextBox.Text = repMax.ToString();
+
+            if (DBC.DBC.SpellMisc.ContainsKey(spellId))
+            {
+                var spellEntry = DBC.DBC.SpellMisc[spellId];
+
+                var spellRange = DBC.DBC.SpellRanges[spellEntry.RangeIndex];
+
+                float maxValue = spellRange.RangesMin[0];
+
+                foreach (float itr in spellRange.RangesMin)
+                {
+                    if (itr > maxValue)
+                        maxValue = itr;
+                }
+
+                foreach (float itr in spellRange.RangesMax)
+                {
+                    if (itr > maxValue)
+                        maxValue = itr;
+                }
+
+                this.mainForm.DungeonDataInfo_AttackDist_TextBox.Text = spellRange.RangesMax[1].ToString();
+            }
 
             EnabledCombatScriptFields(true);
         }
