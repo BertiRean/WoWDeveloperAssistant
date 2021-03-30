@@ -146,16 +146,25 @@ namespace WoWDeveloperAssistant.Misc
                 {
                     if (line.Contains("V8_0_1"))
                         return BuildVersions.BUILD_8_0_1;
-                    if (line.Contains("V8_1_0"))
+                    else if (line.Contains("V8_1_0"))
                         return BuildVersions.BUILD_8_1_0;
-                    if (line.Contains("V8_1_5"))
+                    else if (line.Contains("V8_1_5"))
                         return BuildVersions.BUILD_8_1_5;
-                    if (line.Contains("V8_2_0"))
+                    else if (line.Contains("V8_2_0"))
                         return BuildVersions.BUILD_8_2_0;
-                    if (line.Contains("V8_2_5"))
+                    else if (line.Contains("V8_2_5"))
                         return BuildVersions.BUILD_8_2_5;
-                    if (line.Contains("V8_3_0") || line.Contains("V8_3_7"))
+                    else if (line.Contains("V8_3_0"))
                         return BuildVersions.BUILD_8_3_0;
+                    else if (line.Contains("V8_3_7"))
+                        return BuildVersions.BUILD_8_3_7;
+                    else if (line.Contains("V9_0_1"))
+                        return BuildVersions.BUILD_9_0_1;
+                    else if (line.Contains("V9_0_2"))
+                        return BuildVersions.BUILD_9_0_2;
+                    else if (line.Contains("V9_0_5"))
+                        return BuildVersions.BUILD_9_0_5;
+
                     return BuildVersions.BUILD_UNKNOWN;
                 }
             }
