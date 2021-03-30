@@ -26,6 +26,8 @@ namespace WoWDeveloperAssistant.DBC
         public static Storage<JournalEncounterItemEntry> JournalEncounterItems { get; set; }
         public static Storage<JournalInstanceEntry> JournalInstances { get; set; }
 
+        public static Storage<JournalItemXDifficultyEntry> JournalItemsXDifficulty { get; set; }
+
         public static Storage<SpellRangeEntry> SpellRanges { get; set; }
 
         private static string GetPath()
@@ -76,6 +78,9 @@ namespace WoWDeveloperAssistant.DBC
 
             dbReader = new DBReader(GetPath(), "JournalInstance.db2");
             JournalInstances = dbReader.GetRecords<JournalInstanceEntry>();
+
+            dbReader = new DBReader(GetPath(), "JournalItemXDifficulty.db2");
+            JournalItemsXDifficulty = dbReader.GetRecords<JournalItemXDifficultyEntry>();
 
             if (SpellEffect != null && SpellEffectStores.Count == 0)
             {

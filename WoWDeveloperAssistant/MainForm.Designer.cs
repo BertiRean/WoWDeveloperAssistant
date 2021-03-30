@@ -329,14 +329,15 @@
             this.AreaTrigger_TargetFlags_CheckBox = new System.Windows.Forms.CheckedListBox();
             this.label34 = new System.Windows.Forms.Label();
             this.AreaTriggerDespawn_RadioButton = new System.Windows.Forms.RadioButton();
+            this.label28 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.AreaTriggerCreator_CheckTemplate_Button = new System.Windows.Forms.Button();
             this.AreaTrigger_SpellId_TextBox = new System.Windows.Forms.TextBox();
-            this.label28 = new System.Windows.Forms.Label();
             this.statusStrip_LoadedFile = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel_FileStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel_CurrentAction = new System.Windows.Forms.ToolStripStatusLabel();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.JournalLoot_GenerateUpdateItemsDifficulty = new System.Windows.Forms.Button();
             this.MainWindowTabs.SuspendLayout();
             this.tabPage_CreatureScriptsCreator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Spells)).BeginInit();
@@ -372,8 +373,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.AreaTrigger_MaxTargetHitted_NumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AreaTrigger_MaxCharges_NumericUpDown)).BeginInit();
             this.AreaTrigger_ButtonContainer_GrooupBox.SuspendLayout();
-            this.statusStrip_LoadedFile.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
+            this.statusStrip_LoadedFile.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainWindowTabs
@@ -645,6 +646,7 @@
             // 
             this.toolStripTextBox_CSC_CreatureEntry.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripTextBox_CSC_CreatureEntry.Enabled = false;
+            this.toolStripTextBox_CSC_CreatureEntry.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox_CSC_CreatureEntry.MaxLength = 40;
             this.toolStripTextBox_CSC_CreatureEntry.Name = "toolStripTextBox_CSC_CreatureEntry";
             this.toolStripTextBox_CSC_CreatureEntry.Size = new System.Drawing.Size(68, 27);
@@ -1009,6 +1011,7 @@
             // 
             this.toolStripTextBox_WC_Entry.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripTextBox_WC_Entry.Enabled = false;
+            this.toolStripTextBox_WC_Entry.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox_WC_Entry.MaxLength = 40;
             this.toolStripTextBox_WC_Entry.Name = "toolStripTextBox_WC_Entry";
             this.toolStripTextBox_WC_Entry.Size = new System.Drawing.Size(70, 27);
@@ -3027,6 +3030,7 @@
             this.tableLayoutPanel5.ColumnCount = 2;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.Controls.Add(this.JournalLoot_GenerateUpdateItemsDifficulty, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.JournalLoot_ComboBox, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.label11, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.JournalLoot_GenerateSQL, 1, 1);
@@ -3859,6 +3863,30 @@
             this.AreaTriggerDespawn_RadioButton.TabStop = true;
             this.AreaTriggerDespawn_RadioButton.UseVisualStyleBackColor = true;
             // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(2, 0);
+            this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(105, 13);
+            this.label28.TabIndex = 0;
+            this.label28.Text = "AreaTrigger Spell ID:";
+            // 
+            // tableLayoutPanel8
+            // 
+            this.tableLayoutPanel8.ColumnCount = 2;
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.Controls.Add(this.AreaTriggerCreator_CheckTemplate_Button, 1, 0);
+            this.tableLayoutPanel8.Controls.Add(this.AreaTrigger_SpellId_TextBox, 0, 0);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(295, 3);
+            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            this.tableLayoutPanel8.RowCount = 1;
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(285, 90);
+            this.tableLayoutPanel8.TabIndex = 21;
+            // 
             // AreaTriggerCreator_CheckTemplate_Button
             // 
             this.AreaTriggerCreator_CheckTemplate_Button.Location = new System.Drawing.Point(144, 2);
@@ -3878,16 +3906,6 @@
             this.AreaTrigger_SpellId_TextBox.Size = new System.Drawing.Size(138, 20);
             this.AreaTrigger_SpellId_TextBox.TabIndex = 10;
             this.AreaTrigger_SpellId_TextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AreaTrigger_SpellId_TextBox_KeyPress);
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(2, 0);
-            this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(105, 13);
-            this.label28.TabIndex = 0;
-            this.label28.Text = "AreaTrigger Spell ID:";
             // 
             // statusStrip_LoadedFile
             // 
@@ -3919,19 +3937,16 @@
             // 
             this.openFileDialog.FileName = "openFileDialog_WSC";
             // 
-            // tableLayoutPanel8
+            // JournalLoot_GenerateUpdateItemsDifficulty
             // 
-            this.tableLayoutPanel8.ColumnCount = 2;
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Controls.Add(this.AreaTriggerCreator_CheckTemplate_Button, 1, 0);
-            this.tableLayoutPanel8.Controls.Add(this.AreaTrigger_SpellId_TextBox, 0, 0);
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(295, 3);
-            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
-            this.tableLayoutPanel8.RowCount = 1;
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(285, 90);
-            this.tableLayoutPanel8.TabIndex = 21;
+            this.JournalLoot_GenerateUpdateItemsDifficulty.Location = new System.Drawing.Point(2, 42);
+            this.JournalLoot_GenerateUpdateItemsDifficulty.Margin = new System.Windows.Forms.Padding(2);
+            this.JournalLoot_GenerateUpdateItemsDifficulty.Name = "JournalLoot_GenerateUpdateItemsDifficulty";
+            this.JournalLoot_GenerateUpdateItemsDifficulty.Size = new System.Drawing.Size(122, 36);
+            this.JournalLoot_GenerateUpdateItemsDifficulty.TabIndex = 3;
+            this.JournalLoot_GenerateUpdateItemsDifficulty.Text = "Generate Update Item Loot Difficulties";
+            this.JournalLoot_GenerateUpdateItemsDifficulty.UseVisualStyleBackColor = true;
+            this.JournalLoot_GenerateUpdateItemsDifficulty.Click += new System.EventHandler(this.JournalLoot_GenerateUpdateItemsDifficulty_Click);
             // 
             // MainForm
             // 
@@ -3999,10 +4014,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.AreaTrigger_MaxTargetHitted_NumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AreaTrigger_MaxCharges_NumericUpDown)).EndInit();
             this.AreaTrigger_ButtonContainer_GrooupBox.ResumeLayout(false);
-            this.statusStrip_LoadedFile.ResumeLayout(false);
-            this.statusStrip_LoadedFile.PerformLayout();
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel8.PerformLayout();
+            this.statusStrip_LoadedFile.ResumeLayout(false);
+            this.statusStrip_LoadedFile.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4282,6 +4297,7 @@
         public System.Windows.Forms.ListView AreaTrigger_CurrentActions_ListView;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
+        public System.Windows.Forms.Button JournalLoot_GenerateUpdateItemsDifficulty;
     }
 }
 

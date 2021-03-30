@@ -63,7 +63,14 @@ namespace WoWDeveloperAssistant.JournalLootCreator_DB
                 string query = "";
                 uint count = 0;
                 var loot = GetItemsAssociatedToCreature(encounter.ID);
-                string constantName = encounter.Name.Replace(',', ' ').Replace(' ', '_').ToUpper();
+                string constantName = encounter.Name.Replace(",", "");
+
+                string[] filter_chars = new string[2] { ",", "\'" };
+
+                foreach (string str in filter_chars)
+                    constantName = constantName.Replace(str, "");
+
+                constantName = constantName.Replace(' ', '_').ToUpper();
 
                 if (loot.Count > 0)
                 {
@@ -76,7 +83,7 @@ namespace WoWDeveloperAssistant.JournalLootCreator_DB
                 foreach (Tuple<uint, long> item in loot)
                 {
                     count++;
-                    query += String.Format("(@{0}, {1}, 0, 1, 1, 1, 1, {2})", constantName, item.Item1, item.Item2);
+                    query += String.Format("(@{0}, {1}, 0, 0, 1, 1, 1, {2})", constantName, item.Item1, item.Item2);
 
                     if (count + 1 > loot.Count)
                         query += ";\n\n";
@@ -89,6 +96,22 @@ namespace WoWDeveloperAssistant.JournalLootCreator_DB
             }
         }
 
+        long GetDifficultyMaskAssociatedToItem(uint journalEncounterItemId)
+        {
+            long mask = 0;
+
+            foreach (var itemXEntry in DBC.DBC.JournalItemsXDifficulty.Values)
+            {
+                if (itemXEntry.JournalEncounterItemID == journalEncounterItemId)
+                {
+                    int diffId = (int)itemXEntry.DifficultyID;
+                    mask |= 1 << (diffId - 1);
+                }
+            }
+
+            return mask;
+        }
+
         ArrayList GetItemsAssociatedToCreature(uint journalEncounterID)
         {
             var itemsDBC = DBC.DBC.JournalEncounterItems.Values;
@@ -98,7 +121,8 @@ namespace WoWDeveloperAssistant.JournalLootCreator_DB
             {
                 if (item.JournalEncounterID == journalEncounterID)
                 {
-                    Tuple<uint, long> key = new Tuple<uint, long>(item.ItemID, item.DifficultyMask);
+                    
+                    Tuple<uint, long> key = new Tuple<uint, long>(item.ItemID, GetDifficultyMaskAssociatedToItem(item.ID));
                     encounterLoot.Add(key);
                 }
             }
@@ -127,6 +151,47 @@ namespace WoWDeveloperAssistant.JournalLootCreator_DB
             mainForm.ObjectTemplateHelper_GenerateSQL_Button.Enabled = enabled;
             mainForm.ObjectTemplate_ObjectField_ComboBox.Enabled  = enabled;
             mainForm.ObjectTemplateHelper_UpdateField_Button.Enabled = enabled;
+        }
+
+        public void GenerateUpdateItemQueries()
+        {
+            this.mainForm.JournalLoot_SQL_RichTextBox.Clear();
+            int selectedEncounter = mainForm.JournalLoot_ComboBox.SelectedIndex;
+
+            if (selectedEncounter == -1)
+                return;
+
+            var encounters = GetEncounters(this.instanceIds[selectedEncounter]);
+
+            foreach (var encounter in encounters)
+            {
+                string query = "";
+                uint count = 0;
+                var loot = GetItemsAssociatedToCreature(encounter.ID);
+                string constantName = encounter.Name.Replace(",", "");
+                string[] filter_chars = new string[2]{ ",", "\'"};
+
+                foreach (string str in filter_chars)
+                    constantName = constantName.Replace(str, "");
+
+                constantName = constantName.Replace(' ', '_').ToUpper();
+
+                if (loot.Count > 0)
+                    query += "SET @" + constantName + " := ;\n\n";
+
+                foreach (Tuple<uint, long> item in loot)
+                {
+                    count++;
+                    query += String.Format("UPDATE `creature_loot_template` set `difficultyMask` = {0} WHERE `item` = {1} and `entry` = @{2};", item.Item2, item.Item1, constantName);
+
+                    if (count + 1 > loot.Count)
+                        query += ";\n\n";
+                    else
+                        query += ",\n";
+                }
+
+                this.mainForm.JournalLoot_SQL_RichTextBox.AppendText(query);
+            }
         }
     }
 }

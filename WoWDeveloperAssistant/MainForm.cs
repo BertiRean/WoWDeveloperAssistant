@@ -698,5 +698,10 @@ namespace WoWDeveloperAssistant
         {
             this.areaTriggerActionCreator.CheckAreaTriggerInfo();
         }
+
+        private void JournalLoot_GenerateUpdateItemsDifficulty_Click(object sender, EventArgs e)
+        {
+            this.journalLootCreatorDB.GenerateUpdateItemQueries();
+        }
     }
 }
