@@ -2,11 +2,11 @@
 {
     public sealed class JournalEncounterItemEntry
     {
-        public uint ItemID;
+        public uint ID;
         public uint JournalEncounterID;
-        public long DifficultyMask;
+        public uint ItemID;
         public long FactionMask;
         public long Flags;
-        public uint ID;
+        public long DifficultyMask;
     }
 }

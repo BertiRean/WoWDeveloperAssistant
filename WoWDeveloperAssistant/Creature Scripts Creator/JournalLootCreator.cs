@@ -75,7 +75,7 @@ namespace WoWDeveloperAssistant.JournalLootCreator_DB
                 if (loot.Count > 0)
                 {
                     query += "SET @" + constantName + " := ;\n\n";
-                    query += "UPDATE `creature_template` set `lootId` = @" + constantName + "WHERE `entry` = @" + constantName + ";\n";
+                    query += "UPDATE `creature_template` set `lootId` = @" + constantName + " WHERE `entry` = @" + constantName + ";\n";
                     query += "DELETE FROM `creature_loot_template` WHERE `entry` = @" + constantName + ";\n";
                     query += "INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupId`, `lootmode`, `mincountOrRef`, `maxcount`, `difficultyMask`) VALUES\n";
                 }

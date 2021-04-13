@@ -6,14 +6,15 @@
         public string Name;
         public string Description;
         public float[] Map = new float[2];
-        public uint DungeonMapID;
-        public uint WorldMapAreaID;
-        public uint FirstSectionID;
         public uint JournalInstanceID;
-        public long DifficultyMask;
-        public long Flags;
+        public uint DungeonEncounterID;
         public uint OrderIndex;
+        public uint FirstSectionID;
+        public uint UiMapID;
         public uint MapDisplayConditionID;
+        public long Flags;
+        public long DifficultyMask;
+
 
     }
 }

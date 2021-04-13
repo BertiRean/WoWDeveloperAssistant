@@ -4,14 +4,14 @@
     {
         public string Name;
         public string Description;
+        public uint ID;
+        public ushort MapID;
+        public uint BackgroundFileDataID;
         public uint ButtonFileDataID;
         public uint ButtonSmallFileDataID;
-        public uint BackgroundFileDataID;
         public uint LoreFileDataID;
-        public ushort MapID;
-        public ushort AreaID;
         public byte OrderIndex;
         public byte Flags;
-        public uint ID;
+        public ushort AreaID;
     }
 }
