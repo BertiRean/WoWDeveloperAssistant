@@ -76,10 +76,23 @@ namespace WoWDeveloperAssistant.JournalLootCreator_DB
                 {
                     query += "SET @" + constantName + " := ;\n\n";
                     query += "UPDATE `creature_template` set `lootId` = @" + constantName + " WHERE `entry` = @" + constantName + ";\n";
-                    query += "DELETE FROM `creature_loot_template` WHERE `entry` = @" + constantName + ";\n";
+                    query += "DELETE FROM `creature_loot_template` WHERE `entry` = @" + constantName + " and `item` in (";
+
+                    foreach (Tuple<uint, long> item in loot)
+                    {
+                        count++;
+                        query += item.Item1.ToString();
+                        if (count + 1 > loot.Count)
+                            query += ")\n";
+                        else
+                            query += ", ";
+
+                    }
+
                     query += "INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupId`, `lootmode`, `mincountOrRef`, `maxcount`, `difficultyMask`) VALUES\n";
                 }
 
+                count = 0;
                 foreach (Tuple<uint, long> item in loot)
                 {
                     count++;
