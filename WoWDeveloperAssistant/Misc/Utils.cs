@@ -10,6 +10,14 @@ namespace WoWDeveloperAssistant.Misc
 {
     public static class Utils
     {
+        public enum TabsSize : uint
+        {
+            ONE_TAB     = 2,
+            TWO_TAB     = 4,
+            THREE_TAB   = 8,
+            FOUR_TABS   = 16,
+        };
+
         public enum BuildVersions : uint
         {
             BUILD_UNKNOWN = 0,
@@ -261,6 +269,18 @@ namespace WoWDeveloperAssistant.Misc
             string spaces = "";
 
             for (uint i = 0; i < count; i++)
+            {
+                spaces += ' ';
+            }
+
+            return spaces;
+        }
+
+        public static string AddSpacesCount(TabsSize count)
+        {
+            string spaces = "";
+
+            for (uint i = 0; i < (uint)count; i++)
             {
                 spaces += ' ';
             }

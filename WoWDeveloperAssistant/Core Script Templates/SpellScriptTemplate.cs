@@ -62,9 +62,9 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
             { "OnPrepare",
                 new Dictionary<string, string>
                 {
-                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"                  },
-                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"    },
-                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" }
+                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"                  },
+                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"    },
+                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" }
                 }
 
             },
@@ -72,9 +72,9 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
             { "OnCheckInterrupt",
                 new Dictionary<string, string>
                 {
-                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(20) + "return false;"                  },
-                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(20) + "return false;"    },
-                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" }
+                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return false;"                  },
+                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return false;"    },
+                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" }
                 }
 
             },
@@ -82,185 +82,185 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
             { "BeforeCast",
                 new Dictionary<string, string>
                 {
-                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"                  },
-                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"    },
-                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName)" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" }
+                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"                  },
+                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"    },
+                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" }
                 }
             },
 
             { "OnCheckCast",
                 new Dictionary<string, string>
                 {
-                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(20) + "return SPELL_FAILED_SUCCESS;" },
-                    { "TargetCheck",    "Unit* l_Target = GetExplTargetUnit();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Target)" + "\r\n" + Utils.AddSpacesCount(20) + "return SPELL_FAILED_NO_VALID_TARGETS;" },
-                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(20) + "return SPELL_FAILED_SUCCESS;"    },
-                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" },
-                    { "TargetAuraCheck","if (l_Target->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" }
+                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return SPELL_FAILED_SUCCESS;" },
+                    { "TargetCheck",    "Unit* l_Target = GetExplTargetUnit();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Target)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return SPELL_FAILED_NO_VALID_TARGETS;" },
+                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return SPELL_FAILED_SUCCESS;"    },
+                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" },
+                    { "TargetAuraCheck","if (l_Target->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" }
                 }
             },
 
             { "OnTakePowers",
                 new Dictionary<string, string>
                 {
-                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"                  },
-                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"    },
-                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" }
+                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"                  },
+                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"    },
+                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" }
                 }
             },
 
             { "OnObjectAreaTargetSelect",
                 new Dictionary<string, string>
                 {
-                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"                  },
-                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"    },
-                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" },
-                    { "TargetListEmptyCheck", "if (p_Targets.empty())" + "\r\n" + Utils.AddSpacesCount(20) + "return;" },
-                    { "TargetListRemoveIf","p_Targets.remove_if([] (WorldObject* p_Itr) -> bool" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "});" },
-                    { "TargetListSizeCheck","if (p_Targets.size() > DESIRED_SIZE)" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" },
+                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"                  },
+                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"    },
+                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" },
+                    { "TargetListEmptyCheck", "if (p_Targets.empty())" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;" },
+                    { "TargetListRemoveIf","p_Targets.remove_if([] (WorldObject* p_Itr) -> bool" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "});" },
+                    { "TargetListSizeCheck","if (p_Targets.size() > DESIRED_SIZE)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" },
                 }
             },
 
             { "OnObjectTargetSelect",
                 new Dictionary<string, string>
                 {
-                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"                  },
-                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"    },
-                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" },
-                    { "TargetCheck","if (p_Target == nullptr)" + "\r\n" + Utils.AddSpacesCount(20) + "return;" },
-                    { "TargetAuraCheck","if (p_Target->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" },
+                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"                  },
+                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"    },
+                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" },
+                    { "TargetCheck","if (p_Target == nullptr)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;" },
+                    { "TargetAuraCheck","if (p_Target->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" },
                 }
             },
 
             { "OnDestinationTargetSelect",
                 new Dictionary<string, string>
                 {
-                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"                  },
-                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"    },
-                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" },
+                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"                  },
+                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"    },
+                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" },
                 }
             },
 
             { "OnCast",
                 new Dictionary<string, string>
                 {
-                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"                  },
-                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"    },
-                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" }
+                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"                  },
+                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"    },
+                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" }
                 }
             },
 
             { "AfterCast",
                 new Dictionary<string, string>
                 {
-                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"                  },
-                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"    },
-                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" }
+                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"                  },
+                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"    },
+                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" }
                 }
             },
 
             { "OnEffectLaunch",
                 new Dictionary<string, string>
                 {
-                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"                  },
-                    { "UnitHitCheck",   "Unit* l_Target = GetHitUnit();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Target)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"                  },
-                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"    },
-                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" },
-                    { "UnitHitAuraCheck","if (l_Target->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" },
+                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"                  },
+                    { "UnitHitCheck",   "Unit* l_Target = GetHitUnit();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Target)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"                  },
+                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"    },
+                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" },
+                    { "UnitHitAuraCheck","if (l_Target->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" },
                 }
             },
 
             { "OnEffectLaunchTarget",
                 new Dictionary<string, string>
                 {
-                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"                  },
-                    { "UnitHitCheck",   "Unit* l_Target = GetHitUnit();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Target)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"                  },
-                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"    },
-                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" },
-                    { "UnitHitAuraCheck","if (l_Target->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" },
+                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"                  },
+                    { "UnitHitCheck",   "Unit* l_Target = GetHitUnit();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Target)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"                  },
+                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"    },
+                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" },
+                    { "UnitHitAuraCheck","if (l_Target->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" },
                 }
             },
 
             { "OnEffectHit",
                 new Dictionary<string, string>
                 {
-                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"                  },
-                    { "UnitHitCheck",   "Unit* l_Target = GetHitUnit();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Target)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"                  },
-                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"    },
-                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" },
-                    { "UnitHitAuraCheck","if (l_Target->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" },
+                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"                  },
+                    { "UnitHitCheck",   "Unit* l_Target = GetHitUnit();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Target)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"                  },
+                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"    },
+                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" },
+                    { "UnitHitAuraCheck","if (l_Target->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" },
                 }
             },
 
             { "BeforeHit",
                 new Dictionary<string, string>
                 {
-                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"                  },
-                    { "UnitHitCheck",   "Unit* l_Target = GetHitUnit();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Target)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"                  },
-                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"    },
-                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" },
-                    { "UnitHitAuraCheck","if (l_Target->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" },
+                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"                  },
+                    { "UnitHitCheck",   "Unit* l_Target = GetHitUnit();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Target)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"                  },
+                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"    },
+                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" },
+                    { "UnitHitAuraCheck","if (l_Target->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" },
                 }
             },
 
             { "OnEffectHitTarget",
                 new Dictionary<string, string>
                 {
-                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"                  },
-                    { "UnitHitCheck",   "Unit* l_Target = GetHitUnit();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Target)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"                  },
-                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"    },
-                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" },
-                    { "UnitHitAuraCheck","if (l_Target->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" },
+                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"                  },
+                    { "UnitHitCheck",   "Unit* l_Target = GetHitUnit();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Target)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"                  },
+                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"    },
+                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" },
+                    { "UnitHitAuraCheck","if (l_Target->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" },
                 }
             },
 
             { "OnHit",
                 new Dictionary<string, string>
                 {
-                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"                  },
-                    { "UnitHitCheck",   "Unit* l_Target = GetHitUnit();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Target)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"                  },
-                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"    },
-                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" },
-                    { "UnitHitAuraCheck","if (l_Target->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" },
+                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"                  },
+                    { "UnitHitCheck",   "Unit* l_Target = GetHitUnit();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Target)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"                  },
+                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"    },
+                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" },
+                    { "UnitHitAuraCheck","if (l_Target->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" },
                 }
             },
 
             { "AfterHit",
                 new Dictionary<string, string>
                 {
-                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"                  },
-                    { "UnitHitCheck",   "Unit* l_Target = GetHitUnit();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Target)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"                  },
-                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"    },
-                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" },
-                    { "UnitHitAuraCheck","if (l_Target->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" },
+                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"                  },
+                    { "UnitHitCheck",   "Unit* l_Target = GetHitUnit();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Target)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"                  },
+                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"    },
+                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" },
+                    { "UnitHitAuraCheck","if (l_Target->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" },
                 }
             },
 
             { "OnCalculateThreat",
                 new Dictionary<string, string>
                 {
-                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(20) + "return;" },
-                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"    },
-                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" },
-                    { "TargetCheck","if (p_Target == nullptr)" + "\r\n" + Utils.AddSpacesCount(20) + "return;" },
-                    { "TargetAuraCheck","if (p_Target->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" }
+                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;" },
+                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"    },
+                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" },
+                    { "TargetCheck","if (p_Target == nullptr)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;" },
+                    { "TargetAuraCheck","if (p_Target->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" }
                 }
             },
 
             { "OnCalculateChannelDuration",
                 new Dictionary<string, string>
                 {
-                    { "CasterCheck","if (p_Caster == nullptr)" + "\r\n" + Utils.AddSpacesCount(20) + "return;" },
-                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"    },
-                    { "CasterAuraCheck","if (p_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" },
+                    { "CasterCheck","if (p_Caster == nullptr)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;" },
+                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"    },
+                    { "CasterAuraCheck","if (p_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" },
                 }
             },
 
             { "OnInterrupt",
                 new Dictionary<string, string>
                 {
-                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(20) + "return;" },
-                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(20) + "return;"    },
-                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" },
+                    { "CasterCheck",    "Unit* l_Caster = GetCaster();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Caster)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;" },
+                    { "GetSpellInfo",   "SpellInfo* l_SpellInfo = GetSpellInfo();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_SpellInfo)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "return;"    },
+                    { "CasterAuraCheck","if (l_Caster->HasAura(eSpells::SpellName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.THREE_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" },
                 }
             }
         };
@@ -281,22 +281,17 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
                 defaultName = "unknow_spell";
 
             scriptName = "spell_" + defaultName.Replace(" ", "_").ToLower().Replace("'", "") + "_" + spellId;
+
             scriptBody = "/// " + defaultName + " - " + spellId + "\r\n";
-            scriptBody += "class " + scriptName + " : public SpellScriptLoader" + "\r\n";
+            scriptBody += "class " + scriptName  + " : public SpellScript" + "\r\n";
             scriptBody += "{" + "\r\n";
-            scriptBody += Utils.AddSpacesCount(4) + "public:" + "\r\n";
-            scriptBody += Utils.AddSpacesCount(8) + scriptName + "()" + " : SpellScriptLoader(\"" + scriptName + "\")" + " { }" + "\r\n\r\n";
             scriptBody += GetEnumsBody(hookBodiesTreeView) + "\r\n\r\n";
-            scriptBody += Utils.AddSpacesCount(8) + "class " + scriptName + "_SpellScript" + " : public SpellScript" + "\r\n";
-            scriptBody += Utils.AddSpacesCount(8) + "{" + "\r\n";
-            scriptBody += Utils.AddSpacesCount(12) + "PrepareSpellScript(" + scriptName + "_SpellScript" + ");" + "\r\n";
+            scriptBody += Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + "PrepareSpellScript(" + scriptName + "_SpellScript" + ");" + "\r\n";
             scriptBody += GetHooksBody(hooksListBox, hookBodiesTreeView) + "\r\n\r\n";
-            scriptBody += Utils.AddSpacesCount(12) + "void Register() override" + "\r\n";
-            scriptBody += Utils.AddSpacesCount(12) + "{" + "\r\n";
+            scriptBody += Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + "void Register() override" + "\r\n";
+            scriptBody += Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + "{" + "\r\n";
             scriptBody += GetHooksMacrosBody(hooksListBox, hookBodiesTreeView, scriptName) + "\r\n";
-            scriptBody += Utils.AddSpacesCount(12) + "}" + "\r\n";
-            scriptBody += Utils.AddSpacesCount(8) + "};" + "\r\n";
-            scriptBody += "\r\n" + GetGettersBody(scriptName) + "\r\n";
+            scriptBody += Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + "}" + "\r\n";
             scriptBody += "};";
 
             Clipboard.SetText(scriptBody);
@@ -335,8 +330,8 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
 
             foreach (var hook in hooksListBox.SelectedItems)
             {
-                body += "\r\n\r\n" + Utils.AddSpacesCount(12) + hooksDictionary[hook.ToString()];
-                body += "\r\n" + Utils.AddSpacesCount(12) + "{" + "\r\n" + Utils.AddSpacesCount(16);
+                body += "\r\n\r\n" + Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + hooksDictionary[hook.ToString()];
+                body += "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB);
 
                 foreach (TreeNode parentNode in hookBodiesTreeView.Nodes)
                 {
@@ -351,7 +346,7 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
                         {
                             if (moreThanOne)
                             {
-                                body += "\r\n\r\n" + Utils.AddSpacesCount(16);
+                                body += "\r\n\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB);
                             }
 
                             body += hookBodiesDictionary[hook.ToString()][childNode.Text];
@@ -364,7 +359,7 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
                     }
                 }
 
-                body += "\r\n" + Utils.AddSpacesCount(12) + "}";
+                body += "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + "}";
             }
 
             return body;
@@ -379,7 +374,7 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
             {
                 string hookStr = hook.ToString();
 
-                body += Utils.AddSpacesCount(16) + hookStr;
+                body += Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + hookStr;
                 body += ' ' + String.Format(hooksMacrosDictionary[hookStr], scriptName, hookStr);
                 
                 if (counter < hooksListBox.SelectedItems.Count)
