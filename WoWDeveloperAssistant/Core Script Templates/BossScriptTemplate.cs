@@ -13,7 +13,7 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
             { "IsSummonedBy",       "void IsSummonedBy(Unit* p_Summoner) override"                                                              },
             { "MoveInLineOfSight",  "void MoveInLineOfSight(Unit* p_Who) override"                                                              },
             { "DoAction",           "void DoAction(int32 const p_Action) override"                                                              },
-            { "SetData",            "void SetData(uint64 /*p_Type*/, uint32 p_Value) override"                                                  },
+            { "SetData",            "void SetData(uint64 p_Type, uint32 p_Value) override"                                                  },
             { "SpellHit",           "void SpellHit(Unit* p_Caster, SpellInfo const* p_Spell) override"                                          },
             { "OnSpellCasted",      "void OnSpellCasted(SpellInfo const* p_Spell) override"                                                     },
             { "OnSpellFinished",    "void OnSpellFinished(SpellInfo const* p_Spell) override"                                                   },
@@ -24,12 +24,12 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
             { "FilterTargets",  "void FilterTargets(std::list<WorldObject*>& p_Targets, Spell const* p_Spell, SpellEffIndex p_EffIndex) override"   },
             { "RegeneratePower", "void RegeneratePower(Powers p_Power, int32& p_Value) override"                                                         },
             { "PowerModified",  "void PowerModified(Powers p_Power, int32 p_Value, bool p_Regen) override"                                      },
-            { "PassengerBoarded",   "void PassengerBoarded(Unit* p_Passenger, int8 /*p_SeatID*/, bool p_Apply) override"                        },
-            { "MovementInform",     "void MovementInform(uint32 /*p_Type*/, uint64 p_PointId) override"                                         },
+            { "PassengerBoarded",   "void PassengerBoarded(Unit* p_Passenger, int8 p_SeatID, bool p_Apply) override"                        },
+            { "MovementInform",     "void MovementInform(uint32 p_Type, uint64 p_PointId) override"                                         },
             { "Reset",              "void Reset() override"                                                                                     },
             { "EnterEvadeMode",     "void EnterEvadeMode() override"                                                                            },
             { "EnterCombat",        "void EnterCombat(Unit* p_Victim) override"                                                                 },
-            { "DamageTaken",        "void DamageTaken(Unit* /*p_Attacker*/, uint32& /*p_Damage*/, SpellInfo const* /*p_SpellInfo*/) override"   },
+            { "DamageTaken",        "void DamageTaken(Unit* p_Attacker, uint32& p_Damage, SpellInfo const* p_SpellInfo) override"   },
             { "JustDied",           "void JustDied(Unit* p_Killer) override"                                                                    },
             { "ExecuteEvent",       "void ExecuteEvent(uint32 const p_EventId) override"                                                        },
             { "UpdateAI",           "void UpdateAI(uint32 const p_Diff) override"                                                               },
@@ -220,21 +220,12 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
 
             scriptName = "boss_" + defaultName.Replace(" ", "_").ToLower().Replace("'", "") + "_" + objectEntry;
             scriptBody = "/// " + defaultName + " - " + objectEntry + "\r\n";
-            scriptBody += "class " + scriptName + " : public CreatureScript" + "\r\n";
-            scriptBody += "{" + "\r\n";
-            scriptBody += Utils.AddSpacesCount(4) + "public:" + "\r\n";
-            scriptBody += Utils.AddSpacesCount(8) + scriptName + "()" + " : CreatureScript(\"" + scriptName + "\")" + "{ }" + "\r\n\r\n";
-            scriptBody += Utils.AddSpacesCount(8) + "struct " + scriptName + "_AI" + " : public " + "BossAI" + "\r\n";
+            scriptBody += Utils.AddSpacesCount(8) + "struct " + scriptName + " : public " + "BossAI" + "\r\n";
             scriptBody += Utils.AddSpacesCount(8) + "{" + "\r\n";
-            scriptBody += Utils.AddSpacesCount(12) + "explicit " + scriptName + "AI" + "(Creature* p_Creature) : " + "BossAI(p_Creature, eData::BOSS_DATA)" + "\r\n" + Utils.AddSpacesCount(12) + "{}";
+            scriptBody += Utils.AddSpacesCount(12) + "explicit " + scriptName + "(Creature* p_Creature) : " + "BossAI(p_Creature, eData::BOSS_DATA)" + "\r\n" + Utils.AddSpacesCount(12) + "{}";
             scriptBody += GetEnumsBody(hookBodiesTreeView);
             scriptBody += GetHooksBody(hooksListBox, hookBodiesTreeView);
             scriptBody += "\r\n" + Utils.AddSpacesCount(8) + "};" + "\r\n\r\n";
-            scriptBody += Utils.AddSpacesCount(8) + "CreatureAI* GetAI(Creature* p_Creature) const override" + "\r\n";
-            scriptBody += Utils.AddSpacesCount(8) + "{" + "\r\n";
-            scriptBody += Utils.AddSpacesCount(12) + "return new " + scriptName + "_AI(p_Creature);" + "\r\n";
-            scriptBody += Utils.AddSpacesCount(8) + "}" + "\r\n";
-            scriptBody += "};";
 
             Clipboard.SetText(scriptBody);
             MessageBox.Show("Template has been successfully builded and copied on your clipboard!");
@@ -250,6 +241,8 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
                 body += "\r\n\r\n" + Utils.AddSpacesCount(12) + "enum ePoints" + "\r\n" + Utils.AddSpacesCount(12) + "{" + "\r\n" + Utils.AddSpacesCount(16) + "\r\n" + Utils.AddSpacesCount(12) + "};";
 
             body += "\r\n\r\n" + Utils.AddSpacesCount(12) + "enum eEvents" + "\r\n" + Utils.AddSpacesCount(12) + "{" + "\r\n" + Utils.AddSpacesCount(16) + "\r\n" + Utils.AddSpacesCount(12) + "};";
+
+            body += "\r\n\r\n" + Utils.AddSpacesCount(12) + "enum eTalks" + "\r\n" + Utils.AddSpacesCount(12) + "{" + "\r\n" + Utils.AddSpacesCount(16) + "\r\n" + Utils.AddSpacesCount(12) + "};";
 
             return body;
         }
