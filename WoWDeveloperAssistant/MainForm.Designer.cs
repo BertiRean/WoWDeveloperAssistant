@@ -29,46 +29,46 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
             this.MainWindowTabs = new System.Windows.Forms.TabControl();
             this.tabPage_CreatureScriptsCreator = new System.Windows.Forms.TabPage();
-            this.checkBox_OnlyCombatSpells = new System.Windows.Forms.CheckBox();
-            this.dataGridView_Spells = new System.Windows.Forms.DataGridView();
+            this.checkBox_CreatureScriptsCreator_OnlyCombatSpells = new System.Windows.Forms.CheckBox();
+            this.dataGridView_CreatureScriptsCreator_Spells = new System.Windows.Forms.DataGridView();
             this.SpellId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SpellName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CastTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -82,11 +82,11 @@
             this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.createSQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listBox_CreatureGuids = new System.Windows.Forms.ListBox();
+            this.listBox_CreatureScriptCreator_CreatureGuids = new System.Windows.Forms.ListBox();
             this.toolStrip_CSC = new System.Windows.Forms.ToolStrip();
             this.toolStripButton_CSC_ImportSniff = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton_CSC_Search = new System.Windows.Forms.ToolStripButton();
-            this.toolStripTextBox_CSC_CreatureEntry = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripButton_CreatureScriptsCreator_Search = new System.Windows.Forms.ToolStripButton();
+            this.toolStripTextBox_CreatureScriptsCreator_CreatureEntry = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripLabel_CSC_CreatureEntry = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator_CSC = new System.Windows.Forms.ToolStripSeparator();
             this.tabPage_WaypointsCreator = new System.Windows.Forms.TabPage();
@@ -266,6 +266,7 @@
             this.tabJournalLootCreator = new System.Windows.Forms.TabPage();
             this.JournalLoot_SQL_RichTextBox = new System.Windows.Forms.RichTextBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.JournalLoot_GenerateUpdateItemsDifficulty = new System.Windows.Forms.Button();
             this.JournalLoot_ComboBox = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.JournalLoot_GenerateSQL = new System.Windows.Forms.Button();
@@ -337,10 +338,39 @@
             this.toolStripStatusLabel_FileStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel_CurrentAction = new System.Windows.Forms.ToolStripStatusLabel();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.JournalLoot_GenerateUpdateItemsDifficulty = new System.Windows.Forms.Button();
+            this.tabConditionsCreator = new System.Windows.Forms.TabPage();
+            this.button_ConditionsCreator_ClearConditions = new System.Windows.Forms.Button();
+            this.button_ConditionsCreator_AddCondition = new System.Windows.Forms.Button();
+            this.label_ConditionsCreator_ScriptName = new System.Windows.Forms.Label();
+            this.label_ConditionsCreator_NegativeCondition = new System.Windows.Forms.Label();
+            this.label_ConditionsCreator_ConditionValue3 = new System.Windows.Forms.Label();
+            this.label_ConditionsCreator_ConditionValue2 = new System.Windows.Forms.Label();
+            this.label_ConditionsCreator_ConditionValue1 = new System.Windows.Forms.Label();
+            this.textBox_ConditionsCreator_ScriptName = new System.Windows.Forms.TextBox();
+            this.textBox_ConditionsCreator_NegativeCondition = new System.Windows.Forms.TextBox();
+            this.textBox_ConditionsCreator_ConditionValue3 = new System.Windows.Forms.TextBox();
+            this.textBox_ConditionsCreator_ConditionValue2 = new System.Windows.Forms.TextBox();
+            this.textBox_ConditionsCreator_ConditionValue1 = new System.Windows.Forms.TextBox();
+            this.textBox_ConditionsCreator_ConditionTarget = new System.Windows.Forms.TextBox();
+            this.label_ConditionsCreator_ConditionTarget = new System.Windows.Forms.Label();
+            this.label_ConditionsCreator_ConditionType = new System.Windows.Forms.Label();
+            this.comboBox_ConditionsCreator_ConditionType = new System.Windows.Forms.ComboBox();
+            this.textBox_ConditionsCreator_ElseGroup = new System.Windows.Forms.TextBox();
+            this.label_ConditionsCreator_ElseGroup = new System.Windows.Forms.Label();
+            this.textBox_ConditionsCreator_SourceId = new System.Windows.Forms.TextBox();
+            this.label_ConditionsCreator_SourceId = new System.Windows.Forms.Label();
+            this.textBox_ConditionsCreator_SourceEntry = new System.Windows.Forms.TextBox();
+            this.label_ConditionsCreator_SourceEntry = new System.Windows.Forms.Label();
+            this.textBox_ConditionsCreator_SourceGroup = new System.Windows.Forms.TextBox();
+            this.label_ConditionsCreator_ConditionSourceGroup = new System.Windows.Forms.Label();
+            this.comboBox_ConditionsCreator_ConditionSourceType = new System.Windows.Forms.ComboBox();
+            this.label_ConditionsCreator_ConditionSourceType = new System.Windows.Forms.Label();
+            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBox_ConditionsCreator_Output = new System.Windows.Forms.TextBox();
+            this.checkBox_CreatureScriptsCreator_CreateDataFile = new System.Windows.Forms.CheckBox();
             this.MainWindowTabs.SuspendLayout();
             this.tabPage_CreatureScriptsCreator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Spells)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_CreatureScriptsCreator_Spells)).BeginInit();
             this.contextMenuStrip_CSC.SuspendLayout();
             this.toolStrip_CSC.SuspendLayout();
             this.tabPage_WaypointsCreator.SuspendLayout();
@@ -375,6 +405,8 @@
             this.AreaTrigger_ButtonContainer_GrooupBox.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
             this.statusStrip_LoadedFile.SuspendLayout();
+            this.tabConditionsCreator.SuspendLayout();
+            this.tableLayoutPanel9.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainWindowTabs
@@ -393,6 +425,7 @@
             this.MainWindowTabs.Controls.Add(this.tabJournalLootCreator);
             this.MainWindowTabs.Controls.Add(this.tabDungeonDataInfoParser);
             this.MainWindowTabs.Controls.Add(this.tabAreaTriggetCreator);
+            this.MainWindowTabs.Controls.Add(this.tabConditionsCreator);
             this.MainWindowTabs.Location = new System.Drawing.Point(2, 2);
             this.MainWindowTabs.Margin = new System.Windows.Forms.Padding(2);
             this.MainWindowTabs.Name = "MainWindowTabs";
@@ -402,9 +435,10 @@
             // 
             // tabPage_CreatureScriptsCreator
             // 
-            this.tabPage_CreatureScriptsCreator.Controls.Add(this.checkBox_OnlyCombatSpells);
-            this.tabPage_CreatureScriptsCreator.Controls.Add(this.dataGridView_Spells);
-            this.tabPage_CreatureScriptsCreator.Controls.Add(this.listBox_CreatureGuids);
+            this.tabPage_CreatureScriptsCreator.Controls.Add(this.checkBox_CreatureScriptsCreator_CreateDataFile);
+            this.tabPage_CreatureScriptsCreator.Controls.Add(this.checkBox_CreatureScriptsCreator_OnlyCombatSpells);
+            this.tabPage_CreatureScriptsCreator.Controls.Add(this.dataGridView_CreatureScriptsCreator_Spells);
+            this.tabPage_CreatureScriptsCreator.Controls.Add(this.listBox_CreatureScriptCreator_CreatureGuids);
             this.tabPage_CreatureScriptsCreator.Controls.Add(this.toolStrip_CSC);
             this.tabPage_CreatureScriptsCreator.Location = new System.Drawing.Point(4, 22);
             this.tabPage_CreatureScriptsCreator.Margin = new System.Windows.Forms.Padding(2);
@@ -415,31 +449,31 @@
             this.tabPage_CreatureScriptsCreator.Text = "Creature Scripts Creator";
             this.tabPage_CreatureScriptsCreator.UseVisualStyleBackColor = true;
             // 
-            // checkBox_OnlyCombatSpells
+            // checkBox_CreatureScriptsCreator_OnlyCombatSpells
             // 
-            this.checkBox_OnlyCombatSpells.AutoSize = true;
-            this.checkBox_OnlyCombatSpells.BackColor = System.Drawing.Color.LightGray;
-            this.checkBox_OnlyCombatSpells.Checked = true;
-            this.checkBox_OnlyCombatSpells.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox_OnlyCombatSpells.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox_OnlyCombatSpells.Location = new System.Drawing.Point(967, 5);
-            this.checkBox_OnlyCombatSpells.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox_OnlyCombatSpells.Name = "checkBox_OnlyCombatSpells";
-            this.checkBox_OnlyCombatSpells.Size = new System.Drawing.Size(130, 19);
-            this.checkBox_OnlyCombatSpells.TabIndex = 4;
-            this.checkBox_OnlyCombatSpells.Text = "Only Combat Spells";
-            this.checkBox_OnlyCombatSpells.UseVisualStyleBackColor = false;
+            this.checkBox_CreatureScriptsCreator_OnlyCombatSpells.AutoSize = true;
+            this.checkBox_CreatureScriptsCreator_OnlyCombatSpells.BackColor = System.Drawing.Color.LightGray;
+            this.checkBox_CreatureScriptsCreator_OnlyCombatSpells.Checked = true;
+            this.checkBox_CreatureScriptsCreator_OnlyCombatSpells.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox_CreatureScriptsCreator_OnlyCombatSpells.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkBox_CreatureScriptsCreator_OnlyCombatSpells.Location = new System.Drawing.Point(967, 5);
+            this.checkBox_CreatureScriptsCreator_OnlyCombatSpells.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox_CreatureScriptsCreator_OnlyCombatSpells.Name = "checkBox_CreatureScriptsCreator_OnlyCombatSpells";
+            this.checkBox_CreatureScriptsCreator_OnlyCombatSpells.Size = new System.Drawing.Size(130, 19);
+            this.checkBox_CreatureScriptsCreator_OnlyCombatSpells.TabIndex = 4;
+            this.checkBox_CreatureScriptsCreator_OnlyCombatSpells.Text = "Only Combat Spells";
+            this.checkBox_CreatureScriptsCreator_OnlyCombatSpells.UseVisualStyleBackColor = false;
             // 
-            // dataGridView_Spells
+            // dataGridView_CreatureScriptsCreator_Spells
             // 
-            this.dataGridView_Spells.AllowUserToAddRows = false;
-            this.dataGridView_Spells.AllowUserToDeleteRows = false;
-            this.dataGridView_Spells.AllowUserToOrderColumns = true;
-            this.dataGridView_Spells.AllowUserToResizeColumns = false;
-            this.dataGridView_Spells.AllowUserToResizeRows = false;
-            this.dataGridView_Spells.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView_Spells.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_Spells.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridView_CreatureScriptsCreator_Spells.AllowUserToAddRows = false;
+            this.dataGridView_CreatureScriptsCreator_Spells.AllowUserToDeleteRows = false;
+            this.dataGridView_CreatureScriptsCreator_Spells.AllowUserToOrderColumns = true;
+            this.dataGridView_CreatureScriptsCreator_Spells.AllowUserToResizeColumns = false;
+            this.dataGridView_CreatureScriptsCreator_Spells.AllowUserToResizeRows = false;
+            this.dataGridView_CreatureScriptsCreator_Spells.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView_CreatureScriptsCreator_Spells.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_CreatureScriptsCreator_Spells.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.SpellId,
             this.SpellName,
             this.CastTime,
@@ -449,23 +483,23 @@
             this.MaxCastRepeatTime,
             this.CastsCount,
             this.SourceSpell});
-            this.dataGridView_Spells.ContextMenuStrip = this.contextMenuStrip_CSC;
-            this.dataGridView_Spells.Enabled = false;
-            this.dataGridView_Spells.Location = new System.Drawing.Point(507, 32);
-            this.dataGridView_Spells.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView_Spells.Name = "dataGridView_Spells";
-            this.dataGridView_Spells.RowHeadersWidth = 62;
-            this.dataGridView_Spells.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView_Spells.RowTemplate.Height = 28;
-            this.dataGridView_Spells.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView_Spells.Size = new System.Drawing.Size(846, 576);
-            this.dataGridView_Spells.TabIndex = 3;
+            this.dataGridView_CreatureScriptsCreator_Spells.ContextMenuStrip = this.contextMenuStrip_CSC;
+            this.dataGridView_CreatureScriptsCreator_Spells.Enabled = false;
+            this.dataGridView_CreatureScriptsCreator_Spells.Location = new System.Drawing.Point(507, 32);
+            this.dataGridView_CreatureScriptsCreator_Spells.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView_CreatureScriptsCreator_Spells.Name = "dataGridView_CreatureScriptsCreator_Spells";
+            this.dataGridView_CreatureScriptsCreator_Spells.RowHeadersWidth = 62;
+            this.dataGridView_CreatureScriptsCreator_Spells.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dataGridView_CreatureScriptsCreator_Spells.RowTemplate.Height = 28;
+            this.dataGridView_CreatureScriptsCreator_Spells.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView_CreatureScriptsCreator_Spells.Size = new System.Drawing.Size(846, 576);
+            this.dataGridView_CreatureScriptsCreator_Spells.TabIndex = 3;
             // 
             // SpellId
             // 
             this.SpellId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.SpellId.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.SpellId.DefaultCellStyle = dataGridViewCellStyle32;
             this.SpellId.HeaderText = "SpellId";
             this.SpellId.MaxInputLength = 10;
             this.SpellId.MinimumWidth = 8;
@@ -476,8 +510,8 @@
             // SpellName
             // 
             this.SpellName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.SpellName.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.SpellName.DefaultCellStyle = dataGridViewCellStyle33;
             this.SpellName.HeaderText = "SpellName";
             this.SpellName.MaxInputLength = 50;
             this.SpellName.MinimumWidth = 8;
@@ -488,8 +522,8 @@
             // CastTime
             // 
             this.CastTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CastTime.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CastTime.DefaultCellStyle = dataGridViewCellStyle34;
             this.CastTime.HeaderText = "CastTime";
             this.CastTime.MaxInputLength = 10;
             this.CastTime.MinimumWidth = 8;
@@ -500,8 +534,8 @@
             // MinCastStartTime
             // 
             this.MinCastStartTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.MinCastStartTime.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.MinCastStartTime.DefaultCellStyle = dataGridViewCellStyle35;
             this.MinCastStartTime.HeaderText = "MinCastStartTime";
             this.MinCastStartTime.MaxInputLength = 10;
             this.MinCastStartTime.MinimumWidth = 8;
@@ -512,8 +546,8 @@
             // MaxCastStartTime
             // 
             this.MaxCastStartTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.MaxCastStartTime.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.MaxCastStartTime.DefaultCellStyle = dataGridViewCellStyle36;
             this.MaxCastStartTime.HeaderText = "MaxCastStartTime";
             this.MaxCastStartTime.MaxInputLength = 10;
             this.MaxCastStartTime.MinimumWidth = 8;
@@ -524,8 +558,8 @@
             // MinCastRepeatTime
             // 
             this.MinCastRepeatTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.MinCastRepeatTime.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.MinCastRepeatTime.DefaultCellStyle = dataGridViewCellStyle37;
             this.MinCastRepeatTime.HeaderText = "MinCastRepeatTime";
             this.MinCastRepeatTime.MaxInputLength = 10;
             this.MinCastRepeatTime.MinimumWidth = 8;
@@ -536,8 +570,8 @@
             // MaxCastRepeatTime
             // 
             this.MaxCastRepeatTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.MaxCastRepeatTime.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.MaxCastRepeatTime.DefaultCellStyle = dataGridViewCellStyle38;
             this.MaxCastRepeatTime.HeaderText = "MaxCastRepeatTime";
             this.MaxCastRepeatTime.MaxInputLength = 10;
             this.MaxCastRepeatTime.MinimumWidth = 8;
@@ -548,8 +582,8 @@
             // CastsCount
             // 
             this.CastsCount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CastsCount.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CastsCount.DefaultCellStyle = dataGridViewCellStyle39;
             this.CastsCount.HeaderText = "CastsCount";
             this.CastsCount.MaxInputLength = 4;
             this.CastsCount.MinimumWidth = 8;
@@ -594,17 +628,17 @@
             this.createSQLToolStripMenuItem.Text = "Create SQL";
             this.createSQLToolStripMenuItem.Click += new System.EventHandler(this.createSQLToolStripMenuItem_Click);
             // 
-            // listBox_CreatureGuids
+            // listBox_CreatureScriptCreator_CreatureGuids
             // 
-            this.listBox_CreatureGuids.BackColor = System.Drawing.SystemColors.Control;
-            this.listBox_CreatureGuids.Enabled = false;
-            this.listBox_CreatureGuids.FormattingEnabled = true;
-            this.listBox_CreatureGuids.Location = new System.Drawing.Point(5, 32);
-            this.listBox_CreatureGuids.Margin = new System.Windows.Forms.Padding(2);
-            this.listBox_CreatureGuids.Name = "listBox_CreatureGuids";
-            this.listBox_CreatureGuids.Size = new System.Drawing.Size(486, 576);
-            this.listBox_CreatureGuids.TabIndex = 2;
-            this.listBox_CreatureGuids.SelectedIndexChanged += new System.EventHandler(this.listBox_CreatureGuids_SelectedIndexChanged);
+            this.listBox_CreatureScriptCreator_CreatureGuids.BackColor = System.Drawing.SystemColors.Control;
+            this.listBox_CreatureScriptCreator_CreatureGuids.Enabled = false;
+            this.listBox_CreatureScriptCreator_CreatureGuids.FormattingEnabled = true;
+            this.listBox_CreatureScriptCreator_CreatureGuids.Location = new System.Drawing.Point(5, 32);
+            this.listBox_CreatureScriptCreator_CreatureGuids.Margin = new System.Windows.Forms.Padding(2);
+            this.listBox_CreatureScriptCreator_CreatureGuids.Name = "listBox_CreatureScriptCreator_CreatureGuids";
+            this.listBox_CreatureScriptCreator_CreatureGuids.Size = new System.Drawing.Size(486, 576);
+            this.listBox_CreatureScriptCreator_CreatureGuids.TabIndex = 2;
+            this.listBox_CreatureScriptCreator_CreatureGuids.SelectedIndexChanged += new System.EventHandler(this.listBox_CreatureGuids_SelectedIndexChanged);
             // 
             // toolStrip_CSC
             // 
@@ -612,8 +646,8 @@
             this.toolStrip_CSC.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip_CSC.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton_CSC_ImportSniff,
-            this.toolStripButton_CSC_Search,
-            this.toolStripTextBox_CSC_CreatureEntry,
+            this.toolStripButton_CreatureScriptsCreator_Search,
+            this.toolStripTextBox_CreatureScriptsCreator_CreatureEntry,
             this.toolStripLabel_CSC_CreatureEntry,
             this.toolStripSeparator_CSC});
             this.toolStrip_CSC.Location = new System.Drawing.Point(2, 2);
@@ -631,26 +665,26 @@
             this.toolStripButton_CSC_ImportSniff.Text = "Import Sniff";
             this.toolStripButton_CSC_ImportSniff.Click += new System.EventHandler(this.toolStripButton_ImportSniff_Click);
             // 
-            // toolStripButton_CSC_Search
+            // toolStripButton_CreatureScriptsCreator_Search
             // 
-            this.toolStripButton_CSC_Search.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripButton_CSC_Search.Enabled = false;
-            this.toolStripButton_CSC_Search.Image = global::WoWDeveloperAssistant.Properties.Resources.PIC_Search;
-            this.toolStripButton_CSC_Search.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_CSC_Search.Name = "toolStripButton_CSC_Search";
-            this.toolStripButton_CSC_Search.Size = new System.Drawing.Size(66, 24);
-            this.toolStripButton_CSC_Search.Text = "Search";
-            this.toolStripButton_CSC_Search.Click += new System.EventHandler(this.toolStripButton_Search_Click);
+            this.toolStripButton_CreatureScriptsCreator_Search.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton_CreatureScriptsCreator_Search.Enabled = false;
+            this.toolStripButton_CreatureScriptsCreator_Search.Image = global::WoWDeveloperAssistant.Properties.Resources.PIC_Search;
+            this.toolStripButton_CreatureScriptsCreator_Search.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_CreatureScriptsCreator_Search.Name = "toolStripButton_CreatureScriptsCreator_Search";
+            this.toolStripButton_CreatureScriptsCreator_Search.Size = new System.Drawing.Size(66, 24);
+            this.toolStripButton_CreatureScriptsCreator_Search.Text = "Search";
+            this.toolStripButton_CreatureScriptsCreator_Search.Click += new System.EventHandler(this.toolStripButton_Search_Click);
             // 
-            // toolStripTextBox_CSC_CreatureEntry
+            // toolStripTextBox_CreatureScriptsCreator_CreatureEntry
             // 
-            this.toolStripTextBox_CSC_CreatureEntry.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripTextBox_CSC_CreatureEntry.Enabled = false;
-            this.toolStripTextBox_CSC_CreatureEntry.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.toolStripTextBox_CSC_CreatureEntry.MaxLength = 40;
-            this.toolStripTextBox_CSC_CreatureEntry.Name = "toolStripTextBox_CSC_CreatureEntry";
-            this.toolStripTextBox_CSC_CreatureEntry.Size = new System.Drawing.Size(68, 27);
-            this.toolStripTextBox_CSC_CreatureEntry.KeyUp += new System.Windows.Forms.KeyEventHandler(this.toolStripTextBox_CSC_CreatureEntrySearch_Enter);
+            this.toolStripTextBox_CreatureScriptsCreator_CreatureEntry.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripTextBox_CreatureScriptsCreator_CreatureEntry.Enabled = false;
+            this.toolStripTextBox_CreatureScriptsCreator_CreatureEntry.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStripTextBox_CreatureScriptsCreator_CreatureEntry.MaxLength = 40;
+            this.toolStripTextBox_CreatureScriptsCreator_CreatureEntry.Name = "toolStripTextBox_CreatureScriptsCreator_CreatureEntry";
+            this.toolStripTextBox_CreatureScriptsCreator_CreatureEntry.Size = new System.Drawing.Size(68, 27);
+            this.toolStripTextBox_CreatureScriptsCreator_CreatureEntry.KeyUp += new System.Windows.Forms.KeyEventHandler(this.toolStripTextBox_CSC_CreatureEntrySearch_Enter);
             // 
             // toolStripLabel_CSC_CreatureEntry
             // 
@@ -687,18 +721,18 @@
             this.grid_WC_Waypoints.AllowUserToDeleteRows = false;
             this.grid_WC_Waypoints.AllowUserToResizeColumns = false;
             this.grid_WC_Waypoints.AllowUserToResizeRows = false;
-            dataGridViewCellStyle9.NullValue = null;
-            this.grid_WC_Waypoints.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle40.NullValue = null;
+            this.grid_WC_Waypoints.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle40;
             this.grid_WC_Waypoints.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.NullValue = null;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grid_WC_Waypoints.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle41.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle41.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle41.NullValue = null;
+            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grid_WC_Waypoints.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle41;
             this.grid_WC_Waypoints.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grid_WC_Waypoints.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.gridColumn_Id,
@@ -711,23 +745,23 @@
             this.gridColumn_HasScript,
             this.WaypointSource});
             this.grid_WC_Waypoints.ContextMenuStrip = this.contextMenuStrip_WC;
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle19.NullValue = null;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grid_WC_Waypoints.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle50.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle50.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle50.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle50.NullValue = null;
+            dataGridViewCellStyle50.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle50.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle50.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grid_WC_Waypoints.DefaultCellStyle = dataGridViewCellStyle50;
             this.grid_WC_Waypoints.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.grid_WC_Waypoints.Enabled = false;
             this.grid_WC_Waypoints.Location = new System.Drawing.Point(849, 32);
             this.grid_WC_Waypoints.Name = "grid_WC_Waypoints";
             this.grid_WC_Waypoints.RowHeadersWidth = 62;
             this.grid_WC_Waypoints.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grid_WC_Waypoints.RowsDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle51.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grid_WC_Waypoints.RowsDefaultCellStyle = dataGridViewCellStyle51;
             this.grid_WC_Waypoints.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grid_WC_Waypoints.Size = new System.Drawing.Size(506, 576);
             this.grid_WC_Waypoints.TabIndex = 28;
@@ -735,8 +769,8 @@
             // 
             // gridColumn_Id
             // 
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.gridColumn_Id.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.gridColumn_Id.DefaultCellStyle = dataGridViewCellStyle42;
             this.gridColumn_Id.HeaderText = "Id";
             this.gridColumn_Id.MinimumWidth = 8;
             this.gridColumn_Id.Name = "gridColumn_Id";
@@ -746,9 +780,9 @@
             // 
             // gridColumn_PosX
             // 
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle12.NullValue = null;
-            this.gridColumn_PosX.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle43.NullValue = null;
+            this.gridColumn_PosX.DefaultCellStyle = dataGridViewCellStyle43;
             this.gridColumn_PosX.HeaderText = "PosX";
             this.gridColumn_PosX.MinimumWidth = 8;
             this.gridColumn_PosX.Name = "gridColumn_PosX";
@@ -758,9 +792,9 @@
             // 
             // gridColumn_PosY
             // 
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle13.NullValue = null;
-            this.gridColumn_PosY.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle44.NullValue = null;
+            this.gridColumn_PosY.DefaultCellStyle = dataGridViewCellStyle44;
             this.gridColumn_PosY.HeaderText = "PosY";
             this.gridColumn_PosY.MinimumWidth = 8;
             this.gridColumn_PosY.Name = "gridColumn_PosY";
@@ -770,8 +804,8 @@
             // 
             // gridColumn_PosZ
             // 
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.gridColumn_PosZ.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.gridColumn_PosZ.DefaultCellStyle = dataGridViewCellStyle45;
             this.gridColumn_PosZ.HeaderText = "PosZ";
             this.gridColumn_PosZ.MinimumWidth = 8;
             this.gridColumn_PosZ.Name = "gridColumn_PosZ";
@@ -781,8 +815,8 @@
             // 
             // gridColumn_Orientation
             // 
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.gridColumn_Orientation.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.gridColumn_Orientation.DefaultCellStyle = dataGridViewCellStyle46;
             this.gridColumn_Orientation.HeaderText = "Orientation";
             this.gridColumn_Orientation.MinimumWidth = 8;
             this.gridColumn_Orientation.Name = "gridColumn_Orientation";
@@ -791,8 +825,8 @@
             // 
             // gridColumn_WCTime
             // 
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.gridColumn_WCTime.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.gridColumn_WCTime.DefaultCellStyle = dataGridViewCellStyle47;
             this.gridColumn_WCTime.HeaderText = "Time";
             this.gridColumn_WCTime.MinimumWidth = 8;
             this.gridColumn_WCTime.Name = "gridColumn_WCTime";
@@ -801,8 +835,8 @@
             // 
             // gridColumn_WCDelay
             // 
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.gridColumn_WCDelay.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.gridColumn_WCDelay.DefaultCellStyle = dataGridViewCellStyle48;
             this.gridColumn_WCDelay.HeaderText = "Delay";
             this.gridColumn_WCDelay.MinimumWidth = 8;
             this.gridColumn_WCDelay.Name = "gridColumn_WCDelay";
@@ -810,8 +844,8 @@
             // 
             // gridColumn_HasScript
             // 
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.gridColumn_HasScript.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.gridColumn_HasScript.DefaultCellStyle = dataGridViewCellStyle49;
             this.gridColumn_HasScript.HeaderText = "HasScript";
             this.gridColumn_HasScript.MinimumWidth = 8;
             this.gridColumn_HasScript.Name = "gridColumn_HasScript";
@@ -896,87 +930,87 @@
             this.chart_WC.BorderSkin.BackColor = System.Drawing.Color.Transparent;
             this.chart_WC.BorderSkin.BorderColor = System.Drawing.Color.Transparent;
             this.chart_WC.BorderSkin.BorderWidth = 0;
-            chartArea1.AlignmentOrientation = ((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations)((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Vertical | System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal)));
-            chartArea1.AxisX.IsReversed = true;
-            chartArea1.AxisX.IsStartedFromZero = false;
-            chartArea1.AxisX.LabelStyle.ForeColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisX.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisX.MajorGrid.Enabled = false;
-            chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisX.MajorTickMark.Enabled = false;
-            chartArea1.AxisX.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisX.MinorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisX.MinorTickMark.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisX.MinorTickMark.TickMarkStyle = System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.None;
-            chartArea1.AxisX.ScaleBreakStyle.Enabled = true;
-            chartArea1.AxisX.ScaleBreakStyle.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.Silver;
-            chartArea1.AxisX.ScrollBar.LineColor = System.Drawing.Color.Black;
-            chartArea1.AxisX.TitleForeColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisX2.MajorGrid.Enabled = false;
-            chartArea1.AxisX2.MajorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisX2.MajorTickMark.Enabled = false;
-            chartArea1.AxisX2.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisX2.MinorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisY.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
-            chartArea1.AxisY.IsStartedFromZero = false;
-            chartArea1.AxisY.LabelStyle.Enabled = false;
-            chartArea1.AxisY.LabelStyle.IsEndLabelVisible = false;
-            chartArea1.AxisY.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisY.MajorGrid.Enabled = false;
-            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisY.MajorTickMark.Enabled = false;
-            chartArea1.AxisY.MinorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisY.MinorTickMark.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisY.MinorTickMark.TickMarkStyle = System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.None;
-            chartArea1.AxisY.ScaleBreakStyle.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.Silver;
-            chartArea1.AxisY.ScrollBar.LineColor = System.Drawing.Color.Black;
-            chartArea1.AxisY.TitleForeColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisY2.MajorGrid.Enabled = false;
-            chartArea1.AxisY2.MajorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisY2.MajorTickMark.Enabled = false;
-            chartArea1.AxisY2.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisY2.MinorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisY2.MinorTickMark.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.BorderColor = System.Drawing.Color.Transparent;
-            chartArea1.CursorX.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea1.CursorX.IsUserEnabled = true;
-            chartArea1.CursorX.IsUserSelectionEnabled = true;
-            chartArea1.CursorX.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            chartArea1.CursorY.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea1.CursorY.IsUserEnabled = true;
-            chartArea1.CursorY.IsUserSelectionEnabled = true;
-            chartArea1.CursorY.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            chartArea1.Name = "ChartArea1";
-            this.chart_WC.ChartAreas.Add(chartArea1);
+            chartArea2.AlignmentOrientation = ((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations)((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Vertical | System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal)));
+            chartArea2.AxisX.IsReversed = true;
+            chartArea2.AxisX.IsStartedFromZero = false;
+            chartArea2.AxisX.LabelStyle.ForeColor = System.Drawing.Color.Transparent;
+            chartArea2.AxisX.LineColor = System.Drawing.Color.Transparent;
+            chartArea2.AxisX.MajorGrid.Enabled = false;
+            chartArea2.AxisX.MajorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea2.AxisX.MajorTickMark.Enabled = false;
+            chartArea2.AxisX.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
+            chartArea2.AxisX.MinorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea2.AxisX.MinorTickMark.LineColor = System.Drawing.Color.Transparent;
+            chartArea2.AxisX.MinorTickMark.TickMarkStyle = System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.None;
+            chartArea2.AxisX.ScaleBreakStyle.Enabled = true;
+            chartArea2.AxisX.ScaleBreakStyle.LineColor = System.Drawing.Color.Transparent;
+            chartArea2.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.Silver;
+            chartArea2.AxisX.ScrollBar.LineColor = System.Drawing.Color.Black;
+            chartArea2.AxisX.TitleForeColor = System.Drawing.Color.Transparent;
+            chartArea2.AxisX2.MajorGrid.Enabled = false;
+            chartArea2.AxisX2.MajorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea2.AxisX2.MajorTickMark.Enabled = false;
+            chartArea2.AxisX2.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
+            chartArea2.AxisX2.MinorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea2.AxisY.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
+            chartArea2.AxisY.IsStartedFromZero = false;
+            chartArea2.AxisY.LabelStyle.Enabled = false;
+            chartArea2.AxisY.LabelStyle.IsEndLabelVisible = false;
+            chartArea2.AxisY.LineColor = System.Drawing.Color.Transparent;
+            chartArea2.AxisY.MajorGrid.Enabled = false;
+            chartArea2.AxisY.MajorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea2.AxisY.MajorTickMark.Enabled = false;
+            chartArea2.AxisY.MinorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea2.AxisY.MinorTickMark.LineColor = System.Drawing.Color.Transparent;
+            chartArea2.AxisY.MinorTickMark.TickMarkStyle = System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.None;
+            chartArea2.AxisY.ScaleBreakStyle.LineColor = System.Drawing.Color.Transparent;
+            chartArea2.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.Silver;
+            chartArea2.AxisY.ScrollBar.LineColor = System.Drawing.Color.Black;
+            chartArea2.AxisY.TitleForeColor = System.Drawing.Color.Transparent;
+            chartArea2.AxisY2.MajorGrid.Enabled = false;
+            chartArea2.AxisY2.MajorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea2.AxisY2.MajorTickMark.Enabled = false;
+            chartArea2.AxisY2.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
+            chartArea2.AxisY2.MinorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea2.AxisY2.MinorTickMark.LineColor = System.Drawing.Color.Transparent;
+            chartArea2.BorderColor = System.Drawing.Color.Transparent;
+            chartArea2.CursorX.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea2.CursorX.IsUserEnabled = true;
+            chartArea2.CursorX.IsUserSelectionEnabled = true;
+            chartArea2.CursorX.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            chartArea2.CursorY.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea2.CursorY.IsUserEnabled = true;
+            chartArea2.CursorY.IsUserSelectionEnabled = true;
+            chartArea2.CursorY.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            chartArea2.Name = "ChartArea1";
+            this.chart_WC.ChartAreas.Add(chartArea2);
             this.chart_WC.Enabled = false;
-            legend1.Enabled = false;
-            legend1.ForeColor = System.Drawing.Color.Transparent;
-            legend1.HeaderSeparatorColor = System.Drawing.Color.Transparent;
-            legend1.ItemColumnSeparatorColor = System.Drawing.Color.Transparent;
-            legend1.Name = "Legend1";
-            legend1.TitleForeColor = System.Drawing.Color.Transparent;
-            legend1.TitleSeparatorColor = System.Drawing.Color.Transparent;
-            this.chart_WC.Legends.Add(legend1);
+            legend2.Enabled = false;
+            legend2.ForeColor = System.Drawing.Color.Transparent;
+            legend2.HeaderSeparatorColor = System.Drawing.Color.Transparent;
+            legend2.ItemColumnSeparatorColor = System.Drawing.Color.Transparent;
+            legend2.Name = "Legend1";
+            legend2.TitleForeColor = System.Drawing.Color.Transparent;
+            legend2.TitleSeparatorColor = System.Drawing.Color.Transparent;
+            this.chart_WC.Legends.Add(legend2);
             this.chart_WC.Location = new System.Drawing.Point(3, 32);
             this.chart_WC.Name = "chart_WC";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
-            series1.Color = System.Drawing.Color.Red;
-            series1.Legend = "Legend1";
-            series1.Name = "Path";
-            series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
-            series1.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
-            this.chart_WC.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series2.Color = System.Drawing.Color.Red;
+            series2.Legend = "Legend1";
+            series2.Name = "Path";
+            series2.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
+            series2.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
+            this.chart_WC.Series.Add(series2);
             this.chart_WC.Size = new System.Drawing.Size(596, 577);
             this.chart_WC.TabIndex = 26;
             this.chart_WC.Text = "Waypoints";
-            title1.DockedToChartArea = "ChartArea1";
-            title1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title1.Name = "Path";
-            title1.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Horizontal;
-            this.chart_WC.Titles.Add(title1);
+            title2.DockedToChartArea = "ChartArea1";
+            title2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title2.Name = "Path";
+            title2.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Horizontal;
+            this.chart_WC.Titles.Add(title2);
             // 
             // toolStrip_WC
             // 
@@ -2422,8 +2456,8 @@
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridViewTextBoxColumn1.HeaderText = "Entry";
             this.dataGridViewTextBoxColumn1.MaxInputLength = 10;
             this.dataGridViewTextBoxColumn1.MinimumWidth = 8;
@@ -2434,8 +2468,8 @@
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridViewTextBoxColumn2.HeaderText = "InitMin";
             this.dataGridViewTextBoxColumn2.MaxInputLength = 50;
             this.dataGridViewTextBoxColumn2.MinimumWidth = 8;
@@ -2446,8 +2480,8 @@
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle19;
             this.dataGridViewTextBoxColumn3.HeaderText = "InitMax";
             this.dataGridViewTextBoxColumn3.MaxInputLength = 10;
             this.dataGridViewTextBoxColumn3.MinimumWidth = 8;
@@ -2458,8 +2492,8 @@
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle20;
             this.dataGridViewTextBoxColumn4.HeaderText = "RepeatMin";
             this.dataGridViewTextBoxColumn4.MaxInputLength = 10;
             this.dataGridViewTextBoxColumn4.MinimumWidth = 8;
@@ -2470,8 +2504,8 @@
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle52.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle52;
             this.dataGridViewTextBoxColumn5.HeaderText = "RepeatMax";
             this.dataGridViewTextBoxColumn5.MaxInputLength = 10;
             this.dataGridViewTextBoxColumn5.MinimumWidth = 8;
@@ -2482,8 +2516,8 @@
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle53;
             this.dataGridViewTextBoxColumn6.HeaderText = "RepeatFail";
             this.dataGridViewTextBoxColumn6.MaxInputLength = 10;
             this.dataGridViewTextBoxColumn6.MinimumWidth = 8;
@@ -2501,8 +2535,8 @@
             // dataGridViewTextBoxColumn7
             // 
             this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle54;
             this.dataGridViewTextBoxColumn7.HeaderText = "EventCheck";
             this.dataGridViewTextBoxColumn7.MaxInputLength = 10;
             this.dataGridViewTextBoxColumn7.MinimumWidth = 8;
@@ -2513,8 +2547,8 @@
             // dataGridViewTextBoxColumn8
             // 
             this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle55.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle55;
             this.dataGridViewTextBoxColumn8.HeaderText = "EventFlags";
             this.dataGridViewTextBoxColumn8.MaxInputLength = 4;
             this.dataGridViewTextBoxColumn8.MinimumWidth = 8;
@@ -3043,6 +3077,17 @@
             this.tableLayoutPanel5.Size = new System.Drawing.Size(252, 81);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
+            // JournalLoot_GenerateUpdateItemsDifficulty
+            // 
+            this.JournalLoot_GenerateUpdateItemsDifficulty.Location = new System.Drawing.Point(2, 42);
+            this.JournalLoot_GenerateUpdateItemsDifficulty.Margin = new System.Windows.Forms.Padding(2);
+            this.JournalLoot_GenerateUpdateItemsDifficulty.Name = "JournalLoot_GenerateUpdateItemsDifficulty";
+            this.JournalLoot_GenerateUpdateItemsDifficulty.Size = new System.Drawing.Size(122, 36);
+            this.JournalLoot_GenerateUpdateItemsDifficulty.TabIndex = 3;
+            this.JournalLoot_GenerateUpdateItemsDifficulty.Text = "Generate Update Item Loot Difficulties";
+            this.JournalLoot_GenerateUpdateItemsDifficulty.UseVisualStyleBackColor = true;
+            this.JournalLoot_GenerateUpdateItemsDifficulty.Click += new System.EventHandler(this.JournalLoot_GenerateUpdateItemsDifficulty_Click);
+            // 
             // JournalLoot_ComboBox
             // 
             this.JournalLoot_ComboBox.FormattingEnabled = true;
@@ -3447,8 +3492,8 @@
             // dataGridViewTextBoxColumn10
             // 
             this.dataGridViewTextBoxColumn10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle56.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle56;
             this.dataGridViewTextBoxColumn10.HeaderText = "Spell ID";
             this.dataGridViewTextBoxColumn10.MaxInputLength = 50;
             this.dataGridViewTextBoxColumn10.MinimumWidth = 8;
@@ -3459,8 +3504,8 @@
             // dataGridViewTextBoxColumn11
             // 
             this.dataGridViewTextBoxColumn11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn11.DefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle57.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn11.DefaultCellStyle = dataGridViewCellStyle57;
             this.dataGridViewTextBoxColumn11.HeaderText = "InitTimers";
             this.dataGridViewTextBoxColumn11.MaxInputLength = 50;
             this.dataGridViewTextBoxColumn11.MinimumWidth = 8;
@@ -3471,8 +3516,8 @@
             // dataGridViewTextBoxColumn12
             // 
             this.dataGridViewTextBoxColumn12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn12.DefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle58.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn12.DefaultCellStyle = dataGridViewCellStyle58;
             this.dataGridViewTextBoxColumn12.HeaderText = "RepeatTimers";
             this.dataGridViewTextBoxColumn12.MaxInputLength = 50;
             this.dataGridViewTextBoxColumn12.MinimumWidth = 8;
@@ -3937,16 +3982,366 @@
             // 
             this.openFileDialog.FileName = "openFileDialog_WSC";
             // 
-            // JournalLoot_GenerateUpdateItemsDifficulty
+            // tabConditionsCreator
             // 
-            this.JournalLoot_GenerateUpdateItemsDifficulty.Location = new System.Drawing.Point(2, 42);
-            this.JournalLoot_GenerateUpdateItemsDifficulty.Margin = new System.Windows.Forms.Padding(2);
-            this.JournalLoot_GenerateUpdateItemsDifficulty.Name = "JournalLoot_GenerateUpdateItemsDifficulty";
-            this.JournalLoot_GenerateUpdateItemsDifficulty.Size = new System.Drawing.Size(122, 36);
-            this.JournalLoot_GenerateUpdateItemsDifficulty.TabIndex = 3;
-            this.JournalLoot_GenerateUpdateItemsDifficulty.Text = "Generate Update Item Loot Difficulties";
-            this.JournalLoot_GenerateUpdateItemsDifficulty.UseVisualStyleBackColor = true;
-            this.JournalLoot_GenerateUpdateItemsDifficulty.Click += new System.EventHandler(this.JournalLoot_GenerateUpdateItemsDifficulty_Click);
+            this.tabConditionsCreator.Controls.Add(this.textBox_ConditionsCreator_Output);
+            this.tabConditionsCreator.Controls.Add(this.tableLayoutPanel9);
+            this.tabConditionsCreator.Location = new System.Drawing.Point(4, 22);
+            this.tabConditionsCreator.Name = "tabConditionsCreator";
+            this.tabConditionsCreator.Size = new System.Drawing.Size(1357, 616);
+            this.tabConditionsCreator.TabIndex = 14;
+            this.tabConditionsCreator.Text = "ConditionsCreator";
+            this.tabConditionsCreator.UseVisualStyleBackColor = true;
+            // 
+            // button_ConditionsCreator_ClearConditions
+            // 
+            this.button_ConditionsCreator_ClearConditions.Enabled = false;
+            this.button_ConditionsCreator_ClearConditions.Location = new System.Drawing.Point(2, 496);
+            this.button_ConditionsCreator_ClearConditions.Margin = new System.Windows.Forms.Padding(2);
+            this.button_ConditionsCreator_ClearConditions.Name = "button_ConditionsCreator_ClearConditions";
+            this.button_ConditionsCreator_ClearConditions.Size = new System.Drawing.Size(100, 24);
+            this.button_ConditionsCreator_ClearConditions.TabIndex = 52;
+            this.button_ConditionsCreator_ClearConditions.Text = "Clear Conditions";
+            this.button_ConditionsCreator_ClearConditions.UseVisualStyleBackColor = true;
+            this.button_ConditionsCreator_ClearConditions.Click += new System.EventHandler(this.button_ClearConditions_Click);
+            // 
+            // button_ConditionsCreator_AddCondition
+            // 
+            this.button_ConditionsCreator_AddCondition.Enabled = false;
+            this.button_ConditionsCreator_AddCondition.Location = new System.Drawing.Point(106, 496);
+            this.button_ConditionsCreator_AddCondition.Margin = new System.Windows.Forms.Padding(2);
+            this.button_ConditionsCreator_AddCondition.Name = "button_ConditionsCreator_AddCondition";
+            this.button_ConditionsCreator_AddCondition.Size = new System.Drawing.Size(115, 24);
+            this.button_ConditionsCreator_AddCondition.TabIndex = 51;
+            this.button_ConditionsCreator_AddCondition.Text = "Add Condition";
+            this.button_ConditionsCreator_AddCondition.UseVisualStyleBackColor = true;
+            this.button_ConditionsCreator_AddCondition.Click += new System.EventHandler(this.button_AddCondition_Click);
+            // 
+            // label_ConditionsCreator_ScriptName
+            // 
+            this.label_ConditionsCreator_ScriptName.AutoSize = true;
+            this.label_ConditionsCreator_ScriptName.Location = new System.Drawing.Point(2, 474);
+            this.label_ConditionsCreator_ScriptName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_ConditionsCreator_ScriptName.Name = "label_ConditionsCreator_ScriptName";
+            this.label_ConditionsCreator_ScriptName.Size = new System.Drawing.Size(65, 13);
+            this.label_ConditionsCreator_ScriptName.TabIndex = 50;
+            this.label_ConditionsCreator_ScriptName.Text = "ScriptName:";
+            // 
+            // label_ConditionsCreator_NegativeCondition
+            // 
+            this.label_ConditionsCreator_NegativeCondition.AutoSize = true;
+            this.label_ConditionsCreator_NegativeCondition.Location = new System.Drawing.Point(2, 454);
+            this.label_ConditionsCreator_NegativeCondition.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_ConditionsCreator_NegativeCondition.Name = "label_ConditionsCreator_NegativeCondition";
+            this.label_ConditionsCreator_NegativeCondition.Size = new System.Drawing.Size(100, 13);
+            this.label_ConditionsCreator_NegativeCondition.TabIndex = 49;
+            this.label_ConditionsCreator_NegativeCondition.Text = "Negative Condition:";
+            // 
+            // label_ConditionsCreator_ConditionValue3
+            // 
+            this.label_ConditionsCreator_ConditionValue3.AutoSize = true;
+            this.label_ConditionsCreator_ConditionValue3.Location = new System.Drawing.Point(2, 434);
+            this.label_ConditionsCreator_ConditionValue3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_ConditionsCreator_ConditionValue3.Name = "label_ConditionsCreator_ConditionValue3";
+            this.label_ConditionsCreator_ConditionValue3.Size = new System.Drawing.Size(93, 13);
+            this.label_ConditionsCreator_ConditionValue3.TabIndex = 48;
+            this.label_ConditionsCreator_ConditionValue3.Text = "Condition Value 3:";
+            // 
+            // label_ConditionsCreator_ConditionValue2
+            // 
+            this.label_ConditionsCreator_ConditionValue2.AutoSize = true;
+            this.label_ConditionsCreator_ConditionValue2.Location = new System.Drawing.Point(2, 414);
+            this.label_ConditionsCreator_ConditionValue2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_ConditionsCreator_ConditionValue2.Name = "label_ConditionsCreator_ConditionValue2";
+            this.label_ConditionsCreator_ConditionValue2.Size = new System.Drawing.Size(93, 13);
+            this.label_ConditionsCreator_ConditionValue2.TabIndex = 47;
+            this.label_ConditionsCreator_ConditionValue2.Text = "Condition Value 2:";
+            // 
+            // label_ConditionsCreator_ConditionValue1
+            // 
+            this.label_ConditionsCreator_ConditionValue1.AutoSize = true;
+            this.label_ConditionsCreator_ConditionValue1.Location = new System.Drawing.Point(2, 394);
+            this.label_ConditionsCreator_ConditionValue1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_ConditionsCreator_ConditionValue1.Name = "label_ConditionsCreator_ConditionValue1";
+            this.label_ConditionsCreator_ConditionValue1.Size = new System.Drawing.Size(93, 13);
+            this.label_ConditionsCreator_ConditionValue1.TabIndex = 46;
+            this.label_ConditionsCreator_ConditionValue1.Text = "Condition Value 1:";
+            // 
+            // textBox_ConditionsCreator_ScriptName
+            // 
+            this.textBox_ConditionsCreator_ScriptName.Enabled = false;
+            this.textBox_ConditionsCreator_ScriptName.Location = new System.Drawing.Point(106, 476);
+            this.textBox_ConditionsCreator_ScriptName.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_ConditionsCreator_ScriptName.MaxLength = 50;
+            this.textBox_ConditionsCreator_ScriptName.Name = "textBox_ConditionsCreator_ScriptName";
+            this.textBox_ConditionsCreator_ScriptName.Size = new System.Drawing.Size(215, 20);
+            this.textBox_ConditionsCreator_ScriptName.TabIndex = 45;
+            // 
+            // textBox_ConditionsCreator_NegativeCondition
+            // 
+            this.textBox_ConditionsCreator_NegativeCondition.Enabled = false;
+            this.textBox_ConditionsCreator_NegativeCondition.Location = new System.Drawing.Point(106, 456);
+            this.textBox_ConditionsCreator_NegativeCondition.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_ConditionsCreator_NegativeCondition.MaxLength = 1;
+            this.textBox_ConditionsCreator_NegativeCondition.Name = "textBox_ConditionsCreator_NegativeCondition";
+            this.textBox_ConditionsCreator_NegativeCondition.Size = new System.Drawing.Size(21, 20);
+            this.textBox_ConditionsCreator_NegativeCondition.TabIndex = 44;
+            this.textBox_ConditionsCreator_NegativeCondition.Text = "0";
+            this.textBox_ConditionsCreator_NegativeCondition.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox_ConditionsCreator_ConditionValue3
+            // 
+            this.textBox_ConditionsCreator_ConditionValue3.Enabled = false;
+            this.textBox_ConditionsCreator_ConditionValue3.Location = new System.Drawing.Point(106, 436);
+            this.textBox_ConditionsCreator_ConditionValue3.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_ConditionsCreator_ConditionValue3.MaxLength = 6;
+            this.textBox_ConditionsCreator_ConditionValue3.Name = "textBox_ConditionsCreator_ConditionValue3";
+            this.textBox_ConditionsCreator_ConditionValue3.Size = new System.Drawing.Size(68, 20);
+            this.textBox_ConditionsCreator_ConditionValue3.TabIndex = 43;
+            // 
+            // textBox_ConditionsCreator_ConditionValue2
+            // 
+            this.textBox_ConditionsCreator_ConditionValue2.Enabled = false;
+            this.textBox_ConditionsCreator_ConditionValue2.Location = new System.Drawing.Point(106, 416);
+            this.textBox_ConditionsCreator_ConditionValue2.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_ConditionsCreator_ConditionValue2.MaxLength = 6;
+            this.textBox_ConditionsCreator_ConditionValue2.Name = "textBox_ConditionsCreator_ConditionValue2";
+            this.textBox_ConditionsCreator_ConditionValue2.Size = new System.Drawing.Size(68, 20);
+            this.textBox_ConditionsCreator_ConditionValue2.TabIndex = 42;
+            // 
+            // textBox_ConditionsCreator_ConditionValue1
+            // 
+            this.textBox_ConditionsCreator_ConditionValue1.Enabled = false;
+            this.textBox_ConditionsCreator_ConditionValue1.Location = new System.Drawing.Point(106, 396);
+            this.textBox_ConditionsCreator_ConditionValue1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_ConditionsCreator_ConditionValue1.MaxLength = 6;
+            this.textBox_ConditionsCreator_ConditionValue1.Name = "textBox_ConditionsCreator_ConditionValue1";
+            this.textBox_ConditionsCreator_ConditionValue1.Size = new System.Drawing.Size(68, 20);
+            this.textBox_ConditionsCreator_ConditionValue1.TabIndex = 41;
+            // 
+            // textBox_ConditionsCreator_ConditionTarget
+            // 
+            this.textBox_ConditionsCreator_ConditionTarget.Enabled = false;
+            this.textBox_ConditionsCreator_ConditionTarget.Location = new System.Drawing.Point(106, 376);
+            this.textBox_ConditionsCreator_ConditionTarget.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_ConditionsCreator_ConditionTarget.MaxLength = 1;
+            this.textBox_ConditionsCreator_ConditionTarget.Name = "textBox_ConditionsCreator_ConditionTarget";
+            this.textBox_ConditionsCreator_ConditionTarget.Size = new System.Drawing.Size(21, 20);
+            this.textBox_ConditionsCreator_ConditionTarget.TabIndex = 40;
+            this.textBox_ConditionsCreator_ConditionTarget.Text = "0";
+            this.textBox_ConditionsCreator_ConditionTarget.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label_ConditionsCreator_ConditionTarget
+            // 
+            this.label_ConditionsCreator_ConditionTarget.AutoSize = true;
+            this.label_ConditionsCreator_ConditionTarget.Location = new System.Drawing.Point(2, 374);
+            this.label_ConditionsCreator_ConditionTarget.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_ConditionsCreator_ConditionTarget.Name = "label_ConditionsCreator_ConditionTarget";
+            this.label_ConditionsCreator_ConditionTarget.Size = new System.Drawing.Size(88, 13);
+            this.label_ConditionsCreator_ConditionTarget.TabIndex = 39;
+            this.label_ConditionsCreator_ConditionTarget.Text = "Condition Target:";
+            // 
+            // label_ConditionsCreator_ConditionType
+            // 
+            this.label_ConditionsCreator_ConditionType.AutoSize = true;
+            this.label_ConditionsCreator_ConditionType.Location = new System.Drawing.Point(2, 354);
+            this.label_ConditionsCreator_ConditionType.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_ConditionsCreator_ConditionType.Name = "label_ConditionsCreator_ConditionType";
+            this.label_ConditionsCreator_ConditionType.Size = new System.Drawing.Size(81, 13);
+            this.label_ConditionsCreator_ConditionType.TabIndex = 38;
+            this.label_ConditionsCreator_ConditionType.Text = "Condition Type:";
+            // 
+            // comboBox_ConditionsCreator_ConditionType
+            // 
+            this.comboBox_ConditionsCreator_ConditionType.Enabled = false;
+            this.comboBox_ConditionsCreator_ConditionType.FormattingEnabled = true;
+            this.comboBox_ConditionsCreator_ConditionType.Location = new System.Drawing.Point(106, 356);
+            this.comboBox_ConditionsCreator_ConditionType.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox_ConditionsCreator_ConditionType.Name = "comboBox_ConditionsCreator_ConditionType";
+            this.comboBox_ConditionsCreator_ConditionType.Size = new System.Drawing.Size(215, 21);
+            this.comboBox_ConditionsCreator_ConditionType.TabIndex = 37;
+            this.comboBox_ConditionsCreator_ConditionType.DropDown += new System.EventHandler(this.comboBox_ConditionType_DropDown);
+            this.comboBox_ConditionsCreator_ConditionType.SelectedIndexChanged += new System.EventHandler(this.comboBox_ConditionType_SelectedIndexChanged);
+            // 
+            // textBox_ConditionsCreator_ElseGroup
+            // 
+            this.textBox_ConditionsCreator_ElseGroup.Enabled = false;
+            this.textBox_ConditionsCreator_ElseGroup.Location = new System.Drawing.Point(106, 336);
+            this.textBox_ConditionsCreator_ElseGroup.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_ConditionsCreator_ElseGroup.MaxLength = 2;
+            this.textBox_ConditionsCreator_ElseGroup.Name = "textBox_ConditionsCreator_ElseGroup";
+            this.textBox_ConditionsCreator_ElseGroup.Size = new System.Drawing.Size(35, 20);
+            this.textBox_ConditionsCreator_ElseGroup.TabIndex = 36;
+            this.textBox_ConditionsCreator_ElseGroup.Text = "0";
+            this.textBox_ConditionsCreator_ElseGroup.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label_ConditionsCreator_ElseGroup
+            // 
+            this.label_ConditionsCreator_ElseGroup.AutoSize = true;
+            this.label_ConditionsCreator_ElseGroup.Location = new System.Drawing.Point(2, 334);
+            this.label_ConditionsCreator_ElseGroup.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_ConditionsCreator_ElseGroup.Name = "label_ConditionsCreator_ElseGroup";
+            this.label_ConditionsCreator_ElseGroup.Size = new System.Drawing.Size(62, 13);
+            this.label_ConditionsCreator_ElseGroup.TabIndex = 35;
+            this.label_ConditionsCreator_ElseGroup.Text = "Else Group:";
+            // 
+            // textBox_ConditionsCreator_SourceId
+            // 
+            this.textBox_ConditionsCreator_SourceId.Enabled = false;
+            this.textBox_ConditionsCreator_SourceId.Location = new System.Drawing.Point(106, 316);
+            this.textBox_ConditionsCreator_SourceId.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_ConditionsCreator_SourceId.MaxLength = 1;
+            this.textBox_ConditionsCreator_SourceId.Name = "textBox_ConditionsCreator_SourceId";
+            this.textBox_ConditionsCreator_SourceId.Size = new System.Drawing.Size(21, 20);
+            this.textBox_ConditionsCreator_SourceId.TabIndex = 34;
+            this.textBox_ConditionsCreator_SourceId.Text = "0";
+            this.textBox_ConditionsCreator_SourceId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label_ConditionsCreator_SourceId
+            // 
+            this.label_ConditionsCreator_SourceId.AutoSize = true;
+            this.label_ConditionsCreator_SourceId.Location = new System.Drawing.Point(2, 314);
+            this.label_ConditionsCreator_SourceId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_ConditionsCreator_SourceId.Name = "label_ConditionsCreator_SourceId";
+            this.label_ConditionsCreator_SourceId.Size = new System.Drawing.Size(56, 13);
+            this.label_ConditionsCreator_SourceId.TabIndex = 33;
+            this.label_ConditionsCreator_SourceId.Text = "Source Id:";
+            // 
+            // textBox_ConditionsCreator_SourceEntry
+            // 
+            this.textBox_ConditionsCreator_SourceEntry.Enabled = false;
+            this.textBox_ConditionsCreator_SourceEntry.Location = new System.Drawing.Point(106, 296);
+            this.textBox_ConditionsCreator_SourceEntry.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_ConditionsCreator_SourceEntry.MaxLength = 6;
+            this.textBox_ConditionsCreator_SourceEntry.Name = "textBox_ConditionsCreator_SourceEntry";
+            this.textBox_ConditionsCreator_SourceEntry.Size = new System.Drawing.Size(68, 20);
+            this.textBox_ConditionsCreator_SourceEntry.TabIndex = 32;
+            // 
+            // label_ConditionsCreator_SourceEntry
+            // 
+            this.label_ConditionsCreator_SourceEntry.AutoSize = true;
+            this.label_ConditionsCreator_SourceEntry.Location = new System.Drawing.Point(2, 294);
+            this.label_ConditionsCreator_SourceEntry.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_ConditionsCreator_SourceEntry.Name = "label_ConditionsCreator_SourceEntry";
+            this.label_ConditionsCreator_SourceEntry.Size = new System.Drawing.Size(71, 13);
+            this.label_ConditionsCreator_SourceEntry.TabIndex = 31;
+            this.label_ConditionsCreator_SourceEntry.Text = "Source Entry:";
+            // 
+            // textBox_ConditionsCreator_SourceGroup
+            // 
+            this.textBox_ConditionsCreator_SourceGroup.Enabled = false;
+            this.textBox_ConditionsCreator_SourceGroup.Location = new System.Drawing.Point(106, 27);
+            this.textBox_ConditionsCreator_SourceGroup.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_ConditionsCreator_SourceGroup.MaxLength = 6;
+            this.textBox_ConditionsCreator_SourceGroup.Name = "textBox_ConditionsCreator_SourceGroup";
+            this.textBox_ConditionsCreator_SourceGroup.Size = new System.Drawing.Size(68, 20);
+            this.textBox_ConditionsCreator_SourceGroup.TabIndex = 30;
+            // 
+            // label_ConditionsCreator_ConditionSourceGroup
+            // 
+            this.label_ConditionsCreator_ConditionSourceGroup.AutoSize = true;
+            this.label_ConditionsCreator_ConditionSourceGroup.Location = new System.Drawing.Point(2, 25);
+            this.label_ConditionsCreator_ConditionSourceGroup.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_ConditionsCreator_ConditionSourceGroup.Name = "label_ConditionsCreator_ConditionSourceGroup";
+            this.label_ConditionsCreator_ConditionSourceGroup.Size = new System.Drawing.Size(76, 13);
+            this.label_ConditionsCreator_ConditionSourceGroup.TabIndex = 29;
+            this.label_ConditionsCreator_ConditionSourceGroup.Text = "Source Group:";
+            // 
+            // comboBox_ConditionsCreator_ConditionSourceType
+            // 
+            this.comboBox_ConditionsCreator_ConditionSourceType.FormattingEnabled = true;
+            this.comboBox_ConditionsCreator_ConditionSourceType.Location = new System.Drawing.Point(106, 2);
+            this.comboBox_ConditionsCreator_ConditionSourceType.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox_ConditionsCreator_ConditionSourceType.Name = "comboBox_ConditionsCreator_ConditionSourceType";
+            this.comboBox_ConditionsCreator_ConditionSourceType.Size = new System.Drawing.Size(215, 21);
+            this.comboBox_ConditionsCreator_ConditionSourceType.TabIndex = 28;
+            this.comboBox_ConditionsCreator_ConditionSourceType.DropDown += new System.EventHandler(this.comboBox_ConditionSourceType_DropDown);
+            this.comboBox_ConditionsCreator_ConditionSourceType.SelectedIndexChanged += new System.EventHandler(this.comboBox_ConditionSourceType_SelectedIndexChanged);
+            // 
+            // label_ConditionsCreator_ConditionSourceType
+            // 
+            this.label_ConditionsCreator_ConditionSourceType.AutoSize = true;
+            this.label_ConditionsCreator_ConditionSourceType.Location = new System.Drawing.Point(2, 0);
+            this.label_ConditionsCreator_ConditionSourceType.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_ConditionsCreator_ConditionSourceType.Name = "label_ConditionsCreator_ConditionSourceType";
+            this.label_ConditionsCreator_ConditionSourceType.Size = new System.Drawing.Size(71, 13);
+            this.label_ConditionsCreator_ConditionSourceType.TabIndex = 27;
+            this.label_ConditionsCreator_ConditionSourceType.Text = "Source Type:";
+            // 
+            // tableLayoutPanel9
+            // 
+            this.tableLayoutPanel9.ColumnCount = 3;
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel9.Controls.Add(this.button_ConditionsCreator_ClearConditions, 0, 12);
+            this.tableLayoutPanel9.Controls.Add(this.button_ConditionsCreator_AddCondition, 0, 12);
+            this.tableLayoutPanel9.Controls.Add(this.label_ConditionsCreator_ScriptName, 0, 11);
+            this.tableLayoutPanel9.Controls.Add(this.label_ConditionsCreator_SourceEntry, 0, 2);
+            this.tableLayoutPanel9.Controls.Add(this.label_ConditionsCreator_SourceId, 0, 3);
+            this.tableLayoutPanel9.Controls.Add(this.label_ConditionsCreator_ElseGroup, 0, 4);
+            this.tableLayoutPanel9.Controls.Add(this.label_ConditionsCreator_ConditionType, 0, 5);
+            this.tableLayoutPanel9.Controls.Add(this.label_ConditionsCreator_ConditionTarget, 0, 6);
+            this.tableLayoutPanel9.Controls.Add(this.textBox_ConditionsCreator_SourceEntry, 1, 2);
+            this.tableLayoutPanel9.Controls.Add(this.textBox_ConditionsCreator_SourceId, 1, 3);
+            this.tableLayoutPanel9.Controls.Add(this.textBox_ConditionsCreator_ConditionTarget, 1, 6);
+            this.tableLayoutPanel9.Controls.Add(this.label_ConditionsCreator_ConditionValue1, 0, 7);
+            this.tableLayoutPanel9.Controls.Add(this.label_ConditionsCreator_ConditionValue2, 0, 8);
+            this.tableLayoutPanel9.Controls.Add(this.label_ConditionsCreator_ConditionSourceGroup, 0, 1);
+            this.tableLayoutPanel9.Controls.Add(this.label_ConditionsCreator_ConditionSourceType, 0, 0);
+            this.tableLayoutPanel9.Controls.Add(this.textBox_ConditionsCreator_ElseGroup, 1, 4);
+            this.tableLayoutPanel9.Controls.Add(this.comboBox_ConditionsCreator_ConditionType, 1, 5);
+            this.tableLayoutPanel9.Controls.Add(this.textBox_ConditionsCreator_ScriptName, 1, 11);
+            this.tableLayoutPanel9.Controls.Add(this.label_ConditionsCreator_NegativeCondition, 0, 10);
+            this.tableLayoutPanel9.Controls.Add(this.label_ConditionsCreator_ConditionValue3, 0, 9);
+            this.tableLayoutPanel9.Controls.Add(this.textBox_ConditionsCreator_NegativeCondition, 1, 10);
+            this.tableLayoutPanel9.Controls.Add(this.textBox_ConditionsCreator_SourceGroup, 1, 1);
+            this.tableLayoutPanel9.Controls.Add(this.comboBox_ConditionsCreator_ConditionSourceType, 1, 0);
+            this.tableLayoutPanel9.Controls.Add(this.textBox_ConditionsCreator_ConditionValue2, 1, 8);
+            this.tableLayoutPanel9.Controls.Add(this.textBox_ConditionsCreator_ConditionValue1, 1, 7);
+            this.tableLayoutPanel9.Controls.Add(this.textBox_ConditionsCreator_ConditionValue3, 1, 9);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(6, 12);
+            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
+            this.tableLayoutPanel9.RowCount = 13;
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(367, 522);
+            this.tableLayoutPanel9.TabIndex = 53;
+            // 
+            // textBox_ConditionsCreator_Output
+            // 
+            this.textBox_ConditionsCreator_Output.Enabled = false;
+            this.textBox_ConditionsCreator_Output.Location = new System.Drawing.Point(378, 10);
+            this.textBox_ConditionsCreator_Output.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_ConditionsCreator_Output.Multiline = true;
+            this.textBox_ConditionsCreator_Output.Name = "textBox_ConditionsCreator_Output";
+            this.textBox_ConditionsCreator_Output.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.textBox_ConditionsCreator_Output.Size = new System.Drawing.Size(968, 598);
+            this.textBox_ConditionsCreator_Output.TabIndex = 54;
+            // 
+            // checkBox_CreatureScriptsCreator_CreateDataFile
+            // 
+            this.checkBox_CreatureScriptsCreator_CreateDataFile.AutoSize = true;
+            this.checkBox_CreatureScriptsCreator_CreateDataFile.BackColor = System.Drawing.Color.LightGray;
+            this.checkBox_CreatureScriptsCreator_CreateDataFile.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkBox_CreatureScriptsCreator_CreateDataFile.Location = new System.Drawing.Point(855, 4);
+            this.checkBox_CreatureScriptsCreator_CreateDataFile.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox_CreatureScriptsCreator_CreateDataFile.Name = "checkBox_CreatureScriptsCreator_CreateDataFile";
+            this.checkBox_CreatureScriptsCreator_CreateDataFile.Size = new System.Drawing.Size(108, 19);
+            this.checkBox_CreatureScriptsCreator_CreateDataFile.TabIndex = 6;
+            this.checkBox_CreatureScriptsCreator_CreateDataFile.Text = "Create Data File";
+            this.checkBox_CreatureScriptsCreator_CreateDataFile.UseVisualStyleBackColor = false;
             // 
             // MainForm
             // 
@@ -3965,7 +4360,7 @@
             this.MainWindowTabs.ResumeLayout(false);
             this.tabPage_CreatureScriptsCreator.ResumeLayout(false);
             this.tabPage_CreatureScriptsCreator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Spells)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_CreatureScriptsCreator_Spells)).EndInit();
             this.contextMenuStrip_CSC.ResumeLayout(false);
             this.toolStrip_CSC.ResumeLayout(false);
             this.toolStrip_CSC.PerformLayout();
@@ -4018,6 +4413,10 @@
             this.tableLayoutPanel8.PerformLayout();
             this.statusStrip_LoadedFile.ResumeLayout(false);
             this.statusStrip_LoadedFile.PerformLayout();
+            this.tabConditionsCreator.ResumeLayout(false);
+            this.tabConditionsCreator.PerformLayout();
+            this.tableLayoutPanel9.ResumeLayout(false);
+            this.tableLayoutPanel9.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4029,16 +4428,16 @@
         private System.Windows.Forms.TabPage tabPage_CreatureScriptsCreator;
         private System.Windows.Forms.ToolStrip toolStrip_CSC;
         public System.Windows.Forms.ToolStripButton toolStripButton_CSC_ImportSniff;
-        public System.Windows.Forms.ToolStripButton toolStripButton_CSC_Search;
+        public System.Windows.Forms.ToolStripButton toolStripButton_CreatureScriptsCreator_Search;
         private System.Windows.Forms.TabPage tabPage_Output;
         private System.Windows.Forms.StatusStrip statusStrip_LoadedFile;
         public System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel_FileStatus;
-        public System.Windows.Forms.ToolStripTextBox toolStripTextBox_CSC_CreatureEntry;
+        public System.Windows.Forms.ToolStripTextBox toolStripTextBox_CreatureScriptsCreator_CreatureEntry;
         private System.Windows.Forms.ToolStripLabel toolStripLabel_CSC_CreatureEntry;
         public System.Windows.Forms.OpenFileDialog openFileDialog;
-        public System.Windows.Forms.DataGridView dataGridView_Spells;
-        public System.Windows.Forms.ListBox listBox_CreatureGuids;
-        public System.Windows.Forms.CheckBox checkBox_OnlyCombatSpells;
+        public System.Windows.Forms.DataGridView dataGridView_CreatureScriptsCreator_Spells;
+        public System.Windows.Forms.ListBox listBox_CreatureScriptCreator_CreatureGuids;
+        public System.Windows.Forms.CheckBox checkBox_CreatureScriptsCreator_OnlyCombatSpells;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip_CSC;
         private System.Windows.Forms.ToolStripMenuItem cutToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
@@ -4298,6 +4697,36 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         public System.Windows.Forms.Button JournalLoot_GenerateUpdateItemsDifficulty;
+        private System.Windows.Forms.TabPage tabConditionsCreator;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
+        private System.Windows.Forms.Label label_ConditionsCreator_ConditionSourceType;
+        private System.Windows.Forms.Button button_ConditionsCreator_ClearConditions;
+        public System.Windows.Forms.ComboBox comboBox_ConditionsCreator_ConditionSourceType;
+        private System.Windows.Forms.Button button_ConditionsCreator_AddCondition;
+        private System.Windows.Forms.Label label_ConditionsCreator_ConditionSourceGroup;
+        private System.Windows.Forms.Label label_ConditionsCreator_ScriptName;
+        public System.Windows.Forms.TextBox textBox_ConditionsCreator_SourceGroup;
+        private System.Windows.Forms.Label label_ConditionsCreator_NegativeCondition;
+        private System.Windows.Forms.Label label_ConditionsCreator_SourceEntry;
+        private System.Windows.Forms.Label label_ConditionsCreator_ConditionValue3;
+        public System.Windows.Forms.TextBox textBox_ConditionsCreator_SourceEntry;
+        private System.Windows.Forms.Label label_ConditionsCreator_ConditionValue2;
+        private System.Windows.Forms.Label label_ConditionsCreator_SourceId;
+        private System.Windows.Forms.Label label_ConditionsCreator_ConditionValue1;
+        public System.Windows.Forms.TextBox textBox_ConditionsCreator_SourceId;
+        public System.Windows.Forms.TextBox textBox_ConditionsCreator_ScriptName;
+        private System.Windows.Forms.Label label_ConditionsCreator_ElseGroup;
+        public System.Windows.Forms.TextBox textBox_ConditionsCreator_NegativeCondition;
+        public System.Windows.Forms.TextBox textBox_ConditionsCreator_ElseGroup;
+        public System.Windows.Forms.TextBox textBox_ConditionsCreator_ConditionValue3;
+        public System.Windows.Forms.ComboBox comboBox_ConditionsCreator_ConditionType;
+        public System.Windows.Forms.TextBox textBox_ConditionsCreator_ConditionValue2;
+        private System.Windows.Forms.Label label_ConditionsCreator_ConditionType;
+        public System.Windows.Forms.TextBox textBox_ConditionsCreator_ConditionValue1;
+        private System.Windows.Forms.Label label_ConditionsCreator_ConditionTarget;
+        public System.Windows.Forms.TextBox textBox_ConditionsCreator_ConditionTarget;
+        public System.Windows.Forms.TextBox textBox_ConditionsCreator_Output;
+        public System.Windows.Forms.CheckBox checkBox_CreatureScriptsCreator_CreateDataFile;
     }
 }
 

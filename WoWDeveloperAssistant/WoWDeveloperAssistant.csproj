@@ -105,6 +105,8 @@
   <ItemGroup>
     <Compile Include="Achievements\AchievementEnums.cs" />
     <Compile Include="Achievements\AchievementsHandler.cs" />
+    <Compile Include="ConditionsCreator\Conditions.cs" />
+    <Compile Include="ConditionsCreator\ConditionsCreator.cs" />
     <Compile Include="Core Script Templates\AuraScriptTemplate.cs" />
     <Compile Include="Core Script Templates\BossScriptTemplate.cs" />
     <Compile Include="Core Script Templates\CoreScriptTemplates.cs" />
@@ -228,5 +230,6 @@
       <Name>DBFileReaderLib</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

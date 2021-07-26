@@ -15,6 +15,7 @@ using WoWDeveloperAssistant.ObjectTemplateDB_Helper;
 using WoWDeveloperAssistant.JournalLootCreator_DB;
 using WoWDeveloperAssistant.DungeonDataInfoParser_Db;
 using WoWDeveloperAssistant.AreaTriggerActionCreatorDB;
+using WoWDeveloperAssistant.Conditions_Creator;
 
 namespace WoWDeveloperAssistant
 {
@@ -33,6 +34,7 @@ namespace WoWDeveloperAssistant
         private JournalLootCreator journalLootCreatorDB;
         private DungeonDataInfoCreator dungeonDataParser;
         private AreaTriggerActionCreator areaTriggerActionCreator;
+        private ConditionsCreator conditionsCreator;
 
         public MainForm()
         {
@@ -49,6 +51,7 @@ namespace WoWDeveloperAssistant
             journalLootCreatorDB = new JournalLootCreator(this);
             dungeonDataParser = new DungeonDataInfoCreator(this);
             areaTriggerActionCreator = new AreaTriggerActionCreator(this);
+            conditionsCreator = new ConditionsCreator(this);
 
             if (Properties.Settings.Default.UsingDB)
             {
@@ -103,7 +106,7 @@ namespace WoWDeveloperAssistant
 
         private void createSQLToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (dataGridView_Spells.Rows.Count > 0)
+            if (dataGridView_CreatureScriptsCreator_Spells.Rows.Count > 0)
             {
                 creatureScriptsCreator.FillSQLOutput();
             }
@@ -116,9 +119,9 @@ namespace WoWDeveloperAssistant
 
         private void cutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            foreach (DataGridViewRow row in dataGridView_Spells.SelectedRows)
+            foreach (DataGridViewRow row in dataGridView_CreatureScriptsCreator_Spells.SelectedRows)
             {
-                dataGridView_Spells.Rows.Remove(row);
+                dataGridView_CreatureScriptsCreator_Spells.Rows.Remove(row);
             }
         }
 
@@ -702,6 +705,67 @@ namespace WoWDeveloperAssistant
         private void JournalLoot_GenerateUpdateItemsDifficulty_Click(object sender, EventArgs e)
         {
             this.journalLootCreatorDB.GenerateUpdateItemQueries();
+        }
+
+        private void button_ClearConditions_Click(object sender, EventArgs e)
+        {
+            conditionsCreator.ClearConditions();
+        }
+
+        private void button_AddCondition_Click(object sender, EventArgs e)
+        {
+            if (comboBox_ConditionsCreator_ConditionSourceType.SelectedItem == null || comboBox_ConditionsCreator_ConditionType.SelectedItem == null)
+                return;
+
+            conditionsCreator.CreateCondition();
+            textBox_ConditionsCreator_Output.Enabled = true;
+        }
+
+        private void comboBox_ConditionType_DropDown(object sender, EventArgs e)
+        {
+            if (comboBox_ConditionsCreator_ConditionType.Items.Count == 0)
+            {
+                comboBox_ConditionsCreator_ConditionType.Items.AddRange(Enum.GetNames(typeof(Conditions.ConditionTypes)));
+            }
+        }
+
+        private void comboBox_ConditionType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox_ConditionsCreator_ConditionSourceType.SelectedItem == null)
+                return;
+
+            conditionsCreator.ChangeTextBoxAccessibility(comboBox_ConditionsCreator_ConditionType.SelectedItem.ToString(), textBox_ConditionsCreator_ConditionValue1);
+            conditionsCreator.ChangeTextBoxAccessibility(comboBox_ConditionsCreator_ConditionType.SelectedItem.ToString(), textBox_ConditionsCreator_ConditionValue2);
+            conditionsCreator.ChangeTextBoxAccessibility(comboBox_ConditionsCreator_ConditionType.SelectedItem.ToString(), textBox_ConditionsCreator_ConditionValue3);
+            conditionsCreator.ChangeTextBoxAccessibility(comboBox_ConditionsCreator_ConditionSourceType.SelectedItem.ToString(), textBox_ConditionsCreator_ConditionTarget);
+            textBox_ConditionsCreator_NegativeCondition.Enabled = true;
+            textBox_ConditionsCreator_ScriptName.Enabled = true;
+            button_ConditionsCreator_AddCondition.Enabled = true;
+            button_ConditionsCreator_ClearConditions.Enabled = true;
+        }
+
+        private void comboBox_ConditionSourceType_DropDown(object sender, EventArgs e)
+        {
+            if (comboBox_ConditionsCreator_ConditionSourceType.Items.Count == 0)
+            {
+                comboBox_ConditionsCreator_ConditionSourceType.Items.AddRange(Enum.GetNames(typeof(Conditions.ConditionSourceTypes)));
+            }
+        }
+
+        private void comboBox_ConditionSourceType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            conditionsCreator.ClearConditions();
+            conditionsCreator.ChangeTextBoxAccessibility(comboBox_ConditionsCreator_ConditionSourceType.SelectedItem.ToString(), textBox_ConditionsCreator_SourceGroup);
+            conditionsCreator.ChangeTextBoxAccessibility(comboBox_ConditionsCreator_ConditionSourceType.SelectedItem.ToString(), textBox_ConditionsCreator_SourceEntry);
+            conditionsCreator.ChangeTextBoxAccessibility(comboBox_ConditionsCreator_ConditionSourceType.SelectedItem.ToString(), textBox_ConditionsCreator_SourceId);
+
+            if (comboBox_ConditionsCreator_ConditionType.SelectedItem != null)
+            {
+                conditionsCreator.ChangeTextBoxAccessibility(comboBox_ConditionsCreator_ConditionSourceType.SelectedItem.ToString(), textBox_ConditionsCreator_ConditionTarget);
+            }
+
+            textBox_ConditionsCreator_ElseGroup.Enabled = true;
+            comboBox_ConditionsCreator_ConditionType.Enabled = true;
         }
     }
 }
