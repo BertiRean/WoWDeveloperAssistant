@@ -467,6 +467,11 @@ namespace WoWDeveloperAssistant
             if (text.Length < 1)
                 isNumber = false;
 
+            if (isNumber)
+                this.spellDBCOverrideCreatorDB.UpdateSpellNameLabel(uint.Parse(text));
+            else
+                this.spellDBCOverrideCreatorDB.UpdateSpellNameLabel(0);
+
             this.spellDBCOverrideCreatorDB.EnableLockedItems(isNumber);
         }
 

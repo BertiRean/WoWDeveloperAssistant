@@ -67,6 +67,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
             this.MainWindowTabs = new System.Windows.Forms.TabControl();
             this.tabPage_CreatureScriptsCreator = new System.Windows.Forms.TabPage();
+            this.checkBox_CreatureScriptsCreator_CreateDataFile = new System.Windows.Forms.CheckBox();
             this.checkBox_CreatureScriptsCreator_OnlyCombatSpells = new System.Windows.Forms.CheckBox();
             this.dataGridView_CreatureScriptsCreator_Spells = new System.Windows.Forms.DataGridView();
             this.SpellId = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -197,7 +198,6 @@
             this.SpellAuraScript_SQL_Out_RichTextBox = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tabSpellDBC_OverrideCreator = new System.Windows.Forms.TabPage();
-            this.CheckJournalButton = new System.Windows.Forms.Button();
             this.SpellInfoOverride_Values_CheckListBox = new System.Windows.Forms.CheckedListBox();
             this.SpellInfo_Override_RichBox = new System.Windows.Forms.RichTextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -334,40 +334,42 @@
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.AreaTriggerCreator_CheckTemplate_Button = new System.Windows.Forms.Button();
             this.AreaTrigger_SpellId_TextBox = new System.Windows.Forms.TextBox();
+            this.tabConditionsCreator = new System.Windows.Forms.TabPage();
+            this.textBox_ConditionsCreator_Output = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.button_ConditionsCreator_ClearConditions = new System.Windows.Forms.Button();
+            this.button_ConditionsCreator_AddCondition = new System.Windows.Forms.Button();
+            this.label_ConditionsCreator_ScriptName = new System.Windows.Forms.Label();
+            this.label_ConditionsCreator_SourceEntry = new System.Windows.Forms.Label();
+            this.label_ConditionsCreator_SourceId = new System.Windows.Forms.Label();
+            this.label_ConditionsCreator_ElseGroup = new System.Windows.Forms.Label();
+            this.label_ConditionsCreator_ConditionType = new System.Windows.Forms.Label();
+            this.label_ConditionsCreator_ConditionTarget = new System.Windows.Forms.Label();
+            this.textBox_ConditionsCreator_SourceEntry = new System.Windows.Forms.TextBox();
+            this.textBox_ConditionsCreator_SourceId = new System.Windows.Forms.TextBox();
+            this.textBox_ConditionsCreator_ConditionTarget = new System.Windows.Forms.TextBox();
+            this.label_ConditionsCreator_ConditionValue1 = new System.Windows.Forms.Label();
+            this.label_ConditionsCreator_ConditionValue2 = new System.Windows.Forms.Label();
+            this.label_ConditionsCreator_ConditionSourceGroup = new System.Windows.Forms.Label();
+            this.label_ConditionsCreator_ConditionSourceType = new System.Windows.Forms.Label();
+            this.textBox_ConditionsCreator_ElseGroup = new System.Windows.Forms.TextBox();
+            this.comboBox_ConditionsCreator_ConditionType = new System.Windows.Forms.ComboBox();
+            this.textBox_ConditionsCreator_ScriptName = new System.Windows.Forms.TextBox();
+            this.label_ConditionsCreator_NegativeCondition = new System.Windows.Forms.Label();
+            this.label_ConditionsCreator_ConditionValue3 = new System.Windows.Forms.Label();
+            this.textBox_ConditionsCreator_NegativeCondition = new System.Windows.Forms.TextBox();
+            this.textBox_ConditionsCreator_SourceGroup = new System.Windows.Forms.TextBox();
+            this.comboBox_ConditionsCreator_ConditionSourceType = new System.Windows.Forms.ComboBox();
+            this.textBox_ConditionsCreator_ConditionValue2 = new System.Windows.Forms.TextBox();
+            this.textBox_ConditionsCreator_ConditionValue1 = new System.Windows.Forms.TextBox();
+            this.textBox_ConditionsCreator_ConditionValue3 = new System.Windows.Forms.TextBox();
             this.statusStrip_LoadedFile = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel_FileStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel_CurrentAction = new System.Windows.Forms.ToolStripStatusLabel();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.tabConditionsCreator = new System.Windows.Forms.TabPage();
-            this.button_ConditionsCreator_ClearConditions = new System.Windows.Forms.Button();
-            this.button_ConditionsCreator_AddCondition = new System.Windows.Forms.Button();
-            this.label_ConditionsCreator_ScriptName = new System.Windows.Forms.Label();
-            this.label_ConditionsCreator_NegativeCondition = new System.Windows.Forms.Label();
-            this.label_ConditionsCreator_ConditionValue3 = new System.Windows.Forms.Label();
-            this.label_ConditionsCreator_ConditionValue2 = new System.Windows.Forms.Label();
-            this.label_ConditionsCreator_ConditionValue1 = new System.Windows.Forms.Label();
-            this.textBox_ConditionsCreator_ScriptName = new System.Windows.Forms.TextBox();
-            this.textBox_ConditionsCreator_NegativeCondition = new System.Windows.Forms.TextBox();
-            this.textBox_ConditionsCreator_ConditionValue3 = new System.Windows.Forms.TextBox();
-            this.textBox_ConditionsCreator_ConditionValue2 = new System.Windows.Forms.TextBox();
-            this.textBox_ConditionsCreator_ConditionValue1 = new System.Windows.Forms.TextBox();
-            this.textBox_ConditionsCreator_ConditionTarget = new System.Windows.Forms.TextBox();
-            this.label_ConditionsCreator_ConditionTarget = new System.Windows.Forms.Label();
-            this.label_ConditionsCreator_ConditionType = new System.Windows.Forms.Label();
-            this.comboBox_ConditionsCreator_ConditionType = new System.Windows.Forms.ComboBox();
-            this.textBox_ConditionsCreator_ElseGroup = new System.Windows.Forms.TextBox();
-            this.label_ConditionsCreator_ElseGroup = new System.Windows.Forms.Label();
-            this.textBox_ConditionsCreator_SourceId = new System.Windows.Forms.TextBox();
-            this.label_ConditionsCreator_SourceId = new System.Windows.Forms.Label();
-            this.textBox_ConditionsCreator_SourceEntry = new System.Windows.Forms.TextBox();
-            this.label_ConditionsCreator_SourceEntry = new System.Windows.Forms.Label();
-            this.textBox_ConditionsCreator_SourceGroup = new System.Windows.Forms.TextBox();
-            this.label_ConditionsCreator_ConditionSourceGroup = new System.Windows.Forms.Label();
-            this.comboBox_ConditionsCreator_ConditionSourceType = new System.Windows.Forms.ComboBox();
-            this.label_ConditionsCreator_ConditionSourceType = new System.Windows.Forms.Label();
-            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox_ConditionsCreator_Output = new System.Windows.Forms.TextBox();
-            this.checkBox_CreatureScriptsCreator_CreateDataFile = new System.Windows.Forms.CheckBox();
+            this.SpellInfo_RemoveCheckBox = new System.Windows.Forms.CheckBox();
+            this.SpellInfo_SpellNameLabelOverride = new System.Windows.Forms.Label();
+            this.SpellNameLabelDescriptionLabel = new System.Windows.Forms.Label();
             this.MainWindowTabs.SuspendLayout();
             this.tabPage_CreatureScriptsCreator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_CreatureScriptsCreator_Spells)).BeginInit();
@@ -404,9 +406,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.AreaTrigger_MaxCharges_NumericUpDown)).BeginInit();
             this.AreaTrigger_ButtonContainer_GrooupBox.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
-            this.statusStrip_LoadedFile.SuspendLayout();
             this.tabConditionsCreator.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
+            this.statusStrip_LoadedFile.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainWindowTabs
@@ -448,6 +450,19 @@
             this.tabPage_CreatureScriptsCreator.TabIndex = 0;
             this.tabPage_CreatureScriptsCreator.Text = "Creature Scripts Creator";
             this.tabPage_CreatureScriptsCreator.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_CreatureScriptsCreator_CreateDataFile
+            // 
+            this.checkBox_CreatureScriptsCreator_CreateDataFile.AutoSize = true;
+            this.checkBox_CreatureScriptsCreator_CreateDataFile.BackColor = System.Drawing.Color.LightGray;
+            this.checkBox_CreatureScriptsCreator_CreateDataFile.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkBox_CreatureScriptsCreator_CreateDataFile.Location = new System.Drawing.Point(855, 4);
+            this.checkBox_CreatureScriptsCreator_CreateDataFile.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox_CreatureScriptsCreator_CreateDataFile.Name = "checkBox_CreatureScriptsCreator_CreateDataFile";
+            this.checkBox_CreatureScriptsCreator_CreateDataFile.Size = new System.Drawing.Size(108, 19);
+            this.checkBox_CreatureScriptsCreator_CreateDataFile.TabIndex = 6;
+            this.checkBox_CreatureScriptsCreator_CreateDataFile.Text = "Create Data File";
+            this.checkBox_CreatureScriptsCreator_CreateDataFile.UseVisualStyleBackColor = false;
             // 
             // checkBox_CreatureScriptsCreator_OnlyCombatSpells
             // 
@@ -2137,7 +2152,8 @@
             // 
             // tabSpellDBC_OverrideCreator
             // 
-            this.tabSpellDBC_OverrideCreator.Controls.Add(this.CheckJournalButton);
+            this.tabSpellDBC_OverrideCreator.Controls.Add(this.SpellNameLabelDescriptionLabel);
+            this.tabSpellDBC_OverrideCreator.Controls.Add(this.SpellInfo_SpellNameLabelOverride);
             this.tabSpellDBC_OverrideCreator.Controls.Add(this.SpellInfoOverride_Values_CheckListBox);
             this.tabSpellDBC_OverrideCreator.Controls.Add(this.SpellInfo_Override_RichBox);
             this.tabSpellDBC_OverrideCreator.Controls.Add(this.tableLayoutPanel1);
@@ -2149,14 +2165,6 @@
             this.tabSpellDBC_OverrideCreator.TabIndex = 8;
             this.tabSpellDBC_OverrideCreator.Text = "Spell DBC Override Creator";
             this.tabSpellDBC_OverrideCreator.UseVisualStyleBackColor = true;
-            // 
-            // CheckJournalButton
-            // 
-            this.CheckJournalButton.Location = new System.Drawing.Point(0, 0);
-            this.CheckJournalButton.Margin = new System.Windows.Forms.Padding(2);
-            this.CheckJournalButton.Name = "CheckJournalButton";
-            this.CheckJournalButton.Size = new System.Drawing.Size(56, 19);
-            this.CheckJournalButton.TabIndex = 0;
             // 
             // SpellInfoOverride_Values_CheckListBox
             // 
@@ -2180,8 +2188,8 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.81967F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.18033F));
             this.tableLayoutPanel1.Controls.Add(this.SpellInfo_ClearSpellData_Button, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.SpellInfo_EffIdx_Label, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.SpellInfo_Check_Data_Button, 0, 5);
@@ -2194,25 +2202,27 @@
             this.tableLayoutPanel1.Controls.Add(this.SpellInfo_Spell_Id_TextBox, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.SpellIInfo_AddSpellOverride_Button, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.SpellInfo_GenerateQuery_Button, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.SpellInfo_RemoveCheckBox, 0, 6);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 5);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 6;
+            this.tableLayoutPanel1.RowCount = 7;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(244, 216);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(244, 223);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // SpellInfo_ClearSpellData_Button
             // 
-            this.SpellInfo_ClearSpellData_Button.Location = new System.Drawing.Point(125, 149);
+            this.SpellInfo_ClearSpellData_Button.Location = new System.Drawing.Point(126, 149);
             this.SpellInfo_ClearSpellData_Button.Name = "SpellInfo_ClearSpellData_Button";
-            this.SpellInfo_ClearSpellData_Button.Size = new System.Drawing.Size(116, 34);
+            this.SpellInfo_ClearSpellData_Button.Size = new System.Drawing.Size(115, 34);
             this.SpellInfo_ClearSpellData_Button.TabIndex = 47;
             this.SpellInfo_ClearSpellData_Button.Text = "Clear Spell Data";
             this.SpellInfo_ClearSpellData_Button.UseVisualStyleBackColor = true;
@@ -2302,9 +2312,9 @@
             "ProcCooldown                ",
             "InternalCooldown            ",
             "DamageClass                 "});
-            this.SpellInfo_Field_ComboBox.Location = new System.Drawing.Point(125, 29);
+            this.SpellInfo_Field_ComboBox.Location = new System.Drawing.Point(126, 29);
             this.SpellInfo_Field_ComboBox.Name = "SpellInfo_Field_ComboBox";
-            this.SpellInfo_Field_ComboBox.Size = new System.Drawing.Size(116, 21);
+            this.SpellInfo_Field_ComboBox.Size = new System.Drawing.Size(115, 21);
             this.SpellInfo_Field_ComboBox.TabIndex = 4;
             this.SpellInfo_Field_ComboBox.SelectedIndexChanged += new System.EventHandler(this.SpellInfo_Field_ComboBox_SelectedIndexChanged);
             // 
@@ -2363,25 +2373,25 @@
             "EFFECT_29,",
             "EFFECT_30,",
             "EFFECT_31,"});
-            this.SpellInfo_EffIdx_ComboBox.Location = new System.Drawing.Point(125, 56);
+            this.SpellInfo_EffIdx_ComboBox.Location = new System.Drawing.Point(126, 56);
             this.SpellInfo_EffIdx_ComboBox.Name = "SpellInfo_EffIdx_ComboBox";
-            this.SpellInfo_EffIdx_ComboBox.Size = new System.Drawing.Size(116, 21);
+            this.SpellInfo_EffIdx_ComboBox.Size = new System.Drawing.Size(115, 21);
             this.SpellInfo_EffIdx_ComboBox.TabIndex = 2;
             // 
             // SpellInfo_Value_TextBox
             // 
             this.SpellInfo_Value_TextBox.Enabled = false;
-            this.SpellInfo_Value_TextBox.Location = new System.Drawing.Point(125, 83);
+            this.SpellInfo_Value_TextBox.Location = new System.Drawing.Point(126, 83);
             this.SpellInfo_Value_TextBox.Name = "SpellInfo_Value_TextBox";
-            this.SpellInfo_Value_TextBox.Size = new System.Drawing.Size(116, 20);
+            this.SpellInfo_Value_TextBox.Size = new System.Drawing.Size(115, 20);
             this.SpellInfo_Value_TextBox.TabIndex = 9;
             this.SpellInfo_Value_TextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SpellInfo_Value_TextBox_KeyPress);
             // 
             // SpellInfo_Spell_Id_TextBox
             // 
-            this.SpellInfo_Spell_Id_TextBox.Location = new System.Drawing.Point(125, 3);
+            this.SpellInfo_Spell_Id_TextBox.Location = new System.Drawing.Point(126, 3);
             this.SpellInfo_Spell_Id_TextBox.Name = "SpellInfo_Spell_Id_TextBox";
-            this.SpellInfo_Spell_Id_TextBox.Size = new System.Drawing.Size(116, 20);
+            this.SpellInfo_Spell_Id_TextBox.Size = new System.Drawing.Size(115, 20);
             this.SpellInfo_Spell_Id_TextBox.TabIndex = 10;
             this.SpellInfo_Spell_Id_TextBox.TextChanged += new System.EventHandler(this.SpellInfo_Spell_Id_TextBox_TextChanged);
             this.SpellInfo_Spell_Id_TextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SpellInfo_Spell_Id_TextBox_KeyPress);
@@ -2400,9 +2410,9 @@
             // SpellInfo_GenerateQuery_Button
             // 
             this.SpellInfo_GenerateQuery_Button.Enabled = false;
-            this.SpellInfo_GenerateQuery_Button.Location = new System.Drawing.Point(125, 109);
+            this.SpellInfo_GenerateQuery_Button.Location = new System.Drawing.Point(126, 109);
             this.SpellInfo_GenerateQuery_Button.Name = "SpellInfo_GenerateQuery_Button";
-            this.SpellInfo_GenerateQuery_Button.Size = new System.Drawing.Size(116, 34);
+            this.SpellInfo_GenerateQuery_Button.Size = new System.Drawing.Size(115, 34);
             this.SpellInfo_GenerateQuery_Button.TabIndex = 11;
             this.SpellInfo_GenerateQuery_Button.Text = "Generate Sql Code";
             this.SpellInfo_GenerateQuery_Button.UseVisualStyleBackColor = true;
@@ -3952,36 +3962,6 @@
             this.AreaTrigger_SpellId_TextBox.TabIndex = 10;
             this.AreaTrigger_SpellId_TextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AreaTrigger_SpellId_TextBox_KeyPress);
             // 
-            // statusStrip_LoadedFile
-            // 
-            this.statusStrip_LoadedFile.BackColor = System.Drawing.Color.LightGray;
-            this.statusStrip_LoadedFile.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.statusStrip_LoadedFile.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel_FileStatus,
-            this.toolStripStatusLabel_CurrentAction});
-            this.statusStrip_LoadedFile.Location = new System.Drawing.Point(0, 634);
-            this.statusStrip_LoadedFile.Name = "statusStrip_LoadedFile";
-            this.statusStrip_LoadedFile.Padding = new System.Windows.Forms.Padding(2, 0, 9, 0);
-            this.statusStrip_LoadedFile.Size = new System.Drawing.Size(1495, 22);
-            this.statusStrip_LoadedFile.TabIndex = 2;
-            this.statusStrip_LoadedFile.Text = "statusStrip";
-            // 
-            // toolStripStatusLabel_FileStatus
-            // 
-            this.toolStripStatusLabel_FileStatus.Name = "toolStripStatusLabel_FileStatus";
-            this.toolStripStatusLabel_FileStatus.Size = new System.Drawing.Size(86, 17);
-            this.toolStripStatusLabel_FileStatus.Text = "No File Loaded";
-            // 
-            // toolStripStatusLabel_CurrentAction
-            // 
-            this.toolStripStatusLabel_CurrentAction.Name = "toolStripStatusLabel_CurrentAction";
-            this.toolStripStatusLabel_CurrentAction.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripStatusLabel_CurrentAction.Size = new System.Drawing.Size(0, 17);
-            // 
-            // openFileDialog
-            // 
-            this.openFileDialog.FileName = "openFileDialog_WSC";
-            // 
             // tabConditionsCreator
             // 
             this.tabConditionsCreator.Controls.Add(this.textBox_ConditionsCreator_Output);
@@ -3993,287 +3973,23 @@
             this.tabConditionsCreator.Text = "ConditionsCreator";
             this.tabConditionsCreator.UseVisualStyleBackColor = true;
             // 
-            // button_ConditionsCreator_ClearConditions
+            // textBox_ConditionsCreator_Output
             // 
-            this.button_ConditionsCreator_ClearConditions.Enabled = false;
-            this.button_ConditionsCreator_ClearConditions.Location = new System.Drawing.Point(2, 496);
-            this.button_ConditionsCreator_ClearConditions.Margin = new System.Windows.Forms.Padding(2);
-            this.button_ConditionsCreator_ClearConditions.Name = "button_ConditionsCreator_ClearConditions";
-            this.button_ConditionsCreator_ClearConditions.Size = new System.Drawing.Size(100, 24);
-            this.button_ConditionsCreator_ClearConditions.TabIndex = 52;
-            this.button_ConditionsCreator_ClearConditions.Text = "Clear Conditions";
-            this.button_ConditionsCreator_ClearConditions.UseVisualStyleBackColor = true;
-            this.button_ConditionsCreator_ClearConditions.Click += new System.EventHandler(this.button_ClearConditions_Click);
-            // 
-            // button_ConditionsCreator_AddCondition
-            // 
-            this.button_ConditionsCreator_AddCondition.Enabled = false;
-            this.button_ConditionsCreator_AddCondition.Location = new System.Drawing.Point(106, 496);
-            this.button_ConditionsCreator_AddCondition.Margin = new System.Windows.Forms.Padding(2);
-            this.button_ConditionsCreator_AddCondition.Name = "button_ConditionsCreator_AddCondition";
-            this.button_ConditionsCreator_AddCondition.Size = new System.Drawing.Size(115, 24);
-            this.button_ConditionsCreator_AddCondition.TabIndex = 51;
-            this.button_ConditionsCreator_AddCondition.Text = "Add Condition";
-            this.button_ConditionsCreator_AddCondition.UseVisualStyleBackColor = true;
-            this.button_ConditionsCreator_AddCondition.Click += new System.EventHandler(this.button_AddCondition_Click);
-            // 
-            // label_ConditionsCreator_ScriptName
-            // 
-            this.label_ConditionsCreator_ScriptName.AutoSize = true;
-            this.label_ConditionsCreator_ScriptName.Location = new System.Drawing.Point(2, 474);
-            this.label_ConditionsCreator_ScriptName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_ConditionsCreator_ScriptName.Name = "label_ConditionsCreator_ScriptName";
-            this.label_ConditionsCreator_ScriptName.Size = new System.Drawing.Size(65, 13);
-            this.label_ConditionsCreator_ScriptName.TabIndex = 50;
-            this.label_ConditionsCreator_ScriptName.Text = "ScriptName:";
-            // 
-            // label_ConditionsCreator_NegativeCondition
-            // 
-            this.label_ConditionsCreator_NegativeCondition.AutoSize = true;
-            this.label_ConditionsCreator_NegativeCondition.Location = new System.Drawing.Point(2, 454);
-            this.label_ConditionsCreator_NegativeCondition.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_ConditionsCreator_NegativeCondition.Name = "label_ConditionsCreator_NegativeCondition";
-            this.label_ConditionsCreator_NegativeCondition.Size = new System.Drawing.Size(100, 13);
-            this.label_ConditionsCreator_NegativeCondition.TabIndex = 49;
-            this.label_ConditionsCreator_NegativeCondition.Text = "Negative Condition:";
-            // 
-            // label_ConditionsCreator_ConditionValue3
-            // 
-            this.label_ConditionsCreator_ConditionValue3.AutoSize = true;
-            this.label_ConditionsCreator_ConditionValue3.Location = new System.Drawing.Point(2, 434);
-            this.label_ConditionsCreator_ConditionValue3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_ConditionsCreator_ConditionValue3.Name = "label_ConditionsCreator_ConditionValue3";
-            this.label_ConditionsCreator_ConditionValue3.Size = new System.Drawing.Size(93, 13);
-            this.label_ConditionsCreator_ConditionValue3.TabIndex = 48;
-            this.label_ConditionsCreator_ConditionValue3.Text = "Condition Value 3:";
-            // 
-            // label_ConditionsCreator_ConditionValue2
-            // 
-            this.label_ConditionsCreator_ConditionValue2.AutoSize = true;
-            this.label_ConditionsCreator_ConditionValue2.Location = new System.Drawing.Point(2, 414);
-            this.label_ConditionsCreator_ConditionValue2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_ConditionsCreator_ConditionValue2.Name = "label_ConditionsCreator_ConditionValue2";
-            this.label_ConditionsCreator_ConditionValue2.Size = new System.Drawing.Size(93, 13);
-            this.label_ConditionsCreator_ConditionValue2.TabIndex = 47;
-            this.label_ConditionsCreator_ConditionValue2.Text = "Condition Value 2:";
-            // 
-            // label_ConditionsCreator_ConditionValue1
-            // 
-            this.label_ConditionsCreator_ConditionValue1.AutoSize = true;
-            this.label_ConditionsCreator_ConditionValue1.Location = new System.Drawing.Point(2, 394);
-            this.label_ConditionsCreator_ConditionValue1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_ConditionsCreator_ConditionValue1.Name = "label_ConditionsCreator_ConditionValue1";
-            this.label_ConditionsCreator_ConditionValue1.Size = new System.Drawing.Size(93, 13);
-            this.label_ConditionsCreator_ConditionValue1.TabIndex = 46;
-            this.label_ConditionsCreator_ConditionValue1.Text = "Condition Value 1:";
-            // 
-            // textBox_ConditionsCreator_ScriptName
-            // 
-            this.textBox_ConditionsCreator_ScriptName.Enabled = false;
-            this.textBox_ConditionsCreator_ScriptName.Location = new System.Drawing.Point(106, 476);
-            this.textBox_ConditionsCreator_ScriptName.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox_ConditionsCreator_ScriptName.MaxLength = 50;
-            this.textBox_ConditionsCreator_ScriptName.Name = "textBox_ConditionsCreator_ScriptName";
-            this.textBox_ConditionsCreator_ScriptName.Size = new System.Drawing.Size(215, 20);
-            this.textBox_ConditionsCreator_ScriptName.TabIndex = 45;
-            // 
-            // textBox_ConditionsCreator_NegativeCondition
-            // 
-            this.textBox_ConditionsCreator_NegativeCondition.Enabled = false;
-            this.textBox_ConditionsCreator_NegativeCondition.Location = new System.Drawing.Point(106, 456);
-            this.textBox_ConditionsCreator_NegativeCondition.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox_ConditionsCreator_NegativeCondition.MaxLength = 1;
-            this.textBox_ConditionsCreator_NegativeCondition.Name = "textBox_ConditionsCreator_NegativeCondition";
-            this.textBox_ConditionsCreator_NegativeCondition.Size = new System.Drawing.Size(21, 20);
-            this.textBox_ConditionsCreator_NegativeCondition.TabIndex = 44;
-            this.textBox_ConditionsCreator_NegativeCondition.Text = "0";
-            this.textBox_ConditionsCreator_NegativeCondition.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox_ConditionsCreator_ConditionValue3
-            // 
-            this.textBox_ConditionsCreator_ConditionValue3.Enabled = false;
-            this.textBox_ConditionsCreator_ConditionValue3.Location = new System.Drawing.Point(106, 436);
-            this.textBox_ConditionsCreator_ConditionValue3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox_ConditionsCreator_ConditionValue3.MaxLength = 6;
-            this.textBox_ConditionsCreator_ConditionValue3.Name = "textBox_ConditionsCreator_ConditionValue3";
-            this.textBox_ConditionsCreator_ConditionValue3.Size = new System.Drawing.Size(68, 20);
-            this.textBox_ConditionsCreator_ConditionValue3.TabIndex = 43;
-            // 
-            // textBox_ConditionsCreator_ConditionValue2
-            // 
-            this.textBox_ConditionsCreator_ConditionValue2.Enabled = false;
-            this.textBox_ConditionsCreator_ConditionValue2.Location = new System.Drawing.Point(106, 416);
-            this.textBox_ConditionsCreator_ConditionValue2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox_ConditionsCreator_ConditionValue2.MaxLength = 6;
-            this.textBox_ConditionsCreator_ConditionValue2.Name = "textBox_ConditionsCreator_ConditionValue2";
-            this.textBox_ConditionsCreator_ConditionValue2.Size = new System.Drawing.Size(68, 20);
-            this.textBox_ConditionsCreator_ConditionValue2.TabIndex = 42;
-            // 
-            // textBox_ConditionsCreator_ConditionValue1
-            // 
-            this.textBox_ConditionsCreator_ConditionValue1.Enabled = false;
-            this.textBox_ConditionsCreator_ConditionValue1.Location = new System.Drawing.Point(106, 396);
-            this.textBox_ConditionsCreator_ConditionValue1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox_ConditionsCreator_ConditionValue1.MaxLength = 6;
-            this.textBox_ConditionsCreator_ConditionValue1.Name = "textBox_ConditionsCreator_ConditionValue1";
-            this.textBox_ConditionsCreator_ConditionValue1.Size = new System.Drawing.Size(68, 20);
-            this.textBox_ConditionsCreator_ConditionValue1.TabIndex = 41;
-            // 
-            // textBox_ConditionsCreator_ConditionTarget
-            // 
-            this.textBox_ConditionsCreator_ConditionTarget.Enabled = false;
-            this.textBox_ConditionsCreator_ConditionTarget.Location = new System.Drawing.Point(106, 376);
-            this.textBox_ConditionsCreator_ConditionTarget.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox_ConditionsCreator_ConditionTarget.MaxLength = 1;
-            this.textBox_ConditionsCreator_ConditionTarget.Name = "textBox_ConditionsCreator_ConditionTarget";
-            this.textBox_ConditionsCreator_ConditionTarget.Size = new System.Drawing.Size(21, 20);
-            this.textBox_ConditionsCreator_ConditionTarget.TabIndex = 40;
-            this.textBox_ConditionsCreator_ConditionTarget.Text = "0";
-            this.textBox_ConditionsCreator_ConditionTarget.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label_ConditionsCreator_ConditionTarget
-            // 
-            this.label_ConditionsCreator_ConditionTarget.AutoSize = true;
-            this.label_ConditionsCreator_ConditionTarget.Location = new System.Drawing.Point(2, 374);
-            this.label_ConditionsCreator_ConditionTarget.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_ConditionsCreator_ConditionTarget.Name = "label_ConditionsCreator_ConditionTarget";
-            this.label_ConditionsCreator_ConditionTarget.Size = new System.Drawing.Size(88, 13);
-            this.label_ConditionsCreator_ConditionTarget.TabIndex = 39;
-            this.label_ConditionsCreator_ConditionTarget.Text = "Condition Target:";
-            // 
-            // label_ConditionsCreator_ConditionType
-            // 
-            this.label_ConditionsCreator_ConditionType.AutoSize = true;
-            this.label_ConditionsCreator_ConditionType.Location = new System.Drawing.Point(2, 354);
-            this.label_ConditionsCreator_ConditionType.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_ConditionsCreator_ConditionType.Name = "label_ConditionsCreator_ConditionType";
-            this.label_ConditionsCreator_ConditionType.Size = new System.Drawing.Size(81, 13);
-            this.label_ConditionsCreator_ConditionType.TabIndex = 38;
-            this.label_ConditionsCreator_ConditionType.Text = "Condition Type:";
-            // 
-            // comboBox_ConditionsCreator_ConditionType
-            // 
-            this.comboBox_ConditionsCreator_ConditionType.Enabled = false;
-            this.comboBox_ConditionsCreator_ConditionType.FormattingEnabled = true;
-            this.comboBox_ConditionsCreator_ConditionType.Location = new System.Drawing.Point(106, 356);
-            this.comboBox_ConditionsCreator_ConditionType.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox_ConditionsCreator_ConditionType.Name = "comboBox_ConditionsCreator_ConditionType";
-            this.comboBox_ConditionsCreator_ConditionType.Size = new System.Drawing.Size(215, 21);
-            this.comboBox_ConditionsCreator_ConditionType.TabIndex = 37;
-            this.comboBox_ConditionsCreator_ConditionType.DropDown += new System.EventHandler(this.comboBox_ConditionType_DropDown);
-            this.comboBox_ConditionsCreator_ConditionType.SelectedIndexChanged += new System.EventHandler(this.comboBox_ConditionType_SelectedIndexChanged);
-            // 
-            // textBox_ConditionsCreator_ElseGroup
-            // 
-            this.textBox_ConditionsCreator_ElseGroup.Enabled = false;
-            this.textBox_ConditionsCreator_ElseGroup.Location = new System.Drawing.Point(106, 336);
-            this.textBox_ConditionsCreator_ElseGroup.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox_ConditionsCreator_ElseGroup.MaxLength = 2;
-            this.textBox_ConditionsCreator_ElseGroup.Name = "textBox_ConditionsCreator_ElseGroup";
-            this.textBox_ConditionsCreator_ElseGroup.Size = new System.Drawing.Size(35, 20);
-            this.textBox_ConditionsCreator_ElseGroup.TabIndex = 36;
-            this.textBox_ConditionsCreator_ElseGroup.Text = "0";
-            this.textBox_ConditionsCreator_ElseGroup.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label_ConditionsCreator_ElseGroup
-            // 
-            this.label_ConditionsCreator_ElseGroup.AutoSize = true;
-            this.label_ConditionsCreator_ElseGroup.Location = new System.Drawing.Point(2, 334);
-            this.label_ConditionsCreator_ElseGroup.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_ConditionsCreator_ElseGroup.Name = "label_ConditionsCreator_ElseGroup";
-            this.label_ConditionsCreator_ElseGroup.Size = new System.Drawing.Size(62, 13);
-            this.label_ConditionsCreator_ElseGroup.TabIndex = 35;
-            this.label_ConditionsCreator_ElseGroup.Text = "Else Group:";
-            // 
-            // textBox_ConditionsCreator_SourceId
-            // 
-            this.textBox_ConditionsCreator_SourceId.Enabled = false;
-            this.textBox_ConditionsCreator_SourceId.Location = new System.Drawing.Point(106, 316);
-            this.textBox_ConditionsCreator_SourceId.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox_ConditionsCreator_SourceId.MaxLength = 1;
-            this.textBox_ConditionsCreator_SourceId.Name = "textBox_ConditionsCreator_SourceId";
-            this.textBox_ConditionsCreator_SourceId.Size = new System.Drawing.Size(21, 20);
-            this.textBox_ConditionsCreator_SourceId.TabIndex = 34;
-            this.textBox_ConditionsCreator_SourceId.Text = "0";
-            this.textBox_ConditionsCreator_SourceId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label_ConditionsCreator_SourceId
-            // 
-            this.label_ConditionsCreator_SourceId.AutoSize = true;
-            this.label_ConditionsCreator_SourceId.Location = new System.Drawing.Point(2, 314);
-            this.label_ConditionsCreator_SourceId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_ConditionsCreator_SourceId.Name = "label_ConditionsCreator_SourceId";
-            this.label_ConditionsCreator_SourceId.Size = new System.Drawing.Size(56, 13);
-            this.label_ConditionsCreator_SourceId.TabIndex = 33;
-            this.label_ConditionsCreator_SourceId.Text = "Source Id:";
-            // 
-            // textBox_ConditionsCreator_SourceEntry
-            // 
-            this.textBox_ConditionsCreator_SourceEntry.Enabled = false;
-            this.textBox_ConditionsCreator_SourceEntry.Location = new System.Drawing.Point(106, 296);
-            this.textBox_ConditionsCreator_SourceEntry.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox_ConditionsCreator_SourceEntry.MaxLength = 6;
-            this.textBox_ConditionsCreator_SourceEntry.Name = "textBox_ConditionsCreator_SourceEntry";
-            this.textBox_ConditionsCreator_SourceEntry.Size = new System.Drawing.Size(68, 20);
-            this.textBox_ConditionsCreator_SourceEntry.TabIndex = 32;
-            // 
-            // label_ConditionsCreator_SourceEntry
-            // 
-            this.label_ConditionsCreator_SourceEntry.AutoSize = true;
-            this.label_ConditionsCreator_SourceEntry.Location = new System.Drawing.Point(2, 294);
-            this.label_ConditionsCreator_SourceEntry.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_ConditionsCreator_SourceEntry.Name = "label_ConditionsCreator_SourceEntry";
-            this.label_ConditionsCreator_SourceEntry.Size = new System.Drawing.Size(71, 13);
-            this.label_ConditionsCreator_SourceEntry.TabIndex = 31;
-            this.label_ConditionsCreator_SourceEntry.Text = "Source Entry:";
-            // 
-            // textBox_ConditionsCreator_SourceGroup
-            // 
-            this.textBox_ConditionsCreator_SourceGroup.Enabled = false;
-            this.textBox_ConditionsCreator_SourceGroup.Location = new System.Drawing.Point(106, 27);
-            this.textBox_ConditionsCreator_SourceGroup.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox_ConditionsCreator_SourceGroup.MaxLength = 6;
-            this.textBox_ConditionsCreator_SourceGroup.Name = "textBox_ConditionsCreator_SourceGroup";
-            this.textBox_ConditionsCreator_SourceGroup.Size = new System.Drawing.Size(68, 20);
-            this.textBox_ConditionsCreator_SourceGroup.TabIndex = 30;
-            // 
-            // label_ConditionsCreator_ConditionSourceGroup
-            // 
-            this.label_ConditionsCreator_ConditionSourceGroup.AutoSize = true;
-            this.label_ConditionsCreator_ConditionSourceGroup.Location = new System.Drawing.Point(2, 25);
-            this.label_ConditionsCreator_ConditionSourceGroup.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_ConditionsCreator_ConditionSourceGroup.Name = "label_ConditionsCreator_ConditionSourceGroup";
-            this.label_ConditionsCreator_ConditionSourceGroup.Size = new System.Drawing.Size(76, 13);
-            this.label_ConditionsCreator_ConditionSourceGroup.TabIndex = 29;
-            this.label_ConditionsCreator_ConditionSourceGroup.Text = "Source Group:";
-            // 
-            // comboBox_ConditionsCreator_ConditionSourceType
-            // 
-            this.comboBox_ConditionsCreator_ConditionSourceType.FormattingEnabled = true;
-            this.comboBox_ConditionsCreator_ConditionSourceType.Location = new System.Drawing.Point(106, 2);
-            this.comboBox_ConditionsCreator_ConditionSourceType.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox_ConditionsCreator_ConditionSourceType.Name = "comboBox_ConditionsCreator_ConditionSourceType";
-            this.comboBox_ConditionsCreator_ConditionSourceType.Size = new System.Drawing.Size(215, 21);
-            this.comboBox_ConditionsCreator_ConditionSourceType.TabIndex = 28;
-            this.comboBox_ConditionsCreator_ConditionSourceType.DropDown += new System.EventHandler(this.comboBox_ConditionSourceType_DropDown);
-            this.comboBox_ConditionsCreator_ConditionSourceType.SelectedIndexChanged += new System.EventHandler(this.comboBox_ConditionSourceType_SelectedIndexChanged);
-            // 
-            // label_ConditionsCreator_ConditionSourceType
-            // 
-            this.label_ConditionsCreator_ConditionSourceType.AutoSize = true;
-            this.label_ConditionsCreator_ConditionSourceType.Location = new System.Drawing.Point(2, 0);
-            this.label_ConditionsCreator_ConditionSourceType.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_ConditionsCreator_ConditionSourceType.Name = "label_ConditionsCreator_ConditionSourceType";
-            this.label_ConditionsCreator_ConditionSourceType.Size = new System.Drawing.Size(71, 13);
-            this.label_ConditionsCreator_ConditionSourceType.TabIndex = 27;
-            this.label_ConditionsCreator_ConditionSourceType.Text = "Source Type:";
+            this.textBox_ConditionsCreator_Output.Enabled = false;
+            this.textBox_ConditionsCreator_Output.Location = new System.Drawing.Point(378, 10);
+            this.textBox_ConditionsCreator_Output.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_ConditionsCreator_Output.Multiline = true;
+            this.textBox_ConditionsCreator_Output.Name = "textBox_ConditionsCreator_Output";
+            this.textBox_ConditionsCreator_Output.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.textBox_ConditionsCreator_Output.Size = new System.Drawing.Size(968, 598);
+            this.textBox_ConditionsCreator_Output.TabIndex = 54;
             // 
             // tableLayoutPanel9
             // 
             this.tableLayoutPanel9.ColumnCount = 3;
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 44F));
             this.tableLayoutPanel9.Controls.Add(this.button_ConditionsCreator_ClearConditions, 0, 12);
             this.tableLayoutPanel9.Controls.Add(this.button_ConditionsCreator_AddCondition, 0, 12);
             this.tableLayoutPanel9.Controls.Add(this.label_ConditionsCreator_ScriptName, 0, 11);
@@ -4319,29 +4035,337 @@
             this.tableLayoutPanel9.Size = new System.Drawing.Size(367, 522);
             this.tableLayoutPanel9.TabIndex = 53;
             // 
-            // textBox_ConditionsCreator_Output
+            // button_ConditionsCreator_ClearConditions
             // 
-            this.textBox_ConditionsCreator_Output.Enabled = false;
-            this.textBox_ConditionsCreator_Output.Location = new System.Drawing.Point(378, 10);
-            this.textBox_ConditionsCreator_Output.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox_ConditionsCreator_Output.Multiline = true;
-            this.textBox_ConditionsCreator_Output.Name = "textBox_ConditionsCreator_Output";
-            this.textBox_ConditionsCreator_Output.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox_ConditionsCreator_Output.Size = new System.Drawing.Size(968, 598);
-            this.textBox_ConditionsCreator_Output.TabIndex = 54;
+            this.button_ConditionsCreator_ClearConditions.Enabled = false;
+            this.button_ConditionsCreator_ClearConditions.Location = new System.Drawing.Point(2, 496);
+            this.button_ConditionsCreator_ClearConditions.Margin = new System.Windows.Forms.Padding(2);
+            this.button_ConditionsCreator_ClearConditions.Name = "button_ConditionsCreator_ClearConditions";
+            this.button_ConditionsCreator_ClearConditions.Size = new System.Drawing.Size(100, 24);
+            this.button_ConditionsCreator_ClearConditions.TabIndex = 52;
+            this.button_ConditionsCreator_ClearConditions.Text = "Clear Conditions";
+            this.button_ConditionsCreator_ClearConditions.UseVisualStyleBackColor = true;
+            this.button_ConditionsCreator_ClearConditions.Click += new System.EventHandler(this.button_ClearConditions_Click);
             // 
-            // checkBox_CreatureScriptsCreator_CreateDataFile
+            // button_ConditionsCreator_AddCondition
             // 
-            this.checkBox_CreatureScriptsCreator_CreateDataFile.AutoSize = true;
-            this.checkBox_CreatureScriptsCreator_CreateDataFile.BackColor = System.Drawing.Color.LightGray;
-            this.checkBox_CreatureScriptsCreator_CreateDataFile.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox_CreatureScriptsCreator_CreateDataFile.Location = new System.Drawing.Point(855, 4);
-            this.checkBox_CreatureScriptsCreator_CreateDataFile.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox_CreatureScriptsCreator_CreateDataFile.Name = "checkBox_CreatureScriptsCreator_CreateDataFile";
-            this.checkBox_CreatureScriptsCreator_CreateDataFile.Size = new System.Drawing.Size(108, 19);
-            this.checkBox_CreatureScriptsCreator_CreateDataFile.TabIndex = 6;
-            this.checkBox_CreatureScriptsCreator_CreateDataFile.Text = "Create Data File";
-            this.checkBox_CreatureScriptsCreator_CreateDataFile.UseVisualStyleBackColor = false;
+            this.button_ConditionsCreator_AddCondition.Enabled = false;
+            this.button_ConditionsCreator_AddCondition.Location = new System.Drawing.Point(106, 496);
+            this.button_ConditionsCreator_AddCondition.Margin = new System.Windows.Forms.Padding(2);
+            this.button_ConditionsCreator_AddCondition.Name = "button_ConditionsCreator_AddCondition";
+            this.button_ConditionsCreator_AddCondition.Size = new System.Drawing.Size(115, 24);
+            this.button_ConditionsCreator_AddCondition.TabIndex = 51;
+            this.button_ConditionsCreator_AddCondition.Text = "Add Condition";
+            this.button_ConditionsCreator_AddCondition.UseVisualStyleBackColor = true;
+            this.button_ConditionsCreator_AddCondition.Click += new System.EventHandler(this.button_AddCondition_Click);
+            // 
+            // label_ConditionsCreator_ScriptName
+            // 
+            this.label_ConditionsCreator_ScriptName.AutoSize = true;
+            this.label_ConditionsCreator_ScriptName.Location = new System.Drawing.Point(2, 474);
+            this.label_ConditionsCreator_ScriptName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_ConditionsCreator_ScriptName.Name = "label_ConditionsCreator_ScriptName";
+            this.label_ConditionsCreator_ScriptName.Size = new System.Drawing.Size(65, 13);
+            this.label_ConditionsCreator_ScriptName.TabIndex = 50;
+            this.label_ConditionsCreator_ScriptName.Text = "ScriptName:";
+            // 
+            // label_ConditionsCreator_SourceEntry
+            // 
+            this.label_ConditionsCreator_SourceEntry.AutoSize = true;
+            this.label_ConditionsCreator_SourceEntry.Location = new System.Drawing.Point(2, 294);
+            this.label_ConditionsCreator_SourceEntry.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_ConditionsCreator_SourceEntry.Name = "label_ConditionsCreator_SourceEntry";
+            this.label_ConditionsCreator_SourceEntry.Size = new System.Drawing.Size(71, 13);
+            this.label_ConditionsCreator_SourceEntry.TabIndex = 31;
+            this.label_ConditionsCreator_SourceEntry.Text = "Source Entry:";
+            // 
+            // label_ConditionsCreator_SourceId
+            // 
+            this.label_ConditionsCreator_SourceId.AutoSize = true;
+            this.label_ConditionsCreator_SourceId.Location = new System.Drawing.Point(2, 314);
+            this.label_ConditionsCreator_SourceId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_ConditionsCreator_SourceId.Name = "label_ConditionsCreator_SourceId";
+            this.label_ConditionsCreator_SourceId.Size = new System.Drawing.Size(56, 13);
+            this.label_ConditionsCreator_SourceId.TabIndex = 33;
+            this.label_ConditionsCreator_SourceId.Text = "Source Id:";
+            // 
+            // label_ConditionsCreator_ElseGroup
+            // 
+            this.label_ConditionsCreator_ElseGroup.AutoSize = true;
+            this.label_ConditionsCreator_ElseGroup.Location = new System.Drawing.Point(2, 334);
+            this.label_ConditionsCreator_ElseGroup.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_ConditionsCreator_ElseGroup.Name = "label_ConditionsCreator_ElseGroup";
+            this.label_ConditionsCreator_ElseGroup.Size = new System.Drawing.Size(62, 13);
+            this.label_ConditionsCreator_ElseGroup.TabIndex = 35;
+            this.label_ConditionsCreator_ElseGroup.Text = "Else Group:";
+            // 
+            // label_ConditionsCreator_ConditionType
+            // 
+            this.label_ConditionsCreator_ConditionType.AutoSize = true;
+            this.label_ConditionsCreator_ConditionType.Location = new System.Drawing.Point(2, 354);
+            this.label_ConditionsCreator_ConditionType.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_ConditionsCreator_ConditionType.Name = "label_ConditionsCreator_ConditionType";
+            this.label_ConditionsCreator_ConditionType.Size = new System.Drawing.Size(81, 13);
+            this.label_ConditionsCreator_ConditionType.TabIndex = 38;
+            this.label_ConditionsCreator_ConditionType.Text = "Condition Type:";
+            // 
+            // label_ConditionsCreator_ConditionTarget
+            // 
+            this.label_ConditionsCreator_ConditionTarget.AutoSize = true;
+            this.label_ConditionsCreator_ConditionTarget.Location = new System.Drawing.Point(2, 374);
+            this.label_ConditionsCreator_ConditionTarget.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_ConditionsCreator_ConditionTarget.Name = "label_ConditionsCreator_ConditionTarget";
+            this.label_ConditionsCreator_ConditionTarget.Size = new System.Drawing.Size(88, 13);
+            this.label_ConditionsCreator_ConditionTarget.TabIndex = 39;
+            this.label_ConditionsCreator_ConditionTarget.Text = "Condition Target:";
+            // 
+            // textBox_ConditionsCreator_SourceEntry
+            // 
+            this.textBox_ConditionsCreator_SourceEntry.Enabled = false;
+            this.textBox_ConditionsCreator_SourceEntry.Location = new System.Drawing.Point(106, 296);
+            this.textBox_ConditionsCreator_SourceEntry.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_ConditionsCreator_SourceEntry.MaxLength = 6;
+            this.textBox_ConditionsCreator_SourceEntry.Name = "textBox_ConditionsCreator_SourceEntry";
+            this.textBox_ConditionsCreator_SourceEntry.Size = new System.Drawing.Size(68, 20);
+            this.textBox_ConditionsCreator_SourceEntry.TabIndex = 32;
+            // 
+            // textBox_ConditionsCreator_SourceId
+            // 
+            this.textBox_ConditionsCreator_SourceId.Enabled = false;
+            this.textBox_ConditionsCreator_SourceId.Location = new System.Drawing.Point(106, 316);
+            this.textBox_ConditionsCreator_SourceId.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_ConditionsCreator_SourceId.MaxLength = 1;
+            this.textBox_ConditionsCreator_SourceId.Name = "textBox_ConditionsCreator_SourceId";
+            this.textBox_ConditionsCreator_SourceId.Size = new System.Drawing.Size(21, 20);
+            this.textBox_ConditionsCreator_SourceId.TabIndex = 34;
+            this.textBox_ConditionsCreator_SourceId.Text = "0";
+            this.textBox_ConditionsCreator_SourceId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox_ConditionsCreator_ConditionTarget
+            // 
+            this.textBox_ConditionsCreator_ConditionTarget.Enabled = false;
+            this.textBox_ConditionsCreator_ConditionTarget.Location = new System.Drawing.Point(106, 376);
+            this.textBox_ConditionsCreator_ConditionTarget.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_ConditionsCreator_ConditionTarget.MaxLength = 1;
+            this.textBox_ConditionsCreator_ConditionTarget.Name = "textBox_ConditionsCreator_ConditionTarget";
+            this.textBox_ConditionsCreator_ConditionTarget.Size = new System.Drawing.Size(21, 20);
+            this.textBox_ConditionsCreator_ConditionTarget.TabIndex = 40;
+            this.textBox_ConditionsCreator_ConditionTarget.Text = "0";
+            this.textBox_ConditionsCreator_ConditionTarget.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label_ConditionsCreator_ConditionValue1
+            // 
+            this.label_ConditionsCreator_ConditionValue1.AutoSize = true;
+            this.label_ConditionsCreator_ConditionValue1.Location = new System.Drawing.Point(2, 394);
+            this.label_ConditionsCreator_ConditionValue1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_ConditionsCreator_ConditionValue1.Name = "label_ConditionsCreator_ConditionValue1";
+            this.label_ConditionsCreator_ConditionValue1.Size = new System.Drawing.Size(93, 13);
+            this.label_ConditionsCreator_ConditionValue1.TabIndex = 46;
+            this.label_ConditionsCreator_ConditionValue1.Text = "Condition Value 1:";
+            // 
+            // label_ConditionsCreator_ConditionValue2
+            // 
+            this.label_ConditionsCreator_ConditionValue2.AutoSize = true;
+            this.label_ConditionsCreator_ConditionValue2.Location = new System.Drawing.Point(2, 414);
+            this.label_ConditionsCreator_ConditionValue2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_ConditionsCreator_ConditionValue2.Name = "label_ConditionsCreator_ConditionValue2";
+            this.label_ConditionsCreator_ConditionValue2.Size = new System.Drawing.Size(93, 13);
+            this.label_ConditionsCreator_ConditionValue2.TabIndex = 47;
+            this.label_ConditionsCreator_ConditionValue2.Text = "Condition Value 2:";
+            // 
+            // label_ConditionsCreator_ConditionSourceGroup
+            // 
+            this.label_ConditionsCreator_ConditionSourceGroup.AutoSize = true;
+            this.label_ConditionsCreator_ConditionSourceGroup.Location = new System.Drawing.Point(2, 25);
+            this.label_ConditionsCreator_ConditionSourceGroup.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_ConditionsCreator_ConditionSourceGroup.Name = "label_ConditionsCreator_ConditionSourceGroup";
+            this.label_ConditionsCreator_ConditionSourceGroup.Size = new System.Drawing.Size(76, 13);
+            this.label_ConditionsCreator_ConditionSourceGroup.TabIndex = 29;
+            this.label_ConditionsCreator_ConditionSourceGroup.Text = "Source Group:";
+            // 
+            // label_ConditionsCreator_ConditionSourceType
+            // 
+            this.label_ConditionsCreator_ConditionSourceType.AutoSize = true;
+            this.label_ConditionsCreator_ConditionSourceType.Location = new System.Drawing.Point(2, 0);
+            this.label_ConditionsCreator_ConditionSourceType.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_ConditionsCreator_ConditionSourceType.Name = "label_ConditionsCreator_ConditionSourceType";
+            this.label_ConditionsCreator_ConditionSourceType.Size = new System.Drawing.Size(71, 13);
+            this.label_ConditionsCreator_ConditionSourceType.TabIndex = 27;
+            this.label_ConditionsCreator_ConditionSourceType.Text = "Source Type:";
+            // 
+            // textBox_ConditionsCreator_ElseGroup
+            // 
+            this.textBox_ConditionsCreator_ElseGroup.Enabled = false;
+            this.textBox_ConditionsCreator_ElseGroup.Location = new System.Drawing.Point(106, 336);
+            this.textBox_ConditionsCreator_ElseGroup.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_ConditionsCreator_ElseGroup.MaxLength = 2;
+            this.textBox_ConditionsCreator_ElseGroup.Name = "textBox_ConditionsCreator_ElseGroup";
+            this.textBox_ConditionsCreator_ElseGroup.Size = new System.Drawing.Size(35, 20);
+            this.textBox_ConditionsCreator_ElseGroup.TabIndex = 36;
+            this.textBox_ConditionsCreator_ElseGroup.Text = "0";
+            this.textBox_ConditionsCreator_ElseGroup.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // comboBox_ConditionsCreator_ConditionType
+            // 
+            this.comboBox_ConditionsCreator_ConditionType.Enabled = false;
+            this.comboBox_ConditionsCreator_ConditionType.FormattingEnabled = true;
+            this.comboBox_ConditionsCreator_ConditionType.Location = new System.Drawing.Point(106, 356);
+            this.comboBox_ConditionsCreator_ConditionType.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox_ConditionsCreator_ConditionType.Name = "comboBox_ConditionsCreator_ConditionType";
+            this.comboBox_ConditionsCreator_ConditionType.Size = new System.Drawing.Size(215, 21);
+            this.comboBox_ConditionsCreator_ConditionType.TabIndex = 37;
+            this.comboBox_ConditionsCreator_ConditionType.DropDown += new System.EventHandler(this.comboBox_ConditionType_DropDown);
+            this.comboBox_ConditionsCreator_ConditionType.SelectedIndexChanged += new System.EventHandler(this.comboBox_ConditionType_SelectedIndexChanged);
+            // 
+            // textBox_ConditionsCreator_ScriptName
+            // 
+            this.textBox_ConditionsCreator_ScriptName.Enabled = false;
+            this.textBox_ConditionsCreator_ScriptName.Location = new System.Drawing.Point(106, 476);
+            this.textBox_ConditionsCreator_ScriptName.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_ConditionsCreator_ScriptName.MaxLength = 50;
+            this.textBox_ConditionsCreator_ScriptName.Name = "textBox_ConditionsCreator_ScriptName";
+            this.textBox_ConditionsCreator_ScriptName.Size = new System.Drawing.Size(215, 20);
+            this.textBox_ConditionsCreator_ScriptName.TabIndex = 45;
+            // 
+            // label_ConditionsCreator_NegativeCondition
+            // 
+            this.label_ConditionsCreator_NegativeCondition.AutoSize = true;
+            this.label_ConditionsCreator_NegativeCondition.Location = new System.Drawing.Point(2, 454);
+            this.label_ConditionsCreator_NegativeCondition.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_ConditionsCreator_NegativeCondition.Name = "label_ConditionsCreator_NegativeCondition";
+            this.label_ConditionsCreator_NegativeCondition.Size = new System.Drawing.Size(100, 13);
+            this.label_ConditionsCreator_NegativeCondition.TabIndex = 49;
+            this.label_ConditionsCreator_NegativeCondition.Text = "Negative Condition:";
+            // 
+            // label_ConditionsCreator_ConditionValue3
+            // 
+            this.label_ConditionsCreator_ConditionValue3.AutoSize = true;
+            this.label_ConditionsCreator_ConditionValue3.Location = new System.Drawing.Point(2, 434);
+            this.label_ConditionsCreator_ConditionValue3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_ConditionsCreator_ConditionValue3.Name = "label_ConditionsCreator_ConditionValue3";
+            this.label_ConditionsCreator_ConditionValue3.Size = new System.Drawing.Size(93, 13);
+            this.label_ConditionsCreator_ConditionValue3.TabIndex = 48;
+            this.label_ConditionsCreator_ConditionValue3.Text = "Condition Value 3:";
+            // 
+            // textBox_ConditionsCreator_NegativeCondition
+            // 
+            this.textBox_ConditionsCreator_NegativeCondition.Enabled = false;
+            this.textBox_ConditionsCreator_NegativeCondition.Location = new System.Drawing.Point(106, 456);
+            this.textBox_ConditionsCreator_NegativeCondition.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_ConditionsCreator_NegativeCondition.MaxLength = 1;
+            this.textBox_ConditionsCreator_NegativeCondition.Name = "textBox_ConditionsCreator_NegativeCondition";
+            this.textBox_ConditionsCreator_NegativeCondition.Size = new System.Drawing.Size(21, 20);
+            this.textBox_ConditionsCreator_NegativeCondition.TabIndex = 44;
+            this.textBox_ConditionsCreator_NegativeCondition.Text = "0";
+            this.textBox_ConditionsCreator_NegativeCondition.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox_ConditionsCreator_SourceGroup
+            // 
+            this.textBox_ConditionsCreator_SourceGroup.Enabled = false;
+            this.textBox_ConditionsCreator_SourceGroup.Location = new System.Drawing.Point(106, 27);
+            this.textBox_ConditionsCreator_SourceGroup.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_ConditionsCreator_SourceGroup.MaxLength = 6;
+            this.textBox_ConditionsCreator_SourceGroup.Name = "textBox_ConditionsCreator_SourceGroup";
+            this.textBox_ConditionsCreator_SourceGroup.Size = new System.Drawing.Size(68, 20);
+            this.textBox_ConditionsCreator_SourceGroup.TabIndex = 30;
+            // 
+            // comboBox_ConditionsCreator_ConditionSourceType
+            // 
+            this.comboBox_ConditionsCreator_ConditionSourceType.FormattingEnabled = true;
+            this.comboBox_ConditionsCreator_ConditionSourceType.Location = new System.Drawing.Point(106, 2);
+            this.comboBox_ConditionsCreator_ConditionSourceType.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox_ConditionsCreator_ConditionSourceType.Name = "comboBox_ConditionsCreator_ConditionSourceType";
+            this.comboBox_ConditionsCreator_ConditionSourceType.Size = new System.Drawing.Size(215, 21);
+            this.comboBox_ConditionsCreator_ConditionSourceType.TabIndex = 28;
+            this.comboBox_ConditionsCreator_ConditionSourceType.DropDown += new System.EventHandler(this.comboBox_ConditionSourceType_DropDown);
+            this.comboBox_ConditionsCreator_ConditionSourceType.SelectedIndexChanged += new System.EventHandler(this.comboBox_ConditionSourceType_SelectedIndexChanged);
+            // 
+            // textBox_ConditionsCreator_ConditionValue2
+            // 
+            this.textBox_ConditionsCreator_ConditionValue2.Enabled = false;
+            this.textBox_ConditionsCreator_ConditionValue2.Location = new System.Drawing.Point(106, 416);
+            this.textBox_ConditionsCreator_ConditionValue2.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_ConditionsCreator_ConditionValue2.MaxLength = 6;
+            this.textBox_ConditionsCreator_ConditionValue2.Name = "textBox_ConditionsCreator_ConditionValue2";
+            this.textBox_ConditionsCreator_ConditionValue2.Size = new System.Drawing.Size(68, 20);
+            this.textBox_ConditionsCreator_ConditionValue2.TabIndex = 42;
+            // 
+            // textBox_ConditionsCreator_ConditionValue1
+            // 
+            this.textBox_ConditionsCreator_ConditionValue1.Enabled = false;
+            this.textBox_ConditionsCreator_ConditionValue1.Location = new System.Drawing.Point(106, 396);
+            this.textBox_ConditionsCreator_ConditionValue1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_ConditionsCreator_ConditionValue1.MaxLength = 6;
+            this.textBox_ConditionsCreator_ConditionValue1.Name = "textBox_ConditionsCreator_ConditionValue1";
+            this.textBox_ConditionsCreator_ConditionValue1.Size = new System.Drawing.Size(68, 20);
+            this.textBox_ConditionsCreator_ConditionValue1.TabIndex = 41;
+            // 
+            // textBox_ConditionsCreator_ConditionValue3
+            // 
+            this.textBox_ConditionsCreator_ConditionValue3.Enabled = false;
+            this.textBox_ConditionsCreator_ConditionValue3.Location = new System.Drawing.Point(106, 436);
+            this.textBox_ConditionsCreator_ConditionValue3.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_ConditionsCreator_ConditionValue3.MaxLength = 6;
+            this.textBox_ConditionsCreator_ConditionValue3.Name = "textBox_ConditionsCreator_ConditionValue3";
+            this.textBox_ConditionsCreator_ConditionValue3.Size = new System.Drawing.Size(68, 20);
+            this.textBox_ConditionsCreator_ConditionValue3.TabIndex = 43;
+            // 
+            // statusStrip_LoadedFile
+            // 
+            this.statusStrip_LoadedFile.BackColor = System.Drawing.Color.LightGray;
+            this.statusStrip_LoadedFile.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.statusStrip_LoadedFile.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel_FileStatus,
+            this.toolStripStatusLabel_CurrentAction});
+            this.statusStrip_LoadedFile.Location = new System.Drawing.Point(0, 634);
+            this.statusStrip_LoadedFile.Name = "statusStrip_LoadedFile";
+            this.statusStrip_LoadedFile.Padding = new System.Windows.Forms.Padding(2, 0, 9, 0);
+            this.statusStrip_LoadedFile.Size = new System.Drawing.Size(1495, 22);
+            this.statusStrip_LoadedFile.TabIndex = 2;
+            this.statusStrip_LoadedFile.Text = "statusStrip";
+            // 
+            // toolStripStatusLabel_FileStatus
+            // 
+            this.toolStripStatusLabel_FileStatus.Name = "toolStripStatusLabel_FileStatus";
+            this.toolStripStatusLabel_FileStatus.Size = new System.Drawing.Size(86, 17);
+            this.toolStripStatusLabel_FileStatus.Text = "No File Loaded";
+            // 
+            // toolStripStatusLabel_CurrentAction
+            // 
+            this.toolStripStatusLabel_CurrentAction.Name = "toolStripStatusLabel_CurrentAction";
+            this.toolStripStatusLabel_CurrentAction.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripStatusLabel_CurrentAction.Size = new System.Drawing.Size(0, 17);
+            // 
+            // openFileDialog
+            // 
+            this.openFileDialog.FileName = "openFileDialog_WSC";
+            // 
+            // SpellInfo_RemoveCheckBox
+            // 
+            this.SpellInfo_RemoveCheckBox.AutoSize = true;
+            this.SpellInfo_RemoveCheckBox.Location = new System.Drawing.Point(3, 192);
+            this.SpellInfo_RemoveCheckBox.Name = "SpellInfo_RemoveCheckBox";
+            this.SpellInfo_RemoveCheckBox.Size = new System.Drawing.Size(66, 17);
+            this.SpellInfo_RemoveCheckBox.TabIndex = 48;
+            this.SpellInfo_RemoveCheckBox.Text = "Remove";
+            this.SpellInfo_RemoveCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // SpellInfo_SpellNameLabelOverride
+            // 
+            this.SpellInfo_SpellNameLabelOverride.AutoSize = true;
+            this.SpellInfo_SpellNameLabelOverride.Location = new System.Drawing.Point(7, 250);
+            this.SpellInfo_SpellNameLabelOverride.Name = "SpellInfo_SpellNameLabelOverride";
+            this.SpellInfo_SpellNameLabelOverride.Size = new System.Drawing.Size(64, 13);
+            this.SpellInfo_SpellNameLabelOverride.TabIndex = 47;
+            this.SpellInfo_SpellNameLabelOverride.Text = "Spell Name:";
+            // 
+            // SpellNameLabelDescriptionLabel
+            // 
+            this.SpellNameLabelDescriptionLabel.AutoSize = true;
+            this.SpellNameLabelDescriptionLabel.Location = new System.Drawing.Point(7, 263);
+            this.SpellNameLabelDescriptionLabel.Name = "SpellNameLabelDescriptionLabel";
+            this.SpellNameLabelDescriptionLabel.Size = new System.Drawing.Size(0, 13);
+            this.SpellNameLabelDescriptionLabel.TabIndex = 48;
             // 
             // MainForm
             // 
@@ -4386,6 +4410,7 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.tabSpellDBC_OverrideCreator.ResumeLayout(false);
+            this.tabSpellDBC_OverrideCreator.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tabCombatAI_Creator.ResumeLayout(false);
@@ -4411,12 +4436,12 @@
             this.AreaTrigger_ButtonContainer_GrooupBox.ResumeLayout(false);
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel8.PerformLayout();
-            this.statusStrip_LoadedFile.ResumeLayout(false);
-            this.statusStrip_LoadedFile.PerformLayout();
             this.tabConditionsCreator.ResumeLayout(false);
             this.tabConditionsCreator.PerformLayout();
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel9.PerformLayout();
+            this.statusStrip_LoadedFile.ResumeLayout(false);
+            this.statusStrip_LoadedFile.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4612,7 +4637,6 @@
         public System.Windows.Forms.RichTextBox ObjectTempalte_SQLResult_RichTextBox;
         public System.Windows.Forms.Button ObjectTemplateHelper_UpdateField_Button;
         public System.Windows.Forms.Button ObjectTemplate_Helper_ClearButton;
-        private System.Windows.Forms.Button CheckJournalButton;
         private System.Windows.Forms.TabPage tabJournalLootCreator;
         public System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         public System.Windows.Forms.ComboBox JournalLoot_ComboBox;
@@ -4727,6 +4751,9 @@
         public System.Windows.Forms.TextBox textBox_ConditionsCreator_ConditionTarget;
         public System.Windows.Forms.TextBox textBox_ConditionsCreator_Output;
         public System.Windows.Forms.CheckBox checkBox_CreatureScriptsCreator_CreateDataFile;
+        public System.Windows.Forms.CheckBox SpellInfo_RemoveCheckBox;
+        public System.Windows.Forms.Label SpellNameLabelDescriptionLabel;
+        private System.Windows.Forms.Label SpellInfo_SpellNameLabelOverride;
     }
 }
 
