@@ -14,8 +14,9 @@ namespace WoWDeveloperAssistant.Misc
         {
             ONE_TAB     = 2,
             TWO_TAB     = 4,
-            THREE_TAB   = 8,
-            FOUR_TABS   = 16,
+            THREE_TAB   = 6,
+            FOUR_TABS   = 8,
+            FIVE_TABS   = 10
         };
 
         public enum BuildVersions : uint
