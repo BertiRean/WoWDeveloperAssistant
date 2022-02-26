@@ -108,7 +108,7 @@ namespace WoWDeveloperAssistant.Spell_Aura_Script_DbCreator
                 var SQLtext = "-- " + SpellInfoOverrideCreator.GetSpellName(item.Key) + " \r\n";
                 SQLtext += "DELETE FROM `aura_scripts` WHERE `SpellId` = " + item.Key + ";\r\n";
                 SQLtext += "insert into `aura_scripts` (`SpellId`, `Id`, `Hook`, `EffectId`, `Action`, `ActionSpellId`, `ActionCaster`, `OriginalCaster`, `ActionTarget`, `Triggered`, " +
-                    "`Calculation`, `DataSource`, `ActionSpellList`, `Comment`) VALUES\r\n";
+                    "`Calculation`, `DataSource`, `ActionSpellList`, `Comment`, `State`) VALUES\r\n";
 
                 uint itr = 0;
                 foreach (AuraScriptEntry script in item.Value)
@@ -160,7 +160,7 @@ namespace WoWDeveloperAssistant.Spell_Aura_Script_DbCreator
                     int EffIdx = mainForm.SpellAuraScript_EffIndex_ComboBox.SelectedIndex;
 
                     uint ActionSpellId = Convert.ToUInt32(mainForm.SpellAuraScripts_ActionSpellId_TextBox.Text.Length > 1 ? mainForm.SpellAuraScripts_ActionSpellId_TextBox.Text : "0");
-                    bool Triggered = mainForm.SpellAuraScript_Triggered_ComboBox.SelectedIndex > 1;
+                    bool Triggered = mainForm.SpellAuraScript_Triggered_ComboBox.SelectedIndex > 0;
 
                     uint Action                 = Convert.ToUInt32(mainForm.SpellAuraScript_ActionComboBox.SelectedIndex != -1 ? mainForm.SpellAuraScript_ActionComboBox.SelectedIndex : 0);
                     uint ActionCaster           = Convert.ToUInt32(mainForm.SpellAuraScripts_ActionCaster_ComboBox.SelectedIndex != -1 ? mainForm.SpellAuraScripts_ActionCaster_ComboBox.SelectedIndex : 0);
@@ -197,7 +197,7 @@ namespace WoWDeveloperAssistant.Spell_Aura_Script_DbCreator
                     int EffIdx = mainForm.SpellAuraScript_EffIndex_ComboBox.SelectedIndex;
 
                     uint ActionSpellId = Convert.ToUInt32(mainForm.SpellAuraScripts_ActionSpellId_TextBox.Text.Length > 1 ? mainForm.SpellAuraScripts_ActionSpellId_TextBox.Text : "0");
-                    bool Triggered = mainForm.SpellAuraScript_Triggered_ComboBox.SelectedIndex > 1;
+                    bool Triggered = mainForm.SpellAuraScript_Triggered_ComboBox.SelectedIndex > 0;
 
                     uint Action = Convert.ToUInt32(mainForm.SpellAuraScript_ActionComboBox.SelectedIndex != -1 ? mainForm.SpellAuraScript_ActionComboBox.SelectedIndex : 0);
                     uint ActionCaster = Convert.ToUInt32(mainForm.SpellAuraScripts_ActionCaster_ComboBox.SelectedIndex != -1 ? mainForm.SpellAuraScripts_ActionCaster_ComboBox.SelectedIndex : 0);

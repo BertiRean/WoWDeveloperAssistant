@@ -30,6 +30,7 @@ namespace WoWDeveloperAssistant.Misc
         public uint TargetSpellId;                              ///< can override the aura to modify for Set/Mod amount and Set/Mod Duration
         public int TargetEffectId;                             ///< can override the effectID to modify for Set/Mod amount and Set/Mod Duration
         public int DataEffectId;                               ///< if value is based on a spell data, id of the effect to pick basepoints
+        public int State;                                     ///< if value is 0 then the aurascript will be removed in the next restart from DB
 
         public AuraScriptEntry(uint spellId, uint hook, int effectIdx, uint action, uint actionSpellId, uint actionCaster, uint actionTarget, bool triggered, string actionSpellList,
             uint actionOriginalCaster, uint dataSource, uint calcType, uint targetSpellId = 0, int targetEffIdx = -1, int dataEffIdx = -1)
@@ -49,6 +50,7 @@ namespace WoWDeveloperAssistant.Misc
             this.TargetSpellId = targetSpellId;
             this.TargetEffectId = targetEffIdx;
             this.DataEffectId = dataEffIdx;
+            this.State = 1;
         }
     };
 
