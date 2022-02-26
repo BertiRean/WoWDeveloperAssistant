@@ -83,9 +83,9 @@ namespace WoWDeveloperAssistant.JournalLootCreator_DB
                         count++;
                         query += item.Item1.ToString();
                         if (count + 1 > loot.Count)
-                            query += ")\n";
+                            query += ");\n";
                         else
-                            query += ", ";
+                            query += ",";
 
                     }
 
