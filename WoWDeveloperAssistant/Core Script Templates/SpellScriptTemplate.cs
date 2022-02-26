@@ -302,10 +302,10 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
         {
             string body = "";
 
-            body += Utils.AddSpacesCount(8) + "SpellScript* GetSpellScript() const override" + "\r\n";
-            body += Utils.AddSpacesCount(8) + "{" + "\r\n";
+            body += Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + "SpellScript* GetSpellScript() const override" + "\r\n";
+            body += Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + "{" + "\r\n";
             body += Utils.AddSpacesCount(12) + "return new " + scriptName + "_SpellScript();" + "\r\n";
-            body += Utils.AddSpacesCount(8) + "}";
+            body += Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + "}";
 
             return body;
         }
@@ -314,7 +314,7 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
         {
             string body = "";
 
-            body += "\r\n" + Utils.AddSpacesCount(8) + "enum eSpells" + "\r\n" + Utils.AddSpacesCount(8) + "{" + "\r\n" + Utils.AddSpacesCount(12) + "\r\n" + Utils.AddSpacesCount(8) + "};";
+            body += "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + "enum eSpells" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(12) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + "};";
 
             return body;
         }

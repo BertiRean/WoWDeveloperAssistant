@@ -12,21 +12,21 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
         {
             { "IsSummonedBy",      "void IsSummonedBy(Unit* p_Summoner) override"                                                            },
             { "QuestAccept",       "void sQuestAccept(Player* p_Player, Quest const* p_Quest) override"                                      },
-            { "QuestReward",       "void sQuestReward(Player* p_Player, Quest const* p_Quest, uint32 /*p_Option*/) override"                 },
-            { "GossipSelect",      "void sGossipSelect(Player* p_Player, uint32 /*p_Sender*/, uint32 p_Action) override"                     },
+            { "QuestReward",       "void sQuestReward(Player* p_Player, Quest const* p_Quest, uint32 /*p_Option) override"                 },
+            { "GossipSelect",      "void sGossipSelect(Player* p_Player, uint32 p_Sender, uint32 p_Action) override"                     },
             { "GossipHello",       "void sGossipHello(Player* p_Player) override"                                                            },
             { "MoveInLineOfSight", "void MoveInLineOfSight(Unit* p_Who) override"                                                            },
             { "DoAction",          "void DoAction(int32 const p_Action) override"                                                            },
-            { "SetData",           "void SetData(uint64 /*p_Type*/, uint32 p_Value) override"                                                },
+            { "SetData",           "void SetData(uint64 p_Type, uint32 p_Value) override"                                                },
             { "OnSpellClick",      "void OnSpellClick(Unit* p_Clicker) override"                                                             },
             { "SpellHit",          "void SpellHit(Unit* p_Caster, SpellInfo const* p_Spell) override"                                        },
             { "OnSpellCasted",     "void OnSpellCasted(SpellInfo const* p_SpellInfo) override"                                               },
-            { "PassengerBoarded",  "void PassengerBoarded(Unit* p_Passenger, int8 /*p_SeatID*/, bool p_Apply) override"                      },
-            { "MovementInform",    "void MovementInform(uint32 /*p_Type*/, uint64 p_PointId) override"                                       },
+            { "PassengerBoarded",  "void PassengerBoarded(Unit* p_Passenger, int8 p_SeatID, bool p_Apply) override"                      },
+            { "MovementInform",    "void MovementInform(uint32 p_Type, uint64 p_PointId) override"                                       },
             { "Reset",             "void Reset() override"                                                                                   },
-            { "EnterCombat",       "void EnterCombat(Unit* /*p_Victim*/) override"                                                           },
-            { "DamageTaken",       "void DamageTaken(Unit* /*p_Attacker*/, uint32& /*p_Damage*/, SpellInfo const* /*p_SpellInfo*/) override" },
-            { "JustDied",          "void JustDied(Unit* /*p_Killer*/) override"                                                              },
+            { "EnterCombat",       "void EnterCombat(Unit* p_Victim) override"                                                           },
+            { "DamageTaken",       "void DamageTaken(Unit* p_Attacker, uint32& p_Damage, SpellInfo const* p_SpellInfo) override" },
+            { "JustDied",          "void JustDied(Unit* p_Killer) override"                                                              },
             { "UpdateAI",          "void UpdateAI(uint32 const p_Diff) override"                                                             }
         };
 
@@ -35,7 +35,7 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
             { "IsSummonedBy",
                 new Dictionary<string, string>
                 {
-                    { "PlayerCheck",     "Player* l_Player = p_Summoner->ToPlayer();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Player)" + "\r\n" + Utils.AddSpacesCount(20) + "return;" },
+                    { "PlayerCheck",     "Player* l_Player = p_Summoner->ToPlayer();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Player)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "return;" },
                     { "SetSummonerGuid", "m_SummonerGuid = p_Summoner->GetObjectGuid();" }
                 }
             },
@@ -43,14 +43,14 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
             { "QuestAccept",
                 new Dictionary<string, string>
                 {
-                    { "QuestIdSwitch", "switch (p_Quest->GetQuestId())" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "case eQuests::QuestName:" + "\r\n" + Utils.AddSpacesCount(20) + "{" + "\r\n" + Utils.AddSpacesCount(24) + "break;" + "\r\n" + Utils.AddSpacesCount(20) + "}" + "\r\n" + Utils.AddSpacesCount(20) + "default:" + "\r\n" + Utils.AddSpacesCount(24) + "break;" + "\r\n" + Utils.AddSpacesCount(16) + "}" }
+                    { "QuestIdSwitch", "switch (p_Quest->GetQuestId())" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "case eQuests::QuestName:" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FIVE_TABS) + "break;" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "}" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "default:" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FIVE_TABS) + "break;" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" }
                 }
             },
 
             { "QuestReward",
                 new Dictionary<string, string>
                 {
-                    { "QuestIdSwitch", "switch (p_Quest->GetQuestId())" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "case eQuests::QuestName:" + "\r\n" + Utils.AddSpacesCount(20) + "{" + "\r\n" + Utils.AddSpacesCount(24) + "break;" + "\r\n" + Utils.AddSpacesCount(20) + "}" + "\r\n" + Utils.AddSpacesCount(20) + "default:" + "\r\n" + Utils.AddSpacesCount(24) + "break;" + "\r\n" + Utils.AddSpacesCount(16) + "}" }
+                    { "QuestIdSwitch", "switch (p_Quest->GetQuestId())" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "case eQuests::QuestName:" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FIVE_TABS) + "break;" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "}" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "default:" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FIVE_TABS) + "break;" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" }
                 }
             },
 
@@ -58,66 +58,66 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
                 new Dictionary<string, string>
                 {
                     { "GloseGossipWindow",    "p_Player->PlayerTalkClass->SendCloseGossip();" },
-                    { "GossipOptionIdSwitch", "switch (p_Action)" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "case 0:" + "\r\n" + Utils.AddSpacesCount(20) + "{" + "\r\n" + Utils.AddSpacesCount(24) + "break;" + "\r\n" + Utils.AddSpacesCount(20) + "}" + "\r\n" + Utils.AddSpacesCount(20) + "default:" + "\r\n" + Utils.AddSpacesCount(24) + "break;" + "\r\n" + Utils.AddSpacesCount(16) + "}" }
+                    { "GossipOptionIdSwitch", "switch (p_Action)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "case 0:" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FIVE_TABS) + "break;" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "}" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "default:" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FIVE_TABS) + "break;" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" }
                 }
             },
 
             { "MoveInLineOfSight",
                 new Dictionary<string, string>
                 {
-                    { "PlayerCheck",   "Player* l_Player = p_Who->ToPlayer();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Player)" + "\r\n" + Utils.AddSpacesCount(20) + "return;" },
-                    { "DistanceCheck", "if (me->GetExactDist2d(p_Who) <= 10.0f)" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "\r\n" + Utils.AddSpacesCount(16) + "}" }
+                    { "PlayerCheck",   "Player* l_Player = p_Who->ToPlayer();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Player)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "return;" },
+                    { "DistanceCheck", "if (me->GetExactDist2d(p_Who) <= 10.0f)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" }
                 }
             },
 
             { "DoAction",
                 new Dictionary<string, string>
                 {
-                    { "DoActionIdSwitch", "switch (p_Action)" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "case eActions::ActionName:" + "\r\n" + Utils.AddSpacesCount(20) + "{" + "\r\n" + Utils.AddSpacesCount(24) + "break;" + "\r\n" + Utils.AddSpacesCount(20) + "}" + "\r\n" + Utils.AddSpacesCount(20) + "default:" + "\r\n" + Utils.AddSpacesCount(24) + "break;" + "\r\n" + Utils.AddSpacesCount(16) + "}" }
+                    { "DoActionIdSwitch", "switch (p_Action)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "case eActions::ActionName:" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FIVE_TABS) + "break;" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "}" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "default:" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FIVE_TABS) + "break;" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" }
                 }
             },
 
             { "SetData",
                 new Dictionary<string, string>
                 {
-                    { "SetDataIdSwitch", "switch (p_Value)" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "case eDatas::DataName:" + "\r\n" + Utils.AddSpacesCount(20) + "{" + "\r\n" + Utils.AddSpacesCount(24) + "break;" + "\r\n" + Utils.AddSpacesCount(20) + "}" + "\r\n" + Utils.AddSpacesCount(20) + "default:" + "\r\n" + Utils.AddSpacesCount(24) + "break;" + "\r\n" + Utils.AddSpacesCount(16) + "}" }
+                    { "SetDataIdSwitch", "switch (p_Value)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "case eDatas::DataName:" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FIVE_TABS) + "break;" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "}" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "default:" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FIVE_TABS) + "break;" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" }
                 }
             },
 
             { "OnSpellClick",
                 new Dictionary<string, string>
                 {
-                    { "PlayerCheck",   "Player* l_Player = p_Clicker->ToPlayer();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Player)" + "\r\n" + Utils.AddSpacesCount(20) + "return;" },
+                    { "PlayerCheck",   "Player* l_Player = p_Clicker->ToPlayer();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Player)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "return;" },
                 }
             },
 
             { "SpellHit",
                 new Dictionary<string, string>
                 {
-                    { "PlayerCheck",   "Player* l_Player = p_Caster->ToPlayer();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Player)" + "\r\n" + Utils.AddSpacesCount(20) + "return;" },
-                    { "SpellIdSwitch", "switch (p_Spell->Id)" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "case eSpells::SpellName:" + "\r\n" + Utils.AddSpacesCount(20) + "{" + "\r\n" + Utils.AddSpacesCount(24) + "break;" + "\r\n" + Utils.AddSpacesCount(20) + "}" + "\r\n" + Utils.AddSpacesCount(20) + "default:" + "\r\n" + Utils.AddSpacesCount(24) + "break;" + "\r\n" + Utils.AddSpacesCount(16) + "}" }
+                    { "PlayerCheck",   "Player* l_Player = p_Caster->ToPlayer();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Player)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "return;" },
+                    { "SpellIdSwitch", "switch (p_Spell->Id)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "case eSpells::SpellName:" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FIVE_TABS) + "break;" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "}" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "default:" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FIVE_TABS) + "break;" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" }
                 }
             },
 
             { "OnSpellCasted",
                 new Dictionary<string, string>
                 {
-                    { "SpellIdSwitch", "switch (p_SpellInfo->Id)" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "case eSpells::SpellName:" + "\r\n" + Utils.AddSpacesCount(20) + "{" + "\r\n" + Utils.AddSpacesCount(24) + "break;" + "\r\n" + Utils.AddSpacesCount(20) + "}" + "\r\n" + Utils.AddSpacesCount(20) + "default:" + "\r\n" + Utils.AddSpacesCount(24) + "break;" + "\r\n" + Utils.AddSpacesCount(16) + "}" }
+                    { "SpellIdSwitch", "switch (p_SpellInfo->Id)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "case eSpells::SpellName:" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FIVE_TABS) + "break;" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "}" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "default:" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FIVE_TABS) + "break;" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" }
                 }
             },
 
             { "PassengerBoarded",
                 new Dictionary<string, string>
                 {
-                    { "PlayerCheck",   "Player* l_Player = p_Passenger->ToPlayer();" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Player)" + "\r\n" + Utils.AddSpacesCount(20) + "return;" },
+                    { "PlayerCheck",   "Player* l_Player = p_Passenger->ToPlayer();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Player)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "return;" },
                 }
             },
 
             { "MovementInform",
                 new Dictionary<string, string>
                 {
-                    { "PlayerCheck",   "Player* l_Player = ObjectAccessor::GetPlayer(*me, m_SummonerGuid);" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Player)" + "\r\n" + Utils.AddSpacesCount(20) + "return;" },
-                    { "PointIdSwitch", "switch (p_PointId)" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "case ePoints::PointName:" + "\r\n" + Utils.AddSpacesCount(20) + "{" + "\r\n" + Utils.AddSpacesCount(24) + "break;" + "\r\n" + Utils.AddSpacesCount(20) + "}" + "\r\n" + Utils.AddSpacesCount(20) + "default:" + "\r\n" + Utils.AddSpacesCount(24) + "break;" + "\r\n" + Utils.AddSpacesCount(16) + "}" }
+                    { "PlayerCheck",   "Player* l_Player = ObjectAccessor::GetPlayer(*me, m_SummonerGuid);" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Player)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "return;" },
+                    { "PointIdSwitch", "switch (p_PointId)" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "case ePoints::PointName:" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FIVE_TABS) + "break;" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "}" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "default:" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FIVE_TABS) + "break;" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" }
                 }
             },
 
@@ -138,9 +138,9 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
             { "UpdateAI",
                 new Dictionary<string, string>
                 {
-                    { "PlayerCheck",   "Player* l_Player = ObjectAccessor::GetPlayer(*me, m_SummonerGuid);" + "\r\n" + Utils.AddSpacesCount(16) + "if (!l_Player || !l_Player->IsInWorld() || !l_Player->HasQuest(eQuests::QuestName))" + "\r\n" + Utils.AddSpacesCount(16) + "{" +  "\r\n" + Utils.AddSpacesCount(20) + "me->DespawnOrUnsummon();" + "\r\n" + Utils.AddSpacesCount(20) + "return;" + "\r\n" + Utils.AddSpacesCount(16) + "}" },
-                    { "CombatChecks",  "if (!UpdateVictim())" + "\r\n" + Utils.AddSpacesCount(20) + "return;" + "\r\n\r\n" + Utils.AddSpacesCount(16) + "m_Events.Update(p_Diff);" + "\r\n\r\n" + Utils.AddSpacesCount(16) + "if (me->HasUnitState(UNIT_STATE_CASTING))" + "\r\n" + Utils.AddSpacesCount(20) + "return;" },
-                    { "EventsSwitch",  "switch (m_Events.ExecuteEvent())" + "\r\n" + Utils.AddSpacesCount(16) + "{" + "\r\n" + Utils.AddSpacesCount(20) + "case eEvents::EventName:" + "\r\n" + Utils.AddSpacesCount(20) + "{" + "\r\n" + Utils.AddSpacesCount(24) + "m_Events.ScheduleEvent(eEvents::Eventname, 10000);" + "\r\n" + Utils.AddSpacesCount(24) + "break;" + "\r\n" + Utils.AddSpacesCount(20) + "}" + "\r\n" + Utils.AddSpacesCount(20) + "default:" + "\r\n" + Utils.AddSpacesCount(24) + "break;" + "\r\n" + Utils.AddSpacesCount(16) + "}" },
+                    { "PlayerCheck",   "Player* l_Player = ObjectAccessor::GetPlayer(*me, m_SummonerGuid);" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (!l_Player || !l_Player->IsInWorld() || !l_Player->HasQuest(eQuests::QuestName))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" +  "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "me->DespawnOrUnsummon();" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "return;" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" },
+                    { "CombatChecks",  "if (!UpdateVictim())" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "return;" + "\r\n\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "m_Events.Update(p_Diff);" + "\r\n\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "if (me->HasUnitState(UNIT_STATE_CASTING))" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "return;" },
+                    { "EventsSwitch",  "switch (m_Events.ExecuteEvent())" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "case eEvents::EventName:" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "m_Events.ScheduleEvent(eEvents::Eventname, 10000);" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FIVE_TABS) + "break;" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "}" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FOUR_TABS) + "default:" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.FIVE_TABS) + "break;" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "}" },
                     { "DoMeleeAttack", "DoMeleeAttackIfReady();" }
                 }
             },
@@ -166,23 +166,15 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
                 return;
 
             scriptName = "npc_" + defaultName.Replace(" ", "_").ToLower().Replace("'", "") + "_" + objectEntry;
+
             scriptBody = "/// " + defaultName + " - " + objectEntry + "\r\n";
-            scriptBody += "class " + scriptName + " : public CreatureScript" + "\r\n";
+            scriptBody += "struct " + scriptName + " : public " + (IsVehicleScript(hooksListBox) ? "VehicleAI" : "ScriptedAI") + "\r\n";
             scriptBody += "{" + "\r\n";
-            scriptBody += Utils.AddSpacesCount(4) + "public:" + "\r\n";
-            scriptBody += Utils.AddSpacesCount(8) + scriptName + "()" + " : CreatureScript(\"" + scriptName + "\")" + " { }" + "\r\n\r\n";
-            scriptBody += Utils.AddSpacesCount(8) + "struct " + scriptName + "AI" + " : public " + (IsVehicleScript(hooksListBox) ? "VehicleAI" : "ScriptedAI") + "\r\n";
-            scriptBody += Utils.AddSpacesCount(8) + "{" + "\r\n";
-            scriptBody += Utils.AddSpacesCount(12) + "explicit " + scriptName + "AI" + "(Creature* p_Creature) : " + (IsVehicleScript(hooksListBox) ? "VehicleAI" : "ScriptedAI") + "(p_Creature) { }";
+            scriptBody += Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + "explicit " + scriptName + "(Creature* p_Creature) : " + (IsVehicleScript(hooksListBox) ? "VehicleAI" : "ScriptedAI") + "(p_Creature) { }";
             scriptBody += GetEnumsBody(hookBodiesTreeView);
             scriptBody += GetVariablesBody(hookBodiesTreeView);
             scriptBody += GetHooksBody(hooksListBox, hookBodiesTreeView);
-            scriptBody += "\r\n" + Utils.AddSpacesCount(8) + "};" + "\r\n\r\n";
-            scriptBody += Utils.AddSpacesCount(8) + "CreatureAI* GetAI(Creature* p_Creature) const override" + "\r\n";
-            scriptBody += Utils.AddSpacesCount(8) + "{" + "\r\n";
-            scriptBody += Utils.AddSpacesCount(12) + "return new " + scriptName + "AI(p_Creature);" + "\r\n";
-            scriptBody += Utils.AddSpacesCount(8) + "}" + "\r\n";
-            scriptBody += "};";
+            scriptBody += "\r\n" + "};" + "\r\n\r\n";
 
             Clipboard.SetText(scriptBody);
             MessageBox.Show("Template has been successfully builded and copied on your clipboard!");
@@ -200,17 +192,17 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
             if (IsHookBodiesContainItem("SpellIdSwitch", hookBodiesTreeView) ||
                 IsHookBodiesContainItem("EventsSwitch", hookBodiesTreeView))
             {
-                body += "\r\n\r\n" + Utils.AddSpacesCount(12) + "enum eSpells" + "\r\n" + Utils.AddSpacesCount(12) + "{" + "\r\n" + Utils.AddSpacesCount(16) + "\r\n" + Utils.AddSpacesCount(12) + "};";
+                body += "\r\n\r\n" + Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + "enum eSpells" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + "};";
             }
 
             if (IsHookBodiesContainItem("PointIdSwitch", hookBodiesTreeView))
             {
-                body += "\r\n\r\n" + Utils.AddSpacesCount(12) + "enum ePoints" + "\r\n" + Utils.AddSpacesCount(12) + "{" + "\r\n" + Utils.AddSpacesCount(16) + "\r\n" + Utils.AddSpacesCount(12) + "};";
+                body += "\r\n\r\n" + Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + "enum ePoints" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + "};";
             }
 
             if (IsHookBodiesContainItem("EventsSwitch", hookBodiesTreeView))
             {
-                body += "\r\n\r\n" + Utils.AddSpacesCount(12) + "enum eEvents" + "\r\n" + Utils.AddSpacesCount(12) + "{" + "\r\n" + Utils.AddSpacesCount(16) + "\r\n" + Utils.AddSpacesCount(12) + "};";
+                body += "\r\n\r\n" + Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + "enum eEvents" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB) + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + "};";
             }
 
             return body;
@@ -225,11 +217,11 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
             {
                 if (variablesCount == 0)
                 {
-                    body += "\r\n\r\n" + Utils.AddSpacesCount(12) + "ObjectGuid m_SummonerGuid;";
+                    body += "\r\n\r\n" + Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + "ObjectGuid m_SummonerGuid;";
                 }
                 else
                 {
-                    body += "\r\n" + Utils.AddSpacesCount(12) + "ObjectGuid m_SummonerGuid;";
+                    body += "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + "ObjectGuid m_SummonerGuid;";
                 }
 
                 variablesCount++;
@@ -239,11 +231,11 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
             {
                 if (variablesCount == 0)
                 {
-                    body += "\r\n\r\n" + Utils.AddSpacesCount(12) + "EventMap m_Events;";
+                    body += "\r\n\r\n" + Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + "EventMap m_Events;";
                 }
                 else
                 {
-                    body += "\r\n" + Utils.AddSpacesCount(12) + "EventMap m_Events;";
+                    body += "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + "EventMap m_Events;";
                 }
 
                 variablesCount++;
@@ -263,8 +255,8 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
 
             foreach (var hook in hooksListBox.SelectedItems)
             {
-                body += "\r\n\r\n" + Utils.AddSpacesCount(12) + hooksDictionary[hook.ToString()];
-                body += "\r\n" + Utils.AddSpacesCount(12) + "{" + "\r\n" + Utils.AddSpacesCount(16);
+                body += "\r\n\r\n" + Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + hooksDictionary[hook.ToString()];
+                body += "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + "{" + "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB);
 
                 foreach (TreeNode parentNode in hookBodiesTreeView.Nodes)
                 {
@@ -279,7 +271,7 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
                         {
                             if (moreThanOne)
                             {
-                                body += "\r\n\r\n" + Utils.AddSpacesCount(16);
+                                body += "\r\n\r\n" + Utils.AddSpacesCount(Utils.TabsSize.TWO_TAB);
                             }
 
                             body += hookBodiesDictionary[hook.ToString()][childNode.Text];
@@ -292,7 +284,7 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
                     }
                 }
 
-                body += "\r\n" + Utils.AddSpacesCount(12) + "}";
+                body += "\r\n" + Utils.AddSpacesCount(Utils.TabsSize.ONE_TAB) + "}";
             }
 
             return body;
