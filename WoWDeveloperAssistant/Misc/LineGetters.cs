@@ -131,6 +131,8 @@ namespace WoWDeveloperAssistant.Misc
             {
                 if (line.Contains("Detected build:"))
                 {
+                    if (line.Contains("V7_1_0_23222"))
+                        return BuildVersions.BUILD_9_0_5;
                     if (line.Contains("V8_0_1"))
                         return BuildVersions.BUILD_8_0_1;
                     else if (line.Contains("V8_1_0"))
@@ -152,6 +154,14 @@ namespace WoWDeveloperAssistant.Misc
                     else if (line.Contains("V9_0_5"))
                         return BuildVersions.BUILD_9_0_5;
                     else if (line.Contains("V9_1_0"))
+                        return BuildVersions.BUILD_9_0_5;
+                    else if (line.Contains("V_9_1_5"))
+                        return BuildVersions.BUILD_9_0_5;
+                    else if (line.Contains("V_9_2_0"))
+                        return BuildVersions.BUILD_9_0_5;
+                    else if (line.Contains("V_9_2_5"))
+                        return BuildVersions.BUILD_9_0_5;
+                    else if (line.Contains("V_9_2_7"))
                         return BuildVersions.BUILD_9_0_5;
 
                     return BuildVersions.BUILD_UNKNOWN;
