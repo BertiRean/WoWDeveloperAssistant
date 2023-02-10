@@ -163,9 +163,9 @@ namespace WoWDeveloperAssistant.Misc
                         return BuildVersions.BUILD_9_0_5;
                     else if (line.Contains("V_9_2_7"))
                         return BuildVersions.BUILD_9_0_5;
-                    else if (line.Contains("V_10_0_2"))
+                    else if (line.Contains("V10_0_2"))
                         return BuildVersions.BUILD_9_0_5;
-                    else if (line.Contains("V_10_0_5"))
+                    else if (line.Contains("V10_0_5"))
                         return BuildVersions.BUILD_9_0_5;
 
                     return BuildVersions.BUILD_UNKNOWN;
