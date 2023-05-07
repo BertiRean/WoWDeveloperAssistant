@@ -548,16 +548,47 @@ namespace WoWDeveloperAssistant.Creature_Scripts_Creator
             scriptBody += $"struct {scriptName} : public ScriptedAI" + "\r\n";
             scriptBody += "{" + "\r\n";
             scriptBody += $"{AddSpacesCount(4)}explicit {scriptName}(Creature* p_Creature) : ScriptedAI(p_Creature) {{ }}";
-            scriptBody += GetEnumsBody();
+            scriptBody += GetEnumsBody(creature);
             scriptBody += GetHooksBody(creature);
             scriptBody += "\r\n" + "};" + "\r\n";
 
             Clipboard.SetText(scriptBody);
         }
 
-        private string GetEnumsBody()
+        private string GetEnumsBody(Creature creature)
         {
             string body = "";
+
+            string creatureTextQuery = $"SELECT `ID`, `Text`  FROM `creature_text` WHERE `CreatureId` = {creature.entry};";
+
+            var creatureTexts = Properties.Settings.Default.UsingDB ? SQLModule.DatabaseSelectQuery(creatureTextQuery) : null;
+
+            if (creatureTexts != null && creatureTexts.Tables["table"].Rows.Count > 0)
+            {
+                body += $"\r\n\r\n{AddSpacesCount(4)}enum eTalks\r\n{AddSpacesCount(4)}{{";
+
+                foreach (DataRow row in creatureTexts.Tables["table"].Rows)
+                {
+                    string text = row[1].ToString();
+                    string id = row[0].ToString();
+                    body += $"\r\n{Utils.AddSpacesCount(8)}{"Talk" + id} = {id + ',' + Utils.AddSpacesCount(4) + "//" + text}";
+                }
+            }
+
+
+            for (int l = 0; l < mainForm.dataGridView_CreatureScriptsCreator_Spells.RowCount; l++)
+            {
+                Spell spell = (Spell)mainForm.dataGridView_CreatureScriptsCreator_Spells[8, l].Value;
+
+                if (l == 0)
+                {
+                    body += $"\r\n{AddSpacesCount(8)}{NormilizeName(spell.name)} = {spell.spellId}";
+                }
+                else
+                {
+                    body += $",\r\n{AddSpacesCount(8)}{NormilizeName(spell.name)} = {spell.spellId}";
+                }
+            }
 
             body += $"\r\n\r\n{AddSpacesCount(4)}enum eSpells\r\n{AddSpacesCount(4)}{{";
 

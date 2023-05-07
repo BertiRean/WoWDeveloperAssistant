@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -172,7 +173,7 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
             scriptBody += "struct " + scriptName + " : public " + (IsVehicleScript(hooksListBox) ? "VehicleAI" : "ScriptedAI") + "\r\n";
             scriptBody += "{" + "\r\n";
             scriptBody += Utils.AddSpacesCount(4) + "explicit " + scriptName + "(Creature* p_Creature) : " + (IsVehicleScript(hooksListBox) ? "VehicleAI" : "ScriptedAI") + "(p_Creature) { }";
-            scriptBody += GetEnumsBody(hookBodiesTreeView);
+            scriptBody += GetEnumsBody(hookBodiesTreeView, objectEntry);
             scriptBody += GetHooksBody(hooksListBox, hookBodiesTreeView);
             scriptBody += "\r\n" + "};" + "\r\n";
 
@@ -214,9 +215,25 @@ namespace WoWDeveloperAssistant.Core_Script_Templates
             return listBox.SelectedItems.Cast<object>().Any(item => item.ToString() == "PassengerBoarded");
         }
 
-        private static string GetEnumsBody(TreeView hookBodiesTreeView)
+        private static string GetEnumsBody(TreeView hookBodiesTreeView, uint objectEntry)
         {
             string body = "";
+
+            string creatureTextQuery = $"SELECT `GroupID`, `Text`  FROM `creature_text` WHERE `CreatureId` = {objectEntry};";
+
+            var creatureTexts = Properties.Settings.Default.UsingDB ? SQLModule.DatabaseSelectQuery(creatureTextQuery) : null;
+
+            if (creatureTexts != null && creatureTexts.Tables["table"].Rows.Count > 0)
+            {
+                body += $"\r\n\r\n{Utils.AddSpacesCount(4)}enum eTalks\r\n{Utils.AddSpacesCount(4)}{{";
+
+                foreach (DataRow row in creatureTexts.Tables["table"].Rows)
+                {
+                    string text = row[1].ToString();
+                    string id = row[0].ToString();
+                    body += $"\r\n{Utils.AddSpacesCount(8)}{"Talk" + id} = {id + ',' + Utils.AddSpacesCount(4) + "//" + text}";
+                }
+            }
 
             if (IsHookBodiesContainItem("SpellIdSwitch", hookBodiesTreeView) ||
                 IsHookBodiesContainItem("EventsSwitch", hookBodiesTreeView))
